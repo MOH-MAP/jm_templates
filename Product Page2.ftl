@@ -1,22 +1,7 @@
 <#assign namespace=randomNamespace />
-<style>
-    .product_hero .product_hero__para {
-        font-size: 18px;
-        line-height: 28px;
-        font-family: JMSansRegular;
-    }
-    .product_hero .product_hero__para p {
-        margin-bottom: 1rem;
-    }
-    table td {
-        border: 0.125rem solid #fff;
-        padding: 0.5rem;
-        background: #ccc;
-    }
-</style>
 
 <div id="product-hero-${namespace}" class="product_hero">
-    <div class="container">
+    <div class="container jmtable--temp">
         <div class="row">
             <#assign imgPresent = ((ImageLarge.getData())?? && ImageLarge.getData() != "")>
             <div class="${(imgPresent)?then('col-md-7','col-md-12')}">
@@ -29,9 +14,8 @@
                 </div>
             </#if>
             
-              <#if Link_Title?? && Link_Title.getData()?has_content>
+            <#if Link_Title?? && Link_Title.getData()?has_content>
                 <#assign linkHref = "#" />
-        
                 <#if Link_Title.Link_Internal.getFriendlyUrl()?has_content>
                     <#assign linkHref = Link_Title.Link_Internal.getFriendlyUrl() />
                 <#elseif Link_Title.Link_Media.getData()?has_content>
@@ -43,12 +27,12 @@
                 </#if>
                 <div class="">
                     <div class="">
-                    <a href="${linkHref}" class="panel__btn">${Link_Title.getData()} <span class="arrow__forward"></span></a>
+                        <a href="${linkHref}" class="panel__btn">${Link_Title.getData()} <span class="arrow__forward"></span></a>
                     </div>
                 </div>
             </#if>
             
-             <#if AdditionalLinks_Title.getSiblings()?? && AdditionalLinks_Title.getSiblings()?has_content>
+            <#if AdditionalLinks_Title.getSiblings()?? && AdditionalLinks_Title.getSiblings()?has_content>
 				<#assign href = '#' >
                 <#assign title = 'Explore'>
 				<#list AdditionalLinks_Title.getSiblings() as cur_AdditionalLinks_Title>
@@ -64,13 +48,14 @@
 							<#assign href = cur_AdditionalLinks_Title.AdditionalLinks_External.getData() >
 						<#elseif cur_AdditionalLinks_Title.AdditionalLinks_Target.getData()?has_content>
 							<#assign href = cur_AdditionalLinks_Title.AdditionalLinks_Target.getData() >
-						</#if>
+                        </#if>
 						<div class="panel__btn">
-                        <a href="${href}">${title}
-                       <span class="arrow__forward"></span></a>
-                    </div>
+                            <a href="${href}" title="${title}">
+                                ${title}
+                                <span class="arrow__forward"></span>
+                            </a>
+                        </div>
 					</#if>
-					 
 				</#list>
             </#if>
         </div>
