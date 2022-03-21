@@ -1,0 +1,29 @@
+.jmtwo--person-temp {
+    .two-person-grid {
+        padding : 0rem !important;
+    }
+    
+    .person-grid .person_card {
+        border: 1px solid #e5e5e5;
+        padding: 1.25rem;
+        width: 100%;
+    }
+    
+    .portlet-journal-content .journal-content-article img {
+        position: unset;
+        height: 100%;
+    }
+}
+
+.journal-content-article {
+    .jmtwo--person-temp {
+        .two-person-grid {
+            margin-right: 0px;
+            padding: 60px 60px 60px 0px !important;
+        }
+
+        .person-heading_align {
+            padding-left: 0px !important;
+        }
+    }
+} 
