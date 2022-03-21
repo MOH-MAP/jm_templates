@@ -36,22 +36,23 @@
                     <div id="player"></div>
                     <div class="modal-footer">
                         <div class="controls jm-video-controls">
-                        <div class="jm-video-button1">
-                            <button id="play" type="button" class="btn btn-primary play-button">Play</button>
-                        </div>
-                        <div class="jm-video-button2">
-                            <button id="pause" type="button" class="btn btn-primary pause-button">PAUSE VIDEO <img src="/o/jm-platinum-theme/images/new__jm__images/pause.svg" alt="forward">
-                            </button>
-                        </div>
-                        <div class="jm-video-button3">
-                            <button id="stop" type="button" class="btn btn-primary jm-video-btn-block stop-button">STOP VIDEO <img src="/o/jm-platinum-theme/images/new__jm__images/stop.svg" alt="forward">
-                            </button>
-                        </div>
-                        <div class="jm-video-button4">
-                            <a class="ytp-watermark yt-uix-sessionlink youtube-button-alignment" target="_blank" aria-label="Watch on www.youtube.com" data-sessionlink="feature=player-watermark" href="https://www.youtube.com/watch?v=${YoutubeID.getData()}" data-layer="8">
-                            <button id="" type="button" class="btn btn-primary jm-video-btn-block">OPEN IN YOUTUBE <img src="/o/jm-platinum-theme/images/new__jm__images/arrow__forward.svg" alt="forward">
-                            </button>
-                            </a>
+                            <div class="jm-video-button1">
+                                <button id="play" type="button" class="btn btn-primary play-button">Play</button>
+                            </div>
+                            <div class="jm-video-button2">
+                                <button id="pause" type="button" class="btn btn-primary pause-button">PAUSE VIDEO <img src="/o/jm-platinum-theme/images/new__jm__images/pause.svg" alt="forward">
+                                </button>
+                            </div>
+                            <div class="jm-video-button3">
+                                <button id="stop" type="button" class="btn btn-primary jm-video-btn-block stop-button">STOP VIDEO <img src="/o/jm-platinum-theme/images/new__jm__images/stop.svg" alt="forward">
+                                </button>
+                            </div>
+                            <div class="jm-video-button4">
+                                <a class="ytp-watermark yt-uix-sessionlink youtube-button-alignment" target="_blank" aria-label="Watch on www.youtube.com" data-sessionlink="feature=player-watermark" href="https://www.youtube.com/watch?v=${YoutubeID.getData()}" data-layer="8">
+                                <button id="" type="button" class="btn btn-primary jm-video-btn-block">OPEN IN YOUTUBE <img src="/o/jm-platinum-theme/images/new__jm__images/arrow__forward.svg" alt="forward">
+                                </button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
