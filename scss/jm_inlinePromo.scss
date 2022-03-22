@@ -1,0 +1,121 @@
+.jm-inline-promo{
+	margin-bottom: 60px;
+	
+ picture {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center center;
+  }
+ img {
+    display: none;
+ }
+.promo__block {
+	background-color: $jmEgyptianBlueColor;
+	padding: 60px ;
+}
+.promo__signup {
+	text-align: left;
+	font-size: 18px;
+	line-height: 22px;
+	font-family: JMSansRegular;
+	letter-spacing: 0px;
+	color: $jmWhiteColor;
+	text-transform: capitalize;
+	opacity: 0.84;
+	margin: 0;
+}
+.promo__heading {
+	margin: 0;
+	margin-top: 24px;
+	text-align: left;
+	font-size: 36px;
+	line-height: 44px;
+	font-family: JMSansMedium;
+	letter-spacing: 0px;
+	color: $jmWhiteColor;
+	opacity: 1;
+	margin-bottom: 36px;
+	max-width: 467px;
+}
+.promo__btn {
+	text-align: right;
+	font-size: 18px;
+	font-family: JMSansMedium;
+	line-height: 22px;
+	letter-spacing: 0px;
+	color: $jmWhiteColor;
+	background-color: $jmEgyptianBlueColor;
+	text-transform: uppercase;
+	opacity: 1;
+	margin: 0;
+	outline: none;
+	border: 1px solid  $jmWhiteColor;
+	padding: 20px 10px 17px 60px;
+	position: static;
+	width: auto;
+	display: inline-flex;
+		
+	&:hover {
+		text-decoration: none;
+		color:  $jmWhiteColor;
+	}
+}
+.arrow__forward {
+	background: url("../images/new__jm__images/arrow_forward-white.svg") 0 0 no-repeat transparent;
+	display: block;
+	width: 24px;
+	height: 24px;
+	margin-left: 8px;
+	top: 50%;
+	margin-top: -2px;
+}
+.promo__sec {
+	.col-md-4 {
+		padding: 0px !important;
+	}
+}
+.promo__sec {
+	div {
+		&:last-child {
+		padding-left: 0;
+		}
+	}
+}
+}
+
+@media (min-width: 320px) and (max-width: 539px) {
+    .jm-inline-promo{
+	.promo__block {
+		padding: 20px;
+		width: 100%;
+	}
+	.promo__heading {
+		font-size: 32px;
+		margin-top: 12px;
+		margin-bottom: 32px;
+	}
+	.promo__signup {
+		font-size: 14px;
+	}
+	.promo__btn {
+		font-size: 16px;
+		padding: 16px 10px 16px 53px;
+	}
+ }
+}
+@media (min-width: 540px) and(max-width: 834px) {
+    .jm-inline-promo{
+	.promo__block {
+		padding: 20px;
+	}
+    }
+}
+@media (min-width: 835px) and (max-width: 1200px) {
+    .jm-inline-promo{
+	.promo__block {
+		padding: 40px;
+	}
+   }
+}
