@@ -3,28 +3,31 @@
 <style>
 .banner-${namespace} {
     <#if (ImageLarge.getData())?? && ImageLarge.getData() != "">
-	background-image: url("${ImageLarge.getData()!}");
+		background-image: url("${ImageLarge.getData()!}");
     </#if>
 }
 @media(min-width: 320px) and (max-width: 539px){
   .banner-${namespace} {
-    <#if (ImageSmall.getData())?? && ImageSmall.getData() != "">
-	background-image: url("${ImageSmall.getData()!}");
-    </#if>
+    	<#if (ImageSmall.getData())?? && ImageSmall.getData() != "">
+			background-image: url("${ImageSmall.getData()!}");
+    	</#if>
   	}
-  }
-
+}
 </style>
 
 <div class="jmcareers--hero-main-container">
 	<div class="banner banner-${namespace} jmbanner-temp">
 		<div class="centered container">
-			<p>
-				<#if (Summary.getData())??>${Summary.getData()}</#if>
-			</p>
-			<h1 class="career__heading">
-				<#if (Title.getData())??>${Title.getData()}</#if>
-			</h1>
+			<#if (Summary.getData())??>
+				<p>
+					${Summary.getData()}
+				</p>
+			</#if>
+			<#if (Title.getData())??>
+				<h1 class="career__heading">
+					${Title.getData()}
+				</h1>
+			</#if>
 			<form id="career-search-frm-${namespace}" action="${ResultsPage.getFriendlyUrl()}" autocomplete="off">
 				<div class="career__input__sec">
 					<div class="dept__sec">
@@ -33,7 +36,7 @@
 					</div>
 					<div class="career__dropdown__sec">
 						<div class="career__dropdown">
-							<input type="text" placeholder="Location" class="textBox" readonly>
+							<input type="text" placeholder="Location" class="textBox" readonly />
 							<div class="career__option">
 								<div> United States </div>
 								<div> United Kingdom </div>
@@ -72,12 +75,12 @@
 								<div>Thailand</div>
 								<div>Trinidad and Tobago </div>
 								<div>United Arab Emirates</div>
-
 							</div>
 						</div>
 					</div>
 					<div class="button__sec">
-						<button id="submit-${namespace}" class=" submit__btn">SUBMIT
+						<button id="submit-${namespace}" class=" submit__btn">
+							SUBMIT
 							<span class="arrow__forward"></span>
 						</button>
 					</div>
