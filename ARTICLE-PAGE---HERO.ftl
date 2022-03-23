@@ -27,7 +27,8 @@
           </#if>
           <div>
             <div class="jmarticle-hero-btn-desktop">
-              <a class="article__btn" href="${linkHref}">${Link_Title.getData()}
+              <a class="article__btn" href="${linkHref}" title="${Link_Title.getData()}">
+                ${Link_Title.getData()}
                 <span class="arrow__forward"></span>
               </a>
             </div>
