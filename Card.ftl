@@ -20,8 +20,7 @@
             </#if>
             <a class="list-link" href="${linkHref}" target="_blank">
                 <span class="link-text">${title}</span>
-                <span class="link-icon"
-                    style="background: url('https://webserver-jmliferay-test.lfr.cloud/o/platinum-standalone-theme/images/new_platinum_images/arrow_forward-blue.svg') 0 0 no-repeat transparent;"></span>
+                <span class="link-icon"></span>
             </a>
         </div>
     </div>

@@ -15,7 +15,7 @@
 }
     
 .jmcard--main-container .link-icon {
-    /* background: url('https://webserver-jmliferay-test.lfr.cloud/o/platinum-standalone-theme/images/new_platinum_images/arrow_forward-blue.svg') 0 0 no-repeat transparent; */
+    background: url('../images/new_platinum_images/arrow_forward-blue.svg') 0 0 no-repeat transparent;
     display: block;
     width: 24px;
     height: 24px;
