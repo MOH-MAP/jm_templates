@@ -3,7 +3,7 @@
 <#assign serviceContext = staticUtil["com.liferay.portal.kernel.service.ServiceContextThreadLocal"].getServiceContext() />
 <#assign themeDisplay = serviceContext.getThemeDisplay() />
 
-<div id="annual-report-slide-${namespace} jmproduct--hero-temp" class="annual-report-slide">
+<div id="annual-report-slide-${namespace}" class="annual-report-slide jmproduct--hero-temp">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
