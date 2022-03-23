@@ -1,0 +1,27 @@
+.homebanner--hero {
+	h2 {
+		font: 52px/60px JMSansMedium;
+		color: $jmWhiteColor;
+		text-shadow: 0px 0px 8px #000000;
+		opacity: 1;
+	}
+	p {
+		font: 18px/28px JMSansRegular;
+		color: $jmWhiteColor;
+		text-shadow: 0px 0px 8px #000000;
+		opacity: 1;
+		width: 100%;
+		max-width: 660px;
+	}
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: left;
+	padding: 0px 60px 0px 20px;
+}
+.homebannerhero__img {
+	width: 100%;
+	height: 384px;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+}
