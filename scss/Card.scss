@@ -1,0 +1,41 @@
+.jmcard--main-container {
+	.list-link {
+		text-decoration: none;
+		text-decoration-color: #1E22AA;
+		color: #1E22AA;
+		font: 18px/22px JMSansMedium;
+		display: flex;
+	}
+	.list-item {
+		.list-link {
+			text-decoration: none;
+			text-decoration-color: #1E22AA;
+			color: #1E22AA;
+			font: 18px/22px JMSansMedium;
+			display: flex;
+		}
+	}
+	.link-icon {
+		display: block;
+		width: 24px;
+		height: 24px;
+		margin-left: 8px;
+		background: url('../images/new_platinum_images/arrow_forward-blue.svg') 0 0 no-repeat transparent;
+	}
+	.card {
+		border: none;
+	}
+	h2 {
+		>.wrap-three {
+			margin-top: 10px;
+			margin-bottom: 25px;
+			margin-right: 40%;
+		}
+	}
+	h1.card-block-header {
+		margin-bottom: 40px;
+	}
+	.card-body {
+		border-bottom: 15px solid #1E22AA;
+	}
+}
