@@ -1,4 +1,4 @@
-.jmrich--text--inner {
+.jmrich--text-inner {
 	h5 {
 		font-size: 26px;
 		font-family: JMSansMedium;
@@ -36,40 +36,39 @@
 }
 
 @media (max-width: 575.98px){
-	.jmrich--text--inner {
-	h5 {
-		font-size: 22px;
-		font-family: JMSansMedium;
-		letter-spacing: 0px;
-		color: #1E22AA;
-		opacity: 1;
-	}
-	p {
-		font-family: JMSansRegular;
-		font-size: 16px;
-		line-height: 20px;
-		letter-spacing: 0px;
-		color: #333333;
-		opacity: 1;
-		padding-bottom: 5px;
-		a {
+	.jmrich--text-inner {
+		h5 {
+			font-size: 22px;
+			font-family: JMSansMedium;
+			letter-spacing: 0px;
 			color: #1E22AA;
-			text-decoration: revert;
+			opacity: 1;
 		}
-	}
-	ul {
-		padding-bottom: 5px;
-		margin-left: 25px;
-		li {
-			padding: 5px 0px;
+		p {
 			font-family: JMSansRegular;
 			font-size: 16px;
 			line-height: 20px;
 			letter-spacing: 0px;
 			color: #333333;
 			opacity: 1;
+			padding-bottom: 5px;
+			a {
+				color: #1E22AA;
+				text-decoration: revert;
+			}
 		}
-	}
-}
-	
+		ul {
+			padding-bottom: 5px;
+			margin-left: 25px;
+			li {
+				padding: 5px 0px;
+				font-family: JMSansRegular;
+				font-size: 16px;
+				line-height: 20px;
+				letter-spacing: 0px;
+				color: #333333;
+				opacity: 1;
+			}
+		}
+	}	
 }

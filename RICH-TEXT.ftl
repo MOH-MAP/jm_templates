@@ -6,9 +6,9 @@ Please use the left panel to quickly add commonly used variables.
 Autocomplete is also available and can be invoked by typing "${".
 -->
 <div class="conainer">
-  <div class="jmrich--text--inner my-4">
-  	 <div class="p-5 my-4 rich--text--details">
-        <p class="jmrich-text">${Body.getData()}</p>
+  <div class="jmrich--text-inner my-4">
+  	 <div class="p-5 my-4 rich--text-details">
+        <p class="jmrich--text">${Body.getData()}</p>
      </div>
   </div>
 </div>
