@@ -1,0 +1,91 @@
+.jmannual--main-container #jmannual--rs-temp {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 477px;
+    position: relative;
+  }
+  .jmannual--main-container .panel__heading {
+    font-size: 47px;
+    line-height: 56px;
+    font-family: JMSansRegular;
+    color: #ffffff;
+    text-shadow: 0px 0px 8px #000000;
+    opacity: 1;
+    padding-top: 65px;
+    max-width: 770px;
+  }
+  .jmannual--main-container .annual__report p{
+    text-align: left;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: JMSansRegular;
+    letter-spacing: 0px;
+    color: #fff;
+    text-shadow: 0px 0px 8px #000000;
+    opacity: 1;
+  }
+  .jmannual--main-container .panel__btn {
+    display: flex;
+    background-color: #1e22aa;
+    color: #fff;
+    width: 321px;
+    border: none;
+    outline: none;
+    padding: 20px 10px 17px 0px;
+    margin-top: 44px;
+    justify-content: flex-end;
+    text-align: right;
+    font-size: 18px;
+    font-family: JMSansMedium;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+  }
+  .jmannual--main-container .arrow__forward {
+    background: url(" arrow_forward-white.svg") 0 0 no-repeat transparent;
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+    top: 50%;
+    margin-top: -2px;
+  }
+  .jmannual--main-container .scroll__sec {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    right: 50%;
+    padding: 10px;
+    border: 1px solid #fff;
+  }
+  
+  @media (min-width: 320px) and (max-width: 539px) {
+    .jmannual--main-container .panel__heading {
+      font-size: 32px;
+      line-height: 48px;
+    }
+    .jmannual--main-container .panel__btn {
+      width: 221px;
+      font-size: 16px;
+      padding: 15px 10px 15px 0px;
+    }
+    .jmannual--main-container .scroll__sec {
+      display: none;
+    }
+  }
+  @media (min-width: 540px) and (max-width: 834px) {
+    .jmannual--main-container .panel__heading {
+      font-size: 44px;
+    }
+    .jmannual--main-container .scroll__sec {
+      margin-bottom: 30px;
+    }
+    .jmannual--main-container .viewnext__img {
+      padding: 7px;
+    }
+  }
