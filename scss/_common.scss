@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+    overflow-x: hidden;
+}
+.portlet-journal-content .journal-content-article {
+  word-wrap: break-word;
+  height: 100%;
+}
+.portlet-decorate .portlet-content {
+  padding: 0px !important;
+  border: none !important;
+}
+.container-fluid {
+  padding: 0px !important;
+}
+li {
+  list-style: none;
+}
+.hide {
+  visibility: hidden;
+}
+.main-nav {
+  background-color: var(--jmWhite-color);
+  padding: 35px 0px;
+}
+.jmlogo__img {
+  width: 250px;
+  margin-left:75px;
+}
+.jmlogo__img--mb {
+  display: none;
+}
+.jmheader__navbar,
+.jmheader__navlinks {
+  background-color: var(--jmEgyptianBlue-color);
+}
+.jmheader__navbar {
+  .jmheader__navlinks {
+    display: flex;
+    padding: 0px 10px;
+    flex-wrap: wrap;
+  }
+}
+.jmheader__navlist {
+  padding: 23px 23px 16px 23px;
+  list-style: none;
+  color: var(--jmCrayola-color);
+  font-family: JMSansBlack;
+  position: static !important;
+  border-bottom: solid 3px var(--jmEgyptianBlue-color);
+
+  &:hover {
+    border-bottom: 3px solid var(--jmWhite-color);
+    transition: 0.3s ease-out;
+    background-color: var(--jmOceanBlue-color);
+    opacity: 1;
+  }
+  a {
+    font-family: JMSansMedium;
+    font-size: 14px;
+    line-height: 30px;
+    color: var(--jmCrayola-color);
+  }
+}
+
+.jmheader__navlist a.header__menu:hover {
+  color: var(--jmWhite-color) !important;
+}
+.jmheader__navlist .child-header:nth-last-child(1),
+.child-header:nth-last-child(2),
+.child-header:nth-last-child(3),
+.child-header:nth-last-child(4) {
+  border-bottom: 0 !important;
+}
+
+.jmheader__navlist:hover ul.child-menu {
+  display: flex;
+  width: calc(100% - 216px);
+  flex-wrap: wrap;
+  left: 108px;
+  box-shadow: 0px 4px 4px #00000080;
+}
+.submenu__mb {
+  position: fixed;
+  left: 15px;
+  top: 120px;
+  background: var(--jmEgyptianBlue-color);
+  width: calc(100% - 30px);
+  display: none;
+  height: calc(100% - 120px);
+  overflow: auto;
+  z-index: 2;
+  padding: 0px 20px;
+
+  .submenu__heading {
+    display: none;
+  }
+  .submenu__child {
+    display: none;
+  }
+}
+ul.child-menu {
+  list-style-type: none;
+  display: none;
+  grid-template-columns: repeat(4, 1fr);
+  position: absolute;
+  margin-top: 20px;
+  left: 0;
+  width: 100%;
+  background-color: var(--jmWhite-color);
+  padding: 20px 40px 40px 40px;
+  z-index: 1;
+}
+a.nav-child-cs {
+  font-size: 12px;
+  color: var(--jmGraniteGray-color);
+  font-weight: bold;
+}
+a.sub-child {
+  color: var(--jmDarkCharcoal-color);
+  font-size: 14px;
+  line-height: 30px;
+  font-family: JMSansRegular;
+}
+.header__menu {
+  color: var(--jmCrayola-color) !important;
+  text-decoration: none !important;
+}
+.child-menu {
+  li {
+    flex: 0 0 25%;
+    color: var(--jmDarkCharcoal-color) !important;
+    font-family: JMSansMedium;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  a {
+    color: var(--jmDarkCharcoal-color) !important;
+    font-size: 14px;
+    line-height: 30px;
+    font-family: JMSansRegular;
+    opacity: 0.6;
+
+    &:hover {
+      color: var(--jmEgyptianBlue-color) !important ;
+      text-decoration: underline;
+      opacity: 1;
+    }
+  }
+
+  .child-header {
+    border-bottom: 1px solid #0000001f;
+    opacity: 1;
+    flex: 0 0 25%;
+    padding: 30px 0px;
+  }
+  .jmlfry__btn {
+    background-color: var(--jmEgyptianBlue-color);
+    outline: none;
+    border: none;
+    align-items: end;
+    padding: 20px 40px;
+    color: var(--jmWhite-color);
+    font-size: 16px;
+    line-height: 21px;
+    font-family: JMSansMedium;
+    font-weight: normal;
+    display: flex;
+  }
+  .jmprdt__btn {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 14px;
+  }
+}
+.contact__container {
+  display: none;
+}
+.icon-arrow--right {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+#jmLogoWhite {
+  background: url(../images/new__jm__images/JMLogoWhite.svg) 0 0 no-repeat
+    transparent;
+  display: block;
+  width: 270px;
+  height: 50px;
+  cursor: pointer;
+}
+.jm_arrow-right {
+  background: url(../images/new__jm__images/keyboard_arrow_right.svg) 0 0
+    no-repeat transparent;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  display: block;
+}
+.input-group-item {
+  display: flex;
+  position: relative;
+  left: -267px;
+  right: 0px;
+  top: -20px;
+}
+.hidden__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 1;
+}
+
+.portlet {
+	margin-bottom: 0;
+}
+.portlet-layout .portlet-header {
+	margin-bottom: 0;
+}
+.arrow--animate {
+  transform: rotate(180deg);
+  opacity: 1;
+}
