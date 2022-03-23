@@ -15,33 +15,32 @@
 				</div>
 			</div>
 			<div class="col-12">
-		<#if AdditionalLinks_Title?? && AdditionalLinks_Title.getSiblings()?has_content>
-				<#assign href = '#' >
-                <#assign title = 'Explore'>
-				<#list AdditionalLinks_Title.getSiblings() as cur_AdditionalLinks_Title>
-					<#if cur_AdditionalLinks_Title?? && cur_AdditionalLinks_Title.getData()?has_content>
-						<#assign title = cur_AdditionalLinks_Title.getData()>
-						<#if cur_AdditionalLinks_Title.AdditionalLinks_Internal?? && cur_AdditionalLinks_Title.AdditionalLinks_Internal.getFriendlyUrl()?has_content>
-							<#assign href = cur_AdditionalLinks_Title.AdditionalLinks_Internal.getFriendlyUrl() >
-						<#elseif cur_AdditionalLinks_Title.AdditionalLinks_Media?? && cur_AdditionalLinks_Title.AdditionalLinks_Media.getData()?has_content>
-							<#assign href = cur_AdditionalLinks_Title.AdditionalLinks_Media.getData() >
-						<#elseif cur_AdditionalLinks_Title.AdditionalLinks_Mailto?? && cur_AdditionalLinks_Title.AdditionalLinks_Mailto.getData()?has_content>
-							<#assign href = cur_AdditionalLinks_Title.AdditionalLinks_Mailto.getData() >
-						<#elseif cur_AdditionalLinks_Title.AdditionalLinks_External?? && cur_AdditionalLinks_Title.AdditionalLinks_External.getData()?has_content>
-							<#assign href = cur_AdditionalLinks_Title.AdditionalLinks_External.getData() >
-						<#elseif cur_AdditionalLinks_Title.AdditionalLinks_Target?? && cur_AdditionalLinks_Title.AdditionalLinks_Target.getData()?has_content>
-							<#assign href = cur_AdditionalLinks_Title.AdditionalLinks_Target.getData() >
-						</#if>
-						<div class="mt-4">
-                        <a class="panel__btn" href="${href}">${title}
-                       <span class="arrow__forward"></span></a>
-                    </div>
-					</#if>
-					 
-				</#list>
-            </#if>
-		
-            </div>
+		        <#if AdditionalLinks_Title?? && AdditionalLinks_Title.getSiblings()?has_content>
+                    <#assign href = '#' >
+                    <#assign title = 'Explore'>
+                    <#list AdditionalLinks_Title.getSiblings() as cur_AdditionalLinks_Title>
+                        <#if cur_AdditionalLinks_Title?? && cur_AdditionalLinks_Title.getData()?has_content>
+                            <#assign title = cur_AdditionalLinks_Title.getData()>
+                            <#if cur_AdditionalLinks_Title.AdditionalLinks_Internal?? && cur_AdditionalLinks_Title.AdditionalLinks_Internal.getFriendlyUrl()?has_content>
+                                <#assign href = cur_AdditionalLinks_Title.AdditionalLinks_Internal.getFriendlyUrl() >
+                            <#elseif cur_AdditionalLinks_Title.AdditionalLinks_Media?? && cur_AdditionalLinks_Title.AdditionalLinks_Media.getData()?has_content>
+                                <#assign href = cur_AdditionalLinks_Title.AdditionalLinks_Media.getData() >
+                            <#elseif cur_AdditionalLinks_Title.AdditionalLinks_Mailto?? && cur_AdditionalLinks_Title.AdditionalLinks_Mailto.getData()?has_content>
+                                <#assign href = cur_AdditionalLinks_Title.AdditionalLinks_Mailto.getData() >
+                            <#elseif cur_AdditionalLinks_Title.AdditionalLinks_External?? && cur_AdditionalLinks_Title.AdditionalLinks_External.getData()?has_content>
+                                <#assign href = cur_AdditionalLinks_Title.AdditionalLinks_External.getData() >
+                            <#elseif cur_AdditionalLinks_Title.AdditionalLinks_Target?? && cur_AdditionalLinks_Title.AdditionalLinks_Target.getData()?has_content>
+                                <#assign href = cur_AdditionalLinks_Title.AdditionalLinks_Target.getData() >
+                            </#if>
+                            <div class="mt-4">
+                                <a class="panel__btn" href="${href}">${title}
+                                    <span class="arrow__forward"></span>
+                                </a>
+                            </div>
+                        </#if>
+                    </#list>
+                </#if>
+		    </div>
         </div>
 	</div>
 
@@ -77,7 +76,7 @@
 
 <style>
     #panels-hero-${namespace} {
-    background-image: url("${ImageLarge.getData()}");
+        background-image: url("${ImageLarge.getData()}");
     	background-position: center;
     	background-size: cover;
     }

@@ -1,11 +1,11 @@
 
 <#assign JournalArticleLocalService = serviceLocator.findService("com.liferay.journal.service.JournalArticleLocalService")>
 <div class="container">
-	<h1 class="jmaccrdn__heading">
-	    <#if (Title.getData())??>
+	<#if (Title.getData())??>
+		<h1 class="jmaccrdn__heading">
 	        ${Title.getData()}
-        </#if>
-    </h1>
+    	</h1>
+	</#if>
 	<div class="accordion" id="accordion">
 		<#if (Sections.getSiblings())?? && Sections.getSiblings()?has_content>
 			<#list Sections.getSiblings() as cur_Sections>

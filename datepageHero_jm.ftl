@@ -1,4 +1,4 @@
-<section class="main__sec ">     
+<section class="main__sec">
     <div class="datepagehero"> 
 		<div class="container">
 			<div class="row">

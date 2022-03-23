@@ -7,10 +7,12 @@
 	<div class="container jmproduct--hero">
 		<div class="row">
 			<div class=" col-md-6" >
-				<h1 >${Name.getData()}</h1>
-				<p>
-					<#if (Specification.getData())??>${Specification.getData()}</#if>
-				</p>
+				<h1>${Name.getData()}</h1>
+				<#if (Specification.getData())??>
+					<p>
+						${Specification.getData()}
+					</p>
+				</#if>
 			</div>
 			<div class="col-md-6">
 				<#if Link_Title?? && Link_Title.getData()?has_content>
@@ -25,8 +27,10 @@
 						<#assign linkHref = Link_Title.Link_External.getData() />
 					</#if>
 					<div class="producthero--btn">
-						<a href="${linkHref}">${Link_Title.getData()}
-						<span class="arrow__forward"></span></a>
+						<a href="${linkHref}" title="${Link_Title.getData()}">
+							${Link_Title.getData()}
+							<span class="arrow__forward"></span>
+						</a>
 					</div>
 				</#if>
 				<#if AdditionalLinks_Title.getSiblings()?has_content>
@@ -47,8 +51,10 @@
 								<#assign href = cur_AdditionalLinks_Title.AdditionalLinks_Target.getData() >
 							</#if>
 							<div class="producthero--btn">
-								<a href="${href}">${title}
-							<span class="arrow__forward"></span></a>
+								<a href="${href}" title="${title}">
+									${title}
+									<span class="arrow__forward"></span>
+								</a>
 							</div>
 						</#if>
 					</#list>
@@ -59,10 +65,10 @@
 </div>
 
 <style>
-#product-page-${namespace} {
-background-image: url("${ImageLarge.getData()}");
-background-position: center center;
-background-size: cover;
-height: 430px;
-}
+	#product-page-${namespace} {
+		background-image: url("${ImageLarge.getData()}");
+		background-position: center center;
+		background-size: cover;
+		height: 430px;
+	}
 </style>
