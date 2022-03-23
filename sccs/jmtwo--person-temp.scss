@@ -1,0 +1,75 @@
+.jmtwo--person-temp {
+    .two-person-grid {
+        padding : 0rem !important;
+    }
+    
+    .person-grid .person_card {
+        border: 1px solid #e5e5e5;
+        padding: 1.25rem;
+        width: 100%;
+    }
+    
+    .portlet-journal-content .journal-content-article img {
+        position: unset;
+        height: 100%;
+    }
+}
+
+.journal-content-article {
+    .jmtwo--person-temp {
+        .person-heading_align {
+            font-family: JMSansMedium;
+            font-size: 36px;
+            line-height: 32px;
+            letter-spacing: 0px;
+            color: #333333;
+            padding-left: 60px;
+            margin-left: 0;
+        }
+        .person-grid .person_card{
+            border: none;
+            padding: 0;
+        }
+        .two-person-grid{
+            margin-top: 0px;
+            padding: 60px!important;
+            gap: 20px;
+        }
+        .person_card img{
+            border-radius: 0;
+            position: static;
+        }
+        h4.person_card-title{
+            padding: 15px 0;
+            font-size: 20px;
+            line-height: 20px;
+            margin-bottom: 0;
+        }
+        h6.person_card-text{
+            color: #333333;
+            opacity: 0.8;
+            margin-bottom: 0px;
+            padding-bottom: 15px;
+        }
+        h6.person_card-number{
+            color: #333333;
+            opacity: 0.8;
+            margin-bottom: 0;
+            padding: 0 0 30px;
+        }
+        .btn__person{
+            padding: 0 10px;
+        }
+        .person_explore-icon{
+            margin-left: 10px;
+        }
+        .btn-person_link{
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            font-family: JMSansMedium!important;
+            font-size: 18px!important;
+            line-height: 22px!important;
+        }        
+    }
+} 

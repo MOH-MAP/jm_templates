@@ -1,13 +1,12 @@
 <#assign href = '#' >
 
-<div class="container mt-6">
+<div class="container mt-6 jmtwo--person-temp">
     <h1 class="person-heading_align">${Title.getData()}</h1>
+    <#if (SubTitle.getData())??>
         <h6 class="person-subheading_align">
-            <#if (SubTitle.getData())??>
-    	        ${SubTitle.getData()}
-            </#if>
+            ${SubTitle.getData()}
         </h6>
-    </h1>
+    </#if>
     
     <#if Link_Title.getData()?has_content>
         <#assign title = Link_Title.getData()>
@@ -44,29 +43,3 @@
         </#if>
     </div>
 </div>
-
-<style>
-.two-person-grid {
-    padding : 0rem !important;
-}
-
-.person-grid .person_card {
-    border: 1px solid #e5e5e5;
-    padding: 1.25rem;
-    width: 100%;
-}
-
-.portlet-journal-content .journal-content-article img {
-    position: unset;
-    height: 100%;
-}
-
-.journal-content-article[data-analytics-asset-title='Fuel-Cell-Contact'] .two-person-grid {
-    margin-right: 0px;
-    padding: 60px 60px 60px 0px !important;
-}
-
-.journal-content-article[data-analytics-asset-title='Fuel-Cell-Contact'] .person-heading_align {
-    padding-left: 0px !important;
-}
-</style>
