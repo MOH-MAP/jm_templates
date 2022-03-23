@@ -28,13 +28,8 @@
           <div>
             <div class="jmarticle-hero-btn-desktop">
               <a class="article__btn" href="${linkHref}">${Link_Title.getData()}
-                <span style="background: url(" arrow_forward-white.svg") 0 0 no-repeat transparent;"
-                  class="arrow__forward"></span></a>
-            </div>
-            <div class="jmarticle-hero-btn-mobile">
-              <a class="article__btn" href="${linkHref}">${Link_Title.getData()}
-                <span style="background: url(" arrow_forward-white-20.svg") 0 0 no-repeat transparent;"
-                  class="arrow__forward"></span></a>
+                <span class="arrow__forward"></span>
+              </a>
             </div>
           </div>
         </#if>

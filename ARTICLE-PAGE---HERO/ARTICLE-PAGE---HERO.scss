@@ -74,10 +74,9 @@
 		margin-top: -2px;
 	}
 	.jmarticle-hero-btn-desktop {
-		display: block;
-	}
-	.jmarticle-hero-btn-mobile {
-		display: none;
+		.arrow__forward {
+			background: url(" arrow_forward-white.svg") 0 0 no-repeat transparent;
+		}
 	}
 }
 @media (min-width: 320px) and (max-width: 539px) {
@@ -104,10 +103,9 @@
 			margin-top: 0px;
 		}
 		.jmarticle-hero-btn-desktop {
-			display: none;
-		}
-		.jmarticle-hero-btn-mobile {
-			display: block;
+			.arrow__forward {
+				background: url(" arrow_forward-white-20.svg") 0 0 no-repeat transparent;
+			}
 		}
 	}
 }
