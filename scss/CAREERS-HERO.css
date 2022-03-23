@@ -1,0 +1,12 @@
+.jmcareers--hero-main-container .jmbanner-temp {
+  background-position: center;
+  background-size: cover;
+  background-position: center center;
+  height: 363px;
+}
+
+@media (min-width: 320px) and (max-width: 539px) {
+	.jmcareers--hero-main-container .jmbanner-temp {
+		height: 463px;
+	  }
+}
