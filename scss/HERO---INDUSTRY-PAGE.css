@@ -1,0 +1,45 @@
+.jmhero--industry-main-container #jmhero--industry-temp {
+  background-size: cover;
+  position: absolute !important;
+  height: 100%;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.jmhero--industry-main-container .full__widthcontainer {
+  position: relative !important;
+}
+.jmhero--industry-main-container #jmhero--industry-img-temp {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 539px) {
+  .jmhero--industry-main-container #jmhero--industry-temp {
+    display: none;
+  }
+  .jmhero--industry-main-container #jmhero--industry-img-temp {
+    background-size: cover;
+    display: block;
+    height: 300px;
+  }
+  .jmhero--industry-main-container .industry-blck,
+  .mb__img {
+    flex: 0 0 0;
+    max-width: 100%;
+  }
+}
+@media (min-width: 540px) and (max-width: 834px) {
+  .jmhero--industry-main-container #jmhero--industry-temp {
+    display: none !important;
+  }
+  .jmhero--industry-main-container #jmhero--industry-img-temp {
+    background-size: cover;
+    display: block;
+    height: 300px;
+  }
+  .jmhero--industry-main-container .industry-blck,
+  .mb__img {
+    flex: 0 0 0;
+    max-width: 100%;
+  }
+}
