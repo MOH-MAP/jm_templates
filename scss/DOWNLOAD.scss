@@ -1,0 +1,126 @@
+.jmdownload--inner-container {
+	background: #FAFAFA;
+	padding: 20px 20px;
+}
+.jmdownload--text-para {
+	font-size: 16px;
+	letter-spacing: 0px;
+	color: #333333;
+	opacity: 0.84;
+}
+span {
+	&.jmdownload--list-item {
+		text-align: left;
+		letter-spacing: 0px;
+		color: #1E22AA;
+		opacity: 1;
+		font-size: 18px;
+		font-family: 'JMSansMedium';
+	}
+}
+.jmdownload--link-icon {
+	background: url("../images/new__jm__images/download-icon.svg") 0 0 no-repeat transparent;
+	display: block;
+	width: 24px;
+	height: 24px;
+	margin-left: 1rem;
+	margin-top: 0px;
+	float: right;
+}
+.jmdownload--list-item {
+	.jmdownload--list-link {
+		text-decoration: none;
+		color: #1E22AA;
+		font: 18px/22px JMSansMedium;
+		display: flex;
+		margin-left: 60px;
+	}
+}
+a {
+	&.jmdownload--list-link {
+		position: absolute;
+		bottom: 0px;
+		color: #1E22AA;
+	}
+}
+.jmdownload--left-side {
+	h1 {
+		font-size: 34px;
+		font-family: JMSansMedium;
+		letter-spacing: 0px;
+		color: #333333;
+		opacity: 1;
+	}
+}
+img {
+	&.jmdownload--right-img {
+		padding-right: 35px;
+		height: 200px;
+		float: right;
+	}
+}
+
+
+@media (min-width: 540px) and (max-width:834px) {
+
+img.jmdownload--right-img {
+padding-right: 0px;
+height: 175px;
+float:right;
+}
+}
+
+@media(min-width: 320px) and (max-width: 539px) {
+.jmdownload--inner-container {
+	background: #FAFAFA;
+	padding: 15px 15px;
+}
+.jmdownload--left-side {
+	width: 70%;
+	position: absolute;
+	height: 125px;
+	h1 {
+		font-size: 20px;
+		font-family: JMSansMedium;
+		letter-spacing: 0px;
+		color: #333333;
+		opacity: 1;
+	}
+}
+img {
+	&.jmdownload--right-img {
+		padding-right: 0px;
+		float: right;
+		height: 120px;
+	}
+}
+.jmdownload--text-para {
+	font-size: 14px;
+	padding-bottom: 0px;
+	padding-right: 40px;
+}
+span {
+	&.jmdownload--list-item {
+		text-align: left;
+		letter-spacing: 0px;
+		color: #1E22AA;
+		opacity: 1;
+		font-size: 16px;
+		font-family: 'JMSansMedium';
+	}
+}
+.jmdownload--link-icon {
+	width: 20px;
+	height: 22px;
+	margin-left: 0.5rem;
+	margin-top: 0px;
+}
+a {
+	&.jmdownload--list-link {
+		position: absolute;
+		bottom: 0px;
+		color: #1E22AA;
+	}
+}
+
+}
