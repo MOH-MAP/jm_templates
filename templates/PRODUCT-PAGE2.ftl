@@ -27,7 +27,7 @@
                 <#elseif Link_Title.Link_External.getData()?has_content>
                     <#assign linkHref = Link_Title.Link_External.getData() />
                 </#if>
-                <div class="">
+                <div class="jmcol-for-alignment">
                     <div class="">
                     <a href="${linkHref}" class="panel__btn">${Link_Title.getData()} <span class="arrow__forward"></span></a>
                     </div>
