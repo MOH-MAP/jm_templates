@@ -1,0 +1,27 @@
+.jmtext--panel-temp {
+  .text-panel-matter {
+    background-color: #1e22aa;
+    color: white;
+    padding: 20px;
+  }
+  .text-panel-link {
+    float: right;
+    position: absolute;
+    right: 40px;
+    bottom: 37px;
+  }
+  .text-panel-title {
+    margin-bottom: 10px;
+  }
+  .text-panel-body {
+    .title-style-a {
+      font-size: 34px;
+      font-family: JMSansMedium;
+      line-height: 32px;
+      color: #ffffff;
+    }
+    p {
+      margin-top: 10px;
+    }
+  }
+}
