@@ -1,4 +1,4 @@
-<div class="person__container">
+<div class="person__container jmperson--temp">
 	<div class="person-grid">
 		<div class="person_card">
 			<#if (Photo.getData())?? && Photo.getData() != "">
@@ -23,9 +23,3 @@
 		</div>
 	</div>
 </div>
-
-<style>
-.journal-content-article[data-analytics-asset-title='Person'] .person_card{
-    width: 100% !important;
-}
-</style>

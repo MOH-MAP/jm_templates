@@ -1,138 +1,143 @@
-.person__img--sec {
-  margin-top: 105px;
-}
-.person__title {
-  text-align: left;
-  font-size: 21px;
-  line-height: 32px;
-  font-family: JMSansRegular;
-  letter-spacing: 0px;
-  color: $jmDarkCharcoalColor;
-  opacity: 0.8;
-  margin-top: 180px;
-  margin-bottom: 80px;
-}
-.person__subtitle {
-  font-size: 30px;
-  line-height: 46px;
-  font-family: JMSansMedium;
-  text-align: left;
-  margin: 0;
-  margin-bottom: 15px;
-  letter-spacing: 0px;
-  color: $jmDarkCharcoalColor;
-  text-transform: capitalize;
-  opacity: 1;
-}
-.person__descp {
-  font-size: 17px;
-  line-height: 28px;
-  font-family: JMSansRegular;
-  text-align: left;
-  letter-spacing: 0px;
-  color: $jmDarkCharcoalColor;
-  opacity: 0.84;
-  margin: 0;
-  margin-bottom: 8px;
-}
-.person__year {
-  font-size: 15px;
-  line-height: 28px;
-  font-family: JMSansRegular;
-  text-align: left;
-  letter-spacing: 0px;
-  color: $jmDarkCharcoalColor;
-  opacity: 0.6;
-}
-.person_dsktpimg {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.person_mbimg {
-  width: 100%;
-  height: auto;
-  display: none;
-}
-.person__name {
-  display: none;
-}
-@media (min-width: 320px) and (max-width: 539px) {
-  .person_mbimg {
-    display: block;
-  }
-  .person_dsktpimg {
-    display: none;
-  }
-  .person__name {
-    font-size: 29px;
-    line-height: 38px;
-    font-family: JMSansMedium;
-    color: $jmDarkCharcoalColor;
-    display: block;
+.jmperson--temp {
+  .person__img--sec {
+    margin-top: 105px;
   }
   .person__title {
-    font-size: 18px;
-    margin-bottom: 29px;
-    margin-top: 16px;
-  }
-  .person__subtitle {
-    font-size: 24px;
-    margin-bottom: 14px;
-    margin-top: 40px;
-  }
-  .person__descp,
-  .person__year {
-    font-size: 14px;
-    margin-bottom: 2px;
-  }
-}
-@media (min-width: 540px) and (max-width: 767px) {
-  .person_mbimg {
-    display: block;
-  }
-  .person_dsktpimg {
-    display: none !important;
-  }
-  .person__name {
-    font-size: 29px;
-    line-height: 38px;
-    font-family: JMSansMedium;
-    color: $jmDarkCharcoalColor;
-    display: block;
-  }
-  .person__title {
-    margin-top: 20px;
-    margin-bottom: 40px;
-  }
-  .person__subtitle {
-    margin-bottom: 40px;
-  }
-}
-@media (min-width: 768px) and (max-width: 834px) {
-  .person_mbimg {
-    display: none;
-  }
-  .person_dsktpimg {
-    display: block !important;
-  }
-  .person__title {
-    margin-top: 160px;
-    margin-bottom: 35px;
-    font-size: 20px;
+    text-align: left;
+    font-size: 21px;
     line-height: 32px;
+    font-family: JMSansRegular;
+    letter-spacing: 0px;
+    color: $jmDarkCharcoalColor;
+    opacity: 0.8;
+    margin-top: 180px;
+    margin-bottom: 80px;
   }
   .person__subtitle {
-    font-size: 26px;
-    line-height: 21px;
+    font-size: 30px;
+    line-height: 46px;
+    font-family: JMSansMedium;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 15px;
+    letter-spacing: 0px;
+    color: $jmDarkCharcoalColor;
+    text-transform: capitalize;
+    opacity: 1;
   }
   .person__descp {
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 17px;
+    line-height: 28px;
+    font-family: JMSansRegular;
+    text-align: left;
+    letter-spacing: 0px;
+    color: $jmDarkCharcoalColor;
+    opacity: 0.84;
+    margin: 0;
+    margin-bottom: 8px;
   }
   .person__year {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 15px;
+    line-height: 28px;
     font-family: JMSansRegular;
+    text-align: left;
+    letter-spacing: 0px;
+    color: $jmDarkCharcoalColor;
+    opacity: 0.6;
+  }
+  .person_dsktpimg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .person_mbimg {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  .person__name {
+    display: none;
+  }
+  @media (min-width: 320px) and (max-width: 539px) {
+    .person_mbimg {
+      display: block;
+    }
+    .person_dsktpimg {
+      display: none;
+    }
+    .person__name {
+      font-size: 29px;
+      line-height: 38px;
+      font-family: JMSansMedium;
+      color: $jmDarkCharcoalColor;
+      display: block;
+    }
+    .person__title {
+      font-size: 18px;
+      margin-bottom: 29px;
+      margin-top: 16px;
+    }
+    .person__subtitle {
+      font-size: 24px;
+      margin-bottom: 14px;
+      margin-top: 40px;
+    }
+    .person__descp,
+    .person__year {
+      font-size: 14px;
+      margin-bottom: 2px;
+    }
+  }
+  @media (min-width: 540px) and (max-width: 767px) {
+    .person_mbimg {
+      display: block;
+    }
+    .person_dsktpimg {
+      display: none !important;
+    }
+    .person__name {
+      font-size: 29px;
+      line-height: 38px;
+      font-family: JMSansMedium;
+      color: $jmDarkCharcoalColor;
+      display: block;
+    }
+    .person__title {
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+    .person__subtitle {
+      margin-bottom: 40px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 834px) {
+    .person_mbimg {
+      display: none;
+    }
+    .person_dsktpimg {
+      display: block !important;
+    }
+    .person__title {
+      margin-top: 160px;
+      margin-bottom: 35px;
+      font-size: 20px;
+      line-height: 32px;
+    }
+    .person__subtitle {
+      font-size: 26px;
+      line-height: 21px;
+    }
+    .person__descp {
+      font-size: 16px;
+      line-height: 25px;
+    }
+    .person__year {
+      font-size: 14px;
+      line-height: 17px;
+      font-family: JMSansRegular;
+    }
+  }
+  .person_card{
+    width: 100% !important;
   }
 }
