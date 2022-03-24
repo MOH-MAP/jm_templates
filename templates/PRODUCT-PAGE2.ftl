@@ -1,21 +1,7 @@
 <#assign namespace=randomNamespace />
-<style>
-    .product_hero .product_hero__para {
-        font-size: 18px;
-        line-height: 28px;
-        font-family: JMSansRegular;
-    }
-    .product_hero .product_hero__para p {
-        margin-bottom: 1rem;
-    }
-    table td {
-        border: 0.125rem solid #fff;
-        padding: 0.5rem;
-        background: #ccc;
-    }
-</style>
 
-<div id="product-hero-${namespace}" class="product_hero">
+
+<div id="product-hero-${namespace}" class="jmproduct--hero-temp">
     <div class="container">
         <div class="row">
             <#assign imgPresent = ((ImageLarge.getData())?? && ImageLarge.getData() != "")>
