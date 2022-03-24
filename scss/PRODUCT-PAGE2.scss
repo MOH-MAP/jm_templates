@@ -1,13 +1,15 @@
-$font-family_1: JMSansRegular;
-
 .jmproduct--hero-temp {
 	.product_hero__para {
 		font-size: 18px;
 		line-height: 28px;
-		font-family: $font-family_1;
+		font-family: JMSansRegular;
 		p {
 			margin-bottom: 1rem;
 		}
+	}
+	.jmcol-for-alignment {
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 }
 table {
