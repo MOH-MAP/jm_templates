@@ -1,0 +1,90 @@
+
+.list-of-links__container {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0px;
+	padding-right: 0px;
+	width: 100%;
+	padding: 0rem 6rem;
+}
+
+.list-of-links__heading {
+	font: 40px/48px JMSansMedium;
+	color: #333333;
+	padding-bottom: 30px;
+}
+.list-of-item {
+	font-size: 24px;
+	font-family: 'JMSansRegular';
+	color: #333333;
+	padding: 22px 40px 22px 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 18px;
+	background-color: #F2F2F2;
+	.list-of-link {
+		text-decoration: none;
+		color: #1E22AA;
+		font: 18px/22px JMSansMedium;
+		display: flex;
+		margin-left: 60px;
+	}
+}
+.list-of-icon {
+	background: url("../images/new__jm__images/blue-right-arrow.svg") 0 0 no-repeat transparent;
+	display: block;
+	width: 24px;
+	height: 24px;
+	margin-left: 10px;
+	float:right;
+	margin-top:2px
+}
+p.list-of-text {
+	font-size: 18px;
+	color: #1E22AA;
+	opacity: 1;
+	float:left;
+	font-family: 'JMSansMedium';
+}
+
+@media (min-width: 540px) and (max-width:834px) {
+	.list-of-links__container {
+		padding: 0rem 4rem;
+	}
+}
+@media (min-width: 320px) and (max-width: 539px) {
+	.list-of-links__container {
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 0px;
+		padding-right: 0px;
+		width: 100%;
+		padding: 1rem;
+	}
+	.list-of-item {
+		font-size: 20px;
+		font-family: 'JMSansRegular';
+		color: #333333;
+		padding: 15px 10px 15px 10px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 10px;
+	}
+	p.list-of-text {
+		font-size: 15px;
+		display: none;
+	}
+	.list-of-icon {
+		width: 20px;
+		height: 20px;
+		margin-left: 8px;
+	}
+	.list-of-links__heading {
+		font-size: 24px;
+		color: #333333;
+		font-family: 'JMSansMedium';
+		padding-bottom: 5px;
+	}
+}
