@@ -2,33 +2,10 @@
 <style>
     #panels-hero-${namespace} {
     background-image: url("${ImageLarge.getData()}");
-    	background-position: center;
-    	background-size: cover;
-    }
-    .panels-hero-panels {
-        background-color: var(--jmEgyptianBlue-color);
-    }
-    .hero-panels-panel.white-border {
-        border-left: 1.5px white solid;
-    }
-    .panels-hero .panels-hero-header h1 {
-        font-size: 46px;
-        line-height: 60px;
-        font-family: JMSansMedium;
-        color: #FFFFFF;
-        text-shadow: 0px 0px 6px #000000;
-    }
-    .panels-hero .panels-hero-para {
-        font-size: 18px;
-        line-height: 28px;
-        font-family: JMSansMedium;
-        color: #FFFFFF;
-        text-shadow: 0px 0px 8px #000000;
-        opacity: 0.8;
     }
 </style>
 
-<div id="panels-hero-${namespace}" class="panels-hero">
+<div id="panels-hero-${namespace} jmpanels--hero-temp" class="panels-hero">
 	<div class="banner container py-6 py-md-8">
 		<div class="row">
 			<div class="col-12">
@@ -103,20 +80,3 @@
         </div>
     </#if>
 </div>
-
-<script>
-$(function() {
-    var imgPath = $(".journal-content-article[data-analytics-asset-title='Panel-Block-energy-revolution'] .text-panel-img img").attr("src")
-    
-    $(".journal-content-article[data-analytics-asset-title='Panel-Block-energy-revolution'] .text-panel-img picture").css({'background-image': 'url('+imgPath+')'});
-    
-    var panelBlockImgPath = $(".journal-content-article[data-analytics-asset-title='Panel-Block-2'] .text-panel-img img").attr("src")
-    
-    $(".journal-content-article[data-analytics-asset-title='Panel-Block-2'] .text-panel-img picture").css({'background-image': 'url('+panelBlockImgPath+')'});
-    
-    $(".journal-content-article[data-analytics-asset-title='Image-Card-Block'] .img__cardblock picture").each(function(){
-        var imgPath = $(this).find('img').attr("src");
-        $(this).css({'background-image': 'url('+imgPath+')'});
-    });
-});
-</script>
