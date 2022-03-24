@@ -1,5 +1,5 @@
 <div class="container mar-btm-60 list-of--links-container">
-    <h1 class="list-of--links__heading">${Name.getData()}</h1>
+    <h1 class="list-of--links-heading">${Name.getData()}</h1>
     <ul>
         <#if AdditionalLinks_Title?? && AdditionalLinks_Title.getSiblings??>
 	        <#list AdditionalLinks_Title.getSiblings() as cur_Links>
