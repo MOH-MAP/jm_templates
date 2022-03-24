@@ -1,0 +1,320 @@
+.career__sec {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  background-image: url(cloud.svg);
+  background-position: center center;
+  background-size: cover;
+  height: 363px;
+}
+.centered {
+  position: absolute;
+  top: 8rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.career__pretitle {
+  text-align: left;
+  font-size: 18px;
+  font-family: JMSansMedium;
+  line-height: 28px;
+  letter-spacing: 0px;
+  color: $jmWhiteColor;
+  text-shadow: 0px 0px 8px #000000;
+  opacity: 0.8;
+  margin: 0;
+  margin-top: 65px;
+}
+.career__heading {
+  text-align: left;
+  font-size: 52px;
+  font-family: JMSansRegular;
+  line-height: 60px;
+  letter-spacing: 0px;
+  color: $jmWhiteColor;
+  text-shadow: 0px 0px 8px #000000;
+  opacity: 1;
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+.career__input__sec {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+}
+.dept__sec {
+  width: 80%;
+}
+.career__dropdown__sec {
+  background-color: $jmWhiteColor;
+  border-left: 1px solid #999999;
+}
+.button__sec {
+  display: flex;
+}
+.career__input {
+  padding: 17px 0px 16px 20px;
+  outline: none;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  &::placeholder {
+    text-align: left;
+    font-size: 18px;
+    font-family: JMSansMedium;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: $jmDarkCharcoalColor;
+    opacity: 0.8;
+  }
+}
+.career__dropdown {
+  input {
+    &::placeholder {
+      text-align: left;
+      font-size: 18px;
+      font-family: JMSansMedium;
+      line-height: 28px;
+      letter-spacing: 0px;
+      color: $jmDarkCharcoalColor;
+      opacity: 0.8;
+    }
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: $jmWhiteColor;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    padding: 12px 20px;
+    font-size: 16px;
+    font-family: JMSansMedium;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: $jmDarkCharcoalColor;
+    opacity: 0.8;
+    border: none;
+    outline: none;
+  }
+  position: relative;
+  width: 300px;
+  height: 50px;
+
+  &::before {
+    content: "";
+    background: url("../images/new__jm__images/keyboard_arrow_down-blue.svg");
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 10000;
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+  .career__option {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    background: $jmWhiteColor;
+    box-shadow: 0px 4px 4px #00000080;
+    overflow: hidden;
+    display: none;
+    max-height: 0;
+    div {
+      padding: 8px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      font-family: JMSansMedium;
+      line-height: 28px;
+      letter-spacing: 0px;
+      color: $jmDarkCharcoalColor;
+      opacity: 0.8;
+    }
+  }
+}
+.arrow__forward {
+  background: url("../images/new__jm__images/arrow_forward-white.svg") 0 0
+    no-repeat transparent;
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+  top: 50%;
+  margin-top: -2px;
+}
+.submit__btn {
+  display: flex;
+  outline: none;
+  border: none;
+  background-color: $jmEgyptianBlueColor;
+  color: $jmWhiteColor;
+  padding: 16px 10px 14px 34px;
+  text-align: right;
+  font-size: 18px;
+  font-family: JMSansMedium;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: $jmWhiteColor;
+  text-transform: uppercase;
+  opacity: 1;
+  justify-content: right;
+}
+.career-search-location {
+  padding: 14px 22px 14px 20px;
+  width: 216px;
+  border: none;
+  border-left: 1px solid #999999;
+  outline: none;
+  font-size: 18px;
+  font-family: JMSansMedium;
+  line-height: 28px;
+  letter-spacing: 0px;
+  color: $jmDarkCharcoalColor;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.link__lists {
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+  padding: 9px 0px;
+}
+.hero__text {
+  margin: 0;
+  position: relative;
+  font-size: 14px;
+  font-family: JMSansRegular;
+  line-height: 28px;
+  letter-spacing: 0px;
+  color: $jmAntiFlashWhiteColor;
+  opacity: 0.8;
+  padding-left: 17px !important;
+}
+.career__option {
+  outline: none;
+  border: none;
+}
+.career__dropdown.active {
+  .career__option {
+    display: block;
+    max-height: 240px;
+    overflow-y: scroll;
+  }
+}
+@media (max-width: 320px) {
+  .link__lists {
+    li {
+      a {
+        font-size: 12px;
+      }
+    }
+  }
+  .dept__sec {
+    width: 100% !important;
+  }
+}
+@media (min-width: 320px) and (max-width: 539px) {
+  .centered {
+    top: 15rem;
+  }
+  .dropdown__sec {
+    border: 0;
+  }
+  .career__dropdown {
+    width: 100%;
+    .career__option {
+      width: 100%;
+    }
+    &::before {
+      right: 5px;
+    }
+  }
+  .career__input__sec {
+    flex-direction: column;
+  }
+  .career-search-location {
+    width: 100%;
+    border-left: none;
+  }
+  .career__pretitle {
+    margin-top: 46px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .career__heading {
+    font-size: 32px;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 42px;
+  }
+  .submit__btn {
+    width: 100%;
+    justify-content: flex-end;
+    font-size: 16px;
+  }
+  .arrow__forward {
+    background: url("../images/new__jm__images/arrow_forward-white-20.svg") 0 0
+      no-repeat transparent;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: 0px;
+  }
+  .dept__sec {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .career__dropdown__sec {
+    margin-bottom: 45px;
+  }
+  .career__sec {
+    height: 463px !important;
+  }
+  .career__input {
+    &::placeholder {
+      font-size: 15px;
+    }
+    padding: 16px 16px 16px 16px;
+  }
+  .career__dropdown.active {
+    .career__option {
+      display: block;
+      max-height: 140px;
+      overflow-y: scroll;
+    }
+  }
+}
+@media (min-width: 540px) and (max-width: 834px) {
+  .career__input {
+    &::placeholder {
+      font-size: 15px;
+    }
+  }
+  .career-search-location {
+    width: 150px;
+  }
+  .career__dropdown {
+    &::before {
+      right: 111px;
+    }
+    input {
+      width: 66%;
+    }
+    .career__option {
+      top: 52px;
+      width: 66%;
+    }
+  }
+  .career__dropdown__sec {
+    width: 200px;
+  }
+  .career__dropdown.active {
+    .career__option {
+      display: block;
+      max-height: 140px;
+      overflow-y: scroll;
+    }
+  }
+}

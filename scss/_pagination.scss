@@ -1,0 +1,61 @@
+.jm_pagination {
+  .pagination-results {
+    font: 16px/26px var(--jm-medium-font);
+    color: $jmDarkCharcoalColor;
+    padding: 0 40px;
+    margin-right: 0;
+  }
+  .pagination-items-per-page a.dropdown-toggle.page-link {
+    border: none;
+    font: 16px/26px var(--jm-font);
+    color: $jmDarkCharcoalColor;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .pagination-items-per-page > a:hover,
+  .pagination-items-per-page > button:hover {
+    background: unset;
+  }
+  .pagination-items-per-page.show > a {
+    background-color: unset;
+  }
+  .pagination-items-per-page
+    a.dropdown-toggle.page-link
+    span:last-child::after {
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    content: "";
+    left: 0;
+    top: 0;
+    background: #ffffff;
+  }
+  .pagination-items-per-page a.dropdown-toggle.page-link span:last-child {
+    position: relative;
+  }
+  .pagination-items-per-page a.dropdown-toggle.page-link span:last-child svg {
+    position: relative;
+    top: -4px;
+  }
+  .pagination-bar {
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .page-link {
+    border: 0;
+    background-color: #fafafa;
+    font: 16px/26px var(--jm-font);
+    color: #666666e5;
+  }
+  .page-item.active .page-link {
+    background-color: $jmEgyptianBlueColor;
+  }
+  .page-item:last-child .page-link,
+  .page-item:first-child .page-link {
+    background: transparent;
+    color: $jmEgyptianBlueColor;
+  }
+  .page-item.disabled .page-link {
+    color: #66666699;
+  }
+}

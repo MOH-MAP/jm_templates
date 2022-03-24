@@ -1,0 +1,151 @@
+@font-face{
+font-family: JMSansBlack;
+src: url(../fonts/JMSans-Black.otf);
+src: url('../fonts/JMSansBlack.eot');
+src: url('../fonts/JMSansBlack.eot') format('embedded-opentype'),
+            url('../fonts/JMSansBlack.woff2') format('woff2'),
+            url('../fonts/JMSansBlack.woff') format('woff'),
+            url('../fonts/JMSansBlack.ttf') format('truetype'),
+            url('../fonts/JMSansBlack.svg#JMSansBlack') format('svg');
+}
+@font-face{
+font-family: JMSansBlackItalic;
+src: url(../fonts/JMSans-BlackItalic.otf);
+src: url('../fonts/JMSansBlackItalic.eot');
+src: url('../fonts/JMSansBlackItalic.eot') format('embedded-opentype'),
+            url('../fonts/JMSansBlackItalic.woff2') format('woff2'),
+            url('../fonts/JMSansBlackItalic.woff') format('woff'),
+            url('../fonts/JMSansBlackItalic.ttf') format('truetype'),
+            url('../fonts/JMSansBlackItalic.svg#JMSansBlackItalic') format('svg');
+}
+@font-face{
+font-family: JMSansBold;
+src: url(../fonts/JMSans-Bold.otf);
+src: url('../fonts/JMSansBold.eot');
+src: url('../fonts/JMSansBold.eot') format('embedded-opentype'),
+            url('../fonts/JMSansBold.woff2') format('woff2'),
+            url('../fonts/JMSansBold.woff') format('woff'),
+            url('../fonts/JMSansBold.ttf') format('truetype'),
+            url('../fonts/JMSansBold.svg#JMSansBold') format('svg');
+}
+@font-face{
+font-family: JMSansBoldItalic;
+src: url(../fonts/JMSans-BoldItalic.otf);
+src: url('../fonts/JMSansBoldItalic.eot');
+src: url('../fonts/JMSansBoldItalic.eot') format('embedded-opentype'),
+            url('../fonts/JMSansBoldItalic.woff2') format('woff2'),
+            url('../fonts/JMSansBoldItalic.woff') format('woff'),
+            url('../fonts/JMSansBoldItalic.ttf') format('truetype'),
+            url('../fonts/JMSansBoldItalic.svg#JMSansBoldItalic') format('svg');
+}
+@font-face{
+font-family: JMSansItalic;
+src: url(../fonts/JMSans-Italic.otf);
+src: url('../fonts/JMSansItalic.eot');
+src: url('../fonts/JMSansItalic.eot') format('embedded-opentype'),
+            url('../fonts/JMSansItalic.woff2') format('woff2'),
+            url('../fonts/JMSansItalic.woff') format('woff'),
+            url('../fonts/JMSansItalic.ttf') format('truetype'),
+            url('../fonts/JMSansItalic.svg#JMSansItalic') format('svg');
+}
+@font-face{
+font-family: JMSansLight;
+src: url(../fonts/JMSans-Light.otf);
+src: url('../fonts/JMSansLight.eot');
+src: url('../fonts/JMSansLight.eot') format('embedded-opentype'),
+            url('../fonts/JMSansLight.woff2') format('woff2'),
+            url('../fonts/JMSansLight.woff') format('woff'),
+            url('../fonts/JMSansLight.ttf') format('truetype'),
+            url('../fonts/JMSansLight.svg#JMSansLight') format('svg');
+}
+@font-face{
+font-family: JMSansLightItalic;
+src: url(../fonts/JMSans-LightItalic.otf);
+src: url('../fonts/JMSansLightItalic.eot');
+src: url('../fonts/JMSansLightItalic.eot') format('embedded-opentype'),
+            url('../fonts/JMSansLightItalic.woff2') format('woff2'),
+            url('../fonts/JMSansLightItalic.woff') format('woff'),
+            url('../fonts/JMSansLightItalic.ttf') format('truetype'),
+            url('../fonts/JMSansLightItalic.svg#JMSansLightItalic') format('svg');
+}
+@font-face{
+font-family: JMSansMedium;
+src: url(../fonts/JMSans-Medium.otf);
+src: url('../fonts/JMSansMedium.eot');
+src: url('../fonts/JMSansMedium.eot') format('embedded-opentype'),
+            url('../fonts/JMSansMedium.woff2') format('woff2'),
+            url('../fonts/JMSansMedium.woff') format('woff'),
+            url('../fonts/JMSansMedium.ttf') format('truetype'),
+            url('../fonts/JMSansMedium.svg#JMSansMedium') format('svg');
+}
+@font-face{
+font-family: JMSansMediumItalic;
+src: url(../fonts/JMSans-MediumItalic.otf);
+src: url('../fonts/JMSansMediumItalic.eot');
+src: url('../fonts/JMSansMediumItalic.eot') format('embedded-opentype'),
+            url('../fonts/JMSansMediumItalic.woff2') format('woff2'),
+            url('../fonts/JMSansMediumItalic.woff') format('woff'),
+            url('../fonts/JMSansMediumItalic.ttf') format('truetype'),
+            url('../fonts/JMSansMediumItalic.svg#JMSansMediumItalic') format('svg');
+}
+@font-face{
+font-family: JMSansRegular;
+src: url(../fonts/JMSans-Regular.otf);
+src: url('../fonts/JMSansRegular.eot');
+src: url('../fonts/JMSansRegular.eot') format('embedded-opentype'),
+            url('../fonts/JMSansRegular.woff2') format('woff2'),
+            url('../fonts/JMSansRegular.woff') format('woff'),
+            url('../fonts/JMSansRegular.ttf') format('truetype'),
+            url('../fonts/JMSansRegular.svg#JMSansRegular') format('svg');
+}
+@font-face{
+font-family: JMSansExtBlack;
+src: url(../fonts/JMSansExtBlack.otf);
+src: url('../fonts/JMSansExtBlack.eot');
+src: url('../fonts/JMSansExtBlack.eot') format('embedded-opentype'),
+            url('../fonts/JMSansExtBlack.woff2') format('woff2'),
+            url('../fonts/JMSansExtBlack.woff') format('woff'),
+            url('../fonts/JMSansExtBlack.ttf') format('truetype'),
+            url('../fonts/JMSansExtBlack.svg#JMSansExtBlack') format('svg');
+}
+@font-face{
+font-family: JMSansExtBold;
+src: url(../fonts/JMSansExtBold.otf);
+src: url('../fonts/JMSansExtBold.eot');
+src: url('../fonts/JMSansExtBold.eot') format('embedded-opentype'),
+            url('../fonts/JMSansExtBold.woff2') format('woff2'),
+            url('../fonts/JMSansExtBold.woff') format('woff'),
+            url('../fonts/JMSansExtBold.ttf') format('truetype'),
+            url('../fonts/JMSansExtBold.svg#JMSansExtBold') format('svg');
+}
+@font-face{
+font-family: JMSansExtLight;
+src: url(../fonts/JMSansExtLight.otf);
+src: url('../fonts/JMSansExtLight.eot');
+src: url('../fonts/JMSansExtLight.eot') format('embedded-opentype'),
+            url('../fonts/JMSansExtLight.woff2') format('woff2'),
+            url('../fonts/JMSansExtLight.woff') format('woff'),
+            url('../fonts/JMSansExtLight.ttf') format('truetype'),
+            url('../fonts/JMSansExtLight.svg#JMSansExtLight') format('svg');
+}
+@font-face{
+font-family: JMSansExtMedium;
+src: url(../fonts/JMSansExtMedium.otf);
+src: url('../fonts/JMSansExtMedium.eot');
+src: url('../fonts/JMSansExtMedium.eot') format('embedded-opentype'),
+            url('../fonts/JMSansExtMedium.woff2') format('woff2'),
+            url('../fonts/JMSansExtMedium.woff') format('woff'),
+            url('../fonts/JMSansExtMedium.ttf') format('truetype'),
+            url('../fonts/JMSansExtMedium.svg#JMSansExtMedium') format('svg');
+}
+@font-face{
+font-family: JMSansExtRegular;
+src: url(../fonts/JMSansExtRegular.otf);
+src: url('../fonts/JMSansExtRegular.eot');
+src: url('../fonts/JMSansExtRegular.eot') format('embedded-opentype'),
+            url('../fonts/JMSansExtRegular.woff2') format('woff2'),
+            url('../fonts/JMSansExtRegular.woff') format('woff'),
+            url('../fonts/JMSansExtRegular.ttf') format('truetype'),
+            url('../fonts/JMSansExtRegular.svg#JMSansExtRegular') format('svg');
+}
+    
