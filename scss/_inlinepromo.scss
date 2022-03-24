@@ -1,8 +1,8 @@
-.promo__block {
+.jminline--promo {
   background-color: $jmEgyptianBlueColor;
   padding: 60px 0px 60px 60px;
 }
-.promo__signup {
+.jminline-promo--sign-up {
   text-align: left;
   font-size: 16px;
   line-height: 22px;
@@ -13,7 +13,7 @@
   opacity: 0.84;
   margin: 0;
 }
-.promo__heading {
+.jminline-promo--heading {
   margin: 0;
   margin-top: 24px;
   text-align: left;
@@ -26,7 +26,7 @@
   margin-bottom: 36px;
   max-width: 467px;
 }
-.promo__btn {
+.jminline-promo--btn {
   text-align: right;
   font-size: 18px;
   font-family: JMSansMedium;
@@ -43,11 +43,11 @@
   padding: 20px 10px 17px 60px;
   position: absolute;
 }
-.promo__btn:hover {
+.jminline-promo--btn:hover {
   text-decoration: none;
   color: #fff;
 }
-.arrow__forward {
+.jminline-promo--forward-icon{
   background: url("../images/new__jm__images/arrow_forward-white.svg") 0 0
     no-repeat transparent;
   display: block;
@@ -58,38 +58,38 @@
   margin-top: -2px;
 }
 
-.promo__sec .col-md-4 {
+.jminline-promo--section .col-md-4 {
   padding: 0px !important;
 }
-.inline-img {
+.jminline-promo--img {
   width: 100%;
   height: 100%;
 }
 @media (min-width: 320px) and (max-width: 539px) {
-  .promo__block {
+  .jminline--promo{
     padding: 30px 20px 80px 20px;
     width: 100%;
   }
-  .promo__heading {
+  .jminline-promo--heading {
     font-size: 32px;
     margin-top: 12px;
     margin-bottom: 32px;
   }
-  .promo__signup {
+  .jminline-promo--sign-up {
     font-size: 14px;
   }
-  .promo__btn {
+  .jminline-promo--btn {
     font-size: 16px;
     padding: 16px 10px 16px 53px;
   }
 }
 @media (min-width: 540px) and(max-width: 834px) {
-  .promo__block {
+  .jminline--promo {
     padding: 40px 20px 80px 20px;
   }
 }
 @media (min-width: 835px) and (max-width: 1200px) {
-  .promo__block {
+  .jminline--promo {
     padding: 40px 20px 105px 20px;
   }
 }
