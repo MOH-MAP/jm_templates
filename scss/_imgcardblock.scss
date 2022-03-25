@@ -1,30 +1,22 @@
-.img__link__icon {
-  background: url("../images/new__jm__images/blue-right-arrow.svg") 0 0
+.jmimg--cardblock-link--icon {
+  background: url("../images/new__jm__images/blue-right-arrow.svg ") 0 0
     no-repeat transparent;
   display: block;
   width: 24px;
   height: 24px;
   margin-left: 8px;
 }
-.col-md-4.\33 -imgcard__img img {
+.col-md-4.\33 .jmimg-cardblock--col-img img {
   height: 190px;
   float: right;
 }
 
-.col-md-6.\32 -imgcard__img img {
+.col-md-6.\32 .jmimg-cardblock--col-img img {
   height: 158px;
   float: right;
 }
 
-.img__card__container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0px;
-  padding-right: 0px;
-  width: 100%;
-  padding: 0rem 8rem;
-}
-.image-card-block__header {
+.jmimage-card-block--header {
   font-family: JMSansMedium;
   padding: 20px 0px 30px 0px;
   font-size: 34px;
@@ -32,7 +24,7 @@
   color: #333333;
   opacity: 1;
 }
-.img__card-body {
+.jmimg__cardblock-body {
   flex: 1 1 auto;
   min-height: 1px;
   padding-bottom: 0.5rem;
@@ -40,10 +32,11 @@
   padding-right: 1.25rem;
   padding-top: 1.25rem;
 }
-.img__cardblock {
+.jmimg-card_block {
   border-bottom: 15px solid #1e22aa;
+  height: 100%;
 }
-.img__card__title {
+.jmimg--cardblock--title {
   text-align: left;
   font-size: 14px;
   letter-spacing: 0px;
@@ -52,16 +45,21 @@
   opacity: 1;
   font-family: JMSansRegular;
 }
-.img__card__text {
+.row.jmimg-cardblock--no-gutters {
+  height: 100%;
+}
+.jmimg--cardblock--text {
   font-size: 25px;
   line-height: 1.2em;
   font-weight: 500;
   font-family: JMSansRegular;
   color: #333333;
   padding-right: 0px;
+  padding-bottom: 40px;
   width: 100%;
 }
-.img__list__link {
+
+.jmimg--cardblock-list--ilnk {
   text-decoration: none;
   text-decoration-color: #1e22aa;
   color: #1e22aa;
@@ -70,32 +68,25 @@
   margin-top: 0px;
   bottom: 15px;
   position: absolute;
+  &:hover {
+    text-decoration: none;
+    text-decoration-color: #1e22aa;
+    color: #1e22aa;
+    font: 17px/22px JMSansMedium;
+    display: flex;
+    margin-top: 0px;
+  }
 }
-.img__list__link:hover {
-  text-decoration: none;
-  text-decoration-color: #1e22aa;
-  color: #1e22aa;
-  font: 17px/22px JMSansMedium;
-  display: flex;
-  margin-top: 0px;
-}
-.img__link__icon {
+.jmimg--cardblock-link--icon {
   display: block;
   width: 24px;
-  margin-top: 0px;
+  margin-top: 2px;
   height: 24px;
   margin-left: 8px;
 }
+
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .img__card__container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0px;
-    padding-right: 0px;
-    width: 100%;
-    padding: 0rem 4rem;
-  }
-  .img__card__text {
+  .jmimg--cardblock--text {
     font-size: 22px;
     line-height: 1.2em;
     font-weight: 500;
@@ -103,8 +94,9 @@
     color: #333333;
     padding-right: 0px;
     width: 100%;
+    padding-bottom: 30px;
   }
-  .img__card__title {
+  .jmimg--cardblock--title {
     text-align: left;
     font-size: 13px;
     letter-spacing: 0px;
@@ -113,7 +105,7 @@
     opacity: 1;
     font-family: JMSansRegular;
   }
-  .img__list__link {
+  .jmimg--cardblock-list--ilnk {
     text-decoration: none;
     text-decoration-color: #1e22aa;
     color: #1e22aa;
@@ -123,25 +115,25 @@
     bottom: 15px;
     position: absolute;
   }
-  .col-md-4.\33 -imgcard__img img {
-    height: 170px;
-    float: right;
+  .col-md-4.\33 {
+    -jmimg-cardblock--col-img {
+      img {
+        height: 170px;
+        float: right;
+      }
+    }
   }
-  .col-md-6.\32 -imgcard__img img {
-    height: 145px;
-    float: right;
+  .col-md-6.\32 {
+    -jmimg-cardblock--col-img {
+      img {
+        height: 145px;
+        float: right;
+      }
+    }
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .img__card__container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0px;
-    padding-right: 0px;
-    width: 100%;
-    padding: 0rem 2rem;
-  }
-  .image-card-block__header {
+  .jmimage-card-block--header {
     font-family: JMSansMedium;
     padding: 15px 0px 20px 0px;
     font-size: 26px;
@@ -149,7 +141,7 @@
     color: #333333;
     opacity: 1;
   }
-  .img__card-body {
+  .jmimg__cardblock-body {
     flex: 1 1 auto;
     min-height: 1px;
     padding-bottom: 0.5rem;
@@ -157,7 +149,7 @@
     padding-right: 0.5rem;
     padding-top: 0.5rem;
   }
-  .img__card__text {
+  .jmimg--cardblock--text {
     font-size: 18px;
     line-height: 1.2em;
     font-weight: 500;
@@ -166,7 +158,7 @@
     padding-right: 0px;
     width: 100%;
   }
-  .img__card__title {
+  .jmimg--cardblock--title {
     text-align: left;
     font-size: 12px;
     letter-spacing: 0px;
@@ -175,7 +167,7 @@
     opacity: 1;
     font-family: JMSansRegular;
   }
-  .img__list__link {
+  .jmimg--cardblock-list--ilnk {
     text-decoration: none;
     text-decoration-color: #1e22aa;
     color: #1e22aa;
@@ -185,29 +177,29 @@
     bottom: 10px;
     position: absolute;
   }
-  .col-md-4.\33 -imgcard__img img {
-    height: 140px;
-    float: right;
+  .col-md-4.\33 {
+    -jmimg-cardblock--col-img {
+      img {
+        height: 140px;
+        float: right;
+      }
+    }
   }
-  .col-md-6.\32 -imgcard__img img {
-    height: 120px;
-    float: right;
+  .col-md-6.\32 {
+    -jmimg-cardblock--col-img {
+      img {
+        height: 120px;
+        float: right;
+      }
+    }
   }
-  .img__cardblock {
+  .jmimg-card_block {
     border-bottom: 10px solid #1e22aa;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .img__card__container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0px;
-    padding-right: 0px;
-    width: 100%;
-    padding: 1rem 2rem;
-  }
-  .img__card__text {
+  .jmimg--cardblock--text {
     font-size: 25px;
     line-height: 1.2em;
     font-weight: 500;
@@ -216,36 +208,36 @@
     padding-right: 0px;
     width: 150%;
   }
-  .img__cardblock {
+  .jmimg-card_block {
     border-bottom: 15px solid #1e22aa;
     margin-bottom: 20px;
   }
-  .col-md-4.\33 -imgcard__img img {
-    height: 130px;
-    float: right;
-    width: 160px;
+  .col-md-4.\33 {
+    -jmimg-cardblock--col-img {
+      img {
+        height: 130px;
+        float: right;
+        width: 160px;
+      }
+    }
   }
-  .col-md-6.\32 -imgcard__img img {
-    height: 125px;
-    float: right;
-    width: 155px;
+  .col-md-6.\32 {
+    -jmimg-cardblock--col-img {
+      img {
+        height: 125px;
+        float: right;
+        width: 155px;
+      }
+    }
   }
 }
 
 @media (max-width: 575.98px) {
-  .img__card__container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0px;
-    padding-right: 0px;
-    width: 100%;
-    padding: 1rem 1rem;
-  }
-  .img__cardblock {
+  .jmimg-card_block {
     border-bottom: 8px solid #1e22aa;
     margin-bottom: 10px;
   }
-  .img__card-body {
+  .jmimg__cardblock-body {
     flex: 1 1 auto;
     min-height: 1px;
     padding-bottom: 0.5rem;
@@ -253,14 +245,14 @@
     padding-right: 0rem;
     padding-top: 0.7rem;
   }
-  .image-card-block__header {
+  .jmimage-card-block--header {
     font-family: JMSansMedium;
     padding: 10px 0px 20px 0px;
     font-size: 24px;
     letter-spacing: 0px;
     color: #333333;
   }
-  .img__card__title {
+  .jmimg--cardblock--title {
     text-align: left;
     font-size: 12px;
     letter-spacing: 0px;
@@ -269,29 +261,38 @@
     opacity: 1;
     font-family: JMSansRegular;
   }
-  .img__card__text {
+  .jmimg--cardblock--text {
     font-size: 20px;
     line-height: 1.2em;
     font-weight: 500;
     font-family: JMSansRegular;
     color: #333333;
     padding-right: 0px;
+    padding-bottom: 0px;
     width: 100%;
   }
-  .img__link__text {
+  .jmimg--cardblock-link--text {
     display: none;
   }
-  .col-md-4.\33 -imgcard__img img {
-    height: 100px;
-    float: right;
-    width: 90px;
+  .col-md-4.\33 {
+    -jmimg-cardblock--col-img {
+      img {
+        height: 100px;
+        float: right;
+        width: 90px;
+      }
+    }
   }
-  .col-md-6.\32 -imgcard__img img {
-    height: 100px;
-    float: right;
-    width: 90px;
+  .col-md-6.\32 {
+    -jmimg-cardblock--col-img {
+      img {
+        height: 100px;
+        float: right;
+        width: 90px;
+      }
+    }
   }
-  .img__list__link {
+  .jmimg--cardblock-list--ilnk {
     text-decoration: none;
     text-decoration-color: #1e22aa;
     color: #1e22aa;
@@ -305,11 +306,12 @@
   }
 }
 
-.img__cardblock__longcol .img__card-img.rounded-0 {
-  height: 158px;
-  width: 100%;
+.jmimg--cardblock--longcol {
+  .jmimg--cardblock-img.rounded-0 {
+    width: 100%;
+  }
 }
-.img__cardblock-body {
+.jmimg--cardblock--body {
   flex: 1 1 auto;
   min-height: 1px;
   padding-bottom: 0.5rem;
@@ -318,22 +320,26 @@
   padding-top: 1.25rem;
   width: 100%;
 }
-
-.img__main__cardblock {
+.jmimg--main--cardblock {
   border-bottom: 15px solid #1e22aa;
 }
+
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .img__cardblock__longcol .img__card-img.rounded-0 {
-    height: 145px;
-    width: 100%;
+  .jmimg--cardblock--longcol {
+    .jmimg--cardblock-img.rounded-0 {
+      height: 145px;
+      width: 100%;
+    }
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .img__cardblock__longcol .img__card-img.rounded-0 {
-    height: 120px;
-    width: 100%;
+  .jmimg--cardblock--longcol {
+    .jmimg--cardblock-img.rounded-0 {
+      height: 120px;
+      width: 100%;
+    }
   }
-  .img__cardblock-body {
+  .jmimg--cardblock--body {
     flex: 1 1 auto;
     min-height: 1px;
     padding-bottom: 0.5rem;
@@ -344,25 +350,32 @@
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .img__cardblock__longcol .img__card-img.rounded-0 {
-    height: 155px;
-    float: right;
-    width: 155px;
+  .jmimg--cardblock--longcol {
+    .jmimg--cardblock-img.rounded-0 {
+      height: 155px;
+      float: right;
+      width: 155px;
+    }
   }
 }
 @media (max-width: 575.98px) {
-  .img__cardblock__longcol .img__card-img.rounded-0 {
-    height: 100px;
-    float: right;
-    width: 90px;
+  .jmimg--cardblock--longcol {
+    .jmimg--cardblock-img.rounded-0 {
+      height: 100px;
+      float: right;
+      width: 90px;
+    }
   }
-  .img__cardblock-body {
+  .jmimg--cardblock--body {
     flex: 1 1 auto;
     min-height: 1px;
     padding-bottom: 0.5rem;
     padding-left: 0.7rem;
     padding-right: 0rem;
     padding-top: 0.7rem;
-    width: 175%;
+    width: 100%;
+  }
+  .jmimg-card_block {
+    height: auto;
   }
 }
