@@ -1,13 +1,20 @@
 <#assign namespace=randomNamespace />
 
-
 <div id="product-hero-${namespace}" class="jmproduct--hero-temp">
     <div class="container">
         <div class="row">
             <#assign imgPresent = ((ImageLarge.getData())?? && ImageLarge.getData() != "")>
             <div class="${(imgPresent)?then('col-md-7','col-md-12')}">
-                <h1 class="product_hero__heading"><#if (Title.getData())??>${Title.getData()}</#if></h1>
-                <div class="product_hero__para"><#if (Summary.getData())??>${Summary.getData()}</#if></div>
+                <#if (Title.getData())??>
+                    <h1 class="product_hero__heading">
+                        ${Title.getData()}
+                    </h1>
+                </#if>
+                <#if (Summary.getData())??>
+                    <div class="product_hero__para">
+                        ${Summary.getData()}
+                    </div>
+                </#if>
             </div>
             <#if imgPresent >
                 <div class="col-md-5">
@@ -15,7 +22,7 @@
                 </div>
             </#if>
             
-              <#if Link_Title?? && Link_Title.getData()?has_content>
+            <#if Link_Title?? && Link_Title.getData()?has_content>
                 <#assign linkHref = "#" />
         
                 <#if Link_Title.Link_Internal.getFriendlyUrl()?has_content>
@@ -29,7 +36,10 @@
                 </#if>
                 <div class="jmcol-for-alignment">
                     <div class="">
-                    <a href="${linkHref}" class="panel__btn">${Link_Title.getData()} <span class="arrow__forward"></span></a>
+                        <a href="${linkHref}" class="panel__btn" title="${Link_Title.getData()}">
+                            ${Link_Title.getData()} 
+                            <span class="arrow__forward"></span>
+                        </a>
                     </div>
                 </div>
             </#if>
@@ -52,11 +62,12 @@
 							<#assign href = cur_AdditionalLinks_Title.AdditionalLinks_Target.getData() >
 						</#if>
 						<div class="panel__btn">
-                        <a href="${href}">${title}
-                       <span class="arrow__forward"></span></a>
-                    </div>
+                            <a href="${href}" title="${title}">
+                                ${title}
+                                <span class="arrow__forward"></span>
+                            </a>
+                        </div>
 					</#if>
-					 
 				</#list>
             </#if>
         </div>

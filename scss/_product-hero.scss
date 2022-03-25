@@ -1,98 +1,118 @@
 .product_hero {
     margin-top: 100px;
-}
-.product_hero .product_hero__heading{
-    margin-bottom: 40px;
-    font-size: 36px;
-    line-height: 40px;
-    font-family: JMSansMedium;
-    color: #333333;
-}
-.product_hero .product_hero__para p{
-    font-size: 18px;
-    line-height: 27px;
-    font-family: JMSansRegular;    
-    letter-spacing: 0px;
-    color: #333333;
-    opacity: 0.84;
-    margin-bottom: 20px;
-}
-.product_hero img{
-    position: static;
-}
-.product_hero .row{
-    align-items: center;
-}
-
-.journal-content-article[data-analytics-asset-title='Fuel-Cell-Contact'] .person-heading_align {
-    font-family: JMSansMedium;
-    font-size: 36px;
-    line-height: 32px;
-    letter-spacing: 0px;
-    color: #333333;
-    padding-left: 60px;
-    margin-left: 0;
-}
-.journal-content-article[data-analytics-asset-title='Fuel-Cell-Contact'] .person-grid .person_card{
-    border: none;
-    padding: 0;
-}
-.journal-content-article[data-analytics-asset-title='Fuel-Cell-Contact'] .two-person-grid{
-    margin-top: 0px;
-    padding: 60px!important;
-}
-.journal-content-article[data-analytics-asset-title='Fuel-Cell-Contact'] .person_card img{
-    border-radius: 0;
-    position: static;
-}
-.journal-content-article[data-analytics-asset-title='Fuel-Cell-Contact'] h4.person_card-title{
-    padding: 15px 0;
-    font-size: 20px;
-    line-height: 20px;
-    margin-bottom: 0;
-}
-.journal-content-article[data-analytics-asset-title='Fuel-Cell-Contact'] h6.person_card-text{
-    color: #333333;
-    opacity: 0.8;
-    margin-bottom: 0px;
-    padding-bottom: 15px;
-}
-.journal-content-article[data-analytics-asset-title='Fuel-Cell-Contact'] h6.person_card-number{
-    color: #333333;
-    opacity: 0.8;
-    margin-bottom: 0;
-    padding: 0 0 30px;
-}
-.journal-content-article[data-analytics-asset-title='Fuel-Cell-Contact'] .btn__person{
-    padding: 0 10px;
-}
-.journal-content-article[data-analytics-asset-title='Fuel-Cell-Contact'] .person_explore-icon{
-    margin-left: 10px;
-}
-.journal-content-article[data-analytics-asset-title='Fuel-Cell-Contact'] .btn-person_link{
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    font-family: JMSansMedium!important;
-    font-size: 18px!important;
-    line-height: 22px!important;
-}
-.journal-content-article[data-analytics-asset-title='Fuel-Cell-Contact'] .two-person-grid{
-    padding: 0;
+    .product_hero__heading{
+        margin-bottom: 40px;
+        font-size: 36px;
+        line-height: 40px;
+        font-family: JMSansMedium;
+        color: #333333;
+    }
+    .product_hero__para p{
+        font-size: 18px;
+        line-height: 27px;
+        font-family: JMSansRegular;    
+        letter-spacing: 0px;
+        color: #333333;
+        opacity: 0.84;
+        margin-bottom: 20px;
+    }
+    img{
+        position: static;
+    }
+    .row{
+        align-items: center;
+    }
 }
 
-.journal-content-article[data-analytics-asset-title='CTA-Block-fuel-cells-technology'] h3.cta_inner_header{
-    font-size: 36px;
-    line-height: 32px;
-    font-family: JMSansMedium;
-    color: #333333;
+.jmproduct--hero-temp {
+	.product_hero__para {
+		font-size: 18px;
+		line-height: 28px;
+		font-family: JMSansRegular;
+		p {
+			margin-bottom: 1rem;
+		}
+	}
+	.jmcol-for-alignment {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+    .person-heading_align {
+        font-family: JMSansMedium;
+        font-size: 36px;
+        line-height: 32px;
+        letter-spacing: 0px;
+        color: #333333;
+        padding-left: 60px;
+        margin-left: 0;
+    }
+    .person-grid .person_card{
+        border: none;
+        padding: 0;
+    }
+    .two-person-grid{
+        margin-top: 0px;
+        padding: 60px!important;
+    }
+    .person_card img{
+        border-radius: 0;
+        position: static;
+    }
+    h4.person_card-title{
+        padding: 15px 0;
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 0;
+    }
+    h6.person_card-text{
+        color: #333333;
+        opacity: 0.8;
+        margin-bottom: 0px;
+        padding-bottom: 15px;
+    }
+    h6.person_card-number{
+        color: #333333;
+        opacity: 0.8;
+        margin-bottom: 0;
+        padding: 0 0 30px;
+    }
+    .btn__person{
+        padding: 0 10px;
+    }
+    .person_explore-icon{
+        margin-left: 10px;
+    }
+    .btn-person_link{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        font-family: JMSansMedium!important;
+        font-size: 18px!important;
+        line-height: 22px!important;
+    }
+    .two-person-grid{
+        padding: 0;
+    }
+    h3.cta_inner_header{
+        font-size: 36px;
+        line-height: 32px;
+        font-family: JMSansMedium;
+        color: #333333;
+    }
+    p.cta_inner_text{
+        font-size: 18px;
+        line-height: 27px;
+        font-family: JMSansRegular;
+        letter-spacing: 0px;
+        color: #333333;
+        opacity: 0.84;
+        margin: 30px 0 20px;
+    }
 }
-.journal-content-article[data-analytics-asset-title='CTA-Block-fuel-cells-technology'] p.cta_inner_text{
-    font-size: 18px;
-    line-height: 27px;
-    font-family: JMSansRegular;
-    letter-spacing: 0px;
-    color: #333333;
-    opacity: 0.84;
-    margin: 30px 0 20px;
+table {
+	td {
+		border: 0.125rem solid #fff;
+		padding: 0.5rem;
+		background: #ccc;
+	}
 }
