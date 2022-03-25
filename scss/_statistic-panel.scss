@@ -1,9 +1,9 @@
-.jm-panel {
-	background-color: #1E22AA;
-	color: white;
-	padding: 20px;
-}
 .jmstatistic--panel-temp {
+	&.jm-panel {
+		background-color: #1E22AA;
+		color: white;
+		padding: 20px;
+	}
 	.jm-panel-title {
 		font-size: 34px;
 		font-family: JMSansMedium;
