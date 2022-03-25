@@ -1,0 +1,27 @@
+#jmpanels--hero-temp {
+	background-position: center;
+	background-size: cover;
+	.panels-hero-panels {
+		background-color: var(--jmEgyptianBlue-color);
+	}
+	.hero-panels-panel.white-border {
+		border-left: 1.5px white solid;
+	}
+	.panels-hero-header {
+		h1 {
+			font-size: 46px;
+			line-height: 60px;
+			font-family: JMSansMedium;
+			color: #ffffff;
+			text-shadow: 0px 0px 6px #000000;
+		}
+	}
+	.panels-hero-para {
+		font-size: 18px;
+		line-height: 28px;
+		font-family: JMSansMedium;
+		color: #ffffff;
+		text-shadow: 0px 0px 8px #000000;
+		opacity: 0.8;
+	}
+}
