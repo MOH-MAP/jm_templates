@@ -19,23 +19,20 @@
 
                     <#if Link_Title??&& Link_Title.getData()?has_content>
                         <#assign linkHref="#" />
-
                         <#if Link_Title.Link_Internal?? && Link_Title.Link_Internal.getFriendlyUrl()?has_content>
                             <#assign linkHref=Link_Title.Link_Internal.getFriendlyUrl() />
-                            <#elseif Link_Title.Link_Media.getData()?has_content>
-                                <#assign linkHref=Link_Title.Link_Media.getData() />
-                                <#elseif Link_Title.Link_Mailto.getData()?has_content>
-                                    <#assign linkHref="mailto:" + Link_Title.Link_Mailto.getData() />
-                                    <#elseif Link_Title.Link_External.getData()?has_content>
-                                        <#assign linkHref=Link_Title.Link_External.getData() />
+                        <#elseif Link_Title.Link_Media.getData()?has_content>
+                            <#assign linkHref=Link_Title.Link_Media.getData() />
+                        <#elseif Link_Title.Link_Mailto.getData()?has_content>
+                            <#assign linkHref="mailto:" + Link_Title.Link_Mailto.getData() />
+                        <#elseif Link_Title.Link_External.getData()?has_content>
+                            <#assign linkHref=Link_Title.Link_External.getData() />
                         </#if>
-
                         <div class="text-panel-link">
                             <a href="${linkHref}">
                                 <span class="arrow__forward" />
                             </a>
                         </div>
-
                     </#if>
                 </div>
             </div>
