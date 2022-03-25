@@ -20,12 +20,11 @@
 				</#if>
 
 				<#if linkHref?has_content>
-				<a class="jmimg--cardblock-list--ilnk text-decoration-none" href="${linkHref}" target="${Link_Title.Link_Target.getData()}">
-					<span class="jmimg--cardblock-link--text">${Link_Title.getData()}</span>
-					<span class="jmimg--cardblock-link--icon"></span>
-				</a>
+					<a class="jmimg--cardblock-list--ilnk text-decoration-none" title="${Link_Title.getData()}" href="${linkHref}" target="${Link_Title.Link_Target.getData()}">
+						<span class="jmimg--cardblock-link--text">${Link_Title.getData()}</span>
+						<span class="jmimg--cardblock-link--icon"></span>
+					</a>
 				</#if>
-
 			</div>
 		</div>
 		<div class="col-5 jmimg-cardblock--right-img">

@@ -1,5 +1,5 @@
 <div class="container">
-<h2 class="jmimage-card-block--header">${imageBlockTitle.getData()}</h2>
+	<h2 class="jmimage-card-block--header">${imageBlockTitle.getData()}</h2>
     <div class="jmimage--cardb-lock jmimg--main--cardblock bg-light">
     	<div class="row no-gutters">
     		<div class="col-4">
@@ -22,10 +22,10 @@
     				</#if>
 
     				<#if linkHref?has_content>
-    				<a class="jmimg--cardblock-list--ilnk" href="${linkHref}" target="${Link_Title.Link_Target.getData()}">
-    					<span class="jmimg--cardblock-link--text">${Link_Title.getData()}</span>
-    					<span class="jmimg--cardblock-link--icon"></span>
-    				</a>
+						<a class="jmimg--cardblock-list--ilnk" title="${Link_Title.getData()}" href="${linkHref}" target="${Link_Title.Link_Target.getData()}">
+							<span class="jmimg--cardblock-link--text">${Link_Title.getData()}</span>
+							<span class="jmimg--cardblock-link--icon"></span>
+						</a>
     				</#if>
     			</div>
     		</div>
