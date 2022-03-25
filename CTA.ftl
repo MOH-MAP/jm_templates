@@ -24,7 +24,7 @@
 						</#if>
 					</#if>
 					<div class="jmbtn--cta">
-						<a class="jmcta-inner-link" href="${href}">
+						<a class="jmcta-inner-link" href="${href}" title="${title}">
 							<span>${title}</span>
 							<span class="jmcta--link-icon"></span>
 						</a>

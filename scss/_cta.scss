@@ -50,46 +50,35 @@
 		font-family: 'JMSansMedium';
 	}
 }
-
 @media (min-width: 992px) and (max-width: 1199.98px) {
-.jmbtn--cta{
-    width: 30%;
-    background: #1E22AA;
-    padding: 30px 0px;
+	.jmbtn--cta{
+		width: 30%;
+		background: #1E22AA;
+		padding: 30px 0px;
+	}
 }
-}
-
 @media (min-width: 768px) and (max-width: 991.98px) {
-.jmbtn--cta {
-    width: 100%;
-    background: #1E22AA;
-    padding: 30px 0px;
-}
+	.jmbtn--cta {
+		width: 100%;
+		background: #1E22AA;
+		padding: 30px 0px;
+	}
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
-.jmcta-inner-header {
-	font-size: 2.5rem;
-	line-height: 2.625rem;
-	font-family: 'JMSansMedium';
-	opacity: 1;
-}
-.jmcta-inner-text {
-	font-size: 1.5rem;
-	line-height: 1.625rem;
-	font-family: 'JMSansRegular';
-	opacity: 1;
-	margin: 25px 0px 30px 0px;
-}
-.jmcta-inner-link {
-	background: #1E22AA;
-	float: right;
-	text-transform: uppercase;
-	font-weight: 700;
-	color: white;
-	text-decoration: none;
-	margin-top: -11px;
-	padding-right: 10px;
-	&:hover {
+	.jmcta-inner-header {
+		font-size: 2.5rem;
+		line-height: 2.625rem;
+		font-family: 'JMSansMedium';
+		opacity: 1;
+	}
+	.jmcta-inner-text {
+		font-size: 1.5rem;
+		line-height: 1.625rem;
+		font-family: 'JMSansRegular';
+		opacity: 1;
+		margin: 25px 0px 30px 0px;
+	}
+	.jmcta-inner-link {
 		background: #1E22AA;
 		float: right;
 		text-transform: uppercase;
@@ -98,40 +87,38 @@
 		text-decoration: none;
 		margin-top: -11px;
 		padding-right: 10px;
+		&:hover {
+			background: #1E22AA;
+			float: right;
+			text-transform: uppercase;
+			font-weight: 700;
+			color: white;
+			text-decoration: none;
+			margin-top: -11px;
+			padding-right: 10px;
+		}
+	}
+	.jmbtn--cta {
+		width: 100%;
+		background: #1E22AA;
+		padding: 30px 0px;
 	}
 }
-.jmbtn--cta {
-	width: 100%;
-	background: #1E22AA;
-	padding: 30px 0px;
-}
-
-}
-
 @media (max-width: 575.98px) {
-.jmcta-inner-header {
-	font-size: 2rem;
-	line-height: 2.625rem;
-	font-family: 'JMSansMedium';
-	opacity: 1;
-}
-.jmcta-inner-text {
-	font-size: 1rem;
-	line-height: 1.625rem;
-	font-family: 'JMSansRegular';
-	opacity: 1;
-	margin: 15px 0px 20px 0px;
-}
-.jmcta-inner-link {
-	background: #1E22AA;
-	float: right;
-	text-transform: uppercase;
-	font-weight: 700;
-	color: white;
-	text-decoration: none;
-	margin-top: -11px;
-	padding-right: 10px;
-	&:hover {
+	.jmcta-inner-header {
+		font-size: 2rem;
+		line-height: 2.625rem;
+		font-family: 'JMSansMedium';
+		opacity: 1;
+	}
+	.jmcta-inner-text {
+		font-size: 1rem;
+		line-height: 1.625rem;
+		font-family: 'JMSansRegular';
+		opacity: 1;
+		margin: 15px 0px 20px 0px;
+	}
+	.jmcta-inner-link {
 		background: #1E22AA;
 		float: right;
 		text-transform: uppercase;
@@ -140,12 +127,20 @@
 		text-decoration: none;
 		margin-top: -11px;
 		padding-right: 10px;
+		&:hover {
+			background: #1E22AA;
+			float: right;
+			text-transform: uppercase;
+			font-weight: 700;
+			color: white;
+			text-decoration: none;
+			margin-top: -11px;
+			padding-right: 10px;
+		}
 	}
-}
-.jmbtn--cta {
-	width: 100%;
-	background: #1E22AA;
-	padding: 30px 0px;
-}
-
+	.jmbtn--cta {
+		width: 100%;
+		background: #1E22AA;
+		padding: 30px 0px;
+	}
 }
