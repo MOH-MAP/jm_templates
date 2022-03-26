@@ -1,4 +1,4 @@
-.jmhero--industry-main-container {
+.jmhero--industry-main-container-temp {
 	#jmhero--industry-temp {
 		background-size: cover;
 		position: absolute !important;
@@ -15,7 +15,7 @@
 	}
 }
 @media (min-width: 320px) and (max-width: 539px) {
-	.jmhero--industry-main-container {
+	.jmhero--industry-main-container-temp {
 		#jmhero--industry-temp {
 			display: none;
 		}
@@ -35,7 +35,7 @@
 	}
 }
 @media (min-width: 540px) and (max-width: 834px) {
-	.jmhero--industry-main-container {
+	.jmhero--industry-main-container-temp {
 		#jmhero--industry-temp {
 			display: none !important;
 		}
