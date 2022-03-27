@@ -5,7 +5,6 @@
         <div class="card-body">
             <h6 class="card-title">${Name.getData()}</h6>
             <h2 class="card-text wrap-three">${Title.getData()}</h2>
-
             <#if Link_Title?? && Link_Title.getData()?has_content>
                 <#assign title=Link_Title.getData() />
                 <#if Link_Title.Link_Internal?? && Link_Title.Link_Internal.getFriendlyUrl()?has_content>
