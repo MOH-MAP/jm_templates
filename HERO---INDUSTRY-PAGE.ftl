@@ -3,29 +3,28 @@
 <#assign serviceContext = staticUtil["com.liferay.portal.kernel.service.ServiceContextThreadLocal"].getServiceContext() />
 <#assign themeDisplay = serviceContext.getThemeDisplay() />
 <style>
-   #industry-hero-${namespace}{
-    	
+   	#industry-hero-${namespace}{
     	background:  url("${ImageLarge.getData()}") no-repeat center center transparent;
     }
     #industry-img-${namespace}{
-    display: none;
+    	display: none;
     }
     
     @media(min-width: 320px) and (max-width: 539px){
-       #industry-hero-${namespace}{
-       display: none;
-       }
-       #industry-img-${namespace}{
-          background:  url("${ImageLarge.getData()}") no-repeat center center transparent;
-       }
+       	#industry-hero-${namespace}{
+       		display: none;
+       	}
+       	#industry-img-${namespace}{
+          	background:  url("${ImageLarge.getData()}") no-repeat center center transparent;
+       	}
     }
     @media(min-width: 540px) and (max-width: 834px){
-    #industry-hero-${namespace}{
-       display: none !important;
-       }
-       #industry-img-${namespace}{
-         background:  url("${ImageLarge.getData()}") no-repeat center center transparent;
-       }
+    	#industry-hero-${namespace}{
+       		display: none !important;
+       	}
+       	#industry-img-${namespace}{
+         	background:  url("${ImageLarge.getData()}") no-repeat center center transparent;
+       	}
     }
 </style>
 
@@ -33,7 +32,11 @@
 	<div class="container industry__sec">
 		<div class=" col-md-6 industry__text">
     		<h1 class="industry__heading">${Name.getData()}</h1>
-    		<p class="industry__para"><#if (Summary.getData())??>${Summary.getData()}</#if></p>
+    		<#if (Summary.getData())??>
+				<p class="industry__para">
+					${Summary.getData()}
+				</p>
+			</#if>
             <#if AdditionalLinks_Title.getSiblings()?has_content>
 				<#assign href = '#' >
                 <#assign title = 'Explore'>
@@ -52,8 +55,10 @@
 							<#assign href = cur_AdditionalLinks_Title.AdditionalLinks_Target.getData() >
 						</#if>
 						<div>
-                        <a class="industry__btn" href="${href}">${title}
-							<span class="arrow__forward"></span></a>
+							<a class="industry__btn" href="${href}" title="${title}">
+								${title}
+								<span class="arrow__forward"></span>
+							</a>
 						</div>
 					</#if>
 				</#list>
@@ -62,11 +67,11 @@
 				<#list ShowScrollLink.getSiblings() as cur_ShowScrollLink>
 					<#if getterUtil.getBoolean(cur_ShowScrollLink.getData())>
 						<div class="hero-links hero-scroll-link">
-						<a class="industry__btn" href="#industry-details">
-						<#if (ScrollLinkText.getData())??>${ScrollLinkText.getData()}</#if>
-							 <span class="arrow__forward"></span>
-						</a>
-					</div>
+							<a class="industry__btn" href="#industry-details" title="${ScrollLinkText.getData()}">
+								<#if (ScrollLinkText.getData())??>${ScrollLinkText.getData()}</#if>
+							 	<span class="arrow__forward"></span>
+							</a>
+						</div>
 					<#else>
 						${languageUtil.get(locale, "no")}
 					</#if>
