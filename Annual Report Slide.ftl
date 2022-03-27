@@ -72,7 +72,7 @@
 </section>
 
 <style>
-#annual-report-slide-${namespace} {
-  background-image: url("${ImageLarge.getData()}");
-}
+    #annual-report-slide-${namespace} {
+        background-image: url("${ImageLarge.getData()}");
+    }
 </style>
