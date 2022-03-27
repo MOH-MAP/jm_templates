@@ -1,17 +1,21 @@
 <main>
 	<div class="hero jmhome--banner-hero-temp">
 		<div class="hero__content">
-			<h2 class="home-heading">
-				<#if (Heading.getData())??>${Heading.getData()}</#if>
-			</h2>
-			<p class="home-para">
-				<#if (Paragraph.getData())??>${Paragraph.getData()}</#if>
-			</p>
+			<#if (Heading.getData())??>
+				<h2 class="home-heading">
+					${Heading.getData()}
+				</h2>
+			</#if>
+			<#if (Paragraph.getData())??>
+				<p class="home-para">
+					${Paragraph.getData()}
+				</p>
+			</#if>
 			<#if LinkToPage ?has_content>
 				<#list LinkToPage.getSiblings()as cur_LinkToPage>
 					<#if cur_LinkToPage ?has_content && cur_LinkToPage.getFriendlyUrl() !="">
 						<div class="panel__btn">
-							<a class="research" href="${cur_LinkToPage.getFriendlyUrl()}">
+							<a class="research" href="${cur_LinkToPage.getFriendlyUrl()}" title="${LinkToPage.linkName.getData()}">
 								<#if (LinkToPage.linkName.getData())??>
 									${LinkToPage.linkName.getData()}
 								</#if>
@@ -28,6 +32,5 @@
   				data-fileentryid="${Image1072.getAttribute("fileEntryId")}" 
     			src="${Image1072.getData()}" />-->
 		</#if>
-
 	</div>
 </main>
