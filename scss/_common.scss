@@ -346,3 +346,13 @@ iframe {
     margin-left: 8px;
   }
 }
+@media (min-width: 320px) and (max-width: 539px) {
+  .arrow__forward {
+    background: url("../images/new__jm__images/arrow_forward-white-20.svg") 0 0
+      no-repeat transparent;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: 0px;
+  }
+}

@@ -65,19 +65,6 @@
 		}
 		padding: 0 15px;
 	}
-	.arrow__forward {
-		display: block;
-		width: 24px;
-		height: 24px;
-		margin-left: 8px;
-		top: 50%;
-		margin-top: -2px;
-	}
-	.jmarticle-hero-btn-desktop {
-		.arrow__forward {
-			background: url(" arrow_forward-white.svg") 0 0 no-repeat transparent;
-		}
-	}
 }
 @media (min-width: 320px) and (max-width: 539px) {
 	.jmarticle--hero-main-container {
@@ -93,19 +80,6 @@
 		.article__heading {
 			font-size: 32px;
 			margin-bottom: 24px;
-		}
-		.arrow__forward {
-			display: block;
-			width: 24px;
-			height: 24px;
-			margin-left: 8px;
-			top: 50%;
-			margin-top: 0px;
-		}
-		.jmarticle-hero-btn-desktop {
-			.arrow__forward {
-				background: url(" arrow_forward-white-20.svg") 0 0 no-repeat transparent;
-			}
 		}
 	}
 }

@@ -49,18 +49,6 @@
 			}
 		}
 	}
-
-	.arrow__forward {
-		background: url("../images/new__jm__images/arrow_forward-white.svg") 0 0
-			no-repeat transparent;
-		display: block;
-		width: 24px;
-		height: 24px;
-		margin-left: 8px;
-		top: 50%;
-		margin-top: -2px;
-	}
-
 	.submit__btn {
 		display: flex;
 		outline: none;
@@ -129,14 +117,6 @@
 			width: 118px;
 			padding: 16px 10px 14px 10px;
 			font-size: 16px;
-		}
-		.arrow__forward {
-			background: url("../images/new__jm__images/arrow_forward-white-20.svg") 0 0
-				no-repeat transparent;
-			display: block;
-			width: 20px;
-			height: 20px;
-			margin-top: 0px;
 		}
 		.service__input::placeholder {
 			font-size: 15px;
