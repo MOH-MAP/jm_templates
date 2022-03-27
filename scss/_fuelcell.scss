@@ -268,7 +268,7 @@
 #breadcrumbs .breadcrumb{
     border-radius: 0;
     margin-bottom: 0;
-    background: rgba(51, 51, 51, 0.5);
+    background: $jmDarkCharcoalColorOpc5;
 }
 .breadcrumb-link{
     font: 14px/28px $jmFont;
@@ -318,7 +318,7 @@
 
 // fuel_processor
 .journal-content-article[data-analytics-asset-title='Fuel-processor-catalysts'] table td {
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid $jmBlackColorOpc1;
     padding: 20px 30px;
     background: #cccccc4d;
     font-family: $jmFont;

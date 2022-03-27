@@ -87,7 +87,7 @@
     height: 100%;
     cursor: pointer;
     background: $jmWhiteColor;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: $jmBoxShadow2;
     padding: 12px 20px;
     font-size: 16px;
     font-family: $jmMediumFont;

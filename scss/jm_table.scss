@@ -16,9 +16,9 @@ table td {
   .jmtable--temp {
     table {
       td {
-        border: 1px solid rgba(0, 0, 0, 0.1);
+        border: 1px solid $jmBlackColorOpc1;
         padding: 20px 30px;
-        background: rgb(204 204 204 / 30%);
+        background: $jmLightGrayColorOpc3;
         font-family: $jmFont;
         font-size: 20px;
         line-height: 38px;
