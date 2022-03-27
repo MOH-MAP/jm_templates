@@ -26,7 +26,7 @@
 		left: 25px;
 		bottom: 0;
 		content: "";
-		background: var(--explore-border-color);
+		background: $jmBlackColorOpc1;
 		z-index: 6;
 		position: absolute;
 	}
@@ -95,7 +95,7 @@
 			margin: 0 15px;
 			font-size: 24px;
 			line-height: 24px;
-			border-bottom: solid 1px var(--explore-border-color);
+			border-bottom: solid 1px $jmBlackColorOpc1;
 			padding-bottom: 25px;
 			display: flex;
 			justify-content: space-between;

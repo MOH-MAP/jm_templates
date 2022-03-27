@@ -31,7 +31,7 @@
 		font: 20px/32px $jmFont;
 		letter-spacing: 0px;
 		color: $jmDarkGrayColor;
-		border-bottom: 1px solid var(--explore-border-color);
+		border-bottom: 1px solid $jmBlackColorOpc1;
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
@@ -39,7 +39,7 @@
 	}
 	.explore__applications {
 		padding: 20px 15px;
-		border-bottom: solid 1px var(--explore-border-color);
+		border-bottom: solid 1px $jmBlackColorOpc1;
 	}
 	.explore__applications:last-child {
 		border-bottom: none;
@@ -47,7 +47,7 @@
 	.explore__apptext {
 		font: 24px/32px $jmBoldFont;
 		letter-spacing: 0px;
-		color: $jmGraniteGrayColor;;
+		color: $jmGraniteGrayColor;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -139,7 +139,7 @@
 		display: none;
 	}
 	.explore__selectedfilter {
-		border-bottom: solid 1px var(--explore-border-color);
+		border-bottom: solid 1px $jmBlackColorOpc1;
 		padding: 15px 0 20px;
 	}
 	/**media query for mobile **/
@@ -196,7 +196,7 @@
 			top: 118px;
 			width: calc(100% - 120px);
 			height: calc(100% - 118px);
-			border-left: solid 1px var(--explore-border-color);
+			border-left: solid 1px $jmBlackColorOpc1;
 			padding-left: 10px;
 			overflow: auto;
 		}
