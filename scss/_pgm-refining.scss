@@ -42,7 +42,7 @@
 	overflow: hidden;
 }
 .jm-text-slider {
-	background-color: #1e22aa;
+	background-color: $jmEgyptianBlueColor;
 	position: absolute;
 	height: 100%;
 	z-index: 2;
@@ -74,13 +74,13 @@
 	}
 }
 .jm-button-block-rctx {
-	background-color: #1e22aa;
+	background-color: $jmEgyptianBlueColor;
 	display: flex;
 	flex-direction: column;
 	width: 18%;
 	padding: 2%;
 	span {
-		background-color: #1e22aa;
+		background-color: $jmEgyptianBlueColor;
 		display: inline-block;
 		text-transform: uppercase;
 		font-size: 15px;
@@ -108,7 +108,7 @@
 .specifications--in {
 	.jm-button-block-rctx {
 		span {
-			background-color: #1e22aa;
+			background-color: $jmEgyptianBlueColor;
 			color: $jmWhiteColor;
 			display: inline-block;
 			text-transform: uppercase;
@@ -131,7 +131,7 @@
 		}
 	}
 	.jm-text-slider {
-		background-color: #1e22aa;
+		background-color: $jmEgyptianBlueColor;
 		position: absolute;
 		height: 100%;
 		z-index: 2;
@@ -278,7 +278,7 @@
 		padding: 2%;
 		span {
 			font-size: 16px;
-			background-color: #1e22aa;
+			background-color: $jmEgyptianBlueColor;
 			display: inline-block;
 			text-transform: uppercase;
 			font-size: 16px;
@@ -312,7 +312,7 @@
 	}
 	.jm-button-block-rctx {
 		span {
-			background-color: #1e22aa;
+			background-color: $jmEgyptianBlueColor;
 			display: inline-block;
 			text-transform: uppercase;
 			font-size: 16px;
@@ -340,7 +340,7 @@
 	.specifications--in {
 		.jm-button-block-rctx {
 			span {
-				background-color: #1e22aa;
+				background-color: $jmEgyptianBlueColor;
 				color: $jmWhiteColor;
 				display: inline-block;
 				text-transform: uppercase;

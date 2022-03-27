@@ -16,7 +16,7 @@
 .flex-item-one-innovation {
   padding: 4%;
   flex: 100%;
-  background-color: #1e22aa;
+  background-color: $jmEgyptianBlueColor;
   color: #666666;
   object-fit: contain;
 }
@@ -204,7 +204,7 @@
 .panel-button-block {
   .btn {
     color: $jmWhiteColor;
-    background-color: #1e22aa;
+    background-color: $jmEgyptianBlueColor;
     border-color: #2e6da4;
     border-radius: 0;
     > a {
@@ -218,7 +218,7 @@
 .btn-primary {
   > a {
     color: $jmWhiteColor;
-    background-color: #1e22aa;
+    background-color: $jmEgyptianBlueColor;
     border-color: #2e6da4;
     border-radius: 0;
   }
@@ -309,11 +309,11 @@
   a {
     .btn-primary {
       color: $jmWhiteColor;
-      background-color: #1e22aa;
+      background-color: $jmEgyptianBlueColor;
       border-color: $jmWhiteColor;
       &:hover {
         color: $jmWhiteColor;
-        background-color: #1e22aa;
+        background-color: $jmEgyptianBlueColor;
         border-color: $jmWhiteColor;
       }
     }
@@ -405,11 +405,11 @@
   a {
     .btn-primary {
       color: $jmWhiteColor;
-      background-color: #1e22aa;
+      background-color: $jmEgyptianBlueColor;
       border-color: $jmWhiteColor;
       &:hover {
         color: $jmWhiteColor;
-        background-color: #1e22aa;
+        background-color: $jmEgyptianBlueColor;
         border-color: $jmWhiteColor;
       }
     }

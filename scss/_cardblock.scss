@@ -1,15 +1,15 @@
 .cardblock__list-link {
 		text-decoration: none;
-		text-decoration-color: #1E22AA;
-		color: #1E22AA;
+		text-decoration-color: $jmEgyptianBlueColor;
+		color: $jmEgyptianBlueColor;
 		font: 18px/22px $jmMediumFont;
 		display: flex;
 	}
 		
 	.list-item .cardblock__list-link {
 		text-decoration: none;
-		text-decoration-color: #1E22AA;
-		color: #1E22AA;
+		text-decoration-color: $jmEgyptianBlueColor;
+		color: $jmEgyptianBlueColor;
 		font: 18px/22px $jmMediumFont;
 		display: flex;
 	}
@@ -23,7 +23,7 @@
     }
     
     .cardblock__body {
-        border-bottom: 15px solid #1E22AA;
+        border-bottom: 15px solid $jmEgyptianBlueColor;
     }
 
 .bg-light {
@@ -41,8 +41,8 @@
 
 .long__card-block .journal-content-article .cardblock .cardblock__body .cardblock__list-link{
 text-decoration: none;
-    text-decoration-color: #1E22AA;
-    color: #1E22AA;
+    text-decoration-color: $jmEgyptianBlueColor;
+    color: $jmEgyptianBlueColor;
     font: 18px/22px $jmMediumFont;
     display: flex;
     float: right;
@@ -218,8 +218,8 @@ h2.cardblock__card-text.wrap-three {
 }
  .cardblock__list-link {
     text-decoration: none;
-    text-decoration-color: #1E22AA;
-    color: #1E22AA;
+    text-decoration-color: $jmEgyptianBlueColor;
+    color: $jmEgyptianBlueColor;
     font: 17px/22px $jmMediumFont;
     display: flex;
     margin-top:0px;
@@ -306,7 +306,7 @@ h1.cardblock_heading {
 margin:10px;
 }
 .cardblock_section .cardblock .cardblock__body {
-        border-bottom: 8px solid #1E22AA;
+        border-bottom: 8px solid $jmEgyptianBlueColor;
     flex: 1 1 auto;
     min-height: 1px;
     padding-bottom: 0.3rem;
@@ -341,7 +341,7 @@ span.cardblock__link-text {
     display: none;
 }
 .cardblock__body {
-    border-bottom: 8px solid #1E22AA;
+    border-bottom: 8px solid $jmEgyptianBlueColor;
    flex: 1 1 auto;
     min-height: 1px;
     padding-bottom: 0.3rem;
@@ -360,7 +360,7 @@ span.cardblock__link-text {
     margin-right: 20%;
 }
 .cardblock__body {
-    border-bottom: 8px solid #1E22AA;
+    border-bottom: 8px solid $jmEgyptianBlueColor;
 }
 .cardblock__list-link {
     margin-right: -5px;
@@ -413,7 +413,7 @@ h1.cardblock__title1{
     margin-top: -30px;
 }
 .cardblock__body.body {
-    border-bottom: 8px solid #1E22AA;
+    border-bottom: 8px solid $jmEgyptianBlueColor;
 }
 .cardblock_section_1 .cardblock__body .cardblock__list-link {
     float: right;

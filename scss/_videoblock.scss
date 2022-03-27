@@ -23,7 +23,7 @@
   }
   .jm-info-btn {
     border-radius: 0%;
-    background-color: #1e22aa;
+    background-color: $jmEgyptianBlueColor;
     color: $jmWhiteColor;
     letter-spacing: 0px;
     color: $jmWhiteColor;
@@ -124,7 +124,7 @@
   }
   .modal-header {
     background-color: #f2f2f2;
-    color: #1e22aa;
+    color: $jmEgyptianBlueColor;
     .close-modal-block {
       width: 5rem;
       opacity: 0.9;
@@ -135,12 +135,12 @@
     height: auto !important;
   }
   .video-close-icon {
-    color: #1e22aa;
+    color: $jmEgyptianBlueColor;
     font-size: 18px;
     font-family: $jmMediumFont;
   }
   .modal-footer {
-    background-color: #1e22aa;
+    background-color: $jmEgyptianBlueColor;
   }
   .modal-footer > .controls {
     width: 100%;
@@ -195,7 +195,7 @@
     background-color: transparent;
   }
   .svg-property {
-    background-color: #1e22aa;
+    background-color: $jmEgyptianBlueColor;
     height: 20px;
     width: 20px;
     border-radius: 50%;
@@ -262,7 +262,7 @@
       display: block;
       width: 100%;
       border-radius: 0%;
-      background-color: #1e22aa;
+      background-color: $jmEgyptianBlueColor;
       color: $jmWhiteColor;
       text-transform: uppercase;
       opacity: 1;

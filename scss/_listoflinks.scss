@@ -17,7 +17,7 @@
     }
     .jmlist-of--link{
         text-decoration: none;
-        color: #1E22AA;
+        color: $jmEgyptianBlueColor;
         font: 18px/22px $jmMediumFont;
         display: flex;
         margin-left: 60px;
@@ -33,7 +33,7 @@
     }
     .jmlist-of--text {
         font-size: 18px;
-        color: #1E22AA;
+        color: $jmEgyptianBlueColor;
         opacity: 1;
         float:left;
         font-family: $jmMediumFont;

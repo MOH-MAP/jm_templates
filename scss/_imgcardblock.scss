@@ -33,7 +33,7 @@
   padding-top: 1.25rem;
 }
 .jmimg-card_block {
-  border-bottom: 15px solid #1e22aa;
+  border-bottom: 15px solid $jmEgyptianBlueColor;
   height: 100%;
 }
 .jmimg--cardblock--title {
@@ -61,8 +61,8 @@
 
 .jmimg--cardblock-list--ilnk {
   text-decoration: none;
-  text-decoration-color: #1e22aa;
-  color: #1e22aa;
+  text-decoration-color: $jmEgyptianBlueColor;
+  color: $jmEgyptianBlueColor;
   font: 17px/22px $jmMediumFont;
   display: flex;
   margin-top: 0px;
@@ -70,8 +70,8 @@
   position: absolute;
   &:hover {
     text-decoration: none;
-    text-decoration-color: #1e22aa;
-    color: #1e22aa;
+    text-decoration-color: $jmEgyptianBlueColor;
+    color: $jmEgyptianBlueColor;
     font: 17px/22px $jmMediumFont;
     display: flex;
     margin-top: 0px;
@@ -107,8 +107,8 @@
   }
   .jmimg--cardblock-list--ilnk {
     text-decoration: none;
-    text-decoration-color: #1e22aa;
-    color: #1e22aa;
+    text-decoration-color: $jmEgyptianBlueColor;
+    color: $jmEgyptianBlueColor;
     font: 16px/22px $jmMediumFont;
     display: flex;
     margin-top: 0px;
@@ -169,8 +169,8 @@
   }
   .jmimg--cardblock-list--ilnk {
     text-decoration: none;
-    text-decoration-color: #1e22aa;
-    color: #1e22aa;
+    text-decoration-color: $jmEgyptianBlueColor;
+    color: $jmEgyptianBlueColor;
     font: 14px/22px $jmMediumFont;
     display: flex;
     margin-top: 0px;
@@ -194,7 +194,7 @@
     }
   }
   .jmimg-card_block {
-    border-bottom: 10px solid #1e22aa;
+    border-bottom: 10px solid $jmEgyptianBlueColor;
   }
 }
 
@@ -209,7 +209,7 @@
     width: 150%;
   }
   .jmimg-card_block {
-    border-bottom: 15px solid #1e22aa;
+    border-bottom: 15px solid $jmEgyptianBlueColor;
     margin-bottom: 20px;
   }
   .col-md-4.\33 {
@@ -234,7 +234,7 @@
 
 @media (max-width: 575.98px) {
   .jmimg-card_block {
-    border-bottom: 8px solid #1e22aa;
+    border-bottom: 8px solid $jmEgyptianBlueColor;
     margin-bottom: 10px;
   }
   .jmimg__cardblock-body {
@@ -294,8 +294,8 @@
   }
   .jmimg--cardblock-list--ilnk {
     text-decoration: none;
-    text-decoration-color: #1e22aa;
-    color: #1e22aa;
+    text-decoration-color: $jmEgyptianBlueColor;
+    color: $jmEgyptianBlueColor;
     font: 17px/22px $jmMediumFont;
     display: flex;
     margin-top: 0px;
@@ -321,7 +321,7 @@
   width: 100%;
 }
 .jmimg--main--cardblock {
-  border-bottom: 15px solid #1e22aa;
+  border-bottom: 15px solid $jmEgyptianBlueColor;
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {

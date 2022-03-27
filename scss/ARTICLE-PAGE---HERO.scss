@@ -30,7 +30,7 @@
 	}
 	.article__btn {
 		display: flex;
-		background-color: #1e22aa;
+		background-color: $jmEgyptianBlueColor;
 		color: $jmWhiteColor !important;
 		width: 321px;
 		border: none;
@@ -56,11 +56,11 @@
 		a {
 			text-decoration: none;
 			color: $jmWhiteColor;
-			background-color: #1e22aa;
+			background-color: $jmEgyptianBlueColor;
 			&:hover {
 				text-decoration: none !important;
 				color: $jmWhiteColor;
-				background-color: #1e22aa;
+				background-color: $jmEgyptianBlueColor;
 			}
 		}
 		padding: 0 15px;

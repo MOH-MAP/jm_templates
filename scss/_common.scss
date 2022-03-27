@@ -36,7 +36,7 @@ li {
 }
 .jmheader__navbar,
 .jmheader__navlinks {
-  background-color: var(--jmEgyptianBlue-color);
+  background-color: $jmEgyptianBlueColor;
 }
 .jmheader__navbar {
   .jmheader__navlinks {
@@ -51,7 +51,7 @@ li {
   color: var(--jmCrayola-color);
   font-family: $jmBlackFont;
   position: static !important;
-  border-bottom: solid 3px var(--jmEgyptianBlue-color);
+  border-bottom: solid 3px $jmEgyptianBlueColor;
 
   &:hover {
     border-bottom: 3px solid $jmWhiteColor;
@@ -88,7 +88,7 @@ li {
   position: fixed;
   left: 15px;
   top: 120px;
-  background: var(--jmEgyptianBlue-color);
+  background: $jmEgyptianBlueColor;
   width: calc(100% - 30px);
   display: none;
   height: calc(100% - 120px);
@@ -147,7 +147,7 @@ a.sub-child {
     opacity: 0.6;
 
     &:hover {
-      color: var(--jmEgyptianBlue-color) !important ;
+      color: $jmEgyptianBlueColor !important ;
       text-decoration: underline;
       opacity: 1;
     }
@@ -160,7 +160,7 @@ a.sub-child {
     padding: 30px 0px;
   }
   .jmlfry__btn {
-    background-color: var(--jmEgyptianBlue-color);
+    background-color: $jmEgyptianBlueColor;
     outline: none;
     border: none;
     align-items: end;
@@ -263,19 +263,19 @@ iframe {
 }
 .modal-header {
   background-color: #f2f2f2;
-  color: #1e22aa;
+  color: $jmEgyptianBlueColor;
   .close-modal-block {
     width: 5rem;
     opacity: 0.9;
   }
 }
 .video-close-icon {
-  color: #1e22aa;
+  color: $jmEgyptianBlueColor;
   font-size: 18px;
   font-family: $jmMediumFont;
 }
 .modal-footer {
-  background-color: #1e22aa;
+  background-color: $jmEgyptianBlueColor;
   > .controls {
     width: 100%;
     margin-right: 6%;
@@ -332,7 +332,7 @@ iframe {
   background-color: transparent;
 }
 .svg-property {
-  background-color: #1e22aa;
+  background-color: $jmEgyptianBlueColor;
   height: 20px;
   width: 20px;
   border-radius: 50%;

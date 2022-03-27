@@ -6,16 +6,16 @@
 	width: 100%;
 	.list-link {
 		text-decoration: none;
-		text-decoration-color: #1e22aa;
-		color: #1e22aa;
+		text-decoration-color: $jmEgyptianBlueColor;
+		color: $jmEgyptianBlueColor;
 		font: 18px/22px $jmMediumFont;
 		display: flex;
 	}
 	.list-item {
 		.list-link {
 			text-decoration: none;
-			text-decoration-color: #1e22aa;
-			color: #1e22aa;
+			text-decoration-color: $jmEgyptianBlueColor;
+			color: $jmEgyptianBlueColor;
 			font: 18px/22px $jmMediumFont;
 			display: flex;
 		}
@@ -41,6 +41,6 @@
 		margin-bottom: 40px;
 	}
 	.card-body {
-		border-bottom: 15px solid #1e22aa;
+		border-bottom: 15px solid $jmEgyptianBlueColor;
 	}
 }
