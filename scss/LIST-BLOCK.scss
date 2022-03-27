@@ -8,7 +8,7 @@
         opacity: 1;
     }
     .jmlist--block-card {
-        background: #F2F2F2 0% 0% no-repeat padding-box;
+        background: $jmAntiFlashWhiteColor 0% 0% no-repeat padding-box;
         border-bottom: $jmEgyptianBlueColor 15px solid;
     }
     .jmlist--block-innerspace {
@@ -124,7 +124,7 @@
             margin-right: 0px;
         }
         .jmlist--block-card {
-            background: #F2F2F2 0% 0% no-repeat padding-box;
+            background: $jmAntiFlashWhiteColor 0% 0% no-repeat padding-box;
             border-bottom: $jmEgyptianBlueColor 10px solid;
         }
     }

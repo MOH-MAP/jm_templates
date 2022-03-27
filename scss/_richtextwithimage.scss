@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   margin-bottom: 4%;
   padding: 3% 5% 10% 10%;
-  background-color: #f2f2f2;
+  background-color: $jmAntiFlashWhiteColor;
   min-height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,7 +23,7 @@
 .flex-item-right-innovation {
   padding: 10px;
   flex: 50%;
-  background-color: #f2f2f2;
+  background-color: $jmAntiFlashWhiteColor;
   padding: 1% 0% 1% 4%;
 }
 .flex-heading-item-innovation-improving {
@@ -264,7 +264,7 @@
 .flex-image-item-left {
   padding: 0% 3% 0 3%;
   flex: 60%;
-  background-color: #f2f2f2;
+  background-color: $jmAntiFlashWhiteColor;
   color: $jmGraniteGrayColor;
   > .article-heading-left {
     font-size: 24px;
@@ -361,7 +361,7 @@
 .flex-image-item-right-second {
   padding: 0% 3% 0 3%;
   flex: 60%;
-  background-color: #f2f2f2;
+  background-color: $jmAntiFlashWhiteColor;
   color: $jmGraniteGrayColor;
   > .article-heading-right {
     font-size: 24px;

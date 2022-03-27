@@ -48,7 +48,7 @@
 }
 .career__dropdown__sec {
   background-color: $jmWhiteColor;
-  border-left: 1px solid #999999;
+  border-left: 1px solid $jmDarkGrayColor;
 }
 .button__sec {
   display: flex;
@@ -165,7 +165,7 @@
   padding: 14px 22px 14px 20px;
   width: 216px;
   border: none;
-  border-left: 1px solid #999999;
+  border-left: 1px solid $jmDarkGrayColor;
   outline: none;
   font-size: 18px;
   font-family: $jmMediumFont;

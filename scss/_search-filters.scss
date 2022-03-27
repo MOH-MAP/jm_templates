@@ -30,7 +30,7 @@
 		padding-bottom: 15px;
 		font: 20px/32px $jmFont;
 		letter-spacing: 0px;
-		color: var(--filter-heading-color);
+		color: $jmDarkGrayColor;
 		border-bottom: 1px solid var(--explore-border-color);
 		display: flex;
 		align-items: center;
@@ -80,7 +80,7 @@
    		margin-bottom: 0;
 		font: 16px/26px $jmMediumFont;
 		letter-spacing: 0px;
-		color: var(--filter-heading-color);
+		color: $jmDarkGrayColor;
 		word-break: break-all;
 	}
 	.jmicon {
@@ -185,7 +185,7 @@
 		.explore__applications {
 			padding: 15px 20px;
 			width: 120px;
-			background: var(--box-bg-color);
+			background: $jmAntiFlashWhiteColor;
 		}
 		.explore__apptext {
 			font: 14px/18px $jmFont;

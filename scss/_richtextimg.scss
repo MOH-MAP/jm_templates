@@ -1,5 +1,5 @@
 .rich-text-img__container_fluid {
-  background-color: #f2f2f2;
+  background-color: $jmAntiFlashWhiteColor;
   max-width: 100%;
   padding: 100px 150px;
 }
@@ -105,7 +105,7 @@ h4.rich-text_title {
 }
 @media (min-width: 540px) and (max-width: 834px) {
     .rich-text-img__container_fluid {
-      background-color: #f2f2f2;
+      background-color: $jmAntiFlashWhiteColor;
       max-width: 100%;
       padding: 30px 50px;
     }
@@ -139,7 +139,7 @@ h4.rich-text_title {
   }
 @media (min-width: 835px) and (max-width: 1024px) {
     .rich-text-img__container_fluid {
-      background-color: #f2f2f2;
+      background-color: $jmAntiFlashWhiteColor;
       max-width: 100%;
       padding: 30px 50px;
     }

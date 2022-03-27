@@ -7,7 +7,7 @@ h1.list-block_title {
     opacity: 1;
 }
     .list-block-css {
-    background: #F2F2F2 0% 0% no-repeat padding-box;
+    background: $jmAntiFlashWhiteColor 0% 0% no-repeat padding-box;
     border-bottom: $jmEgyptianBlueColor 15px solid;
 }
 .product-align {
@@ -99,7 +99,7 @@ h1.list-block_title{
     margin-right: 0px;
 }
 .list-block-css {
-    background: #F2F2F2 0% 0% no-repeat padding-box;
+    background: $jmAntiFlashWhiteColor 0% 0% no-repeat padding-box;
     border-bottom: $jmEgyptianBlueColor 10px solid;
 }
 }

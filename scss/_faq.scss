@@ -35,7 +35,7 @@
 .faqblck__list:nth-child(odd){
     border-top: 1px solid $jmBlackColorOpc1;
     border-bottom: 1px solid $jmBlackColorOpc1;
-    background-color: #F2F2F2;
+    background-color: $jmAntiFlashWhiteColor;
 }
 .faqblck__arrow{
     background: url(../images/new__jm__images/arrow_forward-blue.svg) 0 0 no-repeat transparent;

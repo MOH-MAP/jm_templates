@@ -47,7 +47,7 @@
 		max-width: 600px;
 	}
 	.explore__boxes:nth-child(even) {
-		background-color: var(--box-bg-color);
+		background-color: $jmAntiFlashWhiteColor;
 	}
 	.explore__link {
 		font: 18px/22px $jmMediumFont;
