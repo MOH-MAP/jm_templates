@@ -1,9 +1,9 @@
-<#assign namespace = randomNamespace />
-<#assign layoutService = serviceLocator.findService("com.liferay.portal.kernel.service.LayoutLocalService") />
-<#assign serviceContext = staticUtil["com.liferay.portal.kernel.service.ServiceContextThreadLocal"].getServiceContext() />
-<#assign themeDisplay = serviceContext.getThemeDisplay() />
+<#assign namespace=randomNamespace />
+<#assign layoutService=serviceLocator.findService("com.liferay.portal.kernel.service.LayoutLocalService") />
+<#assign serviceContext=staticUtil["com.liferay.portal.kernel.service.ServiceContextThreadLocal"].getServiceContext() />
+<#assign themeDisplay=serviceContext.getThemeDisplay() />
 
-<div id="annual-report-slide-${namespace}" class="annual-report-slide jmproduct--hero-temp">
+<div id="annual-report-slide-${namespace}" class="annual-report-slide jmproduct--hero1-temp">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">

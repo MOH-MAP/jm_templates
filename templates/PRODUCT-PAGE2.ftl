@@ -29,7 +29,10 @@
                 </#if>
                 <div class="jmcol-for-alignment">
                     <div class="">
-                    <a href="${linkHref}" class="panel__btn">${Link_Title.getData()} <span class="arrow__forward"></span></a>
+                        <a href="${linkHref}" class="panel__btn" title="${Link_Title.getData()} ">
+                            ${Link_Title.getData()} 
+                            <span class="arrow__forward"></span>
+                        </a>
                     </div>
                 </div>
             </#if>
