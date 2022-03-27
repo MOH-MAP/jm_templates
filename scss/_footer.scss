@@ -25,7 +25,7 @@
     
     .jmfooter__listlink{
    font-family: $jmFont;
-   color: var(--jmCrayola-color);
+   color: $jmCrayolaColor;
    font-size: 16px;
    line-height: 21px;
    text-decoration: none;
@@ -97,7 +97,7 @@
     display: block;
     }
     .jmlfrybtn{
-    background-color: var(--jmOceanBlue-color);
+    background-color: $jmOceanBlueColor;
     border:none;
     outline: none;
     padding: 16px;

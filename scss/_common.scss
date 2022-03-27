@@ -48,7 +48,7 @@ li {
 .jmheader__navlist {
   padding: 23px 23px 16px 23px;
   list-style: none;
-  color: var(--jmCrayola-color);
+  color: $jmCrayolaColor;
   font-family: $jmBlackFont;
   position: static !important;
   border-bottom: solid 3px $jmEgyptianBlueColor;
@@ -56,14 +56,14 @@ li {
   &:hover {
     border-bottom: 3px solid $jmWhiteColor;
     transition: 0.3s ease-out;
-    background-color: var(--jmOceanBlue-color);
+    background-color: $jmOceanBlueColor;
     opacity: 1;
   }
   a {
     font-family: $jmMediumFont;
     font-size: 14px;
     line-height: 30px;
-    color: var(--jmCrayola-color);
+    color: $jmCrayolaColor;
   }
 }
 
@@ -127,7 +127,7 @@ a.sub-child {
   font-family: $jmFont;
 }
 .header__menu {
-  color: var(--jmCrayola-color) !important;
+  color: $jmCrayolaColor !important;
   text-decoration: none !important;
 }
 .child-menu {
