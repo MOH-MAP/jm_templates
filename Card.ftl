@@ -18,7 +18,7 @@
                                 <#assign linkHref=Link_Title.Link_External.getData() />
                 </#if>
             </#if>
-            <a class="list-link" href="${linkHref}" target="_blank">
+            <a class="list-link" title="${title}" href="${linkHref}" target="_blank">
                 <span class="link-text">${title}</span>
                 <span class="link-icon"></span>
             </a>
