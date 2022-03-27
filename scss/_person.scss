@@ -6,7 +6,7 @@
     text-align: left;
     font-size: 21px;
     line-height: 32px;
-    font-family: JMSansRegular;
+    font-family: $jmFont;
     letter-spacing: 0px;
     color: $jmDarkCharcoalColor;
     opacity: 0.8;
@@ -16,7 +16,7 @@
   .person__subtitle {
     font-size: 30px;
     line-height: 46px;
-    font-family: JMSansMedium;
+    font-family: $jmMediumFont;
     text-align: left;
     margin: 0;
     margin-bottom: 15px;
@@ -28,7 +28,7 @@
   .person__descp {
     font-size: 17px;
     line-height: 28px;
-    font-family: JMSansRegular;
+    font-family: $jmFont;
     text-align: left;
     letter-spacing: 0px;
     color: $jmDarkCharcoalColor;
@@ -39,7 +39,7 @@
   .person__year {
     font-size: 15px;
     line-height: 28px;
-    font-family: JMSansRegular;
+    font-family: $jmFont;
     text-align: left;
     letter-spacing: 0px;
     color: $jmDarkCharcoalColor;
@@ -68,7 +68,7 @@
     .person__name {
       font-size: 29px;
       line-height: 38px;
-      font-family: JMSansMedium;
+      font-family: $jmMediumFont;
       color: $jmDarkCharcoalColor;
       display: block;
     }
@@ -98,7 +98,7 @@
     .person__name {
       font-size: 29px;
       line-height: 38px;
-      font-family: JMSansMedium;
+      font-family: $jmMediumFont;
       color: $jmDarkCharcoalColor;
       display: block;
     }
@@ -134,7 +134,7 @@
     .person__year {
       font-size: 14px;
       line-height: 17px;
-      font-family: JMSansRegular;
+      font-family: $jmFont;
     }
   }
   .person_card{

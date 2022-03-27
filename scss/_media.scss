@@ -50,34 +50,34 @@
       display: block !important;
     }
     .submenu__content {
-      border-bottom: 1px solid #ffffff33;
+      border-bottom: 1px solid $jmWhiteColorOpc2;
       opacity: 1;
       flex: 0 0 25%;
       padding: 20px 0px;
     }
     .submenu__list {
-      font-family: JMSansMedium;
+      font-family: $jmMediumFont;
       font-size: 14px;
       line-height: 20px;
-      color: var(--jmWhite-color);
+      color: $jmWhiteColor;
     }
     .submenu__heading {
-      font-family: JMSansMedium;
+      font-family: $jmMediumFont;
       font-size: 14px;
       line-height: 20px;
       opacity: 0.6;
-      color: var(--jmWhite-color);
+      color: $jmWhiteColor;
       display: block !important;
       margin-top: 20px;
     }
   }
   .jmheader__navlist {
     width: 100%;
-    border-bottom: 1px solid #ffffff33 !important;
+    border-bottom: 1px solid $jmWhiteColorOpc2 !important;
     opacity: 1;
 
     a {
-      color: var(--jmWhite-color) !important;
+      color: $jmWhiteColor !important;
       line-height: 24px;
     }
   }
@@ -119,10 +119,10 @@
       margin-left: 10px;
     }
     .contact__text {
-      font-family: JMSansMedium;
+      font-family: $jmMediumFont;
       font-size: 14px;
       line-height: 20px;
-      color: var(--jmWhite-color);
+      color: $jmWhiteColor;
       margin-left: 12px;
       display: flex;
       text-align: center;

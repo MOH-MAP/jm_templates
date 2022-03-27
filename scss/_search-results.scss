@@ -12,9 +12,9 @@
 		justify-content: space-between;
 		margin-bottom: 10px;
 		margin-left: 25px;
-		font: 32px/45px var(--jm-medium-font);
+		font: 32px/45px $jmMediumFont;
 		letter-spacing: 0px;
-		color: var(--result-heading-color);
+		color: $jmDarkCharcoalColor;
 	}
 	.explore__boxes {
 		padding: 40px 25px;
@@ -34,15 +34,15 @@
 		display: none;
 	}
 	.explore__boxhead {
-		font: 28px/40px var(--jm-font);
+		font: 28px/40px $jmFont;
 		letter-spacing: 0px;
-		color: var(--result-heading-color);
+		color: $jmDarkCharcoalColor;
 		margin-bottom: 15px;
 	}
 	.explore__text {
-		font: 16px/20px var(--jm-font);
+		font: 16px/20px $jmFont;
 		letter-spacing: 0px;
-		color: var(--result-heading-color);
+		color: $jmDarkCharcoalColor;
 		opacity: 0.7;
 		max-width: 600px;
 	}
@@ -50,7 +50,7 @@
 		background-color: var(--box-bg-color);
 	}
 	.explore__link {
-		font: 18px/22px var(--jm-medium-font);
+		font: 18px/22px $jmMediumFont;
 		letter-spacing: 0px;
 		color: var(--filter-select-text-color);
 		position: absolute;

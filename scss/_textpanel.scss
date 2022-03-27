@@ -22,19 +22,19 @@
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0px;
-  color: #ffffff;
+  color: $jmWhiteColor;
   opacity: 0.6;
   padding: 2px 10px;
-  font-family: "JMSansRegular";
+  font-family: $jmFont;
 }
 .summary p {
   letter-spacing: 0px;
-  color: #ffffff;
+  color: $jmWhiteColor;
   opacity: 1;
   font-size: 24px;
   line-height: 32px;
   padding: 10px 40px 0px 10px;
-  font-family: "JMSansRegular";
+  font-family: $jmFont;
 }
 
 @media (min-width: 320px) and (max-width: 539px) {
@@ -55,12 +55,12 @@
   }
   .summary p {
     letter-spacing: 0px;
-    color: #ffffff;
+    color: $jmWhiteColor;
     opacity: 1;
     font-size: 22px;
     line-height: 30px;
     padding: 10px 20px 0px 10px;
-    font-family: "JMSansRegular";
+    font-family: $jmFont;
   }
 
   .text-panel_explore-icon {

@@ -4,15 +4,15 @@
         margin-bottom: 40px;
         font-size: 36px;
         line-height: 40px;
-        font-family: JMSansMedium;
-        color: #333333;
+        font-family: $jmMediumFont;
+        color: $jmDarkCharcoalColor;
     }
     .product_hero__para p{
         font-size: 18px;
         line-height: 27px;
-        font-family: JMSansRegular;    
+        font-family: $jmFont;    
         letter-spacing: 0px;
-        color: #333333;
+        color: $jmDarkCharcoalColor;
         opacity: 0.84;
         margin-bottom: 20px;
     }
@@ -28,7 +28,7 @@
 	.product_hero__para {
 		font-size: 18px;
 		line-height: 28px;
-		font-family: JMSansRegular;
+		font-family: $jmFont;
 		p {
 			margin-bottom: 1rem;
 		}
@@ -38,11 +38,11 @@
 		padding-right: 15px;
 	}
     .person-heading_align {
-        font-family: JMSansMedium;
+        font-family: $jmMediumFont;
         font-size: 36px;
         line-height: 32px;
         letter-spacing: 0px;
-        color: #333333;
+        color: $jmDarkCharcoalColor;
         padding-left: 60px;
         margin-left: 0;
     }
@@ -65,13 +65,13 @@
         margin-bottom: 0;
     }
     h6.person_card-text{
-        color: #333333;
+        color: $jmDarkCharcoalColor;
         opacity: 0.8;
         margin-bottom: 0px;
         padding-bottom: 15px;
     }
     h6.person_card-number{
-        color: #333333;
+        color: $jmDarkCharcoalColor;
         opacity: 0.8;
         margin-bottom: 0;
         padding: 0 0 30px;
@@ -86,7 +86,7 @@
         display: flex;
         justify-content: right;
         align-items: center;
-        font-family: JMSansMedium!important;
+        font-family: $jmMediumFont!important;
         font-size: 18px!important;
         line-height: 22px!important;
     }
@@ -96,22 +96,22 @@
     h3.cta_inner_header{
         font-size: 36px;
         line-height: 32px;
-        font-family: JMSansMedium;
-        color: #333333;
+        font-family: $jmMediumFont;
+        color: $jmDarkCharcoalColor;
     }
     p.cta_inner_text{
         font-size: 18px;
         line-height: 27px;
-        font-family: JMSansRegular;
+        font-family: $jmFont;
         letter-spacing: 0px;
-        color: #333333;
+        color: $jmDarkCharcoalColor;
         opacity: 0.84;
         margin: 30px 0 20px;
     }
 }
 table {
 	td {
-		border: 0.125rem solid #fff;
+		border: 0.125rem solid $jmWhiteColor;
 		padding: 0.5rem;
 		background: #ccc;
 	}

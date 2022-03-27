@@ -38,7 +38,7 @@
   margin-bottom: 44px;
   text-align: left;
   font-size: 18px;
-  font-family: JMSansRegular;
+  font-family: $jmFont;
   line-height: 28px;
   letter-spacing: 0px;
   color: $jmDarkCharcoalColor;
@@ -49,7 +49,7 @@
   margin: 0;
   text-align: left;
   font-size: 52px;
-  font-family: JMSansMedium;
+  font-family: $jmMediumFont;
   line-height: 60px;
   letter-spacing: 0px;
   color: $jmDarkCharcoalColor;
@@ -65,7 +65,7 @@
   justify-content: flex-end;
   text-align: right;
   font-size: 18px;
-  font-family: JMSansMedium;
+  font-family: $jmMediumFont;
   line-height: 22px;
   letter-spacing: 0px;
   text-transform: uppercase;

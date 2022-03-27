@@ -6,17 +6,17 @@
     opacity: 1;
     font-size: 36px;
     line-height: 40px;
-    font-family: JMSansMedium;
-    color: #fff;
+    font-family: $jmMediumFont;
+    color: $jmWhiteColor;
   }
   .jm-image-slogan-text {
     text-shadow: 0px 0px 6px #000;
     text-align: left;
     font-size: 16px;
     line-height: 22px;
-    font-family: JMSansRegular;
+    font-family: $jmFont;
     letter-spacing: 0;
-    color: #fff;
+    color: $jmWhiteColor;
     text-transform: capitalize;
     opacity: 0.84;
     margin: 0 0 5px;
@@ -24,14 +24,14 @@
   .jm-info-btn {
     border-radius: 0%;
     background-color: #1e22aa;
-    color: #fff;
+    color: $jmWhiteColor;
     letter-spacing: 0px;
-    color: #fff;
+    color: $jmWhiteColor;
     text-transform: uppercase;
     opacity: 1;
     font-size: 16px;
     line-height: 20px;
-    font-family: JMSansMedium;
+    font-family: $jmMediumFont;
   }
   .jm-video-image-container {
     padding: 0px !important;
@@ -137,7 +137,7 @@
   .video-close-icon {
     color: #1e22aa;
     font-size: 18px;
-    font-family: JMSansMedium;
+    font-family: $jmMediumFont;
   }
   .modal-footer {
     background-color: #1e22aa;
@@ -166,19 +166,19 @@
     margin-right: 4px;
     border-color: transparent;
     background-color: transparent;
-    border-color: 1px solid #fff;
+    border-color: 1px solid $jmWhiteColor;
   }
   .controls .btn {
     border-radius: 0px;
     margin-right: 4px;
-    border-color: 1px solid #fff;
+    border-color: 1px solid $jmWhiteColor;
     background-color: transparent;
     opacity: 0.9;
   }
   .controls .btn-primary {
     border-radius: 0px;
     margin-right: 4px;
-    color: #fff;
+    color: $jmWhiteColor;
     border-color: #0062cc;
     background-color: transparent;
   }
@@ -263,12 +263,12 @@
       width: 100%;
       border-radius: 0%;
       background-color: #1e22aa;
-      color: #fff;
+      color: $jmWhiteColor;
       text-transform: uppercase;
       opacity: 1;
       font-size: 16px;
       line-height: 20px;
-      font-family: JMSansMedium;
+      font-family: $jmMediumFont;
       border: none;
     }
     .centered-with-text {

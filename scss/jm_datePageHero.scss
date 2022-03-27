@@ -2,10 +2,10 @@
     text-align: left;
     font-size: 52px;
     line-height: 60px;
-    font-family: JMSansMedium;
+    font-family: $jmMediumFont;
     letter-spacing: 0px;
-    color: #ffffff;
-    text-shadow: 0px 0px 8px #000000;
+    color: $jmWhiteColor;
+    text-shadow: $jmTextShadow;
     opacity: 1;
     margin-top: 95px;
     margin-bottom: 34px;

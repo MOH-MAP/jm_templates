@@ -15,9 +15,9 @@
         gap: 20px;
     }
     h4.person_card-title {
-        font-family: 'JMSansMedium';
+        font-family: $jmMediumFont;
         letter-spacing: 0px;
-        color: #333333;
+        color: $jmDarkCharcoalColor;
         opacity: 1;
         padding: 15px 0;
         font-size: 20px;
@@ -27,15 +27,15 @@
     h6.person_card-text {
         text-align: left;
         letter-spacing: 0px;
-        color: #333333;
+        color: $jmDarkCharcoalColor;
         opacity: 0.8;
-        font-family: 'JMSansMedium';
+        font-family: $jmMediumFont;
         font-size: 14px;
         padding: 0px 0px 15px;
         margin-bottom: 0px;
     }
     h6.person_card-number{
-        color: #333333;
+        color: $jmDarkCharcoalColor;
         opacity: 0.8;
         margin-bottom: 0;
         padding: 0 0 30px;
@@ -50,16 +50,16 @@
         display: flex;
         justify-content: right;
         align-items: center;
-        font-family: JMSansMedium!important;
+        font-family: $jmMediumFont!important;
         font-size: 18px!important;
         line-height: 22px!important;
     }
     .person-heading_align {
-        font-family: JMSansMedium;
+        font-family: $jmMediumFont;
         font-size: 36px;
         line-height: 32px;
         letter-spacing: 0px;
-        color: #333333;
+        color: $jmDarkCharcoalColor;
         padding-left: 60px;
         margin-left: 0;
     }
@@ -95,7 +95,7 @@
         }
         .btn__person {
             border-color: #1E22AA;
-            color: #fff;
+            color: $jmWhiteColor;
             background: #1E22AA 0% 0% no-repeat padding-box;
             opacity: 1;
             width: 100%;
@@ -108,11 +108,11 @@
             margin: 0px 15px;
         }
         .btn-person_link {
-            color: #fff;
+            color: $jmWhiteColor;
             float: right;
             font-size: 16px;
             text-decoration: none;
-            font-family: 'JMSansRegular';
+            font-family: $jmFont;
         }
     }
     @media (min-width: 576px) and (max-width: 767.98px) {
@@ -140,7 +140,7 @@
             padding: 0px 15px;
         }
         .btn-person_link {
-            color: #fff;
+            color: $jmWhiteColor;
             font-size: 16px;
             text-decoration: none;
         }
@@ -151,7 +151,7 @@
         }
         .btn__person {
             border-color: #1E22AA;
-            color: #fff;
+            color: $jmWhiteColor;
             background: #1E22AA 0% 0% no-repeat padding-box;
             opacity: 1;
             width: 100%;

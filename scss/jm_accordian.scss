@@ -3,7 +3,7 @@
 	color: $jmDarkCharcoalColor;
 	font-size: 40px;
 	line-height: 48px;
-	font-family: JMSansMedium;
+	font-family: $jmMediumFont;
 	margin: 0px;
 	padding-left: 40px;
 	text-align: left;
@@ -13,7 +13,7 @@
 	color: $jmGraniteGrayColor;
 	font-size: 24px;
 	line-height: 32px;
-	font-family: JMSansMedium;
+	font-family: $jmMediumFont;
 	margin: 0;
 	border-bottom: 1px solid #0000001a;
 	cursor: pointer;
@@ -34,7 +34,7 @@
 		font-size: 18px;
 		line-height: 27px;
 		color: $jmDarkCharcoalColor;
-		font-family: JMSansRegular;
+		font-family: $jmFont;
 		margin-bottom: 36px;
 	}
 }

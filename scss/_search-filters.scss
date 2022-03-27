@@ -13,7 +13,7 @@
 		outline: none;
 		padding: 10px 15px;
 		background: rgba(30, 34, 170, 0.12);
-		font: 20px/26px var(--jm-medium-font);
+		font: 20px/26px $jmMediumFont;
 		letter-spacing: 0px;
 		color: var(--filter-select-text-color);
 		display: inline-flex;
@@ -28,7 +28,7 @@
 	}
 	.explore__filtertext {
 		padding-bottom: 15px;
-		font: 20px/32px var(--jm-font);
+		font: 20px/32px $jmFont;
 		letter-spacing: 0px;
 		color: var(--filter-heading-color);
 		border-bottom: 1px solid var(--explore-border-color);
@@ -45,7 +45,7 @@
 		border-bottom: none;
 	}
 	.explore__apptext {
-		font: 24px/32px var(--jm-bold-font);
+		font: 24px/32px $jmBoldFont;
 		letter-spacing: 0px;
 		color: var(--filter-category-color);
 		display: flex;
@@ -78,7 +78,7 @@
 	.explore__label {
 		margin-left: 35px;
    		margin-bottom: 0;
-		font: 16px/26px var(--jm-medium-font);
+		font: 16px/26px $jmMediumFont;
 		letter-spacing: 0px;
 		color: var(--filter-heading-color);
 		word-break: break-all;
@@ -148,7 +148,7 @@
 			position: fixed;
 			z-index: 9;
 			width: 100%;
-			background: var(--white-color);
+			background: $jmWhiteColor;
 			height: 100%;
 			padding-top: 60px;
 			left: 0;
@@ -162,9 +162,9 @@
 		.explore__filtertext {
 			padding: 15px 20px;
 			background: var(--filter-select-text-color);
-			color: var(--white-color);
+			color: $jmWhiteColor;
 			font-size: 16px;
-			font-family: var(--jm-medium-font);
+			font-family: $jmMediumFont;
 		}
 		.explore__filterback,
 		.explore__filterclear {
@@ -188,7 +188,7 @@
 			background: var(--box-bg-color);
 		}
 		.explore__apptext {
-			font: 14px/18px var(--jm-font);
+			font: 14px/18px $jmFont;
 		}
 		.explore__accordian {
 			position: absolute;
@@ -204,10 +204,10 @@
 			margin-top: 15px;
 		}
 		.explore__label {
-			font: 14px/16px var(--jm-font);
+			font: 14px/16px $jmFont;
 		}
 		.explore__expanded.explore__applications {
-			background: var(--white-color);
+			background: $jmWhiteColor;
 		}
 		.explore__checkboxlabel {
 			top: 50%;

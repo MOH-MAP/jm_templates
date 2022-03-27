@@ -1,10 +1,10 @@
 .ejm__btn{
     padding: 20px;
     background: #1E22AA;
-    color: #fff!important;
+    color: $jmWhiteColor !important;
     opacity: 1!important;
     text-align: right;
-    font-family: JMSansMedium!important;
+    font-family: $jmMediumFont!important;
     font-size: 18px!important;
     line-height: 22px!important;
     align-items: center;
@@ -52,12 +52,12 @@
     margin-bottom: 35px;
 }
 .journal-content-article[data-analytics-asset-title='Panel-Block-energy-revolution'] .panel_block .panel_block-header h1{
-    text-shadow: 0px 0px 8px #000000;
+    text-shadow: $jmTextShadow;
     font-size: 48px;
     line-height: 60px;
     margin: 0;
-    color: #ffffff;
-    font-family: JMSansMedium;
+    color: $jmWhiteColor;
+    font-family: $jmMediumFont;
 }
 .journal-content-article[data-analytics-asset-title='Panel-Block-energy-revolution'] .panel_block .panel_block-header .col-sm-12:first-child{
     padding-right: 0;
@@ -82,7 +82,7 @@
     margin-bottom: 40px;
     font-size: 24px;
     line-height: 32px;
-    font-family: JMSansMedium;
+    font-family: $jmMediumFont;
     color: #666666;
 }
 .journal-content-article[data-analytics-asset-title='Panel-Block-energy-revolution'] .text-panel .text-panel-body p{
@@ -90,9 +90,9 @@
     opacity: 0.84;
     font-size: 18px;
     line-height: 27px;
-    font-family: JMSansRegular;
+    font-family: $jmFont;
     margin-top: 0;
-    color: #333333;
+    color: $jmDarkCharcoalColor;
 }
 .journal-content-article[data-analytics-asset-title='Panel-Block-energy-revolution']{
     position: relative;
@@ -126,14 +126,14 @@
     margin-bottom: 40px;
     font-size: 18px;
     line-height: 27px;
-    font-family: JMSansRegular;
+    font-family: $jmFont;
 }
 .journal-content-article[data-analytics-asset-title='Panel-Block-2'] .text-panel .text-panel-body p{
     letter-spacing: 0px;
     opacity: 1;
     font-size: 18px;
     line-height: 27px;
-    font-family: JMSansRegular;
+    font-family: $jmFont;
     margin-top: 0;
 }
 .journal-content-article[data-analytics-asset-title='Panel-Block-2']{
@@ -166,11 +166,11 @@
 
 
 .journal-content-article[data-analytics-asset-title='Fuel-Cell-Contact'] .person-heading_align {
-    font-family: JMSansMedium;
+    font-family: $jmMediumFont;
     font-size: 36px;
     line-height: 32px;
     letter-spacing: 0px;
-    color: #333333;
+    color: $jmDarkCharcoalColor;
     padding-left: 60px;
     margin-left: 0;
 }
@@ -192,13 +192,13 @@
     margin-bottom: 0;
 }
 .journal-content-article[data-analytics-asset-title='Fuel-Cell-Contact'] h6.person_card-text{
-    color: #333333;
+    color: $jmDarkCharcoalColor;
     opacity: 0.8;
     margin-bottom: 0px;
     padding-bottom: 15px;
 }
 .journal-content-article[data-analytics-asset-title='Fuel-Cell-Contact'] h6.person_card-number{
-    color: #333333;
+    color: $jmDarkCharcoalColor;
     opacity: 0.8;
     margin-bottom: 0;
     padding: 0 0 30px;
@@ -213,7 +213,7 @@
     display: flex;
     justify-content: right;
     align-items: center;
-    font-family: JMSansMedium!important;
+    font-family: $jmMediumFont!important;
     font-size: 18px!important;
     line-height: 22px!important;
 }
@@ -271,7 +271,7 @@
     background: rgba(51, 51, 51, 0.5);
 }
 .breadcrumb-link{
-    font: 14px/28px JMSansRegular;
+    font: 14px/28px $jmFont;
     letter-spacing: 0px;
     color: #F2F2F2;
     opacity: 0.8;
@@ -294,21 +294,21 @@
     text-decoration: none;
 }
 .breadcrumb-text-truncate{
-    font: 14px/28px JMSansRegular;
+    font: 14px/28px $jmFont;
     letter-spacing: 0px;
-    color: #ffffff;
+    color: $jmWhiteColor;
 }
 .journal-content-article[data-analytics-asset-title='Fuel-cells'] .panels-hero-para{
-    font: 18px/28px JMSansRegular;
+    font: 18px/28px $jmFont;
     letter-spacing: 0px;
-    color: #FFFFFF;
-    text-shadow: 0px 0px 8px #000000;
+    color: $jmWhiteColor;
+    text-shadow: $jmTextShadow;
     opacity: 1;
     margin-bottom: 40px;
 }
 .journal-content-article[data-analytics-asset-title='Fuel-cells'] .panels-hero-header h1{
     line-height: 38px;
-    text-shadow: 0px 0px 8px #000000;
+    text-shadow: $jmTextShadow;
     margin-bottom: 35px;
 }
 .journal-content-article[data-analytics-asset-title='Fuel-cells'] .banner{
@@ -321,25 +321,25 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 20px 30px;
     background: #cccccc4d;
-    font-family: JMSansRegular;
+    font-family: $jmFont;
     font-size: 20px;
     line-height: 38px;
     color: #666666;
     vertical-align: top;
 }
 .journal-content-article[data-analytics-asset-title='Fuel-processor-catalysts'] table tr:first-child td{
-    background: #ffffff;
+    background: $jmWhiteColor;
     padding: 15px 30px;
-    color: #333333;
+    color: $jmDarkCharcoalColor;
     border-top: 0;
 }
 .journal-content-article[data-analytics-asset-title='Fuel-processor-catalysts'] table td strong{
-    font-family: JMSansMedium;
+    font-family: $jmMediumFont;
 }
 .journal-content-article[data-analytics-asset-title='Fuel-processor-catalysts'] table tr td:first-child{
     border-left: 0;
-    background: #ffffff;
-    color: #333333;
+    background: $jmWhiteColor;
+    color: $jmDarkCharcoalColor;
 }
 .journal-content-article[data-analytics-asset-title='Fuel-processor-catalysts'] table tr td:last-child{
     border-right: 0;
@@ -349,11 +349,11 @@
 }
 
 .journal-content-article[data-analytics-asset-title='Fuel-Catalysts'] .person-heading_align {
-    font-family: JMSansMedium;
+    font-family: $jmMediumFont;
     font-size: 36px;
     line-height: 32px;
     letter-spacing: 0px;
-    color: #333333;
+    color: $jmDarkCharcoalColor;
     padding-left: 60px;
     margin-left: 0;
 }
@@ -376,13 +376,13 @@
     margin-bottom: 0;
 }
 .journal-content-article[data-analytics-asset-title='Fuel-Catalysts'] h6.person_card-text{
-    color: #333333;
+    color: $jmDarkCharcoalColor;
     opacity: 0.8;
     margin-bottom: 0px;
     padding-bottom: 15px;
 }
 .journal-content-article[data-analytics-asset-title='Fuel-Catalysts'] h6.person_card-number{
-    color: #333333;
+    color: $jmDarkCharcoalColor;
     opacity: 0.8;
     margin-bottom: 0;
     padding: 0 0 30px;
@@ -397,7 +397,7 @@
     display: flex;
     justify-content: right;
     align-items: center;
-    font-family: JMSansMedium!important;
+    font-family: $jmMediumFont!important;
     font-size: 18px!important;
     line-height: 22px!important;
 }
@@ -406,11 +406,11 @@
     gap: 20px;
 }
 .journal-content-article[data-analytics-asset-title='Fuel-Catalysts'] .person-subheading_align{
-    font-family: JMSansMedium;
+    font-family: $jmMediumFont;
     font-size: 16px;
     line-height: 28px;
     letter-spacing: 0px;
-    color: #333333;
+    color: $jmDarkCharcoalColor;
     padding-left: 60px;
     margin-left: 0;
     margin-top: 15px;
@@ -464,9 +464,9 @@
     text-align: left;
     font-size: 16px;
     line-height: 22px;
-    font-family: JMSansRegular;
+    font-family: $jmFont;
     letter-spacing: 0;
-    color: #fff;
+    color: $jmWhiteColor;
     text-transform: capitalize;
     opacity: .84;
     margin: 0 0 5px;
@@ -474,16 +474,16 @@
 .journal-content-article[data-analytics-asset-title='RefiningVideo Block'] .jm-image-text-heading{
     font-size: 36px;
     line-height: 40px;
-    font-family: JMSansMedium;
-    color: #fff;
+    font-family: $jmMediumFont;
+    color: $jmWhiteColor;
 }
 
 .journal-content-article[data-analytics-asset-title='PGM Refining'] .person-heading_align {
-    font-family: JMSansMedium;
+    font-family: $jmMediumFont;
     font-size: 36px;
     line-height: 32px;
     letter-spacing: 0px;
-    color: #333333;
+    color: $jmDarkCharcoalColor;
     padding-left: 60px;
     margin-left: 0;
 }
@@ -506,13 +506,13 @@
     margin-bottom: 0;
 }
 .journal-content-article[data-analytics-asset-title='PGM Refining'] h6.person_card-text{
-    color: #333333;
+    color: $jmDarkCharcoalColor;
     opacity: 0.8;
     margin-bottom: 0px;
     padding-bottom: 15px;
 }
 .journal-content-article[data-analytics-asset-title='PGM Refining'] h6.person_card-number{
-    color: #333333;
+    color: $jmDarkCharcoalColor;
     opacity: 0.8;
     margin-bottom: 0;
     padding: 0 0 30px;
@@ -527,7 +527,7 @@
     display: flex;
     justify-content: right;
     align-items: center;
-    font-family: JMSansMedium!important;
+    font-family: $jmMediumFont!important;
     font-size: 18px!important;
     line-height: 22px!important;
 }
@@ -559,8 +559,8 @@
 	font-size: 48px;
 	line-height: 60px;
 	margin: 0;
-	color: #fff;
-	font-family: JMSansMedium;
+	color: $jmWhiteColor;
+	font-family: $jmMediumFont;
 }
 
 .cta-block_inner {

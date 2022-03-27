@@ -20,7 +20,7 @@
 }
 /** text content css: start*/
 .promoblck__title {
-  font-family: JMSansMedium;
+  font-family: $jmMediumFont;
   font-size: 45px;
   line-height: 60px;
   color: $jmDarkCharcoalColor;
@@ -29,7 +29,7 @@
   margin-top: 0;
 }
 .promoblck__heading {
-  font-family: JMSansMedium;
+  font-family: $jmMediumFont;
   font-size: 21px;
   line-height: 26px;
   color: $jmGraniteGrayColor;
@@ -39,7 +39,7 @@
   margin-top: 0;
 }
 .promoblck__para {
-  font-family: JMSansRegular;
+  font-family: $jmFont;
   font-size: 17px;
   line-height: 28px;
   color: $jmDarkCharcoalColor;
@@ -72,7 +72,7 @@
 .invte__heading {
   font-size: 34px;
   line-height: 48px;
-  font-family: JMSansMedium;
+  font-family: $jmMediumFont;
   color: $jmDarkCharcoalColor;
   text-align: left;
   margin-bottom: 40px;

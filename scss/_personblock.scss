@@ -11,7 +11,7 @@
 }
 .btn__person {
   border-color: #1e22aa;
-  color: #fff;
+  color: $jmWhiteColor;
   background: #1e22aa 0% 0% no-repeat padding-box;
   opacity: 1;
   width: 100%;
@@ -21,11 +21,11 @@
   border: 0px;
 }
 .btn-person_link {
-  color: #fff;
+  color: $jmWhiteColor;
   text-decoration: none;
 }
 .btn-person_link:hover {
-  color: #fff;
+  color: $jmWhiteColor;
   text-decoration: none;
 }
 
@@ -34,27 +34,27 @@
 }
 h4.person_card-title {
   font-size: 24px;
-  font-family: "JMSansMedium";
+  font-family: $jmMediumFont;
   letter-spacing: 0px;
-  color: #333333;
+  color: $jmDarkCharcoalColor;
   opacity: 1;
   padding: 6px 0px 2px 0px;
 }
 h6.person_card-text {
   text-align: left;
   letter-spacing: 0px;
-  color: #333333;
+  color: $jmDarkCharcoalColor;
   opacity: 0.8;
-  font-family: "JMSansMedium";
+  font-family: $jmMediumFont;
   font-size: 16px;
   padding: 0px 0px 2px 0px;
 }
 h6.person_card-number {
   text-align: left;
   letter-spacing: 0px;
-  color: #333333;
+  color: $jmDarkCharcoalColor;
   opacity: 0.8;
-  font-family: "JMSansMedium";
+  font-family: $jmMediumFont;
   font-size: 16px;
   padding: 2px 0px;
 }

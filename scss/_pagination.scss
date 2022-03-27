@@ -1,13 +1,13 @@
 .jm_pagination {
   .pagination-results {
-    font: 16px/26px var(--jm-medium-font);
+    font: 16px/26px $jmMediumFont;
     color: $jmDarkCharcoalColor;
     padding: 0 40px;
     margin-right: 0;
   }
   .pagination-items-per-page a.dropdown-toggle.page-link {
     border: none;
-    font: 16px/26px var(--jm-font);
+    font: 16px/26px $jmFont;
     color: $jmDarkCharcoalColor;
     padding-right: 0;
     padding-left: 0;
@@ -28,7 +28,7 @@
     content: "";
     left: 0;
     top: 0;
-    background: #ffffff;
+    background: $jmWhiteColor;
   }
   .pagination-items-per-page a.dropdown-toggle.page-link span:last-child {
     position: relative;
@@ -44,7 +44,7 @@
   .page-link {
     border: 0;
     background-color: #fafafa;
-    font: 16px/26px var(--jm-font);
+    font: 16px/26px $jmFont;
     color: #666666e5;
   }
   .page-item.active .page-link {

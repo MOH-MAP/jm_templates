@@ -2,10 +2,10 @@
   text-align: left;
   font-size: 53px;
   line-height: 60px;
-  font-family: JMSansMedium;
+  font-family: $jmMediumFont;
   letter-spacing: 0px;
   color: $jmWhiteColor;
-  text-shadow: 0px 0px 8px #000000;
+  text-shadow: $jmTextShadow;
   opacity: 1;
   margin-top: 74px;
   margin-bottom: 44px;
@@ -21,7 +21,7 @@
   justify-content: flex-end;
   text-align: right;
   font-size: 18px;
-  font-family: JMSansMedium;
+  font-family: $jmMediumFont;
   line-height: 22px;
   letter-spacing: 0px;
   text-transform: uppercase;
@@ -75,7 +75,7 @@
   justify-content: flex-end;
   text-align: right;
   font-size: 18px;
-  font-family: JMSansMedium;
+  font-family: $jmMediumFont;
   line-height: 22px;
   letter-spacing: 0px;
   text-transform: uppercase;
@@ -87,10 +87,10 @@
   text-align: left;
   font-size: 52px;
   line-height: 60px;
-  font-family: JMSansMedium;
+  font-family: $jmMediumFont;
   letter-spacing: 0px;
   color: $jmWhiteColor;
-  text-shadow: 0px 0px 8px #000000;
+  text-shadow: $jmTextShadow;
   opacity: 1;
   margin-top: 75px;
   margin-bottom: 34px;
@@ -99,10 +99,10 @@
   text-align: left;
   font-size: 18px;
   line-height: 28px;
-  font-family: JMSansRegular;
+  font-family: $jmFont;
   letter-spacing: 0px;
   color: $jmWhiteColor;
-  text-shadow: 0px 0px 8px #000000;
+  text-shadow: $jmTextShadow;
   opacity: 1;
 }
 

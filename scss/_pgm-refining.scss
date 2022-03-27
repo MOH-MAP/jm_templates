@@ -17,9 +17,9 @@
 		line-height: 46px;
 		text-align: left;
 		letter-spacing: 0px;
-		color: #333333;
+		color: $jmDarkCharcoalColor;
 		opacity: 1;
-		font-family: JMSansMedium;
+		font-family: $jmMediumFont;
 	}
 }
 .jm-richtext-para {
@@ -28,7 +28,7 @@
 		line-height: 27px;
 		text-align: left;
 		letter-spacing: 0px;
-		color: #333333;
+		color: $jmDarkCharcoalColor;
 		opacity: 0.84;
 	}
 }
@@ -55,20 +55,20 @@
 	left: calc(100% - 3.75rem);
 }
 .jm-product-info-container {
-	color: #ffffff;
+	color: $jmWhiteColor;
 	padding: 2%;
 	p {
 		font-size: 16px;
 		text-align: left;
 		letter-spacing: 0px;
-		color: #ffffff;
+		color: $jmWhiteColor;
 		opacity: 0.8;
-		font-family: JMSansRegular;
+		font-family: $jmFont;
 	}
 	ol {
 		>li {
 			>menu {
-				color: #ffffff;
+				color: $jmWhiteColor;
 			}
 		}
 	}
@@ -84,15 +84,15 @@
 		display: inline-block;
 		text-transform: uppercase;
 		font-size: 15px;
-		font-family: JMSansMedium;
+		font-family: $jmMediumFont;
 		transform: rotate(89deg) translateY(1.4rem) translateX(9.9375rem);
 		text-align: left;
 		letter-spacing: 0px;
-		color: #ffffff;
+		color: $jmWhiteColor;
 		opacity: 0.8;
 		&:after {
 			content: "";
-			color: #ffffff;
+			color: $jmWhiteColor;
 			font-weight: bold;
 			float: right;
 			margin-left: 5px;
@@ -109,15 +109,15 @@
 	.jm-button-block-rctx {
 		span {
 			background-color: #1e22aa;
-			color: #ffffff;
+			color: $jmWhiteColor;
 			display: inline-block;
 			text-transform: uppercase;
 			font-size: 18px;
-			font-family: JMSansMedium;
+			font-family: $jmMediumFont;
 			transform: rotate(90deg) translateY(1.625rem) translateX(9.9375rem);
 			&:after {
 				content: "";
-				color: #ffffff;
+				color: $jmWhiteColor;
 				font-weight: bold;
 				float: right;
 				margin-left: 5px;
@@ -152,16 +152,16 @@
 	font-size: 16px;
 	text-align: left;
 	letter-spacing: 0px;
-	color: #ffffff;
+	color: $jmWhiteColor;
 	opacity: 0.8;
-	font-family: JMSansRegular;
+	font-family: $jmFont;
 	>ul {
 		>li {
 			padding: 2%;
 			margin: 2%;
 			list-style-type: decimal;
 			>a {
-				color: #ffffff;
+				color: $jmWhiteColor;
 				text-decoration: none;
 			}
 		}
@@ -216,11 +216,11 @@
 		>p {
 			font-size: 14px;
 			line-height: 20px;
-			font-family: JMSansRegular;
+			font-family: $jmFont;
 		}
 	}
 	.jm-product-info-container {
-		color: #ffffff;
+		color: $jmWhiteColor;
 		padding: 2%;
 		margin-top: 5%;
 		p {
@@ -238,7 +238,7 @@
 				padding: 2%;
 				margin: 2%;
 				>a {
-					color: #ffffff;
+					color: $jmWhiteColor;
 					text-decoration: none;
 				}
 			}
@@ -282,11 +282,11 @@
 			display: inline-block;
 			text-transform: uppercase;
 			font-size: 16px;
-			font-family: JMSansMedium;
+			font-family: $jmMediumFont;
 			transform: rotate(90deg) translateY(0.625rem) translateX(9.9375rem);
 			text-align: left;
 			letter-spacing: 0px;
-			color: #ffffff;
+			color: $jmWhiteColor;
 			opacity: 0.8;
 			&:after {
 				transform: rotate(90deg) translateY(6.625rem) translateX(0.1rem);
@@ -316,15 +316,15 @@
 			display: inline-block;
 			text-transform: uppercase;
 			font-size: 16px;
-			font-family: JMSansMedium;
+			font-family: $jmMediumFont;
 			transform: rotate(89deg) translateY(2.625rem) translateX(12.9375rem);
 			text-align: left;
 			letter-spacing: 0px;
-			color: #ffffff;
+			color: $jmWhiteColor;
 			opacity: 0.8;
 			&:after {
 				content: "";
-				color: #ffffff;
+				color: $jmWhiteColor;
 				font-weight: bold;
 				float: right;
 				margin-left: 5px;
@@ -341,15 +341,15 @@
 		.jm-button-block-rctx {
 			span {
 				background-color: #1e22aa;
-				color: #ffffff;
+				color: $jmWhiteColor;
 				display: inline-block;
 				text-transform: uppercase;
 				font-size: 20px;
-				font-family: JMSansMedium;
+				font-family: $jmMediumFont;
 				transform: rotate(90deg) translateY(1.625rem) translateX(13.9375rem);
 				&:after {
 					content: "";
-					color: #ffffff;
+					color: $jmWhiteColor;
 					font-weight: bold;
 					float: right;
 					margin-left: 5px;

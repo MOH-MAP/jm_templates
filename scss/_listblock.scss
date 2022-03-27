@@ -1,5 +1,5 @@
 h1.list-block_title {
-    font-family: JMSansMedium;
+    font-family: $jmMediumFont;
     padding: 10px 0px 30px 0px;
     font-size: 34px;
     letter-spacing: 0px;
@@ -25,14 +25,14 @@ h1.list-block_title {
     opacity: 1;
     font-size: 14px;
     line-height: 16px;
-    font-family: 'JMSansRegular';
+    font-family: $jmFont;
     text-align: left;
 }
 .product-heading {
         font-size: 25px;
     line-height: 1.2em;
     font-weight: 500;
-    font-family: JMSansRegular;
+    font-family: $jmFont;
     color: $jmDarkCharcoalColor;
 opacity: 1;
     margin-top: 10px;
@@ -45,7 +45,7 @@ opacity: 1;
     opacity: 1;
     font-size: 18px;
     line-height: 22px;
-    font-family: 'JMSansMedium';
+    font-family: $jmMediumFont;
     margin-top: 21px;
 }
 .readmore-icon {
@@ -57,7 +57,7 @@ opacity: 1;
     margin-top: -37px;
 }
 .list-block_container {
-    background: #fff;
+    background: $jmWhiteColor;
     border-color: transparent;
     border-style: solid;
     border-width: 1px 1px 1px 1px;

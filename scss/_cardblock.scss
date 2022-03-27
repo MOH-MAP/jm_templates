@@ -2,7 +2,7 @@
 		text-decoration: none;
 		text-decoration-color: #1E22AA;
 		color: #1E22AA;
-		font: 18px/22px JMSansMedium;
+		font: 18px/22px $jmMediumFont;
 		display: flex;
 	}
 		
@@ -10,7 +10,7 @@
 		text-decoration: none;
 		text-decoration-color: #1E22AA;
 		color: #1E22AA;
-		font: 18px/22px JMSansMedium;
+		font: 18px/22px $jmMediumFont;
 		display: flex;
 	}
 
@@ -31,7 +31,7 @@
   }
 .list-link {
   color: $jmEgyptianBlueColor;
-  font: 18px/22px JMSansMedium;
+  font: 18px/22px $jmMediumFont;
   text-decoration: none;
   text-decoration-color: $jmEgyptianBlueColor;
   display: flex;
@@ -43,7 +43,7 @@
 text-decoration: none;
     text-decoration-color: #1E22AA;
     color: #1E22AA;
-    font: 18px/22px JMSansMedium;
+    font: 18px/22px $jmMediumFont;
     display: flex;
     float: right;
     margin-top: -35px;
@@ -75,27 +75,27 @@ flex: 1 1 auto;
     text-align: left;
     font-size: 14px;
     letter-spacing: 0px;
-    color: #333333;
+    color: $jmDarkCharcoalColor;
     text-transform: capitalize;
     opacity: 1;
-    font-family: JMSansRegular;
+    font-family: $jmFont;
 }
 h2.cardblock__card-text.wrap-three {
     font-size: 25px;
     line-height: 1.2em;
     font-weight: 500;
-    font-family: JMSansRegular;
+    font-family: $jmFont;
     color: $jmDarkCharcoalColor;
     letter-spacing: 0px;
     opacity: 1;
 }
 h1.cardblock__title1 {
-    font-family: JMSansMedium;
+    font-family: $jmMediumFont;
     padding: 20px 0px 30px 0px;
     font-size: 34px;
     letter-spacing: 0px;
-color: #333333;
-opacity: 1;
+    color: $jmDarkCharcoalColor;
+    opacity: 1;
 }
 .cardblock_container-fluid a {
     text-decoration: none;
@@ -127,17 +127,17 @@ opacity: 1;
     text-align: left;
     font-size:14px;
     letter-spacing: 0px;
-    color: #333333;
+    color: $jmDarkCharcoalColor;
     text-transform: capitalize;
     opacity: 1;
-    font-family: JMSansRegular;
+    font-family: $jmFont;
 }
 .cardblock_section_1 .cardblock .cardblock__body .cardblock__card-text.wrap-three{
     font-size: 25px;
     line-height: 1.2em;
     font-weight: 500;
-     font-family: JMSansRegular; 
-    color: #333333;
+     font-family: $jmFont; 
+    color: $jmDarkCharcoalColor;
     letter-spacing: 0px;
 opacity: 1;
 }
@@ -146,27 +146,21 @@ opacity: 1;
     margin-bottom: 20px;
     margin-right: 40%;
 }
-
-
-
-
-    h1.cardblock_heading {
-    font-family: JMSansMedium;
+h1.cardblock_heading {
+    font-family: $jmMediumFont;
     padding: 20px 0px 30px 0px;
     font-size: 34px;
     letter-spacing: 0px;
-color: #333333;
-opacity: 1;
+    color: $jmDarkCharcoalColor;
+    opacity: 1;
 }
 .cardblock__title {
-text-align: left;
-font-size:14px;
-letter-spacing: 0px;
-color: #333333;
-opacity: 1;
+    text-align: left;
+    font-size:14px;
+    letter-spacing: 0px;
+    color: $jmDarkCharcoalColor;
+    opacity: 1;
 }
-
-
 .cardblock_section2 .body {
     flex: 1 1 auto;
     min-height: 1px;
@@ -180,8 +174,8 @@ h2.cardblock__card-text.wrap-three {
     font-size: 25px;
     line-height: 1.2em;
     font-weight: 500;
-    font-family: JMSansRegular;
-    color: #333333;
+    font-family: $jmFont;
+    color: $jmDarkCharcoalColor;
     letter-spacing: 0px;
     opacity: 1;
 }
@@ -189,20 +183,20 @@ h2.cardblock__card-text.wrap-three {
     text-align: left;
     font-size:14px;
     letter-spacing: 0px;
-    color: #333333;
+    color: $jmDarkCharcoalColor;
     text-transform: capitalize;
     opacity: 1;
-    font-family: JMSansRegular;
+    font-family: $jmFont;
 }
 .cardblock_section .cardblock .cardblock__body .cardblock__card-text.wrap-three{
     font-size: 25px;
     line-height: 1.2em;
     font-weight: 500;
-    font-family: JMSansRegular; 
-    color: #333333;
+    font-family: $jmFont; 
+    color: $jmDarkCharcoalColor;
 }
 .cardblock_section .cardblock .cardblock__body{
-flex: 1 1 auto;
+    flex: 1 1 auto;
     min-height: 1px;
     padding-bottom: 0.99rem;
     padding-left: 1.25rem;
@@ -226,7 +220,7 @@ flex: 1 1 auto;
     text-decoration: none;
     text-decoration-color: #1E22AA;
     color: #1E22AA;
-    font: 17px/22px JMSansMedium;
+    font: 17px/22px $jmMediumFont;
     display: flex;
     margin-top:0px;
 }
@@ -249,7 +243,7 @@ flex: 1 1 auto;
     padding: 0rem 2rem;
 }
 h1.cardblock_heading {
-    font-family: JMSansMedium;
+    font-family: $jmMediumFont;
     padding: 25px 0px 20px 0px;
     font-size: 30px;
 }
@@ -257,7 +251,7 @@ h1.cardblock_heading {
     font-size: 22px;
     line-height: 1.2em;
     font-weight: 500;
-    font-family: JMSansRegular;
+    font-family: $jmFont;
     color: $jmDarkCharcoalColor;
   }
 
@@ -265,7 +259,7 @@ h1.cardblock_heading {
     font-size: 22px;
     line-height: 1.2em;
     font-weight: 500;
-    font-family: JMSansRegular;
+    font-family: $jmFont;
     color: $jmDarkCharcoalColor;
     letter-spacing: 0px;
     opacity: 1;
@@ -282,7 +276,7 @@ h1.cardblock_heading {
     margin-right: 30%;
 }
 h1.cardblock__title1 {
-    font-family: JMSansMedium;
+    font-family: $jmMediumFont;
     padding: 0px 0px 30px 0px;
     font-size: 30px;
     letter-spacing: 0px;
@@ -293,7 +287,7 @@ h1.cardblock__title1 {
     font-size: 22px;
     line-height: 1.2em;
     font-weight: 500;
-    font-family: JMSansRegular;
+    font-family: $jmFont;
     color: $jmDarkCharcoalColor;
     letter-spacing: 0px;
     opacity: 1;
@@ -336,7 +330,7 @@ margin:10px;
     text-decoration: none;
     text-decoration-color: $jmEgyptianBlueColor;
     color: $jmEgyptianBlueColor;
-    font: 17px/22px JMSansMedium;
+    font: 17px/22px $jmMediumFont;
     display: flex;
     margin-top: 0px;
     float: right;

@@ -24,7 +24,7 @@ li {
   visibility: hidden;
 }
 .main-nav {
-  background-color: var(--jmWhite-color);
+  background-color: $jmWhiteColor;
   padding: 35px 0px;
 }
 .jmlogo__img {
@@ -54,13 +54,13 @@ li {
   border-bottom: solid 3px var(--jmEgyptianBlue-color);
 
   &:hover {
-    border-bottom: 3px solid var(--jmWhite-color);
+    border-bottom: 3px solid $jmWhiteColor;
     transition: 0.3s ease-out;
     background-color: var(--jmOceanBlue-color);
     opacity: 1;
   }
   a {
-    font-family: JMSansMedium;
+    font-family: $jmMediumFont;
     font-size: 14px;
     line-height: 30px;
     color: var(--jmCrayola-color);
@@ -68,7 +68,7 @@ li {
 }
 
 .jmheader__navlist a.header__menu:hover {
-  color: var(--jmWhite-color) !important;
+  color: $jmWhiteColor !important;
 }
 .jmheader__navlist .child-header:nth-last-child(1),
 .child-header:nth-last-child(2),
@@ -111,7 +111,7 @@ ul.child-menu {
   margin-top: 20px;
   left: 0;
   width: 100%;
-  background-color: var(--jmWhite-color);
+  background-color: $jmWhiteColor;
   padding: 20px 40px 40px 40px;
   z-index: 1;
 }
@@ -121,10 +121,10 @@ a.nav-child-cs {
   font-weight: bold;
 }
 a.sub-child {
-  color: var(--jmDarkCharcoal-color);
+  color: $jmDarkCharcoalColor;
   font-size: 14px;
   line-height: 30px;
-  font-family: JMSansRegular;
+  font-family: $jmFont;
 }
 .header__menu {
   color: var(--jmCrayola-color) !important;
@@ -133,17 +133,17 @@ a.sub-child {
 .child-menu {
   li {
     flex: 0 0 25%;
-    color: var(--jmDarkCharcoal-color) !important;
-    font-family: JMSansMedium;
+    color: $jmDarkCharcoalColor !important;
+    font-family: $jmMediumFont;
     font-size: 16px;
     line-height: 24px;
   }
 
   a {
-    color: var(--jmDarkCharcoal-color) !important;
+    color: $jmDarkCharcoalColor !important;
     font-size: 14px;
     line-height: 30px;
-    font-family: JMSansRegular;
+    font-family: $jmFont;
     opacity: 0.6;
 
     &:hover {
@@ -165,10 +165,10 @@ a.sub-child {
     border: none;
     align-items: end;
     padding: 20px 40px;
-    color: var(--jmWhite-color);
+    color: $jmWhiteColor;
     font-size: 16px;
     line-height: 21px;
-    font-family: JMSansMedium;
+    font-family: $jmMediumFont;
     font-weight: normal;
     display: flex;
   }
@@ -272,7 +272,7 @@ iframe {
 .video-close-icon {
   color: #1e22aa;
   font-size: 18px;
-  font-family: JMSansMedium;
+  font-family: $jmMediumFont;
 }
 .modal-footer {
   background-color: #1e22aa;
@@ -302,19 +302,19 @@ iframe {
     margin-right: 4px;
     border-color: transparent;
     background-color: transparent;
-    border-color: 1px solid #ffffff;
+    border-color: 1px solid $jmWhiteColor;
   }
   .btn {
     border-radius: 0px;
     margin-right: 4px;
-    border-color: 1px solid #ffffff;
+    border-color: 1px solid $jmWhiteColor;
     background-color: transparent;
     opacity: 0.9;
   }
   .btn-primary {
     border-radius: 0px;
     margin-right: 4px;
-    color: #fff;
+    color: $jmWhiteColor;
     border-color: #0062cc;
     background-color: transparent;
   }

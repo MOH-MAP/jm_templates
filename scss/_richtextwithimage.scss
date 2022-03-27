@@ -32,24 +32,24 @@
   > p {
     font-size: 52px;
     line-height: 60px;
-    color: #ffffff;
-    font-family: JMSansMedium;
+    color: $jmWhiteColor;
+    font-family: $jmMediumFont;
   }
 }
 .flex-image-item-left {
   > .article-heading-left {
     font-size: 24px;
     line-height: 32px;
-    font-family: JMSansMedium;
-    color: #333333;
+    font-family: $jmMediumFont;
+    color: $jmDarkCharcoalColor;
   }
 }
 .article-content-innovation-improving {
   font-size: 15px;
   line-height: 22px;
-  color: #ffffff;
+  color: $jmWhiteColor;
   text-align: left;
-  font-family: JMSansMedium;
+  font-family: $jmMediumFont;
 }
 @media (max-width: 800px) {
   .flex-item-right-innovation {
@@ -66,16 +66,16 @@
     > p {
       font-size: 32px;
       line-height: 40px;
-      color: #ffffff;
-      font-family: JMSansMedium;
+      color: $jmWhiteColor;
+      font-family: $jmMediumFont;
     }
   }
   .article-content-innovation-improving {
     font-size: 15px;
     line-height: 22px;
-    color: #ffffff;
+    color: $jmWhiteColor;
     text-align: left;
-    font-family: JMSansMedium;
+    font-family: $jmMediumFont;
     margin-top: 20px;
   }
 }
@@ -123,17 +123,17 @@
 .article-heading-left {
   font-size: 40px;
   line-height: 42px;
-  font-family: JMSansMedium;
-  color: #333333;
+  font-family: $jmMediumFont;
+  color: $jmDarkCharcoalColor;
   opacity: 1;
 }
 
 .article-content-left {
   font-size: 16px;
   line-height: 25px;
-  color: #333333;
+  color: $jmDarkCharcoalColor;
   text-align: left;
-  font-family: JMSansRegular;
+  font-family: $jmFont;
   margin-top: 20px;
   opacity: 0.84;
 }
@@ -181,16 +181,16 @@
 .second-article-heading-right {
   font-size: 34px;
   line-height: 42px;
-  font-family: JMSansMedium;
-  color: #333333;
+  font-family: $jmMediumFont;
+  color: $jmDarkCharcoalColor;
   opacity: 1;
 }
 .second-article-content-right {
   font-size: 16px;
   line-height: 25px;
-  color: #333333;
+  color: $jmDarkCharcoalColor;
   text-align: left;
-  font-family: JMSansRegular;
+  font-family: $jmFont;
   margin-top: 20px;
   opacity: 0.84;
 }
@@ -203,21 +203,21 @@
 }
 .panel-button-block {
   .btn {
-    color: #fff;
+    color: $jmWhiteColor;
     background-color: #1e22aa;
     border-color: #2e6da4;
     border-radius: 0;
     > a {
       padding: 10px 12px;
       border-radius: 0px;
-      font-family: JMSansMedium;
+      font-family: $jmMediumFont;
     }
   }
   margin-top: 2%;
 }
 .btn-primary {
   > a {
-    color: #fff;
+    color: $jmWhiteColor;
     background-color: #1e22aa;
     border-color: #2e6da4;
     border-radius: 0;
@@ -243,8 +243,8 @@
   .second-article-heading-right {
     font-size: 32px;
     line-height: 40px;
-    font-family: JMSansMedium;
-    color: #333333;
+    font-family: $jmMediumFont;
+    color: $jmDarkCharcoalColor;
   }
   .panel-button-block {
     > .btn {
@@ -269,8 +269,8 @@
   > .article-heading-left {
     font-size: 24px;
     line-height: 32px;
-    font-family: JMSansMedium;
-    color: #333333;
+    font-family: $jmMediumFont;
+    color: $jmDarkCharcoalColor;
   }
 }
 .flex-image-item-right {
@@ -292,34 +292,34 @@
   > p {
     font-size: 46px;
     line-height: 54px;
-    color: #ffffff;
-    font-family: JMSansMedium;
+    color: $jmWhiteColor;
+    font-family: $jmMediumFont;
   }
 }
 .article-content-left-panel {
   font-size: 18px;
   line-height: 27px;
-  color: #333333;
+  color: $jmDarkCharcoalColor;
   text-align: left;
-  font-family: JMSansRegular;
+  font-family: $jmFont;
   margin-top: 40px;
   opacity: 0.84;
 }
 .custom-btn-block {
   a {
     .btn-primary {
-      color: #fff;
+      color: $jmWhiteColor;
       background-color: #1e22aa;
-      border-color: #fff;
+      border-color: $jmWhiteColor;
       &:hover {
-        color: #fff;
+        color: $jmWhiteColor;
         background-color: #1e22aa;
-        border-color: #fff;
+        border-color: $jmWhiteColor;
       }
     }
     .btn {
       border-radius: 0px;
-      font-family: JMSansMedium;
+      font-family: $jmMediumFont;
     }
   }
 }
@@ -366,15 +366,15 @@
   > .article-heading-right {
     font-size: 24px;
     line-height: 32px;
-    font-family: JMSansMedium;
-    color: #333333;
+    font-family: $jmMediumFont;
+    color: $jmDarkCharcoalColor;
   }
   > .article-content-right {
     font-size: 18px;
     line-height: 27px;
-    color: #333333;
+    color: $jmDarkCharcoalColor;
     text-align: left;
-    font-family: JMSansRegular;
+    font-family: $jmFont;
     margin-top: 40px;
     opacity: 0.84;
   }
@@ -385,8 +385,8 @@
   > p {
     font-size: 46px;
     line-height: 54px;
-    color: #ffffff;
-    font-family: JMSansMedium;
+    color: $jmWhiteColor;
+    font-family: $jmMediumFont;
   }
 }
 .article-image-container-seven {
@@ -404,18 +404,18 @@
 .custom-btn-block {
   a {
     .btn-primary {
-      color: #fff;
+      color: $jmWhiteColor;
       background-color: #1e22aa;
-      border-color: #fff;
+      border-color: $jmWhiteColor;
       &:hover {
-        color: #fff;
+        color: $jmWhiteColor;
         background-color: #1e22aa;
-        border-color: #fff;
+        border-color: $jmWhiteColor;
       }
     }
     .btn {
       border-radius: 0px;
-      font-family: JMSansMedium;
+      font-family: $jmMediumFont;
     }
   }
 }
@@ -425,9 +425,9 @@
     > .article-content-right {
       font-size: 15px;
       line-height: 22px;
-      color: #333333;
+      color: $jmDarkCharcoalColor;
       text-align: left;
-      font-family: JMSansRegular;
+      font-family: $jmFont;
       margin-top: 10px;
       opacity: 0.84;
     }
@@ -467,8 +467,8 @@
 .third-article-heading {
   font-size: 34px;
   line-height: 42px;
-  font-family: JMSansMedium;
-  color: #333333;
+  font-family: $jmMediumFont;
+  color: $jmDarkCharcoalColor;
   text-align: center;
   padding: 1% 5% 1% 5%;
   margin: 0 12% 0 12%;
@@ -476,9 +476,9 @@
 .third-article-content {
   font-size: 16px;
   line-height: 25px;
-  color: #333333;
+  color: $jmDarkCharcoalColor;
   text-align: left;
-  font-family: JMSansRegular;
+  font-family: $jmFont;
   margin-top: 20px;
   opacity: 0.84;
 }

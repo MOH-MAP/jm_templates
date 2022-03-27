@@ -8,10 +8,10 @@
 #breadcrumbs .breadcrumb{
     border-radius: 0;
     margin-bottom: 0;
-    background: #33333380;
+    background: $jmDarkCharcoalColorOpc5;
 }
 .breadcrumb-link{
-    font: 14px/28px JMSansRegular;
+    font: 14px/28px $jmFont;
     letter-spacing: 0px;
     color: #F2F2F2;
     opacity: 0.8;
@@ -21,7 +21,7 @@
     text-decoration: none;
 }
 .breadcrumb-text-truncate{
-    font: 14px/28px JMSansRegular;
+    font: 14px/28px $jmFont;
     letter-spacing: 0px;
-    color: #ffffff;
+    color: $jmWhiteColor;
 }

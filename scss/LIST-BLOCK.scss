@@ -1,10 +1,10 @@
 .jmlist--block-temp {
     .jmlist--block-title {
-        font-family: JMSansMedium;
+        font-family: $jmMediumFont;
         padding: 30px 0px 30px 0px;
         font-size: 34px;
         letter-spacing: 0px;
-        color: #333333;
+        color: $jmDarkCharcoalColor;
         opacity: 1;
     }
     .jmlist--block-card {
@@ -21,20 +21,20 @@
     }
     .jmlist--block-card-title {
         letter-spacing: 0px;
-        color: #333333;
+        color: $jmDarkCharcoalColor;
         text-transform: capitalize;
         opacity: 1;
         font-size: 14px;
         line-height: 16px;
-        font-family: 'JMSansRegular';
+        font-family: $jmFont;
         text-align: left;
     }
     .jmlist--block-card-heading{
         font-size: 25px;
         line-height: 1.2em;
         font-weight: 500;
-        font-family: JMSansRegular;
-        color: #333333;
+        font-family: $jmFont;
+        color: $jmDarkCharcoalColor;
         margin-top: 10px;
         margin-bottom: 20px;
         margin-right: 25%;
@@ -44,9 +44,9 @@
         color: #1E22AA;
         opacity: 1;
         line-height: 22px;
-        font-family: 'JMSansMedium';
+        font-family: $jmMediumFont;
         margin-top: 20px;
-        font: 17px/22px JMSansMedium;
+        font: 17px/22px $jmMediumFont;
     }
     .jmlist--block-more-icon {
         background: url("../images/new__jm__images/blue-right-arrow.svg") 0 0 no-repeat transparent;

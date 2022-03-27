@@ -2,9 +2,9 @@
     text-align: left;
     font-size: 36px;
     line-height: 48px;
-    font-family: JMSansMedium;
+    font-family: $jmMediumFont;
     letter-spacing: 0px;
-    color: #333333;
+    color: $jmDarkCharcoalColor;
     margin-top: 92px;
     margin-bottom: 0;
     padding-bottom: 40px;
@@ -15,7 +15,7 @@
     text-align: left;
     font-size: 22px;
     line-height: 32px;
-    font-family: JMSansMedium;
+    font-family: $jmMediumFont;
     letter-spacing: 0px;
     color: #666666;
     opacity: 1;
@@ -24,7 +24,7 @@
     justify-content: space-between;
     text-transform: uppercase;
     cursor:pointer;
-    background-color:#fff;
+    background-color:$jmWhiteColor;
 }
 .faqblck__sec a{
     text-decoration: none !important;

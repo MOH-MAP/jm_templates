@@ -1,7 +1,7 @@
 .jmtext--panel-temp {
 	.text-panel-matter {
 		background-color: #1e22aa;
-		color: #ffffff;
+		color: $jmWhiteColor;
 		padding: 20px 0 20px;
 	}
 	.text-panel-link {
@@ -12,20 +12,20 @@
 	}
 	.text-panel-title {
 		margin-bottom: 10px;
-		font-family: JMSansMedium;
+		font-family: $jmMediumFont;
 		font-size: 16px;
 		line-height: 21px;
 	}
 	.text-panel-body {
 		.title-style-a {
 			font-size: 34px;
-			font-family: JMSansMedium;
+			font-family: $jmMediumFont;
 			line-height: 32px;
-			color: #ffffff;
+			color: $jmWhiteColor;
 		}
 		p {
 			margin-top: 10px;
-			font-family: JMSansMedium;
+			font-family: $jmMediumFont;
 			font-size: 16px;
 			line-height: 21px;
 		}

@@ -1,7 +1,7 @@
 .card__title{
 	font-size: 40px; 
     line-height: 48px;
-    font-family: JMSansMedium;
+    font-family: $jmMediumFont;
     color: $jmDarkCharcoalColor;
     text-align: left;
     margin-bottom: 40px;
@@ -48,19 +48,19 @@
 	border: 1px solid #707070;
 }
 .card__heading{
-    font: 32px/40px JMSansMedium;
+    font: 32px/40px $jmMediumFont;
     color: $jmWhiteColor;
     margin: 0;
 }
 .card__description{
-    font: 16px/20px JMSansRegular;
+    font: 16px/20px $jmFont;
     color:  $jmWhiteColor;
     opacity: 0.84; 
     margin: 20px 0px 0px 0px; 
     max-width: 350px;
 }
 .card__subtext{
-    font: 18px/22px JMSansMedium;
+    font: 18px/22px $jmMediumFont;
     color: $jmWhiteColor;
     position: absolute;
     bottom: 0;
@@ -68,7 +68,7 @@
 }
 @media(max-width: 990px) {
     .card__title{
-        font: 24px/48px JMSansMedium;
+        font: 24px/48px $jmMediumFont;
         margin-bottom: 16px;
        padding-top: 30px;
         border: none;
@@ -86,17 +86,17 @@
         border: 1px solid #707070;
     } 
     .card__heading{
-        font: 20px/40px JMSansMedium;
+        font: 20px/40px $jmMediumFont;
         margin-bottom: 12px;
     } 
     .card__description{
-        font: 14px/20px JMSansRegular; ;
+        font: 14px/20px $jmFont; ;
     	margin-bottom: 42px;
         margin-top: 0px;
     } 
     .card__subtext{
         position: static;
-        font: 16px/22px JMSansMedium;
+        font: 16px/22px $jmMediumFont;
     } 
 }
 @media(min-width: 835px) {
