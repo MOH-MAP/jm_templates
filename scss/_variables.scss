@@ -2,10 +2,8 @@
 :root{
 --jmCrayola-color: #C8C8E9;
 --jmOceanBlue-color: #4347B9;
---jmGraniteGray-color: #666666;
 --black-color: #000000;
 --filter-heading-color: #999999;
---filter-category-color: #666666;
 --box-bg-color: #F2F2F2;
 --explore-border-color: rgba(0, 0, 0, 0.1);
 }
@@ -22,6 +20,8 @@ $jmEgyptianBlueColor: #1E22AA;
 $jmCrayolaColor: #C8C8E9;
 $jmOceanBlueColor: #4347B9;
 $jmGraniteGrayColor: #666666;
+$jmGraniteGrayColorOpc6: rgba(102, 102, 102, 0.6);
+$jmGraniteGrayColorOpc9: rgba(102, 102, 102, 0.9);
 $jmAntiFlashWhiteColor: #F2F2F2;
 $jmTextShadow1: 0px 0px 8px #000000;
 $jmTextShadow2: 0px 0px 6px #000000;

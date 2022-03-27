@@ -45,7 +45,7 @@
     border: 0;
     background-color: #fafafa;
     font: 16px/26px $jmFont;
-    color: #666666e5;
+    color: $jmGraniteGrayColorOpc9;
   }
   .page-item.active .page-link {
     background-color: $jmEgyptianBlueColor;
@@ -56,6 +56,6 @@
     color: $jmEgyptianBlueColor;
   }
   .page-item.disabled .page-link {
-    color: #66666699;
+    color: $jmGraniteGrayColorOpc6;
   }
 }
