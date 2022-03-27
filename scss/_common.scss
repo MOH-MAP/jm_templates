@@ -49,7 +49,7 @@ li {
   padding: 23px 23px 16px 23px;
   list-style: none;
   color: var(--jmCrayola-color);
-  font-family: JMSansBlack;
+  font-family: $jmBlackFont;
   position: static !important;
   border-bottom: solid 3px var(--jmEgyptianBlue-color);
 
@@ -82,7 +82,7 @@ li {
   width: calc(100% - 216px);
   flex-wrap: wrap;
   left: 108px;
-  box-shadow: 0px 4px 4px #00000080;
+  box-shadow: $jmBoxShadow1;
 }
 .submenu__mb {
   position: fixed;
@@ -154,7 +154,7 @@ a.sub-child {
   }
 
   .child-header {
-    border-bottom: 1px solid #0000001f;
+    border-bottom: 1px solid $jmBlackColorOpc12;
     opacity: 1;
     flex: 0 0 25%;
     padding: 30px 0px;

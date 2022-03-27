@@ -11,7 +11,7 @@
 			line-height: 60px;
 			font-family: $jmMediumFont;
 			color: $jmWhiteColor;
-			text-shadow: 0px 0px 6px #000000;
+			text-shadow: $jmTextShadow2;
 		}
 	}
 	.panels-hero-para {
@@ -19,7 +19,7 @@
 		line-height: 28px;
 		font-family: $jmMediumFont;
 		color: $jmWhiteColor;
-		text-shadow: $jmTextShadow;
+		text-shadow: $jmTextShadow1;
 		opacity: 0.8;
 	}
 }

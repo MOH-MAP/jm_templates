@@ -37,7 +37,7 @@
     padding: 0px !important;
     margin: -10px !important;
     text-align: center;
-    color: white;
+    color:$jmWhiteColor;
     position: relative;
     img {
       width: 100%;
@@ -51,7 +51,7 @@
     display: flex;
     position: relative;
     text-align: center;
-    color: white;
+    color:$jmWhiteColor;
     .modalbutton {
       position: absolute;
       top: 70%;
@@ -59,7 +59,7 @@
       transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       background-color: #555;
-      color: white;
+      color:$jmWhiteColor;
       font-size: 16px;
       padding: 12px 24px;
       border: none;

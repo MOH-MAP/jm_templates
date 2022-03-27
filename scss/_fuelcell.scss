@@ -13,7 +13,7 @@
     display: inline-block;
 }
 .hero-panels-panel.white-border {
-    border-left: 1.5px white solid!important;
+    border-left: 1.5px$jmWhiteColor solid!important;
 }
 .innovating__content{
     padding-top: 20px;
@@ -52,7 +52,7 @@
     margin-bottom: 35px;
 }
 .journal-content-article[data-analytics-asset-title='Panel-Block-energy-revolution'] .panel_block .panel_block-header h1{
-    text-shadow: $jmTextShadow;
+    text-shadow: $jmTextShadow1;
     font-size: 48px;
     line-height: 60px;
     margin: 0;
@@ -302,13 +302,13 @@
     font: 18px/28px $jmFont;
     letter-spacing: 0px;
     color: $jmWhiteColor;
-    text-shadow: $jmTextShadow;
+    text-shadow: $jmTextShadow1;
     opacity: 1;
     margin-bottom: 40px;
 }
 .journal-content-article[data-analytics-asset-title='Fuel-cells'] .panels-hero-header h1{
     line-height: 38px;
-    text-shadow: $jmTextShadow;
+    text-shadow: $jmTextShadow1;
     margin-bottom: 35px;
 }
 .journal-content-article[data-analytics-asset-title='Fuel-cells'] .banner{

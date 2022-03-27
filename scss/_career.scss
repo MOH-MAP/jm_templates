@@ -20,7 +20,7 @@
   line-height: 28px;
   letter-spacing: 0px;
   color: $jmWhiteColor;
-  text-shadow: $jmTextShadow;
+  text-shadow: $jmTextShadow1;
   opacity: 0.8;
   margin: 0;
   margin-top: 65px;
@@ -32,7 +32,7 @@
   line-height: 60px;
   letter-spacing: 0px;
   color: $jmWhiteColor;
-  text-shadow: $jmTextShadow;
+  text-shadow: $jmTextShadow1;
   opacity: 1;
   margin: 0;
   margin-top: 16px;
@@ -118,7 +118,7 @@
     top: 50px;
     width: 100%;
     background: $jmWhiteColor;
-    box-shadow: 0px 4px 4px #00000080;
+    box-shadow: $jmBoxShadow1;
     overflow: hidden;
     display: none;
     max-height: 0;
