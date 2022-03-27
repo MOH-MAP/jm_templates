@@ -1,26 +1,31 @@
 .jmcard--main-container {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 100%;
 	.list-link {
 		text-decoration: none;
-		text-decoration-color: #1E22AA;
-		color: #1E22AA;
+		text-decoration-color: #1e22aa;
+		color: #1e22aa;
 		font: 18px/22px JMSansMedium;
 		display: flex;
 	}
 	.list-item {
 		.list-link {
 			text-decoration: none;
-			text-decoration-color: #1E22AA;
-			color: #1E22AA;
+			text-decoration-color: #1e22aa;
+			color: #1e22aa;
 			font: 18px/22px JMSansMedium;
 			display: flex;
 		}
 	}
 	.link-icon {
+		background: url("../images/new_platinum_images/arrow_forward-blue.svg") 0 0 no-repeat transparent;
 		display: block;
 		width: 24px;
 		height: 24px;
 		margin-left: 8px;
-		background: url('../images/new_platinum_images/arrow_forward-blue.svg') 0 0 no-repeat transparent;
 	}
 	.card {
 		border: none;
@@ -36,6 +41,6 @@
 		margin-bottom: 40px;
 	}
 	.card-body {
-		border-bottom: 15px solid #1E22AA;
+		border-bottom: 15px solid #1e22aa;
 	}
 }
