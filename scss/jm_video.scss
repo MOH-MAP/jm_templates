@@ -2,7 +2,7 @@
   .jm-image-text-heading {
     text-align: left;
     letter-spacing: 0px;
-    text-shadow: 0px 0px 6px #000;
+    text-shadow: $jmTextShadow2;
     opacity: 1;
     font-size: 36px;
     line-height: 40px;
@@ -10,7 +10,7 @@
     color: $jmWhiteColor;
   }
   .jm-image-slogan-text {
-    text-shadow: 0px 0px 6px #000;
+    text-shadow: $jmTextShadow2;
     text-align: left;
     font-size: 16px;
     line-height: 22px;
@@ -160,7 +160,7 @@
     border-radius: 0px;
     margin-right: 4px;
     color: $jmWhiteColor;
-    border-color: #0062cc;
+    border-color: $jmNavyBlueColor;
     background-color: transparent;
   }
   .pause-button {

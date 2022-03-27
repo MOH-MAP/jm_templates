@@ -205,7 +205,7 @@
   .btn {
     color: $jmWhiteColor;
     background-color: $jmEgyptianBlueColor;
-    border-color: #2e6da4;
+    border-color: $jmLochmaraColor;
     border-radius: 0;
     > a {
       padding: 10px 12px;
@@ -219,7 +219,7 @@
   > a {
     color: $jmWhiteColor;
     background-color: $jmEgyptianBlueColor;
-    border-color: #2e6da4;
+    border-color: $jmLochmaraColor;
     border-radius: 0;
   }
 }

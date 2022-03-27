@@ -320,7 +320,7 @@
 .journal-content-article[data-analytics-asset-title='Fuel-processor-catalysts'] table td {
     border: 1px solid $jmBlackColorOpc1;
     padding: 20px 30px;
-    background: #cccccc4d;
+    background: $jmLightGrayColorOpc3;
     font-family: $jmFont;
     font-size: 20px;
     line-height: 38px;
@@ -555,7 +555,7 @@
 }
 
 .panel_block-header h1{
-	text-shadow: 0 0 8px #000;
+	text-shadow: $jmTextShadow1;
 	font-size: 48px;
 	line-height: 60px;
 	margin: 0;

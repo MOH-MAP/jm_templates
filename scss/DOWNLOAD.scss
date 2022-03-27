@@ -1,5 +1,5 @@
 .jmdownload--inner-container {
-	background: #FAFAFA;
+	background: $jmLightShadeWhiteColor;
 	padding: 20px 20px;
 }
 .jmdownload--text-para {
@@ -72,7 +72,7 @@ float:right;
 
 @media(min-width: 320px) and (max-width: 539px) {
 .jmdownload--inner-container {
-	background: #FAFAFA;
+	background: $jmLightShadeWhiteColor;
 	padding: 15px 15px;
 }
 .jmdownload--left-side {
