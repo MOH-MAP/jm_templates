@@ -1,7 +1,7 @@
 <#assign namespace = randomNamespace />
 
 <div class="container ">
-    <div id="caseStudyCarousel-${namespace}" class="carousel jmcasestudy--slide" data-ride="${getterUtil.getBoolean(AutoRotate.getData())?then('carousel','false')}">
+    <div id="caseStudyCarousel-${namespace}" class="carousel jmcase-study__slide" data-ride="${getterUtil.getBoolean(AutoRotate.getData())?then('carousel','false')}">
         <div class="carousel-inner">
             <#if CaseStudy.getSiblings()?has_content>
                 <#list CaseStudy.getSiblings() as cur_CaseStudy>
@@ -16,13 +16,12 @@
                     </div>
                 </#list>
             </#if>
-            
         </div>
-        <a class="carousel-control-prev" href="#caseStudyCarousel-${namespace}" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#caseStudyCarousel-${namespace}" role="button" title="prev" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only"><#if (PreviousSlideLabel.getData())??>${PreviousSlideLabel.getData()}</#if></span>
         </a>
-        <a class="carousel-control-next" href="#caseStudyCarousel-${namespace}" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#caseStudyCarousel-${namespace}" role="button" title="next" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only"><#if (NextSlideLabel.getData())??>${NextSlideLabel.getData()}</#if></span>
         </a>
