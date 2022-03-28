@@ -22,7 +22,9 @@
 						<#assign href = Link_Title.Link_Target.getData() >
 					</#if>
 					<p class="read-more">
-                        <a href="${href}">${title}
+                        <a title="${title}" href="${href}">
+							${title}
+						</a>
                     </p> 
 					<span class="readmore-icon"></span>
 				</#if>
