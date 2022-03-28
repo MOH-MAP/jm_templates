@@ -1,7 +1,7 @@
 <#assign namespace = randomNamespace />
 
-<div class="container ">
-    <div id="caseStudyCarousel-${namespace}" class="carousel jmcase-study__slide" data-ride="${getterUtil.getBoolean(AutoRotate.getData())?then('carousel','false')}">
+<div class="container jmcasestudy">
+    <div id="caseStudyCarousel-${namespace}" class="carousel jmcasestudy__slide" data-ride="${getterUtil.getBoolean(AutoRotate.getData())?then('carousel','false')}">
         <div class="carousel-inner">
             <#if CaseStudy.getSiblings()?has_content>
                 <#list CaseStudy.getSiblings() as cur_CaseStudy>

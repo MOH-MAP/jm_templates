@@ -1,21 +1,23 @@
 <div class="container">
-	<article class="jmcase-study__main">
-		<div class="jmcase-study__inner-container">
+	<article class="jmcasestudy__main">
+		<div class="jmcasestudy__inner-container">
 			<div class="row">
 				<div class="col-md-4">
 					<#if (Image.getData())?? && Image.getData() != "">
-						<img class="jmcase-study__img" alt="case-study" data-fileentryid="${Image.getAttribute("fileEntryId")}" src="${Image.getData()}"
+						<img class="jmcasestudy__img" alt="case-study" data-fileentryid="${Image.getAttribute("fileEntryId")}" src="${Image.getData()}"
 							 />
 					</#if>
 				</div>
 				<div class="col-md-8">
-					<div class="jmcase-study__content">
-						<div class="jmcase-study__header">
-							<div class="jmcase-study__title"><#if (Title.getData())??>${Title.getData()}</#if></div>
-								<div class="jmcase-study__subtitle"><#if (Subtitle.getData())??>${Subtitle.getData()}</#if></div>
+					<div class="jmcasestudy__content">
+						<div class="jmcasestudy__header">
+							<div class="jmcasestudy__title"><#if (Title.getData())??>${Title.getData()}</#if></div>
+								<div class="jmcasestudy__subtitle"><#if (Subtitle.getData())??>${Subtitle.getData()}</#if></div>
 							</div>
-						<div class="jmcase-study__copy">
-							<div><#if (Summary.getData())??>${Summary.getData()}</#if></div>
+						<div class="jmcasestudy__copy">
+							<#if (Summary.getData())??>
+								<div>${Summary.getData()}</div>
+							</#if>
 						</div>
 						<#if Link_Title?? && Link_Title.getData()?has_content>
 							<#assign linkHref = "#" />
@@ -28,10 +30,11 @@
 							<#elseif Link_Title.Link_External?? && Link_Title.Link_External.getData()?has_content>
 								<#assign linkHref = Link_Title.Link_External.getData() />
 							</#if>
-							<div class="jmcase-study__link">
-								<a href="${linkHref}" class="jmcase-study__btn-link">
-                                    <span class="jmcase-study__link-text">${Link_Title.getData()}</span>
-								<span class="jmcase-study__link-icon"></span>
+							<div class="jmcasestudy__link">
+								<a href="${linkHref}" class="jmcasestudy__btn-link" title="${Link_Title.getData()}">
+                                    <span class="jmcasestudy__link-text">${Link_Title.getData()}</span>
+									<span class="jmcasestudy__link-icon"></span>
+								</a>
 							</div>
 						</#if>
 					</div>
