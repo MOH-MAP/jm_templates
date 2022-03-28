@@ -6,7 +6,7 @@ h1.list-block_title {
     color: c;
     opacity: 1;
 }
-    .list-block-css {
+.list-block-css {
     background: #F2F2F2 0% 0% no-repeat padding-box;
     border-bottom: $jmEgyptianBlueColor 15px solid;
 }
@@ -29,7 +29,7 @@ h1.list-block_title {
     text-align: left;
 }
 .product-heading {
-        font-size: 25px;
+    font-size: 25px;
     line-height: 1.2em;
     font-weight: 500;
     font-family: JMSansRegular;
@@ -66,75 +66,75 @@ opacity: 1;
 }
 @media(min-width: 320px) and (max-width: 539px) {
     .list-block_container {
-    padding: 0rem 1rem;
-}
-h1.list-block_title{
-    padding: 10px 0px 10px 0px;
-    font-size: 24px;
-}
-.product-align{
-    flex: 1 1 auto;
-    min-height: 1px;
-    padding-bottom: 0.75rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-top: 0.75rem;
-}
-.product-css{
-    font-size:13px;
-    margin:0px;
-}
-.product-heading{
-    font-size: 20px;
-        margin-bottom: 0px;
-        margin-top: 5px;
-            margin-right: 20%;
-}
-.read-more{
-    display:none;
-}
-.readmore-icon{
-        float: right;
-    margin-top: -23px;
-    margin-right: 0px;
-}
-.list-block-css {
-    background: #F2F2F2 0% 0% no-repeat padding-box;
-    border-bottom: $jmEgyptianBlueColor 10px solid;
-}
+        padding: 0rem 1rem;
+    }
+    h1.list-block_title{
+        padding: 10px 0px 10px 0px;
+        font-size: 24px;
+    }
+    .product-align{
+        flex: 1 1 auto;
+        min-height: 1px;
+        padding-bottom: 0.75rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 0.75rem;
+    }
+    .product-css{
+        font-size:13px;
+        margin:0px;
+    }
+    .product-heading{
+        font-size: 20px;
+            margin-bottom: 0px;
+            margin-top: 5px;
+                margin-right: 20%;
+    }
+    .read-more{
+        display:none;
+    }
+    .readmore-icon{
+            float: right;
+        margin-top: -23px;
+        margin-right: 0px;
+    }
+    .list-block-css {
+        background: #F2F2F2 0% 0% no-repeat padding-box;
+        border-bottom: $jmEgyptianBlueColor 10px solid;
+    }
 }
 @media(min-width: 540px) and (max-width:834px){
     .list-block_container {
-    padding: 0.5rem 2rem;
-}
-h1.list-block_title {
-    font-size: 30px;
-}
-.product-heading {
-    font-size: 23px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    margin-right: 0%;
-}
-.product-css{
-    font-size:13px;
-    margin:0px
-}
-.product-align {
-    flex: 1 1 auto;
-    min-height: 1px;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
-}
-.read-more{
-    font-size:17px;
-    margin-top: 20px;
-}
-.readmore-icon {
-    margin-left: 90px;
-}
+        padding: 0.5rem 2rem;
+    }
+    h1.list-block_title {
+        font-size: 30px;
+    }
+    .product-heading {
+        font-size: 23px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-right: 0%;
+    }
+    .product-css{
+        font-size:13px;
+        margin:0px
+    }
+    .product-align {
+        flex: 1 1 auto;
+        min-height: 1px;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+    }
+    .read-more{
+        font-size:17px;
+        margin-top: 20px;
+    }
+    .readmore-icon {
+        margin-left: 90px;
+    }
 }
 @media(min-width: 835px) and (max-width:1024px){
     .product-heading{
