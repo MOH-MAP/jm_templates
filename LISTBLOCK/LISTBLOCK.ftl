@@ -23,7 +23,9 @@
 							<#assign href = Link_Title.Link_Target.getData() >
 						</#if>
 						<p class="jmlist-block-read-more">
-							${title}
+							<a title="${title}" href="${href}">
+								${title}
+							</a>
 						</p> 
 						<span class="jmlist-block-more-icon"></span>
 					</#if>
