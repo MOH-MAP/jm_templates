@@ -11,9 +11,13 @@
 				<div class="col-md-8">
 					<div class="jmcasestudy__content">
 						<div class="jmcasestudy__header">
-							<div class="jmcasestudy__title"><#if (Title.getData())??>${Title.getData()}</#if></div>
-								<div class="jmcasestudy__subtitle"><#if (Subtitle.getData())??>${Subtitle.getData()}</#if></div>
-							</div>
+							<#if (Title.getData())??>
+								<div class="jmcasestudy__title">${Title.getData()}</div>
+							</#if>
+							<#if (Subtitle.getData())??>
+								<div class="jmcasestudy__subtitle">${Subtitle.getData()}</div>
+							</#if>
+						</div>
 						<div class="jmcasestudy__copy">
 							<#if (Summary.getData())??>
 								<div>${Summary.getData()}</div>
