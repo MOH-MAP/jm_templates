@@ -18,11 +18,11 @@
     margin: 0;
     border-bottom: 1px solid $jmBlackColorOpc1;
     cursor: pointer;
-  }
-  .jmaccrdn__title p {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0px;
+    p {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0px;
+    }
   }
   .jmaccrdn__body {
     background-color: $jmAntiFlashWhiteColor;
@@ -31,6 +31,13 @@
   }
   .jmaccrdn__answer-sec {
     padding: 60px;
+    p {
+      font-size: 18px;
+      line-height: 27px;
+      color: $jmDarkCharcoalColor;
+      font-family: $jmFont;
+      margin-bottom: 36px;
+    }
   }
   .jmaccrdn__arrow {
     background: url("../images/new__jm__images/jm__accrdn_arrow_blue.svg") 0 0
@@ -40,13 +47,6 @@
     height: 24px;
     margin-left: 8px;
     margin-top: 7px;
-  }
-  .jmaccrdn__answer-sec p {
-    font-size: 18px;
-    line-height: 27px;
-    color: $jmDarkCharcoalColor;
-    font-family: $jmFont;
-    margin-bottom: 36px;
   }
   @media (min-width: 320px) and (max-width: 539px) {
     .jmaccrdn__heading {

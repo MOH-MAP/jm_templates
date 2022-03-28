@@ -339,6 +339,16 @@ iframe {
   display: inline-block;
   opacity: 0.9;
 }
+.bg-light {
+  background-color: $jmAntiFlashWhiteColor !important;
+}
+.list-link {
+  color: $jmEgyptianBlueColor;
+  font: 18px/22px $jmMediumFont;
+  text-decoration: none;
+  text-decoration-color: $jmEgyptianBlueColor;
+  display: flex;
+}
 @media(max-width: 990px) {
   .explore-icon{
     width: 20px;

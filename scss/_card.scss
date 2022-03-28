@@ -4,22 +4,6 @@
 	padding-left: 15px;
 	padding-right: 15px;
 	width: 100%;
-	.list-link {
-		text-decoration: none;
-		text-decoration-color: $jmEgyptianBlueColor;
-		color: $jmEgyptianBlueColor;
-		font: 18px/22px $jmMediumFont;
-		display: flex;
-	}
-	.list-item {
-		.list-link {
-			text-decoration: none;
-			text-decoration-color: $jmEgyptianBlueColor;
-			color: $jmEgyptianBlueColor;
-			font: 18px/22px $jmMediumFont;
-			display: flex;
-		}
-	}
 	.link-icon {
 		background: url("../images/new_platinum_images/arrow_forward-blue.svg") 0 0 no-repeat transparent;
 		display: block;
