@@ -3,38 +3,33 @@
 <style>
 .banner-${namespace} {
     <#if (ImageLarge.getData())?? && ImageLarge.getData() != "">
-	background-image: url("${ImageLarge.getData()!}");
+		background-image: url("${ImageLarge.getData()!}");
     </#if>
-	background-position: center;
-	background-size: cover;
-	background-position: center center;
-	height: 363px;
 }
 @media(min-width: 320px) and (max-width: 539px){
   .banner-${namespace} {
     <#if (ImageSmall.getData())?? && ImageSmall.getData() != "">
-	background-image: url("${ImageSmall.getData()!}");
+		background-image: url("${ImageSmall.getData()!}");
     </#if>
-    height: 463px;
   }
-  }
+}
 </style>
 
-<div class="jmcareer-hero--banner banner-${namespace} ">
-    <div class="jmcareer-hero-center container">
-    	<p class="jmcareer-hero--pretitle"><#if (Summary.getData())??>${Summary.getData()}</#if></p>
-    	<h1 class="jmcareer-hero--heading"><#if (Title.getData())??>${Title.getData()}</#if></h1>
+<div class="jmcareerhero__banner banner-${namespace} ">
+    <div class="jmcareerhero__center container">
+    	<p class="jmcareerhero__pretitle"><#if (Summary.getData())??>${Summary.getData()}</#if></p>
+    	<h1 class="jmcareerhero__heading"><#if (Title.getData())??>${Title.getData()}</#if></h1>
 		<form id="jmcareer-search-frm-${namespace}" action="${ResultsPage.getFriendlyUrl()}" autocomplete="off">
 			<div class="jmcareer-input--sec">
 					 <div class="jmdept--sec">
     			        <input id="q-${namespace}" name="q" class="jmcareer--input" type="text"
 						placeholder="Enter job title, department or other keywords" />
     			     </div>
-					    <div class="jmcareer-hero-dropdown--sec">
-						<div class="jmcareer-hero--dropdown">
+					    <div class="jmcareerhero__dropdown--sec">
+						<div class="jmcareerhero__dropdown">
 							<input type="text" placeholder="Location"
 							class="textBox" readonly>
-						    <div class="jmcareer-hero-option">
+						    <div class="jmcareerhero__option">
 						    <div> United States </div>
 						     <div> United Kingdom </div>
 							<div >Argentina</div>
@@ -76,9 +71,9 @@
 						</div>
 						</div>
 						</div>
-						 <div class="jmcareer-hero-btn--sec">
-						<button id="submit-${namespace}" class="jmcareer-hero-submit--btn">SUBMIT
-						<span class="jmcareer-hero--arrow"></span>
+						 <div class="jmcareerhero__btn--sec">
+						<button id="submit-${namespace}" class="jmcareerhero__submit--btn">SUBMIT
+						<span class="jmcareerhero__arrow"></span>
 						</button>
     			        </div>
 						</div>
