@@ -1,4 +1,4 @@
-.jmslide--show-temp {
+.jm__slideshow.jmslide--show-temp {
 	#carousel-custom-dots {
 		display: flex;
 		justify-content: center;
@@ -36,12 +36,10 @@
 			padding: 5px 20px 5px 20px;
 		}
 	}
-}
-.jm__slideshow.jmslide--show-temp {
 	margin-top: 50px;
 	margin-bottom: 50px;
 	.previous__icon {
-		background: url("/o/jm-platinum-theme/images/new__jm__images/keyboard_arrow_left-black-48dp.svg") 0 0 no-repeat transparent;
+		background: url("/o/jm-platinum-theme/images/new__jm__images/chevron-left-blue.svg") 0 0 no-repeat transparent;
 		display: block;
 		width: 24px;
 		height: 24px;
@@ -50,7 +48,7 @@
 		margin-top: 5px;
 	}
 	.next__icon {
-		background: url("/o/jm-platinum-theme/images/new__jm__images/keyboard_arrow_right-black-48dp.svg") 0 0 no-repeat transparent;
+		background: url("/o/jm-platinum-theme/images/new__jm__images/chevron-right-blue.svg") 0 0 no-repeat transparent;
 		display: block;
 		width: 24px;
 		height: 24px;
@@ -82,5 +80,82 @@
 		opacity: 0.9;
 		background-color: #fafafa;
 		padding: 11px 15px;
+	}
+	.owl-carousel {
+		.owl-nav {
+			position: relative;
+			bottom: 4px;
+			padding-right: 36%;
+			padding-left: 36%;
+			button {
+				border: solid 1px;
+			}
+			button.owl-prev {
+				float: left;
+			}
+			button.owl-next {
+				float: right;
+			}
+		}
+	}
+}
+@media (max-width: 599px) {
+	.jm__slideshow.jmslide--show-temp {
+		.owl-carousel {
+			.owl-nav {
+				position: relative;
+				bottom: 4px;
+				padding-right: 15%;
+				padding-left: 15%;
+			}
+		}
+	}
+}
+@media (min-width: 600px) and (max-width: 768px) {
+	.jm__slideshow.jmslide--show-temp {
+		.owl-carousel {
+			.owl-nav {
+				position: relative;
+				bottom: 4px;
+				padding-right: 22%;
+				padding-left: 22%;
+			}
+		}
+	}
+}
+@media (min-width: 769px) and (max-width: 1000px) {
+	.jm__slideshow.jmslide--show-temp {
+		.owl-carousel {
+			.owl-nav {
+				position: relative;
+				bottom: 4px;
+				padding-right: 28%;
+				padding-left: 28%;
+			}
+		}
+	}
+}
+@media (min-width: 1001px) and (max-width: 1099px) {
+	.jm__slideshow.jmslide--show-temp {
+		.owl-carousel {
+			.owl-nav {
+				position: relative;
+				bottom: 4px;
+				padding-right: 34%;
+				padding-left: 34%;
+			}
+		}
+	}
+}
+@media (min-width: 1099px) and (max-width: 1199px) {
+	.jm__slideshow.jmslide--show-temp {
+		.owl-carousel {
+			.owl-nav {
+				position: relative;
+				bottom: 4px;
+				padding-right: 33%;
+				padding-left: 33%;
+			}
+		}
 	}
 }
