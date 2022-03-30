@@ -1,154 +1,188 @@
-.case-study__container{
-    float: left;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.jmcasestudy__inner-container {
+  float: left;
+  width: 100%;
+  padding: 2rem 0rem;
+  display: flex;
+  justify-content: center;
 }
-.case-study_inner-container{
-     float: left;
-    width: 100%;
-    padding: 2rem 0rem;
-    display: flex;
-    justify-content: center;
+.jmcasestudy__content {
+  padding-left: 0px;
+  margin-left: -20px;
 }
+.jmcasestudy__title {
+  font-size: 40px;
+  text-align: left;
+  letter-spacing: 0px;
+  color: $jmDarkCharcoalColor;
+  opacity: 1;
+  line-height: 48px;
+  margin-top: -14px;
+  font-family: "JMSansMedium";
+}
+.jmcasestudy__subtitle {
+  text-align: left;
+  letter-spacing: 0px;
+  color: $jmDarkCharcoalColor;
+  opacity: 0.8;
+  padding-bottom: 10px;
+  font-family: "JMSansMedium";
+  font-size: 18px;
+}
+.jmcasestudy__copy p {
+  text-align: left;
+  letter-spacing: 0px;
+  color: $jmDarkCharcoalColor;
+  opacity: 1;
+  font-size: 18px;
+  font-family: "JMSansMedium";
+}
+.jmcasestudy__btn-link {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #1e22aa;
+}
+span.jmcasestudy__link-text {
+  float: right;
+  /* padding-left: 12px; */
+  padding: 15px 10px 0px 200px;
+  color: white;
+  letter-spacing: 0px;
+  color: $jmWhiteColor;
+  text-transform: uppercase;
+  opacity: 1;
+  font-size: 16px;
+  float: left;
+  font-family: "JMSansRegular";
+}
+.jmcasestudy__link-icon {
+  background: url("../images/new__jm__images/arrow_forward-white.svg") 0 0
+    no-repeat transparent;
+  display: block;
+  width: 24px;
+  height: 24px;
+  float: right;
+  margin-left: 0rem;
+  margin-top: 14px;
+  padding: 23px 15px 15px 20px;
+}
+.jmcasestudy__slide {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.jmcasestudy__img {
+  width: 275px;
+  height: 250px;
+}
+.jmcasestudy__promo-carousel-prev,
+.jmcasestudy__promo-carousel-next {
+  align-items: center;
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  opacity: 1;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  transition: opacity 0.15s ease;
+  width: 3%;
+  z-index: 1;
+  margin: -25px;
+}
+// .jmcasestudy__promo-carousel-next-icon {
+//    background-image: url("../images/new__jm__images/casestudy-right-arrow.svg");
+// }
+// .jmcasestudy__promo-carousel-prev-icon {
+//    background-image: url("../images/new__jm__images/casestudy-left-arrow.svg");
+// }
 
-.case-study__main {
-    padding-left: 0px;
-        margin-left: -20px;
+.jmcasestudy__btn-link {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #1e22aa;
 }
-.case-study__title {
-    font-size: 40px;
-    text-align: left;
-    font: normal normal medium 40px/48px $jmFont;
-    letter-spacing: 0px;
-    color: $jmDarkCharcoalColor;
-    opacity: 1;
-    line-height: 1.7;
-    margin-top: -14px;
-    font-family: $jmMediumFont;
+span.jmcasestudy__link-text {
+  float: right;
+  /* padding-left: 12px; */
+  padding: 15px 10px 0px 200px;
+  color: white;
+  letter-spacing: 0px;
+  color: $jmWhiteColor;
+  text-transform: uppercase;
+  opacity: 1;
+  font-size: 16px;
+  float: left;
+  font-family: "JMSansRegular";
 }
-.case-study__subtitle {
-    text-align: left;
-    letter-spacing: 0px;
-    color: $jmDarkCharcoalColor;
-    opacity: 0.8;
-    padding-bottom: 10px;
-    font-family: $jmMediumFont;
-    font-size: 18px;
+.jmcasestudy__link-icon {
+  background: url("../images/new__jm__images/arrow_forward-white.svg") 0 0
+    no-repeat transparent;
+  display: block;
+  width: 24px;
+  height: 24px;
+  float: right;
+  margin-left: 0rem;
+  margin-top: 14px;
+  padding: 23px 15px 15px 20px;
 }
-.case-study__copy p {
-    text-align: left;
-    letter-spacing: 0px;
-    color: $jmDarkCharcoalColor;
-    opacity: 1;
-    font-size: 18px;
-    font-family: $jmMediumFont;
+.jmcasestudy__slide {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-.case-study__btn-link{
-    position:absolute;
-    bottom:0;
-    right:0;
-    background: $jmEgyptianBlueColor;
+.jmcasestudy__img {
+  width: 275px;
+  height: 250px;
 }
-span.case-study_link-text {
-    float: right;
-    /* padding-left: 12px; */
-    padding: 15px 10px 0px 200px;
-    color:$jmWhiteColor;
-    letter-spacing: 0px;
-    color: $jmWhiteColor;
-    text-transform: uppercase;
-    opacity: 1;
-    font-size: 16px;
-    float: left;
-    font-family: $jmFont;
+.carousel-control-prev,
+.carousel-control-next {
+  align-items: center;
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  opacity: 1;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  transition: opacity 0.15s ease;
+  width: 3%;
+  z-index: 1;
+  margin: -25px;
 }
-
-
-.case-study_link-icon {
-    background: url("../images/new__jm__images/arrow_forward-white.svg") 0 0 no-repeat transparent;
-    display: block;
-    width: 24px;
-    height: 24px;
-    float: right;
-    margin-left: 0rem;
-    margin-top: 14px;
-    padding: 23px 15px 15px 20px;
-}
-.casestudy_slide{
-        width: 100%;
-    height: auto;
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
- .case-study__img{
-          width: 275px;
-    height: 250px;
-    }
-.carousel-control-prev, .carousel-control-next {
-    align-items: center;
-    bottom: 0;
-    color: $jmWhiteColor;
-    display: flex;
-    justify-content: center;
-    opacity: 1;
-    position: absolute;
-    text-align: center;
-    top: 0;
-    transition: opacity 0.15s ease;
-    width: 3%;
-    z-index: 1;
-    margin: -25px;
-}
-
-.case-study__promo-block {
-    float: left;
-    width: 100%;
-    display: flex;
-    padding: 2rem 8rem;
-    /* margin: 4rem; */
-    justify-content: center;
-}
-
-    
-     .carousel-control-next-icon {
-    background-image: url("../images/new__jm__images/right-move-arrow.svg");
+.carousel-control-next-icon {
+  background-image: url("../images/new__jm__images/casestudy-right-arrow.svg");
 }
 .carousel-control-prev-icon {
-    background-image: url("../images/new__jm__images/left-move-arrow.svg");
+  background-image: url("../images/new__jm__images/casestudy-left-arrow.svg");
 }
-
 @media (min-width: 992px) and (max-width: 1199.98px) {
-.case-study__promo-block {
-    float: left;
-    width: 100%;
-    display: flex;
-    padding: 2rem 4rem;
-    /* margin: 4rem; */
-    justify-content: center;
-}
-.case-study__img {
+  .jmcasestudy__img {
     width: 90%;
     height: 250px;
+  }
 }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .jmcasestudy__img {
+    width: 90%;
+    height: 250px;
+  }
 }
-
 @media (min-width: 768px) and (max-width: 991.98px) {
-.case-study__promo-block {
-    float: left;
-    width: 100%;
-    display: flex;
-    padding: 2rem 2rem;
-    /* margin: 4rem; */
-    justify-content: center;
-}
-.carousel-control-prev, .carousel-control-next {
+  .jmcasestudy__promo-carousel-prev,
+  .jmcasestudy__promo-carousel-next {
     align-items: center;
     bottom: 0;
-    color: $jmWhiteColor;
+    color: #fff;
     display: flex;
     justify-content: center;
     opacity: 1;
@@ -159,88 +193,91 @@ span.case-study_link-text {
     width: 3%;
     z-index: 1;
     margin: 0px;
-}
-.case-study__img {
+  }
+  .jmcasestudy__img {
     width: 100%;
     height: 235px;
-}
-.case-study__title {
+  }
+  .jmcasestudy__title {
     font-size: 36px;
-}
-.case-study__main {
+  }
+  .jmcasestudy__content {
     padding-left: 40px;
-}
-.case-study__copy p {
+  }
+  .jmcasestudy__copy p {
     font-size: 16px;
-}
-.case-study__subtitle {
+  }
+  .jmcasestudy__subtitle {
     font-size: 16px;
-}
-}
-@media (min-width: 576px) and (max-width: 767.98px) {
-.case-study__promo-block {
-    float: left;
-    width: 100%;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    align-items: center;
+    bottom: 0;
+    color: #fff;
     display: flex;
-    padding: 2rem 2rem;
-    /* margin: 4rem; */
     justify-content: center;
-}
+    opacity: 1;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    transition: opacity 0.15s ease;
+    width: 3%;
+    z-index: 1;
+    margin: 0px;
+  }
+  .jmcasestudy__img {
+    width: 100%;
+    height: 235px;
+  }
 }
 @media (max-width: 575.98px) {
-.case-study__promo-block {
-    float: left !important;
-    width: 100% !important;
-    display: flex !important;
-   padding: 1rem 1rem 1rem 1.5rem !important;
-    /* margin: 4rem; */
-    justify-content: center !important;
-}
-.case-study__img {
+  .jmcasestudy__img {
     width: 27% !important;
     height: 75px !important;
-}
-.case-study__title {
+  }
+  .jmcasestudy__title {
     font-size: 22px !important;
     margin-top: -14px !important;
-}
-.case-study__subtitle {
+  }
+  .jmcasestudy__subtitle {
     padding-bottom: 10px !important;
     font-size: 14px !important;
-}
-.case-study__btn-link {
-       position: relative !important;
+  }
+  .jmcasestudy__btn-link {
+    position: relative !important;
     bottom: 0 !important;
     right: 0 !important;
-    display:flex !important;
+    display: flex !important;
     justify-content: flex-end !important;
     width: 95% !important;
     float: right !important;
-    background: $jmEgyptianBlueColor !important;
-}
-span.case-study_link-text {
+    background: #1e22aa !important;
+  }
+  span.jmcasestudy__link-text {
     float: right !important;
     padding: 15px 5px 0px 0px !important;
     font-size: 16px !important;
     float: left !important;
-    font-family: $jmFont !important;
-}
-.case-study__copy p {
+    font-family: "JMSansRegular" !important;
+  }
+  .jmcasestudy__copy p {
     font-size: 14px;
     line-height: 1.5;
-        padding-left: 15px !important;
+    padding-left: 15px !important;
     padding-top: 15px !important;
     padding-bottom: 20px !important;
-}
-.case-study__header {
+  }
+  .jmcasestudy__header {
     position: absolute !important;
     margin-top: -70px !important;
     margin-left: 135px !important;
-}
-.carousel-control-prev, .carousel-control-next {
+  }
+  .jmcasestudy__promo-carousel-prev,
+  .jmcasestudy__promo-carousel--next {
     align-items: center !important;
     bottom: 0 !important;
-    color: $jmWhiteColor;
+    color: #fff;
     display: flex;
     justify-content: center;
     opacity: 1;
@@ -251,6 +288,42 @@ span.case-study_link-text {
     width: 10% !important;
     z-index: 1;
     margin: -20px -15px 0px -25px !important;
-    }
-
+  }
+  .jmcasestudy__img {
+    width: 27% !important;
+    height: 75px !important;
+  }
+  .jmcasestudy__btn-link {
+    position: relative !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+    width: 95% !important;
+    float: right !important;
+    background: #1e22aa !important;
+  }
+  span.jmcasestudy_link-text {
+    float: right !important;
+    padding: 15px 5px 0px 0px !important;
+    font-size: 16px !important;
+    float: left !important;
+    font-family: "JMSansRegular" !important;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    align-items: center !important;
+    bottom: 0 !important;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    transition: opacity 0.15s ease;
+    width: 10% !important;
+    z-index: 1;
+    margin: -20px -15px 0px -25px !important;
+  }
 }

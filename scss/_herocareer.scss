@@ -1,0 +1,153 @@
+.jmcareerhero__banner {
+    background-image: url(/documents/101039/101203/cloud.svg/0084d11c-e07c-251f-5907-2f9b07db8a76?t=1645509290280);
+    background-position: center;
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+}
+.jmcareerhero__centered {
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+}
+.jmcareerhero__pretitle {
+    text-align: left;
+    font-size: 18px;
+    font-family: JMSansMedium;
+    line-height: 28px;
+    letter-spacing: 0;
+    color: #fff;
+    text-shadow: 0 0 8px #000;
+    opacity: .8;
+    margin: 0;
+    margin-top: 65px;
+}
+.jmcareerhero__heading {
+    text-align: left;
+    font-size: 52px;
+    font-family: JMSansRegular;
+    line-height: 60px;
+    letter-spacing: 0;
+    color: #fff;
+    text-shadow: 0 0 8px #000;
+    opacity: 1;
+    margin: 0;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+.jmcareerhero__input--sec {
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+}
+.jmdept--sec {
+    width: 80%;
+}
+.jmcareerhero__input {
+    padding: 17px 0 16px 20px;
+    outline: 0;
+    border: 0;
+    width: 100%;
+    cursor: pointer;
+}
+.jmcareerhero__dropdown--sec {
+    background-color: #fff;
+    border-left: 1px solid #999;
+}
+.jmcareerhero__dropdown {
+    position: relative;
+    width: 300px;
+    height: 50px;
+}
+.jmcareerhero__dropdown::before {
+    content: "";
+    background: url(../images/new__jm__images/keyboard_arrow_down-blue.svg);
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 10000;
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+.jmcareerhero__dropdown input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: #fff;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 5%);
+    padding: 12px 20px;
+    font-size: 16px;
+    font-family: JMSansMedium;
+    line-height: 28px;
+    letter-spacing: 0;
+    color: #333;
+    opacity: .8;
+    border: 0;
+    outline: 0;
+}
+.jmcareerhero__dropdown.active .jmcareerhero__option {
+    display: block;
+    max-height: 240px;
+    overflow-y: scroll;
+}
+.jmcareerhero__dropdown .jmcareerhero__option  {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 4px 4px #00000080;
+    overflow: hidden;
+    display: none;
+    max-height: 0;
+}
+.jmcareerhero__dropdown .jmcareerhero__option div {
+    padding: 8px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: JMSansMedium;
+    line-height: 28px;
+    letter-spacing: 0;
+    color: #333;
+    opacity: .8;
+}
+.jmcareerhero__btn--sec {
+    display: flex;
+}
+.jmcareerhero__submit--btn {
+    display: flex;
+    outline: 0;
+    border: 0;
+    background-color: #1e22aa;
+    color: #fff;
+    padding: 16px 10px 14px 34px;
+    text-align: right;
+    font-size: 18px;
+    font-family: JMSansMedium;
+    line-height: 22px;
+    letter-spacing: 0;
+    color: #fff;
+    text-transform: uppercase;
+    opacity: 1;
+    justify-content: right;
+}
+.jmcareerhero__arrow {
+    background: url(../images/new__jm__images/arrow_forward-white.svg) 0 0 no-repeat transparent;
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+    top: 50%;
+    margin-top: -2px;
+}
+@media(min-width: 320px) and (max-width: 539px){
+    .jmcareerhero__banner{
+        height: 463px;
+    }
+}

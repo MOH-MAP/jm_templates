@@ -25,6 +25,6 @@
 
 <style>
 .journal-content-article[data-analytics-asset-title='Person'] .person_card{
-    width: 100% !important;
+    width: 33.3% !important;
 }
 </style>

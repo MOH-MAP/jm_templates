@@ -1,17 +1,17 @@
-.jmlist--block-temp {
-    .jmlist--block-title {
+ 
+    .jmlist-block__title {
         font-family: JMSansMedium;
-        padding: 30px 0px 30px 0px;
+        padding: 10px 0px 30px 0px;
         font-size: 34px;
         letter-spacing: 0px;
         color: #333333;
         opacity: 1;
     }
-    .jmlist--block-card {
+    .jmlist-block__card {
         background: #F2F2F2 0% 0% no-repeat padding-box;
         border-bottom: #1E22AA 15px solid;
     }
-    .jmlist--block-innerspace {
+    .jmlist-block__innerspace {
         flex: 1 1 auto;
         min-height: 1px;
         padding-bottom: 0.99rem;
@@ -19,7 +19,7 @@
         padding-right: 1.25rem;
         padding-top: 1.25rem;
     }
-    .jmlist--block-card-title {
+    .jmlist-block__card-title {
         letter-spacing: 0px;
         color: #333333;
         text-transform: capitalize;
@@ -29,7 +29,7 @@
         font-family: 'JMSansRegular';
         text-align: left;
     }
-    .jmlist--block-card-heading{
+    .jmlist-block__card-heading{
         font-size: 25px;
         line-height: 1.2em;
         font-weight: 500;
@@ -39,7 +39,7 @@
         margin-bottom: 20px;
         margin-right: 25%;
     }
-    .jmlist--block-read-more {
+    .jmlist-block__read-more {
         letter-spacing: 0px;
         color: #1E22AA;
         opacity: 1;
@@ -48,7 +48,7 @@
         margin-top: 20px;
         font: 17px/22px JMSansMedium;
     }
-    .jmlist--block-more-icon {
+    .jmlist-block__more-icon {
         background: url("../images/new__jm__images/blue-right-arrow.svg") 0 0 no-repeat transparent;
         display: block;
         width: 24px;
@@ -56,27 +56,28 @@
         margin-left: 90px;
         margin-top: -20px;
     }
-
+    
     @media (min-width: 835px) and (max-width:1024px) {
-        .jmlist--block-card-heading {
+        .jmlist-block__card-heading {
             margin-right: 0%;
         }
     }
     @media (min-width: 540px) and (max-width:834px) {
-        .jmlist--block-title {
+    
+        .jmlist-block__title {
             font-size: 30px;
         }
-        .jmlist--block-card-heading {
+        .jmlist-block__card-heading {
             font-size: 23px;
             margin-top: 10px;
             margin-bottom: 20px;
             margin-right: 0%;
         }
-        .jmlist--block-card-title {
+        .jmlist-block__card-title {
             font-size: 13px;
             margin: 0px;
         }
-        .jmlist--block-innerspace {
+        .jmlist-block__innerspace {
             flex: 1 1 auto;
             min-height: 1px;
             padding-bottom: 1rem;
@@ -84,20 +85,21 @@
             padding-right: 1rem;
             padding-top: 1rem;
         }
-        .jmlist--block-read-more {
+        .jmlist-block__read-more {
             font-size: 17px;
             margin-top: 20px;
         }
-        .jmlist--block-more-icon {
+        .jmlist-block__more-icon {
             margin-left: 90px;
         }
     }
     @media (min-width: 320px) and (max-width: 539px) {
-        .jmlist--block-title {
+    
+        .jmlist-block__title {
             padding: 10px 0px 10px 0px;
             font-size: 24px;
         }
-        .jmlist--block-innerspace {
+        .jmlist-block__innerspace {
             flex: 1 1 auto;
             min-height: 1px;
             padding-bottom: 0.75rem;
@@ -105,27 +107,27 @@
             padding-right: 0.5rem;
             padding-top: 0.75rem;
         }
-        .jmlist--block-card-title {
+        .jmlist-block__card-title {
             font-size: 13px;
             margin: 0px;
         }
-        .jmlist--block-card-heading {
+        .jmlist-block__card-heading {
             font-size: 20px;
             margin-bottom: 0px;
             margin-top: 5px;
             margin-right: 20%;
         }
-        .jmlist--block-read-more {
+        .jmlist-block__read-more {
             display: none;
         }
-        .jmlist--block-more-icon {
+        .jmlist-block__more-icon {
             float: right;
             margin-top: -21px;
             margin-right: 0px;
         }
-        .jmlist--block-card {
+        .jmlist-block__card {
             background: #F2F2F2 0% 0% no-repeat padding-box;
             border-bottom: #1E22AA 10px solid;
         }
     }
-}
+    
