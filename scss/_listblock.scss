@@ -1,15 +1,15 @@
 .jmlist--block-temp {
     .jmlist--block-title {
-        font-family: JMSansMedium;
+        font-family: $jmMediumFont;
         padding: 30px 0px 30px 0px;
         font-size: 34px;
         letter-spacing: 0px;
-        color: #333333;
+        color: $jmDarkCharcoalColor;
         opacity: 1;
     }
     .jmlist--block-card {
-        background: #F2F2F2 0% 0% no-repeat padding-box;
-        border-bottom: #1E22AA 15px solid;
+        background: $jmAntiFlashWhiteColor 0% 0% no-repeat padding-box;
+        border-bottom: $jmEgyptianBlueColor 15px solid;
     }
     .jmlist--block-innerspace {
         flex: 1 1 auto;
@@ -21,32 +21,30 @@
     }
     .jmlist--block-card-title {
         letter-spacing: 0px;
-        color: #333333;
+        color: $jmDarkCharcoalColor;
         text-transform: capitalize;
         opacity: 1;
         font-size: 14px;
         line-height: 16px;
-        font-family: 'JMSansRegular';
+        font-family: $jmFont;
         text-align: left;
     }
     .jmlist--block-card-heading{
         font-size: 25px;
         line-height: 1.2em;
         font-weight: 500;
-        font-family: JMSansRegular;
-        color: #333333;
+        font-family: $jmFont;
+        color: $jmDarkCharcoalColor;
         margin-top: 10px;
         margin-bottom: 20px;
         margin-right: 25%;
     }
     .jmlist--block-read-more {
         letter-spacing: 0px;
-        color: #1E22AA;
+        color: $jmEgyptianBlueColor;
         opacity: 1;
-        line-height: 22px;
-        font-family: 'JMSansMedium';
         margin-top: 20px;
-        font: 17px/22px JMSansMedium;
+        font: 17px/22px $jmMediumFont;
     }
     .jmlist--block-more-icon {
         background: url("../images/new__jm__images/blue-right-arrow.svg") 0 0 no-repeat transparent;
@@ -124,8 +122,8 @@
             margin-right: 0px;
         }
         .jmlist--block-card {
-            background: #F2F2F2 0% 0% no-repeat padding-box;
-            border-bottom: #1E22AA 10px solid;
+            background: $jmAntiFlashWhiteColor 0% 0% no-repeat padding-box;
+            border-bottom: $jmEgyptianBlueColor 10px solid;
         }
     }
 }

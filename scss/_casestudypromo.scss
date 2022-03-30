@@ -17,7 +17,7 @@
   opacity: 1;
   line-height: 48px;
   margin-top: -14px;
-  font-family: "JMSansMedium";
+  font-family: $jmMediumFont;
 }
 .jmcasestudy__subtitle {
   text-align: left;
@@ -25,7 +25,7 @@
   color: $jmDarkCharcoalColor;
   opacity: 0.8;
   padding-bottom: 10px;
-  font-family: "JMSansMedium";
+  font-family: $jmMediumFont;
   font-size: 18px;
 }
 .jmcasestudy__copy p {
@@ -34,13 +34,13 @@
   color: $jmDarkCharcoalColor;
   opacity: 1;
   font-size: 18px;
-  font-family: "JMSansMedium";
+  font-family: $jmMediumFont;
 }
 .jmcasestudy__btn-link {
   position: absolute;
   bottom: 0;
   right: 0;
-  background: #1e22aa;
+  background: $jmEgyptianBlueColor;
 }
 span.jmcasestudy__link-text {
   float: right;
@@ -53,7 +53,7 @@ span.jmcasestudy__link-text {
   opacity: 1;
   font-size: 16px;
   float: left;
-  font-family: "JMSansRegular";
+  font-family: $jmFont;
 }
 .jmcasestudy__link-icon {
   background: url("../images/new__jm__images/arrow_forward-white.svg") 0 0
@@ -82,7 +82,7 @@ span.jmcasestudy__link-text {
 .jmcasestudy__promo-carousel-next {
   align-items: center;
   bottom: 0;
-  color: #fff;
+  color: $jmWhiteColor;
   display: flex;
   justify-content: center;
   opacity: 1;
@@ -105,7 +105,7 @@ span.jmcasestudy__link-text {
   position: absolute;
   bottom: 0;
   right: 0;
-  background: #1e22aa;
+  background: $jmEgyptianBlueColor;
 }
 span.jmcasestudy__link-text {
   float: right;
@@ -118,7 +118,7 @@ span.jmcasestudy__link-text {
   opacity: 1;
   font-size: 16px;
   float: left;
-  font-family: "JMSansRegular";
+  font-family: $jmFont;
 }
 .jmcasestudy__link-icon {
   background: url("../images/new__jm__images/arrow_forward-white.svg") 0 0
@@ -147,7 +147,7 @@ span.jmcasestudy__link-text {
 .carousel-control-next {
   align-items: center;
   bottom: 0;
-  color: #fff;
+  color: $jmWhiteColor;
   display: flex;
   justify-content: center;
   opacity: 1;
@@ -182,7 +182,7 @@ span.jmcasestudy__link-text {
   .jmcasestudy__promo-carousel-next {
     align-items: center;
     bottom: 0;
-    color: #fff;
+    color: $jmWhiteColor;
     display: flex;
     justify-content: center;
     opacity: 1;
@@ -214,7 +214,7 @@ span.jmcasestudy__link-text {
   .carousel-control-next {
     align-items: center;
     bottom: 0;
-    color: #fff;
+    color: $jmWhiteColor;
     display: flex;
     justify-content: center;
     opacity: 1;
@@ -252,14 +252,14 @@ span.jmcasestudy__link-text {
     justify-content: flex-end !important;
     width: 95% !important;
     float: right !important;
-    background: #1e22aa !important;
+    background: $jmEgyptianBlueColor !important;
   }
   span.jmcasestudy__link-text {
     float: right !important;
     padding: 15px 5px 0px 0px !important;
     font-size: 16px !important;
     float: left !important;
-    font-family: "JMSansRegular" !important;
+    font-family: $jmFont !important;
   }
   .jmcasestudy__copy p {
     font-size: 14px;
@@ -277,7 +277,7 @@ span.jmcasestudy__link-text {
   .jmcasestudy__promo-carousel--next {
     align-items: center !important;
     bottom: 0 !important;
-    color: #fff;
+    color: $jmWhiteColor;
     display: flex;
     justify-content: center;
     opacity: 1;
@@ -301,20 +301,20 @@ span.jmcasestudy__link-text {
     justify-content: flex-end !important;
     width: 95% !important;
     float: right !important;
-    background: #1e22aa !important;
+    background: $jmEgyptianBlueColor !important;
   }
   span.jmcasestudy_link-text {
     float: right !important;
     padding: 15px 5px 0px 0px !important;
     font-size: 16px !important;
     float: left !important;
-    font-family: "JMSansRegular" !important;
+    font-family: $jmFont !important;
   }
   .carousel-control-prev,
   .carousel-control-next {
     align-items: center !important;
     bottom: 0 !important;
-    color: #fff;
+    color: $jmWhiteColor;
     display: flex;
     justify-content: center;
     opacity: 1;
