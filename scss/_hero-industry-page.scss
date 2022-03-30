@@ -7,9 +7,6 @@
 		top: 0;
 		width: 100%;
 	}
-	.full__widthcontainer {
-		position: relative !important;
-	}
 	#jmhero--industry-img-temp {
 		display: none;
 	}
@@ -29,10 +26,6 @@
 			max-width: 100%;
 		}
 	}
-	.mb__img {
-		flex: 0 0 0;
-		max-width: 100%;
-	}
 }
 @media (min-width: 540px) and (max-width: 834px) {
 	.jmhero--industry-main-container-temp {
@@ -48,9 +41,5 @@
 			flex: 0 0 0;
 			max-width: 100%;
 		}
-	}
-	.mb__img {
-		flex: 0 0 0;
-		max-width: 100%;
 	}
 }

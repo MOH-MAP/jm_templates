@@ -439,6 +439,97 @@ iframe {
   margin-top: 30px;
   display: inline-block;
 }
+.full__widthcontainer {
+  position: relative !important;
+}
+.mb__img {
+  display: none;
+}
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: transparent;
+}
+.slide-1 {
+  background-image: url(../images/new__jm__images/background.svg);
+}
+.slide-content {
+  position: absolute;
+  top: 200px;
+  transform: translateY(-50%);
+  color: $jmWhiteColor;
+  padding: 0 20%;
+  align-items: center;
+}
+.slide {
+  width: 100%;
+  height: 509px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.owl-theme .owl-dots .owl-dot span,
+.owl-theme .owl-dots .owl-dot.active span {
+  background: transparent;
+}
+.owl-dots {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+}
+.owl-dot {
+  background: $jmWhiteColor !important;
+  width: 10px;
+  height: 10px;
+  cursor: pointer !important;
+  margin: 7px;
+  border: 1px solid $jmWhiteColor !important;
+  border-radius: 50%;
+  padding: 0;
+  position: relative;
+  bottom: 60px;
+}
+.owl-dot.active {
+  background: $jmEgyptianBlueColor !important;
+}
+.owl-prev,
+.owl-next {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  margin-top: -12px !important;
+  left: 24px;
+  background: url(../../resources/images/chevron__left__icon.png) no-repeat
+    transparent !important;
+  background-size: contain !important;
+  z-index: 3;
+  cursor: pointer !important;
+}
+.owl-next {
+  left: auto;
+  right: 24px;
+  background: url(../../resources/images/chevron__right__icon.png) no-repeat
+    transparent !important;
+  background-size: contain !important;
+}
+.owl-prev span,
+.owl-next span {
+  display: none;
+}
+.owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.owl-theme .owl-dots .owl-dot span {
+  background: transparent !important;
+}
+
 @media(max-width: 990px) {
   .explore-icon{
     width: 20px;
@@ -462,6 +553,16 @@ iframe {
     margin: 0px;
   }
 }
+@media (min-width: 540px) and (max-width: 834px) {
+  .mb__img {
+		flex: 0 0 0;
+		max-width: 100%;
+	  display: block;
+    img{
+      width: 100%;
+    }
+  }
+}
 @media (min-width: 320px) and (max-width: 539px) {
   .centered {
     top: 15rem;
@@ -481,5 +582,13 @@ iframe {
     width: 20px;
     height: 20px;
     margin-top: 0px;
+  }
+  .mb__img {
+		flex: 0 0 0;
+		max-width: 100%;
+	  display: block;
+    img{
+      width: 100%;
+    }
   }
 }

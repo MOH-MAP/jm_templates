@@ -75,12 +75,6 @@
   width: 100%;
   height: auto;
 }
-.full__widthcontainer {
-  position: relative;
-}
-.mb__img {
-  display: none;
-}
 @media (min-width: 320px) and (max-width: 539px) {
   .industry__btn {
     width: 100% !important;
@@ -95,12 +89,6 @@
   .industry__img {
     display: none;
   }
-  .mb__img {
-    display: block;
-  }
-  .mb__img img {
-    width: 100%;
-  }
 }
 @media (min-width: 540px) and (max-width: 834px) {
   .industry__text {
@@ -109,12 +97,6 @@
   }
   .industry__img {
     display: none;
-  }
-  .mb__img {
-    display: block;
-  }
-  .mb__img img {
-    width: 100%;
   }
   .industry__btn {
     width: 260px !important ;
