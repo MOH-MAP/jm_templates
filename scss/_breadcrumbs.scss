@@ -10,10 +10,10 @@
 }
 .breadcrumb-link{
     @include generateFont($jmFont, 14px, 28px, $jmAntiFlashWhiteColor, 0.8);
-}
-.breadcrumb-link:hover{
-    opacity: .5;
-    text-decoration: none;
+    &:hover{
+        opacity: .5;
+        text-decoration: none;
+    }
 }
 .breadcrumb-text-truncate{
     @include generateFont($jmFont, 14px, 28px, $jmWhiteColor);

@@ -55,10 +55,11 @@
 .innovating__sec {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 .innovating__content {
   flex: 0 0 55%;
-  padding-top: 47px;
+  padding-top: 20px;
 }
 .innovating__space {
   flex: 0 0 5%;
@@ -71,7 +72,7 @@
 }
 .invte__heading {
   font-size: 34px;
-  line-height: 48px;
+  line-height: 36px;
   font-family: $jmMediumFont;
   color: $jmDarkCharcoalColor;
   text-align: left;

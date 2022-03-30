@@ -41,8 +41,9 @@ li {
 .jmheader__navbar {
   .jmheader__navlinks {
     display: flex;
-    padding: 0px 10px;
     flex-wrap: wrap;
+    margin-bottom: 0;
+	  padding: 0px 25px;
   }
 }
 .jmheader__navlist {
@@ -387,6 +388,56 @@ iframe {
 }
 .carousel-control-prev-icon {
   background-image: url("../images/new__jm__images/casestudy-left-arrow.svg");
+}
+.no-heading {
+  opacity: 0;
+}
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  input[type="checkbox"] {
+    border: none;
+    outline: none;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    &:checked {
+      + {
+        label {
+          &::after {
+            content: url(../images/new__jm__images/chechboxright__arrow.png);
+            right: 0px;
+            top: 28px;
+            left: 2px;
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+  label {
+    &::before {
+      content: url(../images/new__jm__images/check_box_outline_blank.svg);
+      position: relative;
+      right: 2px;
+      top: 9px;
+    }
+  }
+}
+.ejm__btn{
+  padding: 20px;
+  background: $jmEgyptianBlueColor;
+  color: $jmWhiteColor !important;
+  opacity: 1!important;
+  text-align: right;
+  font-family: $jmMediumFont!important;
+  font-size: 18px!important;
+  line-height: 22px!important;
+  align-items: center;
+  text-transform: uppercase;
+  margin-top: 30px;
+  display: inline-block;
 }
 @media(max-width: 990px) {
   .explore-icon{
