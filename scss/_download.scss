@@ -4,43 +4,30 @@
 }
 .jmdownload-list-item {
 	text-align: left;
-	letter-spacing: 0px;
-	color: $jmEgyptianBlueColor;
-	opacity: 1;
-	font-size: 18px;
-	font-family: $jmMediumFont;
-	.jmdownload-list-link {
+	@include generateFont($jmMediumFont, 18px, false, $jmEgyptianBlueColor);
+    .jmdownload-list-link {
 		text-decoration: none;
-		color: $jmEgyptianBlueColor;
-		font: 18px/22px $jmMediumFont;
-		display: flex;
+		@include generateFont($jmMediumFont, 18px, 22px, $jmEgyptianBlueColor);
+        display: flex;
 		margin-left: 60px;
 	}
 }
 .jmdownload-link-icon {
-	background: url("../images/new__jm__images/download-icon.svg") 0 0 no-repeat transparent;
-	display: block;
-	width: 24px;
-	height: 24px;
-	margin-left: 1rem;
+	@include generateIcon(24px, 24px, "../images/new__jm__images/download-icon.svg");
+    margin-left: 1rem;
 	margin-top: 0px;
 	float: right;
 }
 .jmdownload-list-link {
-	position: absolute;
-	bottom: 0px;
 	color: $jmEgyptianBlueColor;
+    @include generatePosAbs(auto, auto, 0);
 	&:hover {
 		text-decoration: none;
 	}
 }
 .jmdownload-left-side {
 	h1 {
-		font-size: 38px;
-		font-family: $jmMediumFont;
-		letter-spacing: 0px;
-		color: $jmDarkCharcoalColor;
-		opacity: 1;
+        @include generateFont($jmMediumFont, 38px, false, $jmDarkCharcoalColor);
 	}
 }
 .jmdownload-right-img {
@@ -48,16 +35,13 @@
 	height: 200px;
 	float: right;
 }
-
 @media (min-width: 540px) and (max-width:834px) {
     .jmdownload-right-img {
-    padding-right: 0px;
-    height: 175px;
-    float:right;
+        padding-right: 0px;
+        height: 175px;
+        float:right;
     }
-}
-
-   
+}   
 @media(min-width: 320px) and (max-width: 539px) {
     .jmdownload-inner-container {
         background: $jmLightShadeWhiteColor;
@@ -68,11 +52,7 @@
         position: absolute;
         height: 125px;
         h1 {
-            font-size: 20px;
-            font-family: $jmMediumFont;
-            letter-spacing: 0px;
-            color: $jmDarkCharcoalColor;
-            opacity: 1;
+            @include generateFont($jmMediumFont, 20px, false, $jmDarkCharcoalColor);
         }
     }
     .jmdownload-right-img {
@@ -82,11 +62,7 @@
     }
     .jmdownload-list-item {
         text-align: left;
-        letter-spacing: 0px;
-        color: $jmEgyptianBlueColor;
-        opacity: 1;
-        font-size: 16px;
-        font-family: $jmMediumFont;
+        @include generateFont($jmMediumFont, 16px, false, $jmEgyptianBlueColor);
     }
     .jmdownload-link-icon {
         width: 20px;
@@ -95,9 +71,8 @@
         margin-top: 0px;
     }
     .jmdownload-list-link {
-        position: absolute;
-        bottom: 0px;
         color: $jmEgyptianBlueColor;
+        @include generatePosAbs(auto, auto, 0);
     }
     
 }
