@@ -1,36 +1,23 @@
 .jmimg--cardblock-link--icon {
-  background: url("../images/new__jm__images/blue-right-arrow.svg ") 0 0
-    no-repeat transparent;
-  display: block;
-  width: 24px;
-  height: 24px;
+  @include generateIcon(24px, 24px, "../images/new__jm__images/blue-right-arrow.svg");
   margin-left: 8px;
 }
 .col-md-4.\33 .jmimg-cardblock--col-img img {
   height: 190px;
   float: right;
 }
-
 .col-md-6.\32 .jmimg-cardblock--col-img img {
   height: 158px;
   float: right;
 }
-
 .jmimage-card-block--header {
-  font-family: $jmMediumFont;
   padding: 20px 0px 30px 0px;
-  font-size: 34px;
-  letter-spacing: 0px;
-  color: $jmDarkCharcoalColor;
-  opacity: 1;
+  @include generateFont($jmMediumFont, 34px, false, $jmDarkCharcoalColor);
 }
 .jmimg__cardblock-body {
   flex: 1 1 auto;
   min-height: 1px;
-  padding-bottom: 0.5rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  padding-top: 1.25rem;
+  @include generatePadding(1.25rem, 1.25rem, 1.25rem, 0.5rem);
 }
 .jmimg-card_block {
   border-bottom: 15px solid $jmEgyptianBlueColor;
@@ -38,41 +25,27 @@
 }
 .jmimg--cardblock--title {
   text-align: left;
-  font-size: 14px;
-  letter-spacing: 0px;
-  color: $jmDarkCharcoalColor;
   text-transform: capitalize;
-  opacity: 1;
-  font-family: $jmFont;
+  @include generateFont($jmFont, 14px, false, $jmDarkCharcoalColor);
 }
 .row.jmimg-cardblock--no-gutters {
   height: 100%;
 }
 .jmimg--cardblock--text {
-  font-size: 25px;
-  line-height: 1.2em;
-  font-weight: 500;
-  font-family: $jmFont;
-  color: $jmDarkCharcoalColor;
   padding-right: 0px;
   padding-bottom: 40px;
   width: 100%;
+  @include generateFont($jmFont, 25px, 1.2em, $jmDarkCharcoalColor, 1, 500);
 }
-
 .jmimg--cardblock-list--ilnk {
-  text-decoration: none;
-  text-decoration-color: $jmEgyptianBlueColor;
-  color: $jmEgyptianBlueColor;
-  font: 17px/22px $jmMediumFont;
+  @include generateTextDecoration;
   display: flex;
   margin-top: 0px;
-  bottom: 15px;
-  position: absolute;
+  @include generatePosAbs(auto, auto, auto, 15px);
+  @include generateFont($jmMediumFont, 17px, 22px, $jmEgyptianBlueColor);
   &:hover {
-    text-decoration: none;
-    text-decoration-color: $jmEgyptianBlueColor;
-    color: $jmEgyptianBlueColor;
-    font: 17px/22px $jmMediumFont;
+    @include generateTextDecoration;
+    @include generateFont($jmMediumFont, 17px, 22px, $jmEgyptianBlueColor);
     display: flex;
     margin-top: 0px;
   }
@@ -84,39 +57,27 @@
   height: 24px;
   margin-left: 8px;
 }
-
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .jmimg--cardblock--text {
-    font-size: 22px;
-    line-height: 1.2em;
-    font-weight: 500;
-    font-family: $jmFont;
-    color: $jmDarkCharcoalColor;
     padding-right: 0px;
     width: 100%;
     padding-bottom: 30px;
+    @include generateFont($jmFont, 22px, 1.2em, $jmDarkCharcoalColor, 1, 500);
   }
   .jmimg--cardblock--title {
     text-align: left;
-    font-size: 13px;
-    letter-spacing: 0px;
-    color: $jmDarkCharcoalColor;
     text-transform: capitalize;
-    opacity: 1;
-    font-family: $jmFont;
+    @include generateFont($jmFont, 13px, false, $jmDarkCharcoalColor);
   }
   .jmimg--cardblock-list--ilnk {
-    text-decoration: none;
-    text-decoration-color: $jmEgyptianBlueColor;
-    color: $jmEgyptianBlueColor;
-    font: 16px/22px $jmMediumFont;
+    @include generateTextDecoration;
     display: flex;
     margin-top: 0px;
-    bottom: 15px;
-    position: absolute;
+    @include generatePosAbs(auto, auto, auto, 15px);
+    @include generateFont($jmMediumFont, 16px, 22px, $jmEgyptianBlueColor);
   }
   .col-md-4.\33 {
-    -jmimg-cardblock--col-img {
+    .jmimg-cardblock--col-img {
       img {
         height: 170px;
         float: right;
@@ -124,7 +85,7 @@
     }
   }
   .col-md-6.\32 {
-    -jmimg-cardblock--col-img {
+    .jmimg-cardblock--col-img {
       img {
         height: 145px;
         float: right;
@@ -134,51 +95,33 @@
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   .jmimage-card-block--header {
-    font-family: $jmMediumFont;
     padding: 15px 0px 20px 0px;
-    font-size: 26px;
-    letter-spacing: 0px;
-    color: $jmDarkCharcoalColor;
-    opacity: 1;
+    @include generateFont($jmMediumFont, 26px, false, $jmDarkCharcoalColor);
   }
   .jmimg__cardblock-body {
     flex: 1 1 auto;
     min-height: 1px;
-    padding-bottom: 0.5rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-top: 0.5rem;
+    @include generatePadding(0.5rem, 0.5rem, 0.5rem, 0.5rem);
   }
   .jmimg--cardblock--text {
-    font-size: 18px;
-    line-height: 1.2em;
-    font-weight: 500;
-    font-family: $jmFont;
-    color: $jmDarkCharcoalColor;
     padding-right: 0px;
     width: 100%;
+    @include generateFont($jmFont, 18px, 1.2em, $jmDarkCharcoalColor, 1, 500);
   }
   .jmimg--cardblock--title {
     text-align: left;
-    font-size: 12px;
-    letter-spacing: 0px;
-    color: $jmDarkCharcoalColor;
     text-transform: capitalize;
-    opacity: 1;
-    font-family: $jmFont;
+    @include generateFont($jmFont, 12px, false, $jmDarkCharcoalColor);
   }
   .jmimg--cardblock-list--ilnk {
-    text-decoration: none;
-    text-decoration-color: $jmEgyptianBlueColor;
-    color: $jmEgyptianBlueColor;
-    font: 14px/22px $jmMediumFont;
+    @include generateTextDecoration;
+    @include generateFont($jmMediumFont, 14px, 22px, $jmEgyptianBlueColor);
+    @include generatePosAbs(auto, auto, auto, 10px);
     display: flex;
     margin-top: 0px;
-    bottom: 10px;
-    position: absolute;
   }
   .col-md-4.\33 {
-    -jmimg-cardblock--col-img {
+    .jmimg-cardblock--col-img {
       img {
         height: 140px;
         float: right;
@@ -186,7 +129,7 @@
     }
   }
   .col-md-6.\32 {
-    -jmimg-cardblock--col-img {
+    .jmimg-cardblock--col-img {
       img {
         height: 120px;
         float: right;
@@ -197,23 +140,18 @@
     border-bottom: 10px solid $jmEgyptianBlueColor;
   }
 }
-
 @media (min-width: 576px) and (max-width: 767.98px) {
   .jmimg--cardblock--text {
-    font-size: 25px;
-    line-height: 1.2em;
-    font-weight: 500;
-    font-family: $jmFont;
-    color: $jmDarkCharcoalColor;
     padding-right: 0px;
     width: 150%;
+    @include generateFont($jmFont, 25px, 1.2em, $jmDarkCharcoalColor, 1, 500);
   }
   .jmimg-card_block {
     border-bottom: 15px solid $jmEgyptianBlueColor;
     margin-bottom: 20px;
   }
   .col-md-4.\33 {
-    -jmimg-cardblock--col-img {
+    .jmimg-cardblock--col-img {
       img {
         height: 130px;
         float: right;
@@ -222,7 +160,7 @@
     }
   }
   .col-md-6.\32 {
-    -jmimg-cardblock--col-img {
+    .jmimg-cardblock--col-img {
       img {
         height: 125px;
         float: right;
@@ -231,7 +169,6 @@
     }
   }
 }
-
 @media (max-width: 575.98px) {
   .jmimg-card_block {
     border-bottom: 8px solid $jmEgyptianBlueColor;
@@ -240,42 +177,28 @@
   .jmimg__cardblock-body {
     flex: 1 1 auto;
     min-height: 1px;
-    padding-bottom: 0.5rem;
-    padding-left: 0.7rem;
-    padding-right: 0rem;
-    padding-top: 0.7rem;
+    @include generatePadding(0.7rem, 0, 0.7rem, 0.5rem);
   }
   .jmimage-card-block--header {
-    font-family: $jmMediumFont;
     padding: 10px 0px 20px 0px;
-    font-size: 24px;
-    letter-spacing: 0px;
-    color: $jmDarkCharcoalColor;
+    @include generateFont($jmMediumFont, 24px, false, $jmDarkCharcoalColor);
   }
   .jmimg--cardblock--title {
     text-align: left;
-    font-size: 12px;
-    letter-spacing: 0px;
-    color: $jmDarkCharcoalColor;
     text-transform: capitalize;
-    opacity: 1;
-    font-family: $jmFont;
+    @include generateFont($jmFont, 12px, false, $jmDarkCharcoalColor);
   }
   .jmimg--cardblock--text {
-    font-size: 20px;
-    line-height: 1.2em;
-    font-weight: 500;
-    font-family: $jmFont;
-    color: $jmDarkCharcoalColor;
     padding-right: 0px;
     padding-bottom: 0px;
     width: 100%;
+    @include generateFont($jmFont, 20px, 1.2em, $jmDarkCharcoalColor, 1, 500);
   }
   .jmimg--cardblock-link--text {
     display: none;
   }
   .col-md-4.\33 {
-    -jmimg-cardblock--col-img {
+    .jmimg-cardblock--col-img {
       img {
         height: 100px;
         float: right;
@@ -284,7 +207,7 @@
     }
   }
   .col-md-6.\32 {
-    -jmimg-cardblock--col-img {
+    .jmimg-cardblock--col-img {
       img {
         height: 100px;
         float: right;
@@ -293,19 +216,16 @@
     }
   }
   .jmimg--cardblock-list--ilnk {
-    text-decoration: none;
-    text-decoration-color: $jmEgyptianBlueColor;
-    color: $jmEgyptianBlueColor;
-    font: 17px/22px $jmMediumFont;
+    @include generateTextDecoration;
     display: flex;
     margin-top: 0px;
     bottom: 15px;
     float: right;
     margin-top: -15px;
     position: relative;
+    @include generateFont($jmMediumFont, 17px, 22px, $jmEgyptianBlueColor);
   }
 }
-
 .jmimg--cardblock--longcol {
   .jmimg--cardblock-img.rounded-0 {
     width: 100%;
@@ -314,16 +234,12 @@
 .jmimg--cardblock--body {
   flex: 1 1 auto;
   min-height: 1px;
-  padding-bottom: 0.5rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  padding-top: 1.25rem;
+  @include generatePadding(1.25rem, 1.25rem, 1.25rem, 0.5rem);
   width: 100%;
 }
 .jmimg--main--cardblock {
   border-bottom: 15px solid $jmEgyptianBlueColor;
 }
-
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .jmimg--cardblock--longcol {
     .jmimg--cardblock-img.rounded-0 {
@@ -342,10 +258,7 @@
   .jmimg--cardblock--body {
     flex: 1 1 auto;
     min-height: 1px;
-    padding-bottom: 0.5rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-top: 0.5rem;
+    @include generatePadding(0.5rem, 0.5rem, 0.5rem, 0.5rem);
     width: 100%;
   }
 }
@@ -369,10 +282,7 @@
   .jmimg--cardblock--body {
     flex: 1 1 auto;
     min-height: 1px;
-    padding-bottom: 0.5rem;
-    padding-left: 0.7rem;
-    padding-right: 0rem;
-    padding-top: 0.7rem;
+    @include generatePadding(0.7rem, 0, 0.7rem, 0.5rem);
     width: 100%;
   }
   .jmimg-card_block {

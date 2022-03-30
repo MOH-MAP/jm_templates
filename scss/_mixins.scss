@@ -72,3 +72,8 @@
     padding-top: $padTop;
   }
 }
+@mixin linkNHover{
+    background-color: $jmEgyptianBlueColor;
+    color: $jmWhiteColor;
+    text-decoration: none;
+}
