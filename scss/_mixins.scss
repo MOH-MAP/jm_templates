@@ -4,10 +4,20 @@
     line-height: $lineHeight;
     font-family: $fontFamily;
     opacity: $elementOpacity;
+    letter-spacing: 0px;
 }
 @mixin generateIcon($iconWidth: 24px, $iconHeight: 24px, $bgImage: "../images/new__jm__images/jm__accrdn_arrow_blue.svg"){
     display: block;
     width: $iconWidth;
     height: $iconHeight;
     background: url($bgImage) 0 0  no-repeat transparent;
+}
+@mixin generateBgSizePos{
+    background-position: center;
+	background-size: cover;
+}
+@mixin generatePosAbs($posLeft: auto, $posTop: auto, $posBottom: auto, $posRight: auto){
+    position: absolute;
+    left: $posLeft;
+    top: $posTop;
 }

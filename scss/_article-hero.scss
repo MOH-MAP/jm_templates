@@ -1,50 +1,35 @@
 .jmarticle__hero-main-container {
-	background-position: center;
-	background-size: cover;
+	@include generateBgSizePos;
 	width: 100%;
 	height: 457px;
 	position: relative;
 	.article__para {
 		text-align: left;
-		font-size: 16px;
-		line-height: 25px;
-		font-family: $jmMediumFont;
-		letter-spacing: 0px;
-		color: $jmWhiteColor;
 		text-shadow: $jmTextShadow1;
-		opacity: 0.8;
+		@include generateFont($jmMediumFont, 16px, 25px, $jmWhiteColor, 0.8);
 	}
 	.article__heading {
 		text-align: left;
-		font-size: 48px;
-		line-height: 60px;
-		font-family: $jmMediumFont;
-		letter-spacing: 0px;
-		color: $jmWhiteColor;
 		text-shadow: $jmTextShadow1;
-		opacity: 1;
 		margin-top: 74px;
 		margin-bottom: 21px;
+		@include generateFont($jmMediumFont, 48px, 60px, $jmWhiteColor);
 	}
 	.article__btn {
 		display: flex;
 		background-color: $jmEgyptianBlueColor;
-		color: $jmWhiteColor !important;
 		width: 321px;
 		border: none;
 		outline: none;
 		padding: 20px 10px 17px 24px;
 		justify-content: flex-end;
 		text-align: right;
-		font-size: 18px;
-		font-family: $jmMediumFont;
-		line-height: 22px;
-		letter-spacing: 0px;
 		text-transform: uppercase;
 		margin-bottom: 30px;
 		text-decoration: none !important;
 		position: absolute;
 		bottom: 80px;
+		@include generateFont($jmMediumFont, 18px, 22px, $jmWhiteColor !important);
 		&:hover {
 			text-decoration: none;
 			color: $jmWhiteColor;
