@@ -1,20 +1,14 @@
 .jmaccrdn {
   .jmaccrdn__heading {
     padding-bottom: 46px;
-    color: $jmDarkCharcoalColor;
-    font-size: 40px;
-    line-height: 48px;
-    font-family: $jmMediumFont;
     margin: 0px;
     padding-left: 40px;
     text-align: left;
+    @include generateFont($jmMediumFont, 40px, 48px, $jmDarkCharcoalColor);
   }
   .jmaccrdn__title {
     padding: 24px 40px;
-    color: $jmGraniteGrayColor;
-    font-size: 24px;
-    line-height: 32px;
-    font-family: $jmMediumFont;
+    @include generateFont($jmMediumFont, 24px, 32px, $jmGraniteGrayColor);
     margin: 0;
     border-bottom: 1px solid $jmBlackColorOpc1;
     cursor: pointer;
@@ -32,19 +26,12 @@
   .jmaccrdn__answer-sec {
     padding: 60px;
     p {
-      font-size: 18px;
-      line-height: 27px;
-      color: $jmDarkCharcoalColor;
-      font-family: $jmFont;
       margin-bottom: 36px;
+      @include generateFont($jmFont, 18px, 27px, $jmDarkCharcoalColor);
     }
   }
   .jmaccrdn__arrow {
-    background: url("../images/new__jm__images/jm__accrdn_arrow_blue.svg") 0 0
-      no-repeat transparent;
-    display: block;
-    width: 24px;
-    height: 24px;
+    @include generateIcon(24px, 24px, "../images/new__jm__images/jm__accrdn_arrow_blue.svg");
     margin-left: 8px;
     margin-top: 7px;
   }
@@ -65,11 +52,7 @@
       font-size: 14px;
     }
     .jmaccrdn__arrow {
-      background: url("../images/new__jm__images/jm__accrdn_arrow_blue.svg") 0 0
-        no-repeat transparent;
-      display: block;
-      width: 20px;
-      height: 20px;
+      @include generateIcon(20px, 20px, "../images/new__jm__images/jm__accrdn_arrow_blue.svg");
       margin-left: 8px;
     }
   }

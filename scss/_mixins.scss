@@ -1,0 +1,13 @@
+@mixin generateFont($fontFamily: $jmFont, $fontSize: 12px, $lineHeight: 20px, $fontColor: $jmDarkCharcoalColor, $elementOpacity: 1) {
+    color: $fontColor;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    font-family: $fontFamily;
+    opacity: $elementOpacity;
+}
+@mixin generateIcon($iconWidth: 24px, $iconHeight: 24px, $bgImage: "../images/new__jm__images/jm__accrdn_arrow_blue.svg"){
+    display: block;
+    width: $iconWidth;
+    height: $iconHeight;
+    background: url($bgImage) 0 0  no-repeat transparent;
+}
