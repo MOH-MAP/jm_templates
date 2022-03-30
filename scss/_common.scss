@@ -349,6 +349,45 @@ iframe {
   text-decoration-color: $jmEgyptianBlueColor;
   display: flex;
 }
+.centered {
+  @include generatePosAbs(50%, 8rem);
+  transform: translate(-50%, -50%);
+}
+.submit__btn {
+  display: flex;
+  outline: none;
+  border: none;
+  background-color: $jmEgyptianBlueColor;
+  padding: 16px 10px 14px 34px;
+  text-align: right;
+  text-transform: uppercase;
+  opacity: 1;
+  justify-content: right;
+  @include generateFont($jmMediumFont, 18px, 22px, $jmWhiteColor);
+}
+.button__sec {
+  display: flex;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  align-items: center;
+  color: $jmWhiteColor;
+  display: flex;
+  justify-content: center;
+  opacity: 1;
+  text-align: center;
+  transition: opacity 0.15s ease;
+  @include generatePosAbs(auto, 0, 0, auto);
+  width: 3%;
+  z-index: 1;
+  margin: -25px;
+}
+.carousel-control-next-icon {
+  background-image: url("../images/new__jm__images/casestudy-right-arrow.svg");
+}
+.carousel-control-prev-icon {
+  background-image: url("../images/new__jm__images/casestudy-left-arrow.svg");
+}
 @media(max-width: 990px) {
   .explore-icon{
     width: 20px;
@@ -356,7 +395,34 @@ iframe {
     margin-left: 8px;
   }
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    align-items: center;
+    color: $jmWhiteColor;
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    text-align: center;
+    @include generatePosAbs(auto, 0, 0, auto);
+    transition: opacity 0.15s ease;
+    width: 3%;
+    z-index: 1;
+    margin: 0px;
+  }
+}
 @media (min-width: 320px) and (max-width: 539px) {
+  .centered {
+    top: 15rem;
+  }
+  .dropdown__sec {
+    border: 0;
+  }
+  .submit__btn {
+    width: 100%;
+    justify-content: flex-end;
+    font-size: 16px;
+  }
   .arrow__forward {
     background: url("../images/new__jm__images/arrow_forward-white-20.svg") 0 0
       no-repeat transparent;

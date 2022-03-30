@@ -1,17 +1,13 @@
 .cardblock__list-link {
-	text-decoration: none;
-	text-decoration-color: $jmEgyptianBlueColor;
-	color: $jmEgyptianBlueColor;
-	font: 17px/22px $jmMediumFont;
-	display: flex;
+	@include generateTextDecoration;
+    display: flex;
 	margin-top: 0px;
+    @include generateFont($jmMediumFont, 17px, 22px, $jmEgyptianBlueColor);
 }
 .list-item {
 	.cardblock__list-link {
-		text-decoration: none;
-		text-decoration-color: $jmEgyptianBlueColor;
-		color: $jmEgyptianBlueColor;
-		font: 18px/22px $jmMediumFont;
+		@include generateTextDecoration;
+        @include generateFont($jmMediumFont, 18px, 22px, $jmEgyptianBlueColor);
 		display: flex;
 	}
 }
@@ -23,20 +19,12 @@ h1 {
 		margin-bottom: 40px;
 	}
 	&.cardblock__title1 {
-		font-family: $jmMediumFont;
-		padding: 20px 0px 30px 0px;
-		font-size: 34px;
-		letter-spacing: 0px;
-		color: $jmDarkCharcoalColor;
-		opacity: 1;
+        @include generatePadding(0, 0, 20px, 30px);
+        @include generateFont($jmMediumFont, 34px, false, $jmDarkCharcoalColor);
 	}
 	&.cardblock_heading {
-		font-family: $jmMediumFont;
-		padding: 20px 0px 30px 0px;
-		font-size: 34px;
-		letter-spacing: 0px;
-		color: $jmDarkCharcoalColor;
-		opacity: 1;
+		@include generatePadding(0, 0, 20px, 30px);
+        @include generateFont($jmMediumFont, 34px, false, $jmDarkCharcoalColor);
 	}
 }
 .cardblock__body {
@@ -49,15 +37,10 @@ h1 {
             .cardblock__body {
                 flex: 1 1 auto;
                 min-height: 1px;
-                padding-bottom: 0.5rem;
-                padding-left: 1.25rem;
-                padding-right: 1.25rem;
-                padding-top: 1.25rem;
+                @include generatePadding(1.25rem, 1.25rem, 1.25rem, 0.5rem);
                 .cardblock__list-link {
-                    text-decoration: none;
-                    text-decoration-color: $jmEgyptianBlueColor;
-                    color: $jmEgyptianBlueColor;
-                    font: 18px/22px $jmMediumFont;
+                    @include generateTextDecoration;
+                    @include generateFont($jmMediumFont, 18px, 22px, $jmEgyptianBlueColor);
                     display: flex;
                     float: right;
                     margin-top: -35px;
@@ -72,44 +55,28 @@ h1 {
     }
 }
 .cardblock__link-icon {
-    background: url("../images/new__jm__images/blue-right-arrow.svg") 0 0
-    no-repeat transparent;
-    display: block;
-    width: 24px;
     margin-top: 3px;
-    height: 24px;
     margin-left: 8px;
+    @include generateIcon(24px, 24px, "../images/new__jm__images/blue-right-arrow.svg");
 }
 .cardblock__title {
 	text-transform: capitalize;
-	font-family: $jmFont;
 	text-align: left;
-	font-size: 14px;
-	letter-spacing: 0px;
-	color: $jmDarkCharcoalColor;
-	opacity: 1;
+    @include generateFont($jmFont, 14px, false, $jmDarkCharcoalColor);
 }
 h2 {
 	&.cardblock__card-text {
 		&.wrap-three {
-			font-size: 25px;
-			line-height: 1.2em;
-			font-weight: 500;
-			font-family: $jmFont;
-			color: $jmDarkCharcoalColor;
-			letter-spacing: 0px;
-			opacity: 1;
+            @include generateFont($jmFont, 25px, 1.2em, $jmDarkCharcoalColor, 1, 500);
 		}
 	}
 }
 .cardblock_container-fluid {
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: 0px;
-	padding-right: 0px;
 	width: 100%;
-	padding: 0rem 8rem;
-	a {
+    @include generatePadding(8rem, 8rem, 0, 0);
+    a {
 		text-decoration: none;
 	}
 }
@@ -117,10 +84,7 @@ h2 {
 	.cardblock__body {
 		flex: 1 1 auto;
 		min-height: 1px;
-		padding-bottom: 0rem;
-		padding-left: 1.25rem;
-		padding-right: 1.25rem;
-		padding-top: 1.25rem;
+        @include generatePadding(1.25rem, 1.25rem, 1.25rem, 0);
 		.cardblock__list-link {
 			float: right;
 			margin-top: -42px;
@@ -133,22 +97,12 @@ h2 {
 			}
 			.cardblock__title {
 				text-align: left;
-				font-size: 14px;
-				letter-spacing: 0px;
-				color: $jmDarkCharcoalColor;
 				text-transform: capitalize;
-				opacity: 1;
-				font-family: $jmFont;
+                @include generateFont($jmFont, 14px, false, $jmDarkCharcoalColor);
 			}
 			.cardblock__card-text {
 				&.wrap-three {
-					font-size: 25px;
-					line-height: 1.2em;
-					font-weight: 500;
-					font-family: $jmFont;
-					color: $jmDarkCharcoalColor;
-					letter-spacing: 0px;
-					opacity: 1;
+                    @include generateFont($jmFont, 25px, 1.2em, $jmDarkCharcoalColor, 1, 500);
 				}
 			}
 			.wrap-three {
@@ -163,10 +117,7 @@ h2 {
 	.body {
 		flex: 1 1 auto;
 		min-height: 1px;
-		padding-bottom: 1.5rem;
-		padding-left: 1.25rem;
-		padding-right: 1.25rem;
-		padding-top: 1.25rem;
+        @include generatePadding(1.25rem, 1.25rem, 1.25rem, 1.5rem);
 	}
 }
 .cardblock_section {
@@ -174,26 +125,15 @@ h2 {
 		.cardblock__body {
 			flex: 1 1 auto;
 			min-height: 1px;
-			padding-bottom: 0.99rem;
-			padding-left: 1.25rem;
-			padding-right: 1.25rem;
-			padding-top: 1.25rem;
+            @include generatePadding(1.25rem, 1.25rem, 1.25rem, 0.99rem);
 			.cardblock__title {
 				text-align: left;
-				font-size: 14px;
-				letter-spacing: 0px;
-				color: $jmDarkCharcoalColor;
 				text-transform: capitalize;
-				opacity: 1;
-				font-family: $jmFont;
+                @include generateFont($jmFont, 14px, false, $jmDarkCharcoalColor);
 			}
 			.cardblock__card-text {
 				&.wrap-three {
-					font-size: 25px;
-					line-height: 1.2em;
-					font-weight: 500;
-					font-family: $jmFont;
-					color: $jmDarkCharcoalColor;
+                    @include generateFont($jmFont, 25px, 1.2em, $jmDarkCharcoalColor, 1, 500);
 				}
 			}
 			.wrap-three {
@@ -208,24 +148,18 @@ h2 {
     .cardblock_container-fluid {
         margin-left: auto;
         margin-right: auto;
-        padding-left: 0px;
-        padding-right: 0px;
         width: 100%;
-        padding: 0rem 2rem;
+        @include generatePadding(2rem, 2rem, 0rem, 0rem);
     }
     h1 {
         &.cardblock_heading {
             font-family: $jmMediumFont;
-            padding: 25px 0px 20px 0px;
             font-size: 30px;
+            @include generatePadding(0, 0, 25px, 20px);
         }
         &.cardblock__title1 {
-            font-family: $jmMediumFont;
-            padding: 0px 0px 30px 0px;
-            font-size: 30px;
-            letter-spacing: 0px;
-            color: $jmDarkCharcoalColor;
-            opacity: 1;
+            @include generatePadding(0, 0, 0, 30px);
+            @include generateFont($jmMediumFont, 30px, false, $jmDarkCharcoalColor);
         }
     }
     .cardblock_section {
@@ -233,11 +167,7 @@ h2 {
             .cardblock__body {
                 .cardblock__card-text {
                     &.wrap-three {
-                        font-size: 22px;
-                        line-height: 1.2em;
-                        font-weight: 500;
-                        font-family: $jmFont;
-                        color: $jmDarkCharcoalColor;
+                        @include generateFont($jmFont, 22px, 1.2em, $jmDarkCharcoalColor, 1, 500);
                     }
                 }
             }
@@ -246,13 +176,7 @@ h2 {
     h2 {
         &.cardblock__card-text {
             &.wrap-three {
-                font-size: 22px;
-                line-height: 1.2em;
-                font-weight: 500;
-                font-family: $jmFont;
-                color: $jmDarkCharcoalColor;
-                letter-spacing: 0px;
-                opacity: 1;
+                @include generateFont($jmFont, 22px, 1.2em, $jmDarkCharcoalColor, 1, 500);
             }
         }
         &.wrap-three {
@@ -271,13 +195,7 @@ h2 {
                 }
                 .cardblock__card-text {
                     &.wrap-three {
-                        font-size: 22px;
-                        line-height: 1.2em;
-                        font-weight: 500;
-                        font-family: $jmFont;
-                        color: $jmDarkCharcoalColor;
-                        letter-spacing: 0px;
-                        opacity: 1;
+                        @include generateFont($jmFont, 22px, 1.2em, $jmDarkCharcoalColor, 1, 500);
                     }
                 }
             }
@@ -286,15 +204,15 @@ h2 {
 }
 @media (min-width: 320px) and (max-width: 539px) {
     .cardblock_container-fluid {
-        padding: 0.25rem;
+        @include generatePadding(0.25rem, 0.25rem, 0.25rem, 0.25rem);
     }
     h1 {
         &.cardblock_heading {
-            padding: 10px 10px 20px 10px;
+            @include generatePadding(10px, 10px, 10px, 20px);
             font-size: 24px;
         }
         &.cardblock__title1 {
-            padding: 10px 10px 20px 10px;
+            @include generatePadding(10px, 10px, 10px, 20px);
             font-size: 24px;
         }
     }
@@ -305,10 +223,7 @@ h2 {
                 border-bottom: 8px solid $jmEgyptianBlueColor;
                 flex: 1 1 auto;
                 min-height: 1px;
-                padding-bottom: 0.3rem;
-                padding-left: 0.5rem;
-                padding-right: 0.5rem;
-                padding-top: 0.5rem;
+                @include generatePadding(0.5rem, 0.5rem, 0.5rem, 0.3rem);
                 .cardblock__card-text {
                     &.wrap-three {
                         font-size: 20px;
@@ -327,15 +242,13 @@ h2 {
         }
     }
     .cardblock__list-link {
-        text-decoration: none;
-        text-decoration-color: $jmEgyptianBlueColor;
-        color: $jmEgyptianBlueColor;
-        font: 17px/22px $jmMediumFont;
+        @include generateTextDecoration;
         display: flex;
         float: right;
         margin-right: -5px;
         margin-top: -30px;
         margin-right: -5px;
+        @include generateFont($jmMediumFont, 17px, 22px, $jmEgyptianBlueColor);
     }
     span {
         &.cardblock__link-text {
@@ -343,13 +256,9 @@ h2 {
         }
     }
     .cardblock__body {
-        border-bottom: 8px solid $jmEgyptianBlueColor;
         flex: 1 1 auto;
         min-height: 1px;
-        padding-bottom: 0.3rem;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        padding-top: 0.5rem;
+        @include generatePadding(0.5rem, 0.5rem, 0.5rem, 0.3rem);
         border-bottom: 8px solid $jmEgyptianBlueColor;
         &.body {
             border-bottom: 8px solid $jmEgyptianBlueColor;
@@ -373,10 +282,7 @@ h2 {
                 .cardblock__body {
                     flex: 1 1 auto;
                     min-height: 1px;
-                    padding-bottom: 0.3rem;
-                    padding-left: 0.5rem;
-                    padding-right: 0.5rem;
-                    padding-top: 0.5rem;
+                    @include generatePadding(0.5rem, 0.5rem, 0.5rem, 0.3rem);
                     .wrap-three {
                         margin-top: 5px;
                         margin-bottom: 5px;
@@ -411,10 +317,7 @@ h2 {
         .cardblock__body {
             flex: 1 1 auto;
             min-height: 1px;
-            padding-bottom: 0.3rem;
-            padding-left: 0.5rem;
-            padding-right: 0.5rem;
-            padding-top: 0.5rem;
+            @include generatePadding(0.5rem, 0.5rem, 0.5rem, 0.3rem);
             .cardblock__list-link {
                 float: right;
                 margin-top: -30px;

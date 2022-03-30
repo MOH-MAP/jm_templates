@@ -3,40 +3,21 @@
   display: inline-block;
   width: 100%;
   background-image: url(cloud.svg);
-  background-position: center center;
-  background-size: cover;
+  @include generateBgSizePos;
   height: 363px;
-}
-.centered {
-  position: absolute;
-  top: 8rem;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .career__pretitle {
   text-align: left;
-  font-size: 18px;
-  font-family: $jmMediumFont;
-  line-height: 28px;
-  letter-spacing: 0px;
-  color: $jmWhiteColor;
   text-shadow: $jmTextShadow1;
-  opacity: 0.8;
   margin: 0;
   margin-top: 65px;
+  @include generateFont($jmMediumFont, 18px, 28px, $jmWhiteColor, 0.8);
 }
 .career__heading {
   text-align: left;
-  font-size: 52px;
-  font-family: $jmFont;
-  line-height: 60px;
-  letter-spacing: 0px;
-  color: $jmWhiteColor;
   text-shadow: $jmTextShadow1;
-  opacity: 1;
-  margin: 0;
-  margin-top: 16px;
-  margin-bottom: 24px;
+  margin: 16px 0 24px;
+  @include generateFont($jmFont, 52px, 60px, $jmWhiteColor);
 }
 .career__input__sec {
   width: 100%;
@@ -50,9 +31,6 @@
   background-color: $jmWhiteColor;
   border-left: 1px solid $jmDarkGrayColor;
 }
-.button__sec {
-  display: flex;
-}
 .career__input {
   padding: 17px 0px 16px 20px;
   outline: none;
@@ -61,42 +39,26 @@
   cursor: pointer;
   &::placeholder {
     text-align: left;
-    font-size: 18px;
-    font-family: $jmMediumFont;
-    line-height: 28px;
     letter-spacing: 0px;
-    color: $jmDarkCharcoalColor;
-    opacity: 0.8;
+    @include generateFont($jmMediumFont, 18px, 28px, $jmDarkCharcoalColor, 0.8);
   }
 }
 .career__dropdown {
   input {
     &::placeholder {
       text-align: left;
-      font-size: 18px;
-      font-family: $jmMediumFont;
-      line-height: 28px;
-      letter-spacing: 0px;
-      color: $jmDarkCharcoalColor;
-      opacity: 0.8;
+      @include generateFont($jmMediumFont, 18px, 28px, $jmDarkCharcoalColor, 0.8);
     }
-    position: absolute;
-    left: 0;
-    top: 0;
     width: 100%;
     height: 100%;
     cursor: pointer;
     background: $jmWhiteColor;
     box-shadow: $jmBoxShadow2;
     padding: 12px 20px;
-    font-size: 16px;
-    font-family: $jmMediumFont;
-    line-height: 28px;
-    letter-spacing: 0px;
-    color: $jmDarkCharcoalColor;
-    opacity: 0.8;
     border: none;
     outline: none;
+    @include generatePosAbs(0, 0);
+    @include generateFont($jmMediumFont, 16px, 28px, $jmDarkCharcoalColor, 0.8);
   }
   position: relative;
   width: 300px;
@@ -104,19 +66,13 @@
 
   &::before {
     content: "";
-    background: url("../images/new__jm__images/keyboard_arrow_down-blue.svg");
-    position: absolute;
-    right: 20px;
-    top: 15px;
     z-index: 10000;
-    width: 24px;
-    height: 24px;
-    display: block;
+    @include generatePosAbs(auto, 15px, auto, 20px);
+    @include generateIcon(24px, 24px, "../images/new__jm__images/keyboard_arrow_down-blue.svg");
   }
   .career__option {
-    position: absolute;
-    top: 50px;
     width: 100%;
+    @include generatePosAbs(auto, 50px, auto, auto);
     background: $jmWhiteColor;
     box-shadow: $jmBoxShadow1;
     overflow: hidden;
@@ -125,31 +81,9 @@
     div {
       padding: 8px 20px;
       cursor: pointer;
-      font-size: 16px;
-      font-family: $jmMediumFont;
-      line-height: 28px;
-      letter-spacing: 0px;
-      color: $jmDarkCharcoalColor;
-      opacity: 0.8;
+      @include generateFont($jmMediumFont, 16px, 28px, $jmDarkCharcoalColor, 0.8);
     }
   }
-}
-.submit__btn {
-  display: flex;
-  outline: none;
-  border: none;
-  background-color: $jmEgyptianBlueColor;
-  color: $jmWhiteColor;
-  padding: 16px 10px 14px 34px;
-  text-align: right;
-  font-size: 18px;
-  font-family: $jmMediumFont;
-  line-height: 22px;
-  letter-spacing: 0px;
-  color: $jmWhiteColor;
-  text-transform: uppercase;
-  opacity: 1;
-  justify-content: right;
 }
 .career-search-location {
   padding: 14px 22px 14px 20px;
@@ -157,13 +91,8 @@
   border: none;
   border-left: 1px solid $jmDarkGrayColor;
   outline: none;
-  font-size: 18px;
-  font-family: $jmMediumFont;
-  line-height: 28px;
-  letter-spacing: 0px;
-  color: $jmDarkCharcoalColor;
-  opacity: 0.8;
   cursor: pointer;
+  @include generateFont($jmMediumFont, 18px, 28px, $jmDarkCharcoalColor, 0.8);
 }
 .link__lists {
   display: flex;
@@ -174,13 +103,8 @@
 .hero__text {
   margin: 0;
   position: relative;
-  font-size: 14px;
-  font-family: $jmFont;
-  line-height: 28px;
-  letter-spacing: 0px;
-  color: $jmAntiFlashWhiteColor;
-  opacity: 0.8;
   padding-left: 17px !important;
+  @include generateFont($jmFont, 14px, 28px, $jmAntiFlashWhiteColor, 0.8);
 }
 .career__option {
   outline: none;
@@ -206,12 +130,6 @@
   }
 }
 @media (min-width: 320px) and (max-width: 539px) {
-  .centered {
-    top: 15rem;
-  }
-  .dropdown__sec {
-    border: 0;
-  }
   .career__dropdown {
     width: 100%;
     .career__option {
@@ -238,11 +156,6 @@
     line-height: 30px;
     margin-top: 20px;
     margin-bottom: 42px;
-  }
-  .submit__btn {
-    width: 100%;
-    justify-content: flex-end;
-    font-size: 16px;
   }
   .dept__sec {
     width: 100%;

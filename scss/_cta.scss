@@ -1,10 +1,8 @@
 .jmcta--link-icon {
 	background: url('../images/new__jm__images/arrow_forward-white.svg') 0 0 no-repeat transparent;
-	display: block;
-	width: 24px;
-	height: 24px;
 	float: right;
 	margin-left: 10px;
+	@include generateIcon(24px, 24px, "../images/new__jm__images/arrow_forward-white.svg");
 }
 .jmbtn--cta {
 	width: 27%;
@@ -16,38 +14,29 @@
 	margin: 2rem 8rem;
 }
 .jmcta-inner-header {
-	font-size: 3.25rem;
-	line-height: 4.25rem;
-	font-family: $jmMediumFont;
+	@include generateFont($jmMediumFont, 3.25rem, 4.25rem);
 	opacity: 1;
 }
 .jmcta-inner-text {
-	font-size: 1.125rem;
-	line-height: 1.75rem;
-	font-family: $jmFont;
-	opacity: 1;
+	@include generateFont($jmFont, 1.125rem, 1.75rem);
 	margin: 10px 0px 10px 0px;
 }
 .jmcta-inner-link {
 	background: $jmEgyptianBlueColor;
 	float: right;
 	text-transform: uppercase;
-	font-weight: 700;
-	color:$jmWhiteColor;
 	text-decoration: none;
 	margin-top: -11px;
 	padding-right: 10px;
-	font-family: $jmMediumFont;
+	@include generateFont($jmMediumFont, false, false, $jmWhiteColor, 1, 700);
 	&:hover {
 		background: $jmEgyptianBlueColor;
 		float: right;
 		text-transform: uppercase;
-		font-weight: 700;
-		color:$jmWhiteColor;
 		text-decoration: none;
 		margin-top: -11px;
 		padding-right: 10px;
-		font-family: $jmMediumFont;
+		@include generateFont($jmMediumFont, false, false, $jmWhiteColor, 1, 700);
 	}
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -66,16 +55,10 @@
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
 	.jmcta-inner-header {
-		font-size: 2.5rem;
-		line-height: 2.625rem;
-		font-family: $jmMediumFont;
-		opacity: 1;
+		@include generateFont($jmMediumFont, 2.5rem, 2.625rem);
 	}
 	.jmcta-inner-text {
-		font-size: 1.5rem;
-		line-height: 1.625rem;
-		font-family: $jmFont;
-		opacity: 1;
+		@include generateFont($jmFont, 1.5rem, 1.625rem);
 		margin: 25px 0px 30px 0px;
 	}
 	.jmcta-inner-link {
@@ -106,16 +89,10 @@
 }
 @media (max-width: 575.98px) {
 	.jmcta-inner-header {
-		font-size: 2rem;
-		line-height: 2.625rem;
-		font-family: $jmMediumFont;
-		opacity: 1;
+		@include generateFont($jmMediumFont, 2rem, 2.625rem);
 	}
 	.jmcta-inner-text {
-		font-size: 1rem;
-		line-height: 1.625rem;
-		font-family: $jmFont;
-		opacity: 1;
+		@include generateFont($jmFont, 1rem, 1.625rem);
 		margin: 15px 0px 20px 0px;
 	}
 	.jmcta-inner-link {
