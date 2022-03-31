@@ -1,0 +1,273 @@
+.jmvideo--main-container
+.container-fluid
+.centered {
+position: absolute;
+top: 35%;
+left: 335px;
+transform: translate(-50%, -50%);
+position: absolute;
+top: 65%;
+left: 17%;
+transform: translate(-50%, -50%);
+width: 82%;
+}
+.jmvideo--main-container .centered h2 span {
+display: flex;
+margin-left: 150px;
+}
+.player:hover .controls {
+opacity: 1;
+}
+player:focus .controls {
+opacity: 1;
+}
+.jmvideo--main-container video {
+width: 100%;
+height: 100%;
+}
+.jmvideo--main-container .modal-dialog {
+position: relative;
+}
+iframe {
+height: 721px;
+width: 100%;
+}
+.jmvideo--main-container .jm-video-modal-body {
+padding: 0;
+}
+.jmvideo--main-container .modal-header {
+background-color: #f2f2f2;
+color: #1e22aa;
+}
+.jmvideo--main-container .modal-header .close-modal-block {
+width: 5rem;
+opacity: 0.9;
+}
+.jmvideo--main-container .jm-video-play-icon {
+width: 25px !important;
+height: auto !important;
+}
+.jmvideo--main-container .video-close-icon {
+color: #1e22aa;
+font-size: 18px;
+font-family: JMSansMedium;
+}
+.jmvideo--main-container .modal-footer {
+background-color: #1e22aa;
+}
+.jmvideo--main-container .modal-footer > .controls {
+width: 100%;
+margin-right: 6%;
+margin-left: 6%;
+}
+.jmvideo--main-container .controls > .play-button {
+display: none;
+float: left;
+border-radius: 0px;
+margin-right: 4px;
+background-color: transparent;
+}
+.controls > .pause-button {
+background-color: transparent;
+}
+.jmvideo--main-container .controls > .stop-button {
+background-color: transparent;
+}
+.jmvideo--main-container .controls > .youtube-button-alignment {
+float: right;
+border-radius: 0px;
+margin-right: 4px;
+border-color: transparent;
+background-color: transparent;
+border-color: 1px solid #fff;
+}
+.jmvideo--main-container .controls .btn {
+border-radius: 0px;
+margin-right: 4px;
+border-color: 1px solid #fff;
+background-color: transparent;
+opacity: 0.9;
+}
+.jmvideo--main-container .controls .btn-primary {
+border-radius: 0px;
+margin-right: 4px;
+color: #fff;
+border-color: #0062cc;
+background-color: transparent;
+}
+.jmvideo--main-container .pause-button {
+float: left;
+border-radius: 0px;
+margin-right: 4px;
+background-color: transparent;
+}
+.jmvideo--main-container .stop-button {
+float: left;
+border-radius: 0px;
+margin-right: 4px;
+background-color: transparent;
+}
+.jmvideo--main-container .svg-property {
+background-color: #1e22aa;
+height: 20px;
+width: 20px;
+border-radius: 50%;
+display: inline-block;
+opacity: 0.9;
+}
+.jmvideo--main-container .jm-video-modal-content {
+border: 0px;
+}
+.jmvideo--main-container .jm-video-button1 {
+display: none;
+}
+.jmvideo--main-container .jm-video-button4 {
+float: right;
+}
+.jmvideo--main-container .jmvideo--main-container .jm-video-image-container {
+padding: 0px !important;
+margin: -10px !important;
+text-align: center;
+color: white;
+position: relative;
+}
+.jmvideo--main-container .jm-video-image-container img {
+width: 100%;
+height: 600px;
+}
+.jmvideo--main-container .centered-with-text {
+position: absolute;
+top: 40%;
+left: 34%;
+transform: translate(-50%, -50%);
+width: 44%;
+}
+.jmvideo--main-container .jm-image-text-heading {
+color: white;
+font-size: 32px;
+line-height: 40px;
+text-align: left;
+letter-spacing: 0px;
+color: #fff;
+text-shadow: 0px 0px 6px #000;
+opacity: 1;
+font-family: JMSansRegular;
+}
+.jmvideo--main-container .jm-image-slogan-text {
+text-align: left;
+letter-spacing: 0px;
+color: #fff;
+text-shadow: 0px 0px 6px #000;
+opacity: 0.8;
+font-family: JMSansMedium;
+}
+.jmvideo--main-container .jm-info-btn {
+border-radius: 0%;
+background-color: #1e22aa;
+color: #fff;
+letter-spacing: 0px;
+color: #fff;
+text-transform: uppercase;
+opacity: 1;
+font-size: 16px;
+line-height: 20px;
+font-family: JMSansMedium;
+}
+@media (min-width: 576px) {
+.jmvideo--main-container .jm-video-modal-dialog {
+margin-left: 0.5rem;
+}
+}
+@media (max-width: 768px) {
+.jmvideo--main-container .modal-footer > .controls {
+width: 100%;
+margin-right: 4%;
+margin-left: 4%;
+}
+.jmvideo--main-container .jm-video-modal-dialog {
+width: 95%;
+}
+.jmvideo--main-container .jm-video-controls {
+display: flex;
+flex-wrap: wrap;
+}
+.jmvideo--main-container .jm-video-button1 {
+display: none;
+}
+.jm-video-button2 {
+order: 2;
+width: 50%;
+}
+.jmvideo--main-container .jm-video-button3 {
+order: 3;
+width: 50%;
+}
+.jmvideo--main-container .jm-video-button4 {
+order: 4;
+width: 100%;
+margin: 12px 0 4px;
+}
+.jmvideo--main-container .jm-video-btn-block {
+display: block;
+width: 100%;
+}
+.jmvideo--main-container .jm-video-image-container {
+padding: 0%;
+}
+.jmvideo--main-container .jm-video-image-container img {
+width: 100%;
+height: 600px;
+object-fit: cover;
+object-position: bottom;
+}
+.jmvideo--main-container .jm-info-btn {
+display: block;
+width: 100%;
+border-radius: 0%;
+background-color: #1e22aa;
+color: #fff;
+text-transform: uppercase;
+opacity: 1;
+font-size: 16px;
+line-height: 20px;
+font-family: JMSansMedium;
+}
+.jmvideo--main-container .centered-with-text {
+position: absolute;
+top: 35%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 82%;
+}
+.jmvideo--main-container .centered {
+position: absolute;
+top: 65%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 82%;
+}
+}
+
+.jmvideo--main-container .container-fluid.jmvideo--content{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+.journal-content-article[data-analytics-asset-title='RefiningVideo Block'] .container {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+.journal-content-article[data-analytics-asset-title='RefiningVideo Block'] .centered-with-text{
+    left: 15px;
+}
+.journal-content-article[data-analytics-asset-title='RefiningVideo Block'] .centered{
+    left: 15px;
+}
+.journal-content-article[data-analytics-asset-title='RefiningVideo Block']{
+    margin-bottom: 70px;
+}
