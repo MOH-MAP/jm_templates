@@ -1,4 +1,3 @@
-
 .innovation__main {
   background-color: $jmAntiFlashWhiteColor;
 }
@@ -20,36 +19,22 @@
 }
 /** text content css: start*/
 .promoblck__title {
-  font-family: $jmMediumFont;
-  font-size: 45px;
-  line-height: 60px;
-  color: $jmDarkCharcoalColor;
   text-align: left;
   margin-bottom: 40px;
   margin-top: 0;
+  @include generateFont($jmMediumFont, 45px, 60px, $jmDarkCharcoalColor);
 }
 .promoblck__heading {
-  font-family: $jmMediumFont;
-  font-size: 21px;
-  line-height: 26px;
-  color: $jmGraniteGrayColor;
   text-align: left;
   text-transform: capitalize;
   margin-bottom: 30px;
   margin-top: 0;
+  @include generateFont($jmMediumFont, 21px, 26px, $jmGraniteGrayColor);
 }
 .promoblck__para {
-  font-family: $jmFont;
-  font-size: 17px;
-  line-height: 28px;
-  color: $jmDarkCharcoalColor;
-  opacity: 0.84;
   margin-bottom: 32px;
   margin-top: 0;
-}
-.pad-tpbtm-100 {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  @include generateFont($jmFont, 17px, 28px, $jmDarkCharcoalColor, 0.84);
 }
 /** innovating styling : start***/
 .innovating__sec {
@@ -71,15 +56,11 @@
   width: 100%;
 }
 .invte__heading {
-  font-size: 34px;
-  line-height: 36px;
-  font-family: $jmMediumFont;
-  color: $jmDarkCharcoalColor;
+  @include generateFont($jmMediumFont, 34px, 36px, $jmDarkCharcoalColor);
   text-align: left;
   margin-bottom: 40px;
   margin-top: 0px;
 }
-
 /** innovating styling : end***/
 /** text content css: end*/
 @media (min-width: 320px) and (max-width: 639px) {
@@ -109,10 +90,6 @@
     margin-bottom: 18px;
     margin-top: 0;
   }
-  .pad-tpbtm-100 {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
   /** innovating style: start***/
   .innovating__content {
     padding-top: 0px;
@@ -129,15 +106,10 @@
     margin-top: 0px;
     max-width: 220px;
   }
-
   /** innovating style: end***/
 }
 
 @media (min-width: 640px) and (max-width: 834px) {
-  .pad-tpbtm-100 {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
   .invte__heading {
     font-size: 34px;
     line-height: 30px;

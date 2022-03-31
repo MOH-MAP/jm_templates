@@ -4,46 +4,24 @@
   }
   .person__title {
     text-align: left;
-    font-size: 21px;
-    line-height: 32px;
-    font-family: $jmFont;
-    letter-spacing: 0px;
-    color: $jmDarkCharcoalColor;
-    opacity: 0.8;
     margin-top: 180px;
     margin-bottom: 80px;
+    @include generateFont($jmFont, 21px, 32px, $jmDarkCharcoalColor, 0.8);
   }
   .person__subtitle {
-    font-size: 30px;
-    line-height: 46px;
-    font-family: $jmMediumFont;
     text-align: left;
-    margin: 0;
-    margin-bottom: 15px;
-    letter-spacing: 0px;
-    color: $jmDarkCharcoalColor;
+    margin: 0 0 15px;
     text-transform: capitalize;
-    opacity: 1;
+    @include generateFont($jmMediumFont, 30px, 46px, $jmDarkCharcoalColor);
   }
   .person__descp {
-    font-size: 17px;
-    line-height: 28px;
-    font-family: $jmFont;
     text-align: left;
-    letter-spacing: 0px;
-    color: $jmDarkCharcoalColor;
-    opacity: 0.84;
-    margin: 0;
-    margin-bottom: 8px;
+    @include generateFont($jmFont, 17px, 28px, $jmDarkCharcoalColor, 0.84);
+    margin: 0 0 8px;
   }
   .person__year {
-    font-size: 15px;
-    line-height: 28px;
-    font-family: $jmFont;
     text-align: left;
-    letter-spacing: 0px;
-    color: $jmDarkCharcoalColor;
-    opacity: 0.6;
+    @include generateFont($jmFont, 15px, 28px, $jmDarkCharcoalColor, 0.6);
   }
   .person_dsktpimg {
     width: 100%;
@@ -66,11 +44,8 @@
       display: none;
     }
     .person__name {
-      font-size: 29px;
-      line-height: 38px;
-      font-family: $jmMediumFont;
-      color: $jmDarkCharcoalColor;
       display: block;
+      @include generateFont($jmMediumFont, 29px, 38px, $jmDarkCharcoalColor);
     }
     .person__title {
       font-size: 18px;
@@ -96,11 +71,8 @@
       display: none !important;
     }
     .person__name {
-      font-size: 29px;
-      line-height: 38px;
-      font-family: $jmMediumFont;
-      color: $jmDarkCharcoalColor;
       display: block;
+      @include generateFont($jmMediumFont, 29px, 38px, $jmDarkCharcoalColor);
     }
     .person__title {
       margin-top: 20px;

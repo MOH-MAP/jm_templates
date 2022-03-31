@@ -1,5 +1,4 @@
 .jmproduct--hero1-temp {
-	background-position: center center;
-	background-size: cover;
+	@include generateBgSizePos;
 	height: 430px;
 }
