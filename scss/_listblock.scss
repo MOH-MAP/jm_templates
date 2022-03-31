@@ -1,11 +1,7 @@
 .jmlist--block-temp {
     .jmlist--block-title {
-        font-family: $jmMediumFont;
         padding: 30px 0px 30px 0px;
-        font-size: 34px;
-        letter-spacing: 0px;
-        color: $jmDarkCharcoalColor;
-        opacity: 1;
+        @include generateFont($jmMediumFont, 34px, false, $jmDarkCharcoalColor);
     }
     .jmlist--block-card {
         background: $jmAntiFlashWhiteColor 0% 0% no-repeat padding-box;
@@ -14,47 +10,28 @@
     .jmlist--block-innerspace {
         flex: 1 1 auto;
         min-height: 1px;
-        padding-bottom: 0.99rem;
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
-        padding-top: 1.25rem;
+        @include generatePadding(1.25rem, 1.25rem, 1.25rem, 0.99rem);
     }
     .jmlist--block-card-title {
-        letter-spacing: 0px;
-        color: $jmDarkCharcoalColor;
         text-transform: capitalize;
-        opacity: 1;
-        font-size: 14px;
-        line-height: 16px;
-        font-family: $jmFont;
         text-align: left;
+        @include generateFont($jmFont, 14px, 16px, $jmDarkCharcoalColor);
     }
     .jmlist--block-card-heading{
-        font-size: 25px;
-        line-height: 1.2em;
-        font-weight: 500;
-        font-family: $jmFont;
-        color: $jmDarkCharcoalColor;
         margin-top: 10px;
         margin-bottom: 20px;
         margin-right: 25%;
+        @include generateFont($jmFont, 25px, 1.2em, $jmDarkCharcoalColor, 1, 500);
     }
     .jmlist--block-read-more {
-        letter-spacing: 0px;
-        color: $jmEgyptianBlueColor;
-        opacity: 1;
         margin-top: 20px;
-        font: 17px/22px $jmMediumFont;
+        @include generateFont($jmMediumFont, 17px, 22px, $jmEgyptianBlueColor);
     }
     .jmlist--block-more-icon {
-        background: url("../images/new__jm__images/blue-right-arrow.svg") 0 0 no-repeat transparent;
-        display: block;
-        width: 24px;
-        height: 24px;
+        @include generateIcon(24px, 24px, "../images/new__jm__images/blue-right-arrow.svg");
         margin-left: 90px;
         margin-top: -20px;
     }
-
     @media (min-width: 835px) and (max-width:1024px) {
         .jmlist--block-card-heading {
             margin-right: 0%;
@@ -77,10 +54,7 @@
         .jmlist--block-innerspace {
             flex: 1 1 auto;
             min-height: 1px;
-            padding-bottom: 1rem;
-            padding-left: 1rem;
-            padding-right: 1rem;
-            padding-top: 1rem;
+            @include generatePadding(1rem, 1rem, 1rem, 1rem);
         }
         .jmlist--block-read-more {
             font-size: 17px;
@@ -98,10 +72,7 @@
         .jmlist--block-innerspace {
             flex: 1 1 auto;
             min-height: 1px;
-            padding-bottom: 0.75rem;
-            padding-left: 0.5rem;
-            padding-right: 0.5rem;
-            padding-top: 0.75rem;
+            @include generatePadding(0.5rem, 0.5rem, 0.75rem, 0.75rem);
         }
         .jmlist--block-card-title {
             font-size: 13px;
