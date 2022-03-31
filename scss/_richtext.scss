@@ -1,9 +1,16 @@
 .jmrich--text-inner {
-	h5 {
-		@include generateFont($jmMediumFont, 26px, false, $jmEgyptianBlueColor);
+	h1, h2, h3, h4, h5, h6 {
+		margin-bottom: 20px !important;
+		@include generateFont($jmMediumFont, 34px, false, $jmEgyptianBlueColor);
+	}
+	span{
+	    @include generateFont($jmFont, 18px, 25px, $jmDarkCharcoalColor);
+		strong{
+			@include generateFont($jmMediumFont, 18px, 25px, $jmDarkCharcoalColor);
+		}
 	}
 	p {
-		padding-bottom: 10px;
+		padding-bottom: 10px !important;
 		@include generateFont($jmFont, 18px, 25px, $jmDarkCharcoalColor);
 		a {
 			color: $jmEgyptianBlueColor;
@@ -22,8 +29,15 @@
 }
 @media (max-width: 575.98px){
 	.jmrich--text-inner {
-		h5 {
+		h1, h2, h3, h4, h5, h6 {
+			margin-bottom: 8px;
 			@include generateFont($jmMediumFont, 22px, false, $jmEgyptianBlueColor);
+		}
+		span{
+			@include generateFont($jmFont, 16px, 20px, $jmDarkCharcoalColor);
+			strong{
+				@include generateFont($jmMediumFont, 16px, 20px, $jmDarkCharcoalColor);
+			}
 		}
 		p {
 			padding-bottom: 5px;

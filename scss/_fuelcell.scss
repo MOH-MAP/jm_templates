@@ -21,9 +21,6 @@
 }
 .panel_block-header h1{
 	text-shadow: $jmTextShadow1;
-	font-size: 48px;
-	line-height: 60px;
 	margin: 0;
-	color: $jmWhiteColor;
-	font-family: $jmMediumFont;
+    @include generateFont($jmMediumFont, 48px, 60px, $jmWhiteColor);
 }

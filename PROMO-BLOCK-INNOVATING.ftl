@@ -3,7 +3,6 @@
 		<div class="col-md-7">
 			<h1>${Name.getData()}</h1>
 			<p>${Body.getData()}</p>
-
 		</div>
 		<div class="col-md-5">
 			<#if (ImageLarge.getData())?? && ImageLarge.getData() !="">
