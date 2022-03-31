@@ -572,6 +572,9 @@ table {
   height: 420px;
   width: 440px;
 }
+.taglib-empty-result-message-header {
+	display: none;
+}
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .btn__person {
     padding: 0px 35px;

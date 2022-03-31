@@ -4,75 +4,41 @@
 		display: inline-block;
 		width: 100%;
 	}
-
 	.service__pretitle {
 		text-align: left;
-		font-size: 18px;
-		font-family: $jmMediumFont;
-		line-height: 28px;
-		letter-spacing: 0px;
-		color: $jmWhiteColor;
 		text-shadow: $jmTextShadow1;
-		opacity: 0.8;
 		margin: 0;
+		@include generateFont($jmMediumFont, 18px, 28px, $jmWhiteColor);
 	}
-
 	.service__heading {
 		text-align: left;
-		font-size: 48px;
-		font-family: $jmFont;
-		line-height: 60px;
-		letter-spacing: 0px;
-		color: $jmWhiteColor;
 		text-shadow: $jmTextShadow1;
-		opacity: 1;
-		margin: 0;
 		margin-top: 16px;
 		margin-bottom: 24px;
+		@include generateFont($jmFont, 48px, 60px, $jmWhiteColor);
 	}
-
 	.service__input__sec {
 		width: 100%;
 		display: flex;
 	}
-
 	.service__input {
 		outline: none;
 		border: none;
 		width: 100%;
-
 		.portlet {
 			margin-bottom: 0px !important;
-
 			.portlet-header {
 				display: none !important;
 			}
 		}
 	}
 	.submit__btn {
-		display: flex;
-		outline: none;
-		border: none;
-		background-color: $jmEgyptianBlueColor;
-		color: $jmWhiteColor;
 		width: 193px;
-		padding: 16px 10px 14px 34px;
-		text-align: right;
-		font-size: 18px;
-		font-family: $jmMediumFont;
-		line-height: 22px;
-		letter-spacing: 0px;
-		color: $jmWhiteColor;
-		text-transform: uppercase;
-		opacity: 1;
-		justify-content: right;
 	}
-
 	.input-group-item {
 		left: unset !important;
 		right: unset !important;
 		top: unset !important;
-
 		.input-group-inset-item-after {
 			display: none !important;
 		}
@@ -82,18 +48,12 @@
 			width: 100% !important;
 			display: flex;
 			margin: 10px;
-		}
-		.search-bar-keywords-input::placeholder {
-			text-align: left;
-			font-size: 18px;
-			font-family: $jmMediumFont;
-			line-height: 28px;
-			letter-spacing: 0px;
-			color: $jmDarkCharcoalColorOpc5;
-			opacity: 0.8;
+			&::placeholder {
+				text-align: left;
+				@include generateFont($jmMediumFont, 18px, 28px, $jmDarkCharcoalColorOpc5, 0.8);
+			}
 		}
 	}
-
 	@media (max-width: 320px) {
 		.link__lists li a {
 			font-size: 12px;

@@ -1,7 +1,6 @@
 .search__results {
 	margin: 40px auto;
 	justify-content: space-between;
-
 	.explore__right {
 		margin-left: auto;
 	}
@@ -12,9 +11,7 @@
 		justify-content: space-between;
 		margin-bottom: 10px;
 		margin-left: 25px;
-		font: 32px/45px $jmMediumFont;
-		letter-spacing: 0px;
-		color: $jmDarkCharcoalColor;
+		@include generateFont($jmMediumFont, 32px, 45px, $jmDarkCharcoalColor);
 	}
 	.explore__boxes {
 		padding: 40px 25px;
@@ -23,59 +20,43 @@
 	.explore__boxes::after {
 		width: calc(100% - 25px);
 		height: 1px;
-		left: 25px;
-		bottom: 0;
 		content: "";
 		background: $jmBlackColorOpc1;
 		z-index: 6;
-		position: absolute;
+		@include generatePosAbs(25px, auto, 0);
 	}
 	.explore__boxes:last-child::after {
 		display: none;
 	}
 	.explore__boxhead {
-		font: 28px/40px $jmFont;
-		letter-spacing: 0px;
-		color: $jmDarkCharcoalColor;
 		margin-bottom: 15px;
+		@include generateFont($jmFont, 28px, 40px, $jmDarkCharcoalColor);
 	}
 	.explore__text {
-		font: 16px/20px $jmFont;
-		letter-spacing: 0px;
-		color: $jmDarkCharcoalColor;
-		opacity: 0.7;
 		max-width: 600px;
+		@include generateFont($jmFont, 16px, 20px, $jmDarkCharcoalColor, 0.7);
 	}
 	.explore__boxes:nth-child(even) {
 		background-color: $jmAntiFlashWhiteColor;
 	}
 	.explore__link {
-		font: 18px/22px $jmMediumFont;
-		letter-spacing: 0px;
-		color: $jmEgyptianBlueColor;
-		position: absolute;
-		right: 0;
-		bottom: 0;
+		@include generatePosAbs(auto, auto, 0, 0);
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		@include generateFont($jmMediumFont, 18px, 22px, $jmEgyptianBlueColor);
 	}
 	.explore__boxesinner {
 		position: relative;
 	}
 	.explore__icon {
-		width: 24px;
-		height: 24px;
-		display: inline-block;
-		background: url(../images/new__jm__images/arrow_forward.svg) no-repeat center center
-			transparent;
 		margin-left: 10px;
+		@include generateIcon(24px, 24px, "../images/new__jm__images/arrow_forward.svg");
+		display: inline-block;
 	}
 	.explore__filtericon {
-		background: url(../images/new__jm__images/filter_icon.svg) no-repeat transparent;
+		@include generateIcon(16px, 16px, "../images/new__jm__images/filter_icon.svg");
 		background-size: cover;
-		width: 16px;
-		height: 16px;
 		display: none;
 	}
 	.explore__link:hover {
@@ -127,8 +108,4 @@
 			max-width: 70%;
 		}
 	}
-}
-
-.taglib-empty-result-message-header {
-	display: none;
 }
