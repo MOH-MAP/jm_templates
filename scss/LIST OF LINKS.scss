@@ -1,24 +1,24 @@
 .list-of--links-container {
     .jmlist-of--links-heading{
-        font: 40px/48px JMSansMedium;
-        color: #333333;
+        font: 40px/48px $jmMediumFont;
+        color: $jmDarkCharcoalColor;
         padding-bottom: 30px;
     }
     .jmlist-of--item{
         font-size: 24px;
-        font-family: 'JMSansRegular';
-        color: #333333;
+        font-family: $jmFont;
+        color: $jmDarkCharcoalColor;
         padding: 22px 40px 22px 30px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-top: 18px;
-        background-color: #F2F2F2; 
+        background-color: $jmAntiFlashWhiteColor; 
     }
     .jmlist-of--link{
         text-decoration: none;
-        color: #1E22AA;
-        font: 18px/22px JMSansMedium;
+        color: $jmEgyptianBlueColor;
+        font: 18px/22px $jmMediumFont;
         display: flex;
         margin-left: 60px;
     }
@@ -33,16 +33,16 @@
     }
     .jmlist-of--text {
         font-size: 18px;
-        color: #1E22AA;
+        color: $jmEgyptianBlueColor;
         opacity: 1;
         float:left;
-        font-family: 'JMSansMedium';
+        font-family: $jmMediumFont;
     }
     @media (min-width: 320px) and (max-width: 539px) {
         .jmlist-of--item {
             font-size: 20px;
-            font-family: 'JMSansRegular';
-            color: #333333;
+            font-family: $jmFont;
+            color: $jmDarkCharcoalColor;
             padding: 15px 10px 15px 10px;
             display: flex;
             justify-content: space-between;
@@ -60,8 +60,8 @@
         }
         .jmlist-of--links--heading{
             font-size: 24px;
-            color: #333333;
-            font-family: 'JMSansMedium';
+            color: $jmDarkCharcoalColor;
+            font-family: $jmMediumFont;
             padding-bottom: 5px;
         }
     }

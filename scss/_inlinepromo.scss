@@ -4,60 +4,38 @@
 }
 .jminline-promo--sign-up {
   text-align: left;
-  font-size: 16px;
-  line-height: 22px;
-  font-family: JMSansRegular;
-  letter-spacing: 0px;
-  color: $jmWhiteColor;
   text-transform: capitalize;
-  opacity: 0.84;
   margin: 0;
+  @include generateFont($jmFont, 16px, 22px, $jmWhiteColor, 0.84);
 }
 .jminline-promo--heading {
-  margin: 0;
-  margin-top: 24px;
+  margin: 24px 0 36px;
   text-align: left;
-  font-size: 40px;
-  line-height: 48px;
-  font-family: JMSansMedium;
-  letter-spacing: 0px;
-  color: $jmWhiteColor;
-  opacity: 1;
-  margin-bottom: 36px;
   max-width: 467px;
+  @include generateFont($jmMediumFont, 40px, 48px, $jmWhiteColor);
 }
 .jminline-promo--btn {
   text-align: right;
-  font-size: 18px;
-  font-family: JMSansMedium;
-  line-height: 22px;
-  letter-spacing: 0px;
-  color: $jmWhiteColor;
   background-color: $jmEgyptianBlueColor;
   text-transform: uppercase;
-  opacity: 1;
   margin: 0;
   display: flex;
   outline: none;
-  border: 1px solid #fff;
+  border: 1px solid $jmWhiteColor;
   padding: 20px 10px 17px 60px;
   position: absolute;
+  @include generateFont($jmMediumFont, 18px, 22px, $jmWhiteColor);
 }
 .jminline-promo--btn:hover {
   text-decoration: none;
-  color: #fff;
+  color: $jmWhiteColor;
 }
 .jminline-promo--forward-icon{
-  background: url("../images/new__jm__images/arrow_forward-white.svg") 0 0
-    no-repeat transparent;
-  display: block;
-  width: 24px;
-  height: 24px;
+  @include generateIcon(24px, 24px, "../images/new__jm__images/arrow_forward-white.svg");
   margin-left: 8px;
   top: 50%;
   margin-top: -2px;
 }
-
 .jminline-promo--section .col-md-4 {
   padding: 0px !important;
 }

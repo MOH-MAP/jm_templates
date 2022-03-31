@@ -1,28 +1,34 @@
-
-:root{
---jmEgyptianBlue-color: #1E22AA;
---jmCrayola-color: #C8C8E9;
---jmWhite-color: #FFFFFF;
---jmOceanBlue-color: #4347B9;
---jmGraniteGray-color: #666666;
---jmDarkCharcoal-color: #333333;
---white-color: #ffffff;
---black-color: #000000;
---filter-select-text-color: #1E22AA;
---filter-heading-color: #999999;
---filter-category-color: #666666;
---result-heading-color: #333333;
---box-bg-color: #F2F2F2;
---explore-border-color: rgba(0, 0, 0, 0.1);
---jm-font: JMSansRegular, Helvetica, Arial, Verdana, Tahoma,sans-serif;
---jm-medium-font: JMSansMedium, Helvetica, Arial, Verdana, Tahoma,sans-serif;
---jm-bold-font: JMSansBold, Helvetica, Arial, Verdana, Tahoma,sans-serif;
-}
-
 $jmDarkCharcoalColor: #333333;
-$jmWhiteColor: #FFFFFF;
+$jmDarkCharcoalColorOpc5: rgba(51, 51, 51, 0.5);
+$jmWhiteColor: #ffffff;
+$jmWhiteColorOpc2: rgba(255, 255, 255, 0.2);
+$jmBlackColor: #000000;
+$jmBlackColorOpc1: rgba(0, 0, 0, 0.1);
+$jmBlackColorOpc5: rgba(0, 0, 0, 0.5);
+$jmBlackColorOpc12: rgba(0, 0, 0, 0.12);
 $jmEgyptianBlueColor: #1E22AA;
+$jmEgyptianBlueColorOpc12: rgba(30, 34, 170, 0.12);
 $jmCrayolaColor: #C8C8E9;
 $jmOceanBlueColor: #4347B9;
 $jmGraniteGrayColor: #666666;
+$jmGraniteGrayColorOpc6: rgba(102, 102, 102, 0.6);
+$jmGraniteGrayColorOpc9: rgba(102, 102, 102, 0.9);
+$jmLightGrayColor: #cccccc;
+$jmLightGrayColorOpc3: rgba(204, 204, 204, 0.3);
+$jmDarkGrayColor: #999999;
+$jmDimGrayColor: #707070;
+$jmNavyBlueColor: #0062cc;
+$jmCyprusColor: #033333;
 $jmAntiFlashWhiteColor: #F2F2F2;
+$jmLightShadeWhiteColor: #fafafa;
+$jmLochmaraColor: #2e6da4;
+$jmDavyGrayColor: #555555;
+$jmMercuryColor: #e5e5e5;
+$jmTextShadow1: 0px 0px 8px #000000;
+$jmTextShadow2: 0px 0px 6px #000000;
+$jmBoxShadow1: 0px 4px 4px rgba(0, 0, 0, 0.5);
+$jmBoxShadow2: 0 5px 20px rgba(0, 0, 0, 0.05);
+$jmFont: JMSansRegular, Helvetica, Arial, Verdana, Tahoma,sans-serif;
+$jmMediumFont: JMSansMedium, Helvetica, Arial, Verdana, Tahoma,sans-serif;
+$jmBoldFont: JMSansBold, Helvetica, Arial, Verdana, Tahoma,sans-serif;
+$jmBlackFont: JMSansBlack, Helvetica, Arial, Verdana, Tahoma,sans-serif;

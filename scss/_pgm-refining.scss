@@ -13,94 +13,67 @@
 }
 .jm-richtext-heading {
 	>p {
-		font-size: 38px;
-		line-height: 46px;
 		text-align: left;
-		letter-spacing: 0px;
-		color: #333333;
-		opacity: 1;
-		font-family: JMSansMedium;
+		@include generateFont($jmMediumFont, 38px, 46px, $jmDarkCharcoalColor);
 	}
 }
 .jm-richtext-para {
 	>p {
-		font-size: 16px;
-		line-height: 27px;
 		text-align: left;
-		letter-spacing: 0px;
-		color: #333333;
-		opacity: 0.84;
+		@include generateFont($jmFont, 16px, 27px, $jmDarkCharcoalColor, 0.84);
 	}
 }
 .jm-rt-image-block {
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	@include generateBgSizePos;
 	height: 464px;
 	width: 100%;
 	position: relative;
 	overflow: hidden;
 }
 .jm-text-slider {
-	background-color: #1e22aa;
-	position: absolute;
+	background-color: $jmEgyptianBlueColor;
+	@include generatePosAbs(calc(100% - 3.75rem), 0);
 	height: 100%;
-	z-index: 2;
-	top: 0;
 	width: 100%;
 	z-index: 2;
-	left: 0%;
-	right: 0;
 	animation: sneakPeak 2.5s cubic-bezier(0.35, 0.75, 0.38, 1.37);
-	left: calc(100% - 3.75rem);
 }
 .jm-product-info-container {
-	color: #ffffff;
+	color: $jmWhiteColor;
 	padding: 2%;
 	p {
-		font-size: 16px;
 		text-align: left;
-		letter-spacing: 0px;
-		color: #ffffff;
-		opacity: 0.8;
-		font-family: JMSansRegular;
+		@include generateFont($jmFont, 16px, false, $jmWhiteColor, 0.8);
 	}
 	ol {
 		>li {
 			>menu {
-				color: #ffffff;
+				color: $jmWhiteColor;
 			}
 		}
 	}
 }
 .jm-button-block-rctx {
-	background-color: #1e22aa;
+	background-color: $jmEgyptianBlueColor;
 	display: flex;
 	flex-direction: column;
 	width: 18%;
 	padding: 2%;
 	span {
-		background-color: #1e22aa;
+		background-color: $jmEgyptianBlueColor;
 		display: inline-block;
 		text-transform: uppercase;
-		font-size: 15px;
-		font-family: JMSansMedium;
 		transform: rotate(89deg) translateY(1.4rem) translateX(9.9375rem);
 		text-align: left;
-		letter-spacing: 0px;
-		color: #ffffff;
-		opacity: 0.8;
+		@include generateFont($jmMediumFont, 15px, false, $jmWhiteColor, 0.8);
 		&:after {
 			content: "";
-			color: #ffffff;
+			color: $jmWhiteColor;
 			font-weight: bold;
 			float: right;
 			margin-left: 5px;
-			background-image: url("http://localhost:8080/documents/20121/0/chevron-right-white.svg/a70d58b0-7d40-e723-7681-6d3cf8343242?t=1646987035028");
-			background-repeat: no-repeat;
+			@include generateIcon(20px, 20px, "../images/new__jm__images/chevron-right-white.svg");
 			background-size: 20px 20px;
-			height: 20px;
-			width: 20px;
 			transform: rotate(90deg) translateY(4.625rem) translateX(-1.3rem);
 		}
 	}
@@ -108,38 +81,29 @@
 .specifications--in {
 	.jm-button-block-rctx {
 		span {
-			background-color: #1e22aa;
-			color: #ffffff;
+			background-color: $jmEgyptianBlueColor;
 			display: inline-block;
 			text-transform: uppercase;
-			font-size: 18px;
-			font-family: JMSansMedium;
 			transform: rotate(90deg) translateY(1.625rem) translateX(9.9375rem);
+			@include generateFont($jmMediumFont, 18px, false, $jmWhiteColor);
 			&:after {
 				content: "";
-				color: #ffffff;
+				color: $jmWhiteColor;
 				font-weight: bold;
 				float: right;
 				margin-left: 5px;
-				background-image: url("http://localhost:8080/documents/20121/0/chevron-right-white.svg/a70d58b0-7d40-e723-7681-6d3cf8343242?t=1646987035028");
-				background-repeat: no-repeat;
+				@include generateIcon(20px, 20px, "../images/new__jm__images/chevron-right-white.svg");
 				background-size: 20px 20px;
-				height: 20px;
-				width: 20px;
 				transform: rotate(272deg) translateY(-6.375rem) translateX(0.1rem);
 			}
 		}
 	}
 	.jm-text-slider {
-		background-color: #1e22aa;
-		position: absolute;
+		background-color: $jmEgyptianBlueColor;
 		height: 100%;
-		z-index: 2;
-		top: 0;
 		width: 100%;
 		z-index: 2;
-		left: 0%;
-		right: 0;
+		@include generatePosAbs(0, 0, auto, 0);
 	}
 }
 .jm-rxtx-slider-btn-block {
@@ -149,19 +113,15 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin-left: 10px;
-	font-size: 16px;
 	text-align: left;
-	letter-spacing: 0px;
-	color: #ffffff;
-	opacity: 0.8;
-	font-family: JMSansRegular;
+	@include generateFont($jmFont, 16px, false, $jmWhiteColor, 0.8);
 	>ul {
 		>li {
 			padding: 2%;
 			margin: 2%;
 			list-style-type: decimal;
 			>a {
-				color: #ffffff;
+				color: $jmWhiteColor;
 				text-decoration: none;
 			}
 		}
@@ -178,23 +138,11 @@
 	width: 105px;
 	height: 25px;
 	margin: 10px;
-	line-height: 50px;
-	color: white;
-	font-size: 12px;
 	text-align: left;
+	@include generateFont($jmFont, 12px, 50px, $jmWhiteColor);
 }
 .rt-list-flex {
-	padding: 0;
-	margin: 0;
-	list-style: none;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	flex-flow: column;
-	-webkit-flex-flow: none;
-	justify-content: start;
+	@include repeatedDisplay;
 }
 @media screen and (max-width: 768px) {
 	.jm-richtext-collapsed {
@@ -214,13 +162,11 @@
 	}
 	.jm-richtext-para {
 		>p {
-			font-size: 14px;
-			line-height: 20px;
-			font-family: JMSansRegular;
+			@include generateFont($jmFont, 14px, 20px);
 		}
 	}
 	.jm-product-info-container {
-		color: #ffffff;
+		color: $jmWhiteColor;
 		padding: 2%;
 		margin-top: 5%;
 		p {
@@ -238,7 +184,7 @@
 				padding: 2%;
 				margin: 2%;
 				>a {
-					color: #ffffff;
+					color: $jmWhiteColor;
 					text-decoration: none;
 				}
 			}
@@ -255,39 +201,22 @@
 		width: 105px;
 		height: 25px;
 		margin: 10px;
-		line-height: 50px;
-		color: white;
-		font-size: 12px;
 		text-align: left;
+		@include generateFont($jmFont, 12px, 50px, $jmWhiteColor);
 	}
 	.rt-list-flex {
-		padding: 0;
-		margin: 0;
-		list-style: none;
-		display: -webkit-box;
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		flex-flow: column;
-		-webkit-flex-flow: row wrap;
-		justify-content: start;
+		@include repeatedDisplay;
 	}
 	.jm-button-block-rctx {
 		width: 26%;
 		padding: 2%;
 		span {
-			font-size: 16px;
-			background-color: #1e22aa;
+			background-color: $jmEgyptianBlueColor;
 			display: inline-block;
 			text-transform: uppercase;
-			font-size: 16px;
-			font-family: JMSansMedium;
 			transform: rotate(90deg) translateY(0.625rem) translateX(9.9375rem);
 			text-align: left;
-			letter-spacing: 0px;
-			color: #ffffff;
-			opacity: 0.8;
+			@include generateFont($jmMediumFont, 16px, false, $jmWhiteColor, 0.8);
 			&:after {
 				transform: rotate(90deg) translateY(6.625rem) translateX(0.1rem);
 			}
@@ -312,27 +241,20 @@
 	}
 	.jm-button-block-rctx {
 		span {
-			background-color: #1e22aa;
+			background-color: $jmEgyptianBlueColor;
 			display: inline-block;
 			text-transform: uppercase;
-			font-size: 16px;
-			font-family: JMSansMedium;
 			transform: rotate(89deg) translateY(2.625rem) translateX(12.9375rem);
 			text-align: left;
-			letter-spacing: 0px;
-			color: #ffffff;
-			opacity: 0.8;
+			@include generateFont($jmMediumFont, 16px, false, $jmWhiteColor, 0.8);
 			&:after {
 				content: "";
-				color: #ffffff;
+				color: $jmWhiteColor;
 				font-weight: bold;
 				float: right;
 				margin-left: 5px;
-				background-image: url(./assets/chevron-right-white.svg);
-				background-repeat: no-repeat;
+				@include generateIcon(20px, 20px, "./assets/chevron-right-white.svg");
 				background-size: 20px 20px;
-				height: 20px;
-				width: 20px;
 				transform: rotate(90deg) translateY(7.625rem) translateX(-0.0625rem);
 			}
 		}
@@ -340,24 +262,19 @@
 	.specifications--in {
 		.jm-button-block-rctx {
 			span {
-				background-color: #1e22aa;
-				color: #ffffff;
+				background-color: $jmEgyptianBlueColor;
 				display: inline-block;
 				text-transform: uppercase;
-				font-size: 20px;
-				font-family: JMSansMedium;
 				transform: rotate(90deg) translateY(1.625rem) translateX(13.9375rem);
+				@include generateFont($jmMediumFont, 20px, false, $jmWhiteColor);
 				&:after {
 					content: "";
-					color: #ffffff;
+					color: $jmWhiteColor;
 					font-weight: bold;
 					float: right;
 					margin-left: 5px;
-					background-image: url(./assets/chevron-right-white.svg);
-					background-repeat: no-repeat;
+					@include generateIcon(20px, 20px, "./assets/chevron-right-white.svg");
 					background-size: 20px 20px;
-					height: 20px;
-					width: 20px;
 					transform: rotate(272deg) translateY(-7.375rem) translateX(-0.0625rem);
 				}
 			}

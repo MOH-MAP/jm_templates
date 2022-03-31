@@ -1,7 +1,6 @@
 .search__filters {
 	margin: 40px auto;
 	justify-content: space-between;
-
 	.explore__leftinner {
 		width: 100%;
 	}
@@ -12,14 +11,12 @@
 		margin-top: 10px;
 		outline: none;
 		padding: 10px 15px;
-		background: rgba(30, 34, 170, 0.12);
-		font: 20px/26px var(--jm-medium-font);
-		letter-spacing: 0px;
-		color: var(--filter-select-text-color);
+		background: $jmEgyptianBlueColorOpc12;
 		display: inline-flex;
 		align-items: center;
 		justify-content: space-between;
 		margin-right: 5px;
+		@include generateFont($jmMediumFont, 20px, 26px, $jmEgyptianBlueColor);
 	}
 	.explore__filterselectedtext {
 		width: calc(100% - 34px);
@@ -28,37 +25,31 @@
 	}
 	.explore__filtertext {
 		padding-bottom: 15px;
-		font: 20px/32px var(--jm-font);
-		letter-spacing: 0px;
-		color: var(--filter-heading-color);
-		border-bottom: 1px solid var(--explore-border-color);
+		border-bottom: 1px solid $jmBlackColorOpc1;
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
     	margin-bottom: 0;
+		@include generateFont($jmFont, 20px, 32px, $jmDarkGrayColor);
 	}
 	.explore__applications {
 		padding: 20px 15px;
-		border-bottom: solid 1px var(--explore-border-color);
+		border-bottom: solid 1px $jmBlackColorOpc1;
 	}
 	.explore__applications:last-child {
 		border-bottom: none;
 	}
 	.explore__apptext {
-		font: 24px/32px var(--jm-bold-font);
-		letter-spacing: 0px;
-		color: var(--filter-category-color);
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		cursor: pointer;
+		@include generateFont($jmBoldFont, 24px, 32px, $jmGraniteGrayColor);
 	}
 	.explore__checkbox {
-		position: absolute;
+		@include generatePosAbs(0, 0);
 		width: 100%;
 		height: 100%;
-		left: 0;
-		top: 0;
 		border: 0;
 		outline: 0;
 		opacity: 0;
@@ -78,10 +69,8 @@
 	.explore__label {
 		margin-left: 35px;
    		margin-bottom: 0;
-		font: 16px/26px var(--jm-medium-font);
-		letter-spacing: 0px;
-		color: var(--filter-heading-color);
 		word-break: break-all;
+		@include generateFont($jmMediumFont, 16px, 26px, $jmDarkGrayColor);
 	}
 	.jmicon {
 		width: 24px;
@@ -94,25 +83,18 @@
 		margin-left: 10px;
 	}
 	.explore__checkboxlabel {
-		background: url(../images/new__jm__images/checkbox_icon.png) no-repeat center center
-			transparent;
-		width: 24px;
-		height: 24px;
-		position: absolute;
-		left: 0;
-		top: 2px;
+		@include generateIcon(24px, 24px, "../images/new__jm__images/checkbox_icon.png");
+		@include generatePosAbs(0, 2px);
 	}
 	.explore__checkbox:checked + label {
 		background: url(../images/new__jm__images/checkbox_selected_icon.png) no-repeat center center
 			transparent;
 	}
 	.explore__checkbox:checked + label + label {
-		color: var(--filter-select-text-color);
+		color: $jmEgyptianBlueColor;
 	}
 	.explore__arrowicon {
-		background: url(../images/new__jm__images/arrow_downward.svg) no-repeat transparent;
-		width: 32px;
-		height: 32px;
+		@include generateIcon(32px, 32px, "../images/new__jm__images/arrow_downward.svg");
 	}
 	.explore__filtercategory {
 		width: calc(100% - 45px);
@@ -127,9 +109,7 @@
 		display: block;
 	}
 	.explore__filterback {
-		background: url(../images/new__jm__images/arrow_forward_white.svg) no-repeat transparent;
-		width: 24px;
-		height: 24px;
+		@include generateIcon(24px, 24px, "../images/new__jm__images/arrow_forward_white.svg");
 		margin-right: 20px;
 		display: none;
 		transform: rotate(180deg);
@@ -139,7 +119,7 @@
 		display: none;
 	}
 	.explore__selectedfilter {
-		border-bottom: solid 1px var(--explore-border-color);
+		border-bottom: solid 1px $jmBlackColorOpc1;
 		padding: 15px 0 20px;
 	}
 	/**media query for mobile **/
@@ -148,7 +128,7 @@
 			position: fixed;
 			z-index: 9;
 			width: 100%;
-			background: var(--white-color);
+			background: $jmWhiteColor;
 			height: 100%;
 			padding-top: 60px;
 			left: 0;
@@ -161,10 +141,8 @@
 		}
 		.explore__filtertext {
 			padding: 15px 20px;
-			background: var(--filter-select-text-color);
-			color: var(--white-color);
-			font-size: 16px;
-			font-family: var(--jm-medium-font);
+			background: $jmEgyptianBlueColor;
+			@include generateFont($jmMediumFont, 16px, false, $jmWhiteColor);
 		}
 		.explore__filterback,
 		.explore__filterclear {
@@ -185,18 +163,16 @@
 		.explore__applications {
 			padding: 15px 20px;
 			width: 120px;
-			background: var(--box-bg-color);
+			background: $jmAntiFlashWhiteColor;
 		}
 		.explore__apptext {
-			font: 14px/18px var(--jm-font);
+			font: 14px/18px $jmFont;
 		}
 		.explore__accordian {
-			position: absolute;
-			left: 120px;
-			top: 118px;
+			@include generatePosAbs(120px, 118px);
 			width: calc(100% - 120px);
 			height: calc(100% - 118px);
-			border-left: solid 1px var(--explore-border-color);
+			border-left: solid 1px $jmBlackColorOpc1;
 			padding-left: 10px;
 			overflow: auto;
 		}
@@ -204,10 +180,10 @@
 			margin-top: 15px;
 		}
 		.explore__label {
-			font: 14px/16px var(--jm-font);
+			@include generateFont($jmFont, 14px, 16px);
 		}
 		.explore__expanded.explore__applications {
-			background: var(--white-color);
+			background: $jmWhiteColor;
 		}
 		.explore__checkboxlabel {
 			top: 50%;

@@ -4,28 +4,9 @@
 	padding-left: 15px;
 	padding-right: 15px;
 	width: 100%;
-	.list-link {
-		text-decoration: none;
-		text-decoration-color: #1e22aa;
-		color: #1e22aa;
-		font: 18px/22px JMSansMedium;
-		display: flex;
-	}
-	.list-item {
-		.list-link {
-			text-decoration: none;
-			text-decoration-color: #1e22aa;
-			color: #1e22aa;
-			font: 18px/22px JMSansMedium;
-			display: flex;
-		}
-	}
 	.link-icon {
-		background: url("../images/new_platinum_images/arrow_forward-blue.svg") 0 0 no-repeat transparent;
-		display: block;
-		width: 24px;
-		height: 24px;
-		margin-left: 8px;
+		@include generateIcon(24px, 24px, "../images/new_platinum_images/arrow_forward-blue.svg");
+    	margin-left: 8px;
 	}
 	.card {
 		border: none;
@@ -41,6 +22,6 @@
 		margin-bottom: 40px;
 	}
 	.card-body {
-		border-bottom: 15px solid #1e22aa;
+		border-bottom: 15px solid $jmEgyptianBlueColor;
 	}
 }

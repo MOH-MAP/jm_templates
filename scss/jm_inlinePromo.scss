@@ -19,7 +19,7 @@
 	text-align: left;
 	font-size: 18px;
 	line-height: 22px;
-	font-family: JMSansRegular;
+	font-family: $jmFont;
 	letter-spacing: 0px;
 	color: $jmWhiteColor;
 	text-transform: capitalize;
@@ -32,7 +32,7 @@
 	text-align: left;
 	font-size: 36px;
 	line-height: 44px;
-	font-family: JMSansMedium;
+	font-family: $jmMediumFont;
 	letter-spacing: 0px;
 	color: $jmWhiteColor;
 	opacity: 1;
@@ -42,7 +42,7 @@
 .promo__btn {
 	text-align: right;
 	font-size: 18px;
-	font-family: JMSansMedium;
+	font-family: $jmMediumFont;
 	line-height: 22px;
 	letter-spacing: 0px;
 	color: $jmWhiteColor;
@@ -61,15 +61,6 @@
 		text-decoration: none;
 		color:  $jmWhiteColor;
 	}
-}
-.arrow__forward {
-	background: url("../images/new__jm__images/arrow_forward-white.svg") 0 0 no-repeat transparent;
-	display: block;
-	width: 24px;
-	height: 24px;
-	margin-left: 8px;
-	top: 50%;
-	margin-top: -2px;
 }
 .promo__sec {
 	.col-md-4 {

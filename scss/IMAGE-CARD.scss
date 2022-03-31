@@ -17,11 +17,11 @@
 }
 
 .jmimage-card-block--header {
-  font-family: JMSansMedium;
+  font-family: $jmMediumFont;
   padding: 20px 0px 30px 0px;
   font-size: 34px;
   letter-spacing: 0px;
-  color: #333333;
+  color: $jmDarkCharcoalColor;
   opacity: 1;
 }
 .jmimg__cardblock-body {
@@ -33,17 +33,17 @@
   padding-top: 1.25rem;
 }
 .jmimg-card_block {
-  border-bottom: 15px solid #1e22aa;
+  border-bottom: 15px solid $jmEgyptianBlueColor;
   height: 100%;
 }
 .jmimg--cardblock--title {
   text-align: left;
   font-size: 14px;
   letter-spacing: 0px;
-  color: #333333;
+  color: $jmDarkCharcoalColor;
   text-transform: capitalize;
   opacity: 1;
-  font-family: JMSansRegular;
+  font-family: $jmFont;
 }
 .row.jmimg-cardblock--no-gutters {
   height: 100%;
@@ -52,8 +52,8 @@
   font-size: 25px;
   line-height: 1.2em;
   font-weight: 500;
-  font-family: JMSansRegular;
-  color: #333333;
+  font-family: $jmFont;
+  color: $jmDarkCharcoalColor;
   padding-right: 0px;
   padding-bottom: 40px;
   width: 100%;
@@ -61,18 +61,18 @@
 
 .jmimg--cardblock-list--ilnk {
   text-decoration: none;
-  text-decoration-color: #1e22aa;
-  color: #1e22aa;
-  font: 17px/22px JMSansMedium;
+  text-decoration-color: $jmEgyptianBlueColor;
+  color: $jmEgyptianBlueColor;
+  font: 17px/22px $jmMediumFont;
   display: flex;
   margin-top: 0px;
   bottom: 15px;
   position: absolute;
   &:hover {
     text-decoration: none;
-    text-decoration-color: #1e22aa;
-    color: #1e22aa;
-    font: 17px/22px JMSansMedium;
+    text-decoration-color: $jmEgyptianBlueColor;
+    color: $jmEgyptianBlueColor;
+    font: 17px/22px $jmMediumFont;
     display: flex;
     margin-top: 0px;
   }
@@ -90,8 +90,8 @@
     font-size: 22px;
     line-height: 1.2em;
     font-weight: 500;
-    font-family: JMSansRegular;
-    color: #333333;
+    font-family: $jmFont;
+    color: $jmDarkCharcoalColor;
     padding-right: 0px;
     width: 100%;
     padding-bottom: 30px;
@@ -100,16 +100,16 @@
     text-align: left;
     font-size: 13px;
     letter-spacing: 0px;
-    color: #333333;
+    color: $jmDarkCharcoalColor;
     text-transform: capitalize;
     opacity: 1;
-    font-family: JMSansRegular;
+    font-family: $jmFont;
   }
   .jmimg--cardblock-list--ilnk {
     text-decoration: none;
-    text-decoration-color: #1e22aa;
-    color: #1e22aa;
-    font: 16px/22px JMSansMedium;
+    text-decoration-color: $jmEgyptianBlueColor;
+    color: $jmEgyptianBlueColor;
+    font: 16px/22px $jmMediumFont;
     display: flex;
     margin-top: 0px;
     bottom: 15px;
@@ -134,11 +134,11 @@
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   .jmimage-card-block--header {
-    font-family: JMSansMedium;
+    font-family: $jmMediumFont;
     padding: 15px 0px 20px 0px;
     font-size: 26px;
     letter-spacing: 0px;
-    color: #333333;
+    color: $jmDarkCharcoalColor;
     opacity: 1;
   }
   .jmimg__cardblock-body {
@@ -153,8 +153,8 @@
     font-size: 18px;
     line-height: 1.2em;
     font-weight: 500;
-    font-family: JMSansRegular;
-    color: #333333;
+    font-family: $jmFont;
+    color: $jmDarkCharcoalColor;
     padding-right: 0px;
     width: 100%;
   }
@@ -162,16 +162,16 @@
     text-align: left;
     font-size: 12px;
     letter-spacing: 0px;
-    color: #333333;
+    color: $jmDarkCharcoalColor;
     text-transform: capitalize;
     opacity: 1;
-    font-family: JMSansRegular;
+    font-family: $jmFont;
   }
   .jmimg--cardblock-list--ilnk {
     text-decoration: none;
-    text-decoration-color: #1e22aa;
-    color: #1e22aa;
-    font: 14px/22px JMSansMedium;
+    text-decoration-color: $jmEgyptianBlueColor;
+    color: $jmEgyptianBlueColor;
+    font: 14px/22px $jmMediumFont;
     display: flex;
     margin-top: 0px;
     bottom: 10px;
@@ -194,7 +194,7 @@
     }
   }
   .jmimg-card_block {
-    border-bottom: 10px solid #1e22aa;
+    border-bottom: 10px solid $jmEgyptianBlueColor;
   }
 }
 
@@ -203,13 +203,13 @@
     font-size: 25px;
     line-height: 1.2em;
     font-weight: 500;
-    font-family: JMSansRegular;
-    color: #333333;
+    font-family: $jmFont;
+    color: $jmDarkCharcoalColor;
     padding-right: 0px;
     width: 150%;
   }
   .jmimg-card_block {
-    border-bottom: 15px solid #1e22aa;
+    border-bottom: 15px solid $jmEgyptianBlueColor;
     margin-bottom: 20px;
   }
   .col-md-4.\33 {
@@ -234,7 +234,7 @@
 
 @media (max-width: 575.98px) {
   .jmimg-card_block {
-    border-bottom: 8px solid #1e22aa;
+    border-bottom: 8px solid $jmEgyptianBlueColor;
     margin-bottom: 10px;
   }
   .jmimg__cardblock-body {
@@ -246,27 +246,27 @@
     padding-top: 0.7rem;
   }
   .jmimage-card-block--header {
-    font-family: JMSansMedium;
+    font-family: $jmMediumFont;
     padding: 10px 0px 20px 0px;
     font-size: 24px;
     letter-spacing: 0px;
-    color: #333333;
+    color: $jmDarkCharcoalColor;
   }
   .jmimg--cardblock--title {
     text-align: left;
     font-size: 12px;
     letter-spacing: 0px;
-    color: #333333;
+    color: $jmDarkCharcoalColor;
     text-transform: capitalize;
     opacity: 1;
-    font-family: JMSansRegular;
+    font-family: $jmFont;
   }
   .jmimg--cardblock--text {
     font-size: 20px;
     line-height: 1.2em;
     font-weight: 500;
-    font-family: JMSansRegular;
-    color: #333333;
+    font-family: $jmFont;
+    color: $jmDarkCharcoalColor;
     padding-right: 0px;
     padding-bottom: 0px;
     width: 100%;
@@ -294,9 +294,9 @@
   }
   .jmimg--cardblock-list--ilnk {
     text-decoration: none;
-    text-decoration-color: #1e22aa;
-    color: #1e22aa;
-    font: 17px/22px JMSansMedium;
+    text-decoration-color: $jmEgyptianBlueColor;
+    color: $jmEgyptianBlueColor;
+    font: 17px/22px $jmMediumFont;
     display: flex;
     margin-top: 0px;
     bottom: 15px;
@@ -321,7 +321,7 @@
   width: 100%;
 }
 .jmimg--main--cardblock {
-  border-bottom: 15px solid #1e22aa;
+  border-bottom: 15px solid $jmEgyptianBlueColor;
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {

@@ -1,33 +1,24 @@
 .jmtext--panel-temp {
 	.text-panel-matter {
-		background-color: #1e22aa;
-		color: #ffffff;
+		background-color: $jmEgyptianBlueColor;
+		color: $jmWhiteColor;
 		padding: 20px 0 20px;
 	}
 	.text-panel-link {
 		float: right;
-		position: absolute;
-		right: 40px;
-		bottom: 37px;
+		@include generatePosAbs(auto, auto, 37px, 40px);
 	}
 	.text-panel-title {
 		margin-bottom: 10px;
-		font-family: JMSansMedium;
-		font-size: 16px;
-		line-height: 21px;
+		@include generateFont($jmMediumFont, 16px, 21px);
 	}
 	.text-panel-body {
 		.title-style-a {
-			font-size: 34px;
-			font-family: JMSansMedium;
-			line-height: 32px;
-			color: #ffffff;
+			@include generateFont($jmMediumFont, 34px, 32px, $jmWhiteColor);
 		}
 		p {
 			margin-top: 10px;
-			font-family: JMSansMedium;
-			font-size: 16px;
-			line-height: 21px;
+			@include generateFont($jmMediumFont, 16px, 21px);
 		}
 	}
 }

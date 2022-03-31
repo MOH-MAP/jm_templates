@@ -1,53 +1,41 @@
 .list-of--links-container {
     .jmlist-of--links-heading{
-        font: 40px/48px JMSansMedium;
-        color: #333333;
         padding-bottom: 30px;
+        @include generateFont($jmMediumFont, 40px, 48px, $jmDarkCharcoalColor);
     }
     .jmlist-of--item{
-        font-size: 24px;
-        font-family: 'JMSansRegular';
-        color: #333333;
         padding: 22px 40px 22px 30px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-top: 18px;
-        background-color: #F2F2F2; 
+        background-color: $jmAntiFlashWhiteColor; 
+        @include generateFont($jmFont, 24px, false, $jmDarkCharcoalColor);
     }
     .jmlist-of--link{
         text-decoration: none;
-        color: #1E22AA;
-        font: 18px/22px JMSansMedium;
         display: flex;
         margin-left: 60px;
+        @include generateFont($jmMediumFont, 18px, 22px, $jmEgyptianBlueColor);
     }
     .jmlist-of--icon {
-        background: url("../images/new__jm__images/blue-right-arrow.svg") 0 0 no-repeat transparent;
-        display: block;
-        width: 24px;
-        height: 24px;
+        @include generateIcon(24px, 24px, "../images/new__jm__images/blue-right-arrow.svg");
         margin-left: 10px;
-        float:right;
+        float: right;
         margin-top:2px
     }
     .jmlist-of--text {
-        font-size: 18px;
-        color: #1E22AA;
-        opacity: 1;
-        float:left;
-        font-family: 'JMSansMedium';
+        float: left;
+        @include generateFont($jmMediumFont, 18px, false, $jmEgyptianBlueColor);
     }
     @media (min-width: 320px) and (max-width: 539px) {
         .jmlist-of--item {
-            font-size: 20px;
-            font-family: 'JMSansRegular';
-            color: #333333;
             padding: 15px 10px 15px 10px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-top: 10px;
+            @include generateFont($jmFont, 20px, false, $jmDarkCharcoalColor);
         }
         .jmlist-of--text {
             font-size: 15px;
@@ -59,10 +47,8 @@
             margin-left: 8px;
         }
         .jmlist-of--links--heading{
-            font-size: 24px;
-            color: #333333;
-            font-family: 'JMSansMedium';
             padding-bottom: 5px;
+            @include generateFont($jmMediumFont, 24px, false, $jmDarkCharcoalColor);
         }
     }
 }

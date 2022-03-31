@@ -1,16 +1,14 @@
 .jm_pagination {
   .pagination-results {
-    font: 16px/26px var(--jm-medium-font);
-    color: $jmDarkCharcoalColor;
     padding: 0 40px;
     margin-right: 0;
+    @include generateFont($jmMediumFont, 16px, 26px, $jmDarkCharcoalColor);
   }
   .pagination-items-per-page a.dropdown-toggle.page-link {
     border: none;
-    font: 16px/26px var(--jm-font);
-    color: $jmDarkCharcoalColor;
     padding-right: 0;
     padding-left: 0;
+    @include generateFont($jmFont, 16px, 26px, $jmDarkCharcoalColor);
   }
   .pagination-items-per-page > a:hover,
   .pagination-items-per-page > button:hover {
@@ -22,13 +20,11 @@
   .pagination-items-per-page
     a.dropdown-toggle.page-link
     span:last-child::after {
-    position: absolute;
     width: 100%;
     height: 10px;
     content: "";
-    left: 0;
-    top: 0;
-    background: #ffffff;
+    background: $jmWhiteColor;
+    @include generatePosAbs(0, 0);
   }
   .pagination-items-per-page a.dropdown-toggle.page-link span:last-child {
     position: relative;
@@ -43,9 +39,8 @@
   }
   .page-link {
     border: 0;
-    background-color: #fafafa;
-    font: 16px/26px var(--jm-font);
-    color: #666666e5;
+    background-color: $jmLightShadeWhiteColor;
+    @include generateFont($jmFont, 16px, 26px, $jmGraniteGrayColorOpc9);
   }
   .page-item.active .page-link {
     background-color: $jmEgyptianBlueColor;
@@ -56,6 +51,6 @@
     color: $jmEgyptianBlueColor;
   }
   .page-item.disabled .page-link {
-    color: #66666699;
+    color: $jmGraniteGrayColorOpc6;
   }
 }

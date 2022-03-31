@@ -1,62 +1,26 @@
 .person_explore-icon {
-  background: url("../images/new__jm__images/arrow_forward-white.svg") 0 0
-    no-repeat transparent;
-  display: block;
-  width: 24px;
-  height: 24px;
   float: right;
+  @include generateIcon(24px, 24px, "../images/new__jm__images/arrow_forward-white.svg");
 }
 .person_card {
   width: 27%;
 }
-.btn__person {
-  border-color: #1e22aa;
-  color: #fff;
-  background: #1e22aa 0% 0% no-repeat padding-box;
-  opacity: 1;
-  width: 100%;
-  height: 50px;
-  border-radius: 0px;
-  padding: 0px 50px;
-  border: 0px;
-}
-.btn-person_link {
-  color: #fff;
-  text-decoration: none;
-}
-.btn-person_link:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
 .person_card-body {
   padding: 10px 0px;
 }
 h4.person_card-title {
-  font-size: 24px;
-  font-family: "JMSansMedium";
-  letter-spacing: 0px;
-  color: #333333;
-  opacity: 1;
+  @include generateFont($jmMediumFont, 24px, false, $jmDarkCharcoalColor);
   padding: 6px 0px 2px 0px;
 }
 h6.person_card-text {
   text-align: left;
-  letter-spacing: 0px;
-  color: #333333;
-  opacity: 0.8;
-  font-family: "JMSansMedium";
-  font-size: 16px;
+  @include generateFont($jmMediumFont, 16px, false, $jmDarkCharcoalColor, 0.8);
   padding: 0px 0px 2px 0px;
 }
 h6.person_card-number {
   text-align: left;
-  letter-spacing: 0px;
-  color: #333333;
-  opacity: 0.8;
-  font-family: "JMSansMedium";
-  font-size: 16px;
   padding: 2px 0px;
+  @include generateFont($jmMediumFont, 16px, false, $jmDarkCharcoalColor, 0.8);
 }
 h6.person_card-number {
   padding: 2px 0px 18px 0px;
@@ -77,26 +41,20 @@ span.span-btn_text {
     width: 100%;
   }
   .person_img {
-    height: 55pt;
-    max-width: 65pt !important;
+    height: 55px;
+    max-width: 65px !important;
     float: left;
     margin: 10px 20px 20px 0px;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .person_card {
-      width: 45%;
-    }
-    .btn__person {
-      padding: 0px 40px;
-    }
+  .person_card {
+    width: 45%;
   }
+}
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .person_card {
-      width: 33%;
-    }
-    .btn__person {
-      padding: 0px 35px;
-    }
+  .person_card {
+    width: 33%;
   }
+}
   

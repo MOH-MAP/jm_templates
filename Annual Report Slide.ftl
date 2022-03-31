@@ -6,7 +6,7 @@
 <#assign layoutname = themeDisplay.getLayout().getName(themeDisplay.getLocale()) />
 
 <section class="main__sec jmannual--main-container"> 
-    <div id="annual-report-slide-${namespace} jmannual--rs-temp" class="annual-report-slide">
+    <div id="annual-report-slide-${namespace}" class="annual-report-slide jmannual--rs-temp">
         <div class="container annual__report">
             <#if (Title.getData())??>
                 <h1 class="panel__heading">${Title.getData()}</h1>

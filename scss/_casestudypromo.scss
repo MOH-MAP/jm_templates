@@ -10,69 +10,43 @@
   margin-left: -20px;
 }
 .jmcasestudy__title {
-  font-size: 40px;
   text-align: left;
-  letter-spacing: 0px;
-  color: $jmDarkCharcoalColor;
-  opacity: 1;
-  line-height: 48px;
   margin-top: -14px;
-  font-family: "JMSansMedium";
+  @include generateFont($jmMediumFont, 40px, 48px, $jmDarkCharcoalColor);
 }
 .jmcasestudy__subtitle {
   text-align: left;
-  letter-spacing: 0px;
-  color: $jmDarkCharcoalColor;
-  opacity: 0.8;
   padding-bottom: 10px;
-  font-family: "JMSansMedium";
-  font-size: 18px;
+  @include generateFont($jmMediumFont, 18px, false, $jmDarkCharcoalColor, 0.8);
 }
 .jmcasestudy__copy p {
   text-align: left;
-  letter-spacing: 0px;
-  color: $jmDarkCharcoalColor;
-  opacity: 1;
-  font-size: 18px;
-  font-family: "JMSansMedium";
+  @include generateFont($jmMediumFont, 18px, false, $jmDarkCharcoalColor);
 }
 .jmcasestudy__btn-link {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background: #1e22aa;
+  @include generatePosAbs(auto, auto, 0, 0);
+  background: $jmEgyptianBlueColor;
 }
 span.jmcasestudy__link-text {
   float: right;
   /* padding-left: 12px; */
   padding: 15px 10px 0px 200px;
-  color: white;
-  letter-spacing: 0px;
-  color: $jmWhiteColor;
   text-transform: uppercase;
-  opacity: 1;
-  font-size: 16px;
   float: left;
-  font-family: "JMSansRegular";
+  @include generateFont($jmFont, 16px, false, $jmWhiteColor);
 }
 .jmcasestudy__link-icon {
-  background: url("../images/new__jm__images/arrow_forward-white.svg") 0 0
-    no-repeat transparent;
-  display: block;
-  width: 24px;
-  height: 24px;
   float: right;
   margin-left: 0rem;
   margin-top: 14px;
   padding: 23px 15px 15px 20px;
+  @include generateIcon(24px, 24px, "../images/new__jm__images/arrow_forward-white.svg");
 }
 .jmcasestudy__slide {
   width: 100%;
   height: auto;
   position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  @include generateBgSizePos;
 }
 .jmcasestudy__img {
   width: 275px;
@@ -81,89 +55,26 @@ span.jmcasestudy__link-text {
 .jmcasestudy__promo-carousel-prev,
 .jmcasestudy__promo-carousel-next {
   align-items: center;
-  bottom: 0;
-  color: #fff;
+  color: $jmWhiteColor;
   display: flex;
   justify-content: center;
   opacity: 1;
-  position: absolute;
   text-align: center;
-  top: 0;
+  @include generatePosAbs(auto, 0, 0, auto);
   transition: opacity 0.15s ease;
   width: 3%;
   z-index: 1;
   margin: -25px;
 }
-// .jmcasestudy__promo-carousel-next-icon {
-//    background-image: url("../images/new__jm__images/casestudy-right-arrow.svg");
-// }
-// .jmcasestudy__promo-carousel-prev-icon {
-//    background-image: url("../images/new__jm__images/casestudy-left-arrow.svg");
-// }
-
 .jmcasestudy__btn-link {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background: #1e22aa;
+  @include generatePosAbs(auto, auto, 0, 0);
+  background: $jmEgyptianBlueColor;
 }
 span.jmcasestudy__link-text {
-  float: right;
-  /* padding-left: 12px; */
   padding: 15px 10px 0px 200px;
-  color: white;
-  letter-spacing: 0px;
-  color: $jmWhiteColor;
   text-transform: uppercase;
-  opacity: 1;
-  font-size: 16px;
   float: left;
-  font-family: "JMSansRegular";
-}
-.jmcasestudy__link-icon {
-  background: url("../images/new__jm__images/arrow_forward-white.svg") 0 0
-    no-repeat transparent;
-  display: block;
-  width: 24px;
-  height: 24px;
-  float: right;
-  margin-left: 0rem;
-  margin-top: 14px;
-  padding: 23px 15px 15px 20px;
-}
-.jmcasestudy__slide {
-  width: 100%;
-  height: auto;
-  position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-.jmcasestudy__img {
-  width: 275px;
-  height: 250px;
-}
-.carousel-control-prev,
-.carousel-control-next {
-  align-items: center;
-  bottom: 0;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  opacity: 1;
-  position: absolute;
-  text-align: center;
-  top: 0;
-  transition: opacity 0.15s ease;
-  width: 3%;
-  z-index: 1;
-  margin: -25px;
-}
-.carousel-control-next-icon {
-  background-image: url("../images/new__jm__images/casestudy-right-arrow.svg");
-}
-.carousel-control-prev-icon {
-  background-image: url("../images/new__jm__images/casestudy-left-arrow.svg");
+  @include generateFont($jmFont, 16px, false, $jmWhiteColor);
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .jmcasestudy__img {
@@ -181,14 +92,12 @@ span.jmcasestudy__link-text {
   .jmcasestudy__promo-carousel-prev,
   .jmcasestudy__promo-carousel-next {
     align-items: center;
-    bottom: 0;
-    color: #fff;
+    color: $jmWhiteColor;
     display: flex;
     justify-content: center;
     opacity: 1;
-    position: absolute;
     text-align: center;
-    top: 0;
+    @include generatePosAbs(auto, 0, 0, auto);
     transition: opacity 0.15s ease;
     width: 3%;
     z-index: 1;
@@ -209,22 +118,6 @@ span.jmcasestudy__link-text {
   }
   .jmcasestudy__subtitle {
     font-size: 16px;
-  }
-  .carousel-control-prev,
-  .carousel-control-next {
-    align-items: center;
-    bottom: 0;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    opacity: 1;
-    position: absolute;
-    text-align: center;
-    top: 0;
-    transition: opacity 0.15s ease;
-    width: 3%;
-    z-index: 1;
-    margin: 0px;
   }
   .jmcasestudy__img {
     width: 100%;
@@ -252,21 +145,17 @@ span.jmcasestudy__link-text {
     justify-content: flex-end !important;
     width: 95% !important;
     float: right !important;
-    background: #1e22aa !important;
+    background: $jmEgyptianBlueColor !important;
   }
   span.jmcasestudy__link-text {
-    float: right !important;
     padding: 15px 5px 0px 0px !important;
-    font-size: 16px !important;
     float: left !important;
-    font-family: "JMSansRegular" !important;
+    @include generateFont($jmFont !important, 16px!important);
   }
   .jmcasestudy__copy p {
     font-size: 14px;
     line-height: 1.5;
-    padding-left: 15px !important;
-    padding-top: 15px !important;
-    padding-bottom: 20px !important;
+    @include generatePadding(15px !important, false, 15px !important, 20px !important);
   }
   .jmcasestudy__header {
     position: absolute !important;
@@ -276,14 +165,12 @@ span.jmcasestudy__link-text {
   .jmcasestudy__promo-carousel-prev,
   .jmcasestudy__promo-carousel--next {
     align-items: center !important;
-    bottom: 0 !important;
-    color: #fff;
+    color: $jmWhiteColor;
     display: flex;
     justify-content: center;
     opacity: 1;
-    position: absolute;
     text-align: center;
-    top: 0;
+    @include generatePosAbs(auto, 0, 0!important, auto);
     transition: opacity 0.15s ease;
     width: 10% !important;
     z-index: 1;
@@ -301,26 +188,24 @@ span.jmcasestudy__link-text {
     justify-content: flex-end !important;
     width: 95% !important;
     float: right !important;
-    background: #1e22aa !important;
+    background: $jmEgyptianBlueColor !important;
   }
   span.jmcasestudy_link-text {
     float: right !important;
     padding: 15px 5px 0px 0px !important;
     font-size: 16px !important;
     float: left !important;
-    font-family: "JMSansRegular" !important;
+    font-family: $jmFont !important;
   }
   .carousel-control-prev,
   .carousel-control-next {
     align-items: center !important;
-    bottom: 0 !important;
-    color: #fff;
+    color: $jmWhiteColor;
     display: flex;
     justify-content: center;
     opacity: 1;
-    position: absolute;
     text-align: center;
-    top: 0;
+    @include generatePosAbs(auto, 0, 0!important, auto);
     transition: opacity 0.15s ease;
     width: 10% !important;
     z-index: 1;

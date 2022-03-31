@@ -1,129 +1,100 @@
-.jmlist-block__title {
-  font-family: JMSansMedium;
-  padding: 10px 0px 30px 0px;
-  font-size: 34px;
-  letter-spacing: 0px;
-  color: #333333;
-  opacity: 1;
-}
-.jmlist-block__card {
-  background: #f2f2f2 0% 0% no-repeat padding-box;
-  border-bottom: #1e22aa 15px solid;
-}
-.jmlist-block__innerspace {
-  flex: 1 1 auto;
-  min-height: 1px;
-  padding-bottom: 0.99rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  padding-top: 1.25rem;
-}
-.jmlist-block__card-title {
-  letter-spacing: 0px;
-  color: #333333;
-  text-transform: capitalize;
-  opacity: 1;
-  font-size: 14px;
-  line-height: 16px;
-  font-family: "JMSansRegular";
-  text-align: left;
-}
-.jmlist-block__card-heading {
-  font-size: 25px;
-  line-height: 1.2em;
-  font-weight: 500;
-  font-family: JMSansRegular;
-  color: #333333;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  margin-right: 25%;
-}
-.jmlist-block__read-more {
-  letter-spacing: 0px;
-  color: #1e22aa;
-  opacity: 1;
-  line-height: 22px;
-  font-family: "JMSansMedium";
-  margin-top: 20px;
-  font: 17px/22px JMSansMedium;
-}
-.jmlist-block__more-icon {
-  background: url("../images/new__jm__images/blue-right-arrow.svg") 0 0
-    no-repeat transparent;
-  display: block;
-  width: 24px;
-  height: 24px;
-  margin-left: 90px;
-  margin-top: -20px;
-}
-@media (min-width: 835px) and (max-width: 1024px) {
-  .jmlist-block__card-heading {
-    margin-right: 0%;
-  }
-}
-@media (min-width: 540px) and (max-width: 834px) {
-  .jmlist-block__title {
-    font-size: 30px;
-  }
-  .jmlist-block__card-heading {
-    font-size: 23px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    margin-right: 0%;
-  }
-  .jmlist-block__card-title {
-    font-size: 13px;
-    margin: 0px;
-  }
-  .jmlist-block__innerspace {
-    flex: 1 1 auto;
-    min-height: 1px;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
-  }
-  .jmlist-block__read-more {
-    font-size: 17px;
-    margin-top: 20px;
-  }
-  .jmlist-block__more-icon {
-    margin-left: 90px;
-  }
-}
-@media (min-width: 320px) and (max-width: 539px) {
-  .jmlist-block__title {
-    padding: 10px 0px 10px 0px;
-    font-size: 24px;
-  }
-  .jmlist-block__innerspace {
-    flex: 1 1 auto;
-    min-height: 1px;
-    padding-bottom: 0.75rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-top: 0.75rem;
-  }
-  .jmlist-block__card-title {
-    font-size: 13px;
-    margin: 0px;
-  }
-  .jmlist-block__card-heading {
-    font-size: 20px;
-    margin-bottom: 0px;
-    margin-top: 5px;
-    margin-right: 20%;
-  }
-  .jmlist-block__read-more {
-    display: none;
-  }
-  .jmlist-block__more-icon {
-    float: right;
-    margin-top: -21px;
-    margin-right: 0px;
-  }
-  .jmlist-block__card {
-    background: #f2f2f2 0% 0% no-repeat padding-box;
-    border-bottom: #1e22aa 10px solid;
-  }
+.jmlist--block-temp {
+    .jmlist--block-title {
+        padding: 30px 0px 30px 0px;
+        @include generateFont($jmMediumFont, 34px, false, $jmDarkCharcoalColor);
+    }
+    .jmlist--block-card {
+        background: $jmAntiFlashWhiteColor 0% 0% no-repeat padding-box;
+        border-bottom: $jmEgyptianBlueColor 15px solid;
+    }
+    .jmlist--block-innerspace {
+        flex: 1 1 auto;
+        min-height: 1px;
+        @include generatePadding(1.25rem, 1.25rem, 1.25rem, 0.99rem);
+    }
+    .jmlist--block-card-title {
+        text-transform: capitalize;
+        text-align: left;
+        @include generateFont($jmFont, 14px, 16px, $jmDarkCharcoalColor);
+    }
+    .jmlist--block-card-heading{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-right: 25%;
+        @include generateFont($jmFont, 25px, 1.2em, $jmDarkCharcoalColor, 1, 500);
+    }
+    .jmlist--block-read-more {
+        margin-top: 20px;
+        @include generateFont($jmMediumFont, 17px, 22px, $jmEgyptianBlueColor);
+    }
+    .jmlist--block-more-icon {
+        @include generateIcon(24px, 24px, "../images/new__jm__images/blue-right-arrow.svg");
+        margin-left: 90px;
+        margin-top: -20px;
+    }
+    @media (min-width: 835px) and (max-width:1024px) {
+        .jmlist--block-card-heading {
+            margin-right: 0%;
+        }
+    }
+    @media (min-width: 540px) and (max-width:834px) {
+        .jmlist--block-title {
+            font-size: 30px;
+        }
+        .jmlist--block-card-heading {
+            font-size: 23px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            margin-right: 0%;
+        }
+        .jmlist--block-card-title {
+            font-size: 13px;
+            margin: 0px;
+        }
+        .jmlist--block-innerspace {
+            flex: 1 1 auto;
+            min-height: 1px;
+            @include generatePadding(1rem, 1rem, 1rem, 1rem);
+        }
+        .jmlist--block-read-more {
+            font-size: 17px;
+            margin-top: 20px;
+        }
+        .jmlist--block-more-icon {
+            margin-left: 90px;
+        }
+    }
+    @media (min-width: 320px) and (max-width: 539px) {
+        .jmlist--block-title {
+            padding: 10px 0px 10px 0px;
+            font-size: 24px;
+        }
+        .jmlist--block-innerspace {
+            flex: 1 1 auto;
+            min-height: 1px;
+            @include generatePadding(0.5rem, 0.5rem, 0.75rem, 0.75rem);
+        }
+        .jmlist--block-card-title {
+            font-size: 13px;
+            margin: 0px;
+        }
+        .jmlist--block-card-heading {
+            font-size: 20px;
+            margin-bottom: 0px;
+            margin-top: 5px;
+            margin-right: 20%;
+        }
+        .jmlist--block-read-more {
+            display: none;
+        }
+        .jmlist--block-more-icon {
+            float: right;
+            margin-top: -21px;
+            margin-right: 0px;
+        }
+        .jmlist--block-card {
+            background: $jmAntiFlashWhiteColor 0% 0% no-repeat padding-box;
+            border-bottom: $jmEgyptianBlueColor 10px solid;
+        }
+    }
 }

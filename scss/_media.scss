@@ -1,12 +1,33 @@
 /**media query for mobile **/
-@media (min-width: 320px) and (max-width: 540px) {
-  .socialmedia__list {
-    padding: 14px 20px 11px 20px;
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .btn__person {
+    padding: 0px 35px;
   }
-  .icon-arrow--right {
-    width: 20px !important;
-    height: 20px !important;
-    margin-left: 12px !important;
+}
+@media(max-width: 990px) {
+  .explore-icon{
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    align-items: center;
+    color: $jmWhiteColor;
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    text-align: center;
+    @include generatePosAbs(auto, 0, 0, auto);
+    transition: opacity 0.15s ease;
+    width: 3%;
+    z-index: 1;
+    margin: 0px;
+  }
+  .btn__person {
+    padding: 0px 40px;
   }
 }
 /**media query for tab **/
@@ -50,34 +71,34 @@
       display: block !important;
     }
     .submenu__content {
-      border-bottom: 1px solid #ffffff33;
+      border-bottom: 1px solid $jmWhiteColorOpc2;
       opacity: 1;
       flex: 0 0 25%;
       padding: 20px 0px;
     }
     .submenu__list {
-      font-family: JMSansMedium;
+      font-family: $jmMediumFont;
       font-size: 14px;
       line-height: 20px;
-      color: var(--jmWhite-color);
+      color: $jmWhiteColor;
     }
     .submenu__heading {
-      font-family: JMSansMedium;
+      font-family: $jmMediumFont;
       font-size: 14px;
       line-height: 20px;
       opacity: 0.6;
-      color: var(--jmWhite-color);
+      color: $jmWhiteColor;
       display: block !important;
       margin-top: 20px;
     }
   }
   .jmheader__navlist {
     width: 100%;
-    border-bottom: 1px solid #ffffff33 !important;
+    border-bottom: 1px solid $jmWhiteColorOpc2 !important;
     opacity: 1;
 
     a {
-      color: var(--jmWhite-color) !important;
+      color: $jmWhiteColor !important;
       line-height: 24px;
     }
   }
@@ -101,7 +122,7 @@
     float: right;
   }
   .jmarrow__right:hover {
-    background-color: var(--jmOceanBlue-color);
+    background-color: $jmOceanBlueColor;
     opacity: 1;
   }
 
@@ -119,10 +140,10 @@
       margin-left: 10px;
     }
     .contact__text {
-      font-family: JMSansMedium;
+      font-family: $jmMediumFont;
       font-size: 14px;
       line-height: 20px;
-      color: var(--jmWhite-color);
+      color: $jmWhiteColor;
       margin-left: 12px;
       display: flex;
       text-align: center;
@@ -134,7 +155,6 @@
       right: 50px;
     }
   }
-
   .nav__toggler {
     background: url(../images/new__jm__images/menu-icon.svg) 0 0 no-repeat
       transparent;
@@ -155,5 +175,79 @@
     position: absolute;
     top: 19px;
     right: 18px;
+  }
+}
+@media (min-width: 540px) and (max-width: 834px) {
+  .mb__img {
+		flex: 0 0 0;
+		max-width: 100%;
+	  display: block;
+    img{
+      width: 100%;
+    }
+  }
+  .pad-tpbtm-100 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .img-left {
+    height: 500px;
+    width: 325px;
+  }
+  .img-right {
+    height: 315px;
+    width: 440px;
+    float: right;
+  }
+}
+@media (min-width: 320px) and (max-width: 539.98px) {
+  .socialmedia__list {
+    padding: 14px 20px 11px 20px;
+  }
+  .icon-arrow--right {
+    width: 20px !important;
+    height: 20px !important;
+    margin-left: 12px !important;
+  }
+  .centered {
+    top: 15rem;
+  }
+  .dropdown__sec {
+    border: 0;
+  }
+  .submit__btn {
+    width: 100%;
+    justify-content: flex-end;
+    font-size: 16px;
+  }
+  .arrow__forward {
+    background: url("../images/new__jm__images/arrow_forward-white-20.svg") 0 0
+      no-repeat transparent;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: 0px;
+  }
+  .mb__img {
+		flex: 0 0 0;
+		max-width: 100%;
+	  display: block;
+    img{
+      width: 100%;
+    }
+  }
+  .pad-tpbtm-100 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .img-left {
+    height: 200px;
+    width: 100%;
+    padding: 15px;
+  }
+  .img-right {
+    height: 200px;
+    width: 100%;
+    padding: 15px;
   }
 }

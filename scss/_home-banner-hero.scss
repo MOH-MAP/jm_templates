@@ -1,17 +1,13 @@
 .jmhome--banner-hero-temp {
 	.home-heading {
-		font: 52px/60px JMSansMedium;
-		color: #FFFFFF;
-		text-shadow: 0px 0px 8px #000000;
-		opacity: 1;
+		text-shadow: $jmTextShadow1;
+		@include generateFont($jmMediumFont, 52px, 60px, $jmWhiteColor);
 	}
 	.home-para {
-		font: 18px/28px JMSansRegular;
-		color: #FFFFFF;
-		text-shadow: 0px 0px 8px #000000;
-		opacity: 1;
+		text-shadow: $jmTextShadow1;
 		width: 100%;
 		max-width: 660px;
+		@include generateFont($jmFont, 18px, 28px, $jmWhiteColor);
 	}
 	.hero__img {
 		width: 100%;
@@ -20,8 +16,7 @@
 		background-repeat: no-repeat !important;
 	}
 	.hero__content {
-		position: absolute;
-		top: 50%;
+		@include generatePosAbs(50%);
 		transform: translateY(-50%);
 		text-align: left;
 		padding: 0px 60px 0px 20px;

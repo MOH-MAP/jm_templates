@@ -1,20 +1,14 @@
 .jmdate--page-hero-temp {
 	.hero {
-		background-position: center;
-		background-size: cover;
+		@include generateBgSizePos;
 		width: 100%;
 		height: 430px;
 		position: relative;
 	}
 	.datepagehero__heading {
 		text-align: left;
-		font-size: 52px;
-		line-height: 60px;
-		font-family: JMSansMedium;
-		letter-spacing: 0px;
-		color: #ffffff;
-		text-shadow: 0px 0px 8px #000000;
-		opacity: 1;
+		text-shadow: $jmTextShadow1;
+		@include generateFont($jmMediumFont, 52px, 60px, $jmWhiteColor);
 		margin-top: 95px;
 		margin-bottom: 34px;
 	}

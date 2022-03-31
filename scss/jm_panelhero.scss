@@ -1,25 +1,25 @@
 .panels-hero-panels {
-	background-color: var(--jmEgyptianBlue-color);
+	background-color: $jmEgyptianBlueColor;
 }
 .hero-panels-panel.white-border {
-	border-left: 1.5px #FFFFFF solid;
+	border-left: 1.5px $jmWhiteColor solid;
 }
 .panels-hero {
 	.panels-hero-header {
 		h1 {
 			font-size: 46px;
 			line-height: 60px;
-			font-family: JMSansMedium;
-			color: #FFFFFF;
-			text-shadow: 0px 0px 6px #000000;
+			font-family: $jmMediumFont;
+			color: $jmWhiteColor;
+			text-shadow: $jmTextShadow2;
 		}
 	}
 	.panels-hero-para {
 		font-size: 18px;
 		line-height: 28px;
-		font-family: JMSansMedium;
-		color: #FFFFFF;
-		text-shadow: 0px 0px 8px #000000;
+		font-family: $jmMediumFont;
+		color: $jmWhiteColor;
+		text-shadow: $jmTextShadow1;
 		opacity: 0.8;
 	}
 }
