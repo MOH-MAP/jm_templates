@@ -559,6 +559,19 @@ table {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+.img-overlay {
+  width: 100%;
+  height: 100%;
+}
+.img-right {
+  height: 350px;
+  width: 440px;
+  float: right;
+}
+.img-left {
+  height: 420px;
+  width: 440px;
+}
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .btn__person {
     padding: 0px 35px;
@@ -603,6 +616,15 @@ table {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+  .img-left {
+    height: 500px;
+    width: 325px;
+  }
+  .img-right {
+    height: 315px;
+    width: 440px;
+    float: right;
+  }
 }
 @media (min-width: 320px) and (max-width: 539px) {
   .centered {
@@ -635,5 +657,15 @@ table {
   .pad-tpbtm-100 {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+  .img-left {
+    height: 200px;
+    width: 100%;
+    padding: 15px;
+  }
+  .img-right {
+    height: 200px;
+    width: 100%;
+    padding: 15px;
   }
 }

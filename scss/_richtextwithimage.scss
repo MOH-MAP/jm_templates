@@ -1,5 +1,4 @@
 /* Rich Text With Background Image Only */
-
 .panel-innovation-improving-container {
   display: flex;
   flex-wrap: wrap;
@@ -7,12 +6,9 @@
   padding: 3% 5% 10% 10%;
   background-color: $jmAntiFlashWhiteColor;
   min-height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-attachment: fixed;
+  @include generateBgSizePos;
 }
-
 .flex-item-one-innovation {
   padding: 4%;
   flex: 100%;
@@ -21,7 +17,6 @@
   object-fit: contain;
 }
 .flex-item-right-innovation {
-  padding: 10px;
   flex: 50%;
   background-color: $jmAntiFlashWhiteColor;
   padding: 1% 0% 1% 4%;
@@ -99,27 +94,22 @@
     margin-top: 50%;
   }
 }
-
 /* Rich Text With Right Image and Without Background Image */
-
 .panel-flex-container {
   display: flex;
   flex-wrap: wrap;
   /*padding: 3% 5% 0% 10%;*/
 }
-
 .flex-item-left {
   padding: 10px 30px 10px 10px;
   flex: 60%;
   /* width: 744px; */
   /* height: 552px; */
 }
-
 .flex-item-right {
   padding: 10px;
   flex: 40%;
 }
-
 .article-heading-left {
   font-size: 40px;
   line-height: 42px;
