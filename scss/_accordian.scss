@@ -1,9 +1,10 @@
 .jmaccrdn {
   .jmaccrdn__heading {
-    padding-bottom: 46px;
+    padding: 60px 40px 40px 40px;
     margin: 0px;
     padding-left: 40px;
     text-align: left;
+    border-bottom: 1px solid $jmBlackColorOpc1;
     @include generateFont($jmMediumFont, 40px, 48px, $jmDarkCharcoalColor);
   }
   .jmaccrdn__title {
@@ -21,13 +22,19 @@
   .jmaccrdn__body {
     background-color: $jmAntiFlashWhiteColor;
     margin: 0;
-    display: block;
+    // display: block;
   }
   .jmaccrdn__answer-sec {
-    padding: 60px;
+    padding: 40px 40px;
     p {
-      margin-bottom: 36px;
+      margin-bottom: 30px;
       @include generateFont($jmFont, 18px, 27px, $jmDarkCharcoalColor);
+    }
+    a{
+      @include generateFont($jmFont, 18px, 27px, $jmEgyptianBlueColor);
+      &:hover {
+        @include generateFont($jmFont, 18px, 27px, $jmEgyptianBlueColor);
+      }
     }
   }
   .jmaccrdn__arrow {
