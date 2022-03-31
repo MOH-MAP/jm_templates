@@ -6,28 +6,19 @@
 	}
 	.text-panel-link {
 		float: right;
-		position: absolute;
-		right: 40px;
-		bottom: 37px;
+		@include generatePosAbs(auto, auto, 37px, 40px);
 	}
 	.text-panel-title {
 		margin-bottom: 10px;
-		font-family: $jmMediumFont;
-		font-size: 16px;
-		line-height: 21px;
+		@include generateFont($jmMediumFont, 16px, 21px);
 	}
 	.text-panel-body {
 		.title-style-a {
-			font-size: 34px;
-			font-family: $jmMediumFont;
-			line-height: 32px;
-			color: $jmWhiteColor;
+			@include generateFont($jmMediumFont, 34px, 32px, $jmWhiteColor);
 		}
 		p {
 			margin-top: 10px;
-			font-family: $jmMediumFont;
-			font-size: 16px;
-			line-height: 21px;
+			@include generateFont($jmMediumFont, 16px, 21px);
 		}
 	}
 }
