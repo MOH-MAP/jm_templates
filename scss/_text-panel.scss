@@ -19,7 +19,7 @@
     }
     p {
       margin-top: 10px;
-      @include generateFont($jmRegularFont, 18px, 27px);
+      @include generateFont($jmBlackFont, 18px, 27px);
     }
   }
 }
