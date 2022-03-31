@@ -4,7 +4,7 @@
   $lineHeight: false,
   $fontColor: false,
   $elementOpacity: 1,
-  $fontWeight
+  $fontWeight: false
 ) {
   font-family: $fontFamily;
   opacity: $elementOpacity;
@@ -12,14 +12,14 @@
   @if $lineHeight {
     line-height: $lineHeight;
   }
-  @if $fontWeight {
-    font-weight: $fontWeight;
-  }
   @if $fontColor {
     color: $fontColor;
   }
   @if $fontSize {
     font-size: $fontSize;
+  }
+  @if $fontWeight {
+    font-weight: $fontWeight;
   }
 }
 @mixin generateIcon(
