@@ -1,24 +1,25 @@
 .jmtext--panel-temp {
-	.text-panel-matter {
-		background-color: $jmEgyptianBlueColor;
-		color: $jmWhiteColor;
-		padding: 20px 0 20px;
-	}
-	.text-panel-link {
-		float: right;
-		@include generatePosAbs(auto, auto, 37px, 40px);
-	}
-	.text-panel-title {
-		margin-bottom: 10px;
-		@include generateFont($jmMediumFont, 16px, 21px);
-	}
-	.text-panel-body {
-		.title-style-a {
-			@include generateFont($jmMediumFont, 34px, 32px, $jmWhiteColor);
-		}
-		p {
-			margin-top: 10px;
-			@include generateFont($jmMediumFont, 16px, 21px);
-		}
-	}
+  padding: 0 5% 0 5%;
+  .text-panel-matter {
+    background-color: $jmEgyptianBlueColor;
+    color: $jmWhiteColor;
+    padding: 20px 0 20px;
+  }
+  .text-panel-link {
+    float: right;
+    @include generatePosAbs(auto, auto, 37px, 40px);
+  }
+  .text-panel-title {
+    margin-bottom: 10px;
+    @include generateFont($jmMediumFont, 24px, 32px);
+  }
+  .text-panel-body {
+    .title-style-a {
+      @include generateFont($jmMediumFont, 34px, 32px, $jmWhiteColor);
+    }
+    p {
+      margin-top: 10px;
+      @include generateFont($jmRegularFont, 18px, 27px);
+    }
+  }
 }
