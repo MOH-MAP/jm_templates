@@ -11,75 +11,49 @@
 		border-right: 0.1px solid transparent;
 		>.pagination__value {
 			text-align: left;
-			letter-spacing: 0px;
-			font-size: 18px;
-			font-family: JMSansMedium;
-			color: #666666;
-			opacity: 0.9;
 			background: #fafafa 0% 0% no-repeat padding-box;
-			opacity: 1;
 			border: none;
 			padding: 5px 20px 5px 20px;
+			@include generateFont($jmMediumFont, 18px, false, $jmGraniteGrayColor);
 		}
 	}
 	.owl-dot.active {
 		>.pagination__value {
 			text-align: left;
-			font-size: 18px;
-			font-family: JMSansMedium;
-			letter-spacing: 0px;
-			color: #1e22aa;
-			opacity: 0.9;
 			background: #fafafa 0% 0% no-repeat padding-box;
-			opacity: 1;
 			border: none;
 			padding: 5px 20px 5px 20px;
+			@include generateFont($jmMediumFont, 18px, false, $jmEgyptianBlueColor);
 		}
 	}
 	margin-top: 50px;
 	margin-bottom: 50px;
 	.previous__icon {
-		background: url("/o/jm-platinum-theme/images/new__jm__images/chevron-left-blue.svg") 0 0 no-repeat transparent;
-		display: block;
-		width: 24px;
-		height: 24px;
 		margin-right: 28px;
 		top: 50%;
 		margin-top: 5px;
+		@include generateIcon(24px, 24px, "/o/jm-platinum-theme/images/new__jm__images/chevron-left-blue.svg");
 	}
 	.next__icon {
-		background: url("/o/jm-platinum-theme/images/new__jm__images/chevron-right-blue.svg") 0 0 no-repeat transparent;
-		display: block;
-		width: 24px;
-		height: 24px;
 		margin-left: 28px;
 		top: 50%;
 		margin-top: 5px;
+		@include generateIcon(24px, 24px, "/o/jm-platinum-theme/images/new__jm__images/chevron-right-blue.svg");
 	}
 	.pagination {
 		display: flex;
 	}
 	.pagination__value.active {
 		text-align: left;
-		font-size: 18px;
-		line-height: 26px;
-		font-family: JMSansMedium;
-		letter-spacing: 0px;
-		color: #ffffff;
-		opacity: 0.9;
 		background-color: #1e22aa;
 		padding: 11px 15px;
+		@include generateFont($jmMediumFont, 18px, 26px, $jmWhiteColor, 0.9);
 	}
 	.pagination__value {
 		text-align: left;
-		font-size: 18px;
-		line-height: 26px;
-		font-family: JMSansRegular;
-		letter-spacing: 0px;
-		color: #666666;
-		opacity: 0.9;
 		background-color: #fafafa;
 		padding: 11px 15px;
+		@include generateFont($jmFont, 18px, 26px, $jmGraniteGrayColor, 0.9);
 	}
 	.owl-carousel {
 		.owl-nav {
