@@ -1,0 +1,72 @@
+.jmarticle--hero-para {
+	text-align: left;
+	text-shadow: $jmTextShadow1;
+	@include generateFont($jmMediumFont, 16px, 25px, $jmWhiteColor, 0.8);
+}
+.jmarticle--hero-heading {
+	text-align: left;
+	text-shadow: $jmTextShadow1;
+	margin-top: 74px;
+	margin-bottom: 21px;
+	@include generateFont($jmMediumFont, 48px, 60px, $jmWhiteColor);
+}
+.jmarticle--hero-btn {
+	display: flex;
+	background-color: $jmEgyptianBlueColor;
+	width: 321px;
+	border: none;
+	outline: none;
+	padding: 20px 10px 17px 24px;
+	justify-content: flex-end;
+	text-align: right;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	text-decoration: none !important;
+	position: absolute;
+	bottom: 80px;
+	@include generateFont($jmMediumFont, 18px, 22px, $jmWhiteColor!important);
+	&:hover {
+		text-decoration: none;
+		color: $jmWhiteColor;
+	}
+}
+.jmarticle-hero-content {
+	a, a:hover {
+		text-decoration: none !important;
+		color: $jmWhiteColor;
+		background-color: $jmEgyptianBlueColor;
+	}
+	padding: 0 15px;
+}
+.jmarticle--hero-arrow_icon {
+    @include generateIcon(24px, 24px, "../images/new__jm__images/arrow_forward-white.svg");
+	margin-left: 8px;
+	top: 50%;
+	margin-top: -2px;
+}
+@media (min-width: 320px) and (max-width: 539px) {
+    .jmarticle-hero-content {
+      padding: 0 15px;
+    }
+    .jmarticle--hero-btn {
+      width: 328px;
+      padding: 15px 10px 16px 0px;
+      font-size: 16px;
+      bottom: 40px;
+    }
+    .jmarticle--hero-heading {
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
+    .jmarticle--hero-arrow_icon {
+      margin-left: 8px;
+      top: 50%;
+      margin-top: 0px;
+	  @include generateIcon(24px, 24px, "../images/new__jm__images/arrow_forward-white-20.svg");
+    }
+}
+@media (min-width: 540px) and (max-width: 834px) {
+	.jmarticle--hero-heading {
+		font-size: 44px;
+	}
+}
