@@ -61,6 +61,15 @@
   margin-bottom: 40px;
   margin-top: 0px;
 }
+.container.jmpromo--block-container-alignment {
+	margin: 30px 0 20px 0;
+  @include generatePadding(0px, 0px, 30px, 20px);
+	.col-md-5 {
+		img {
+			width: 100%;
+		}
+	}
+}
 /** innovating styling : end***/
 /** text content css: end*/
 @media (min-width: 320px) and (max-width: 639px) {
@@ -108,7 +117,6 @@
   }
   /** innovating style: end***/
 }
-
 @media (min-width: 640px) and (max-width: 834px) {
   .invte__heading {
     font-size: 34px;
