@@ -1,37 +1,21 @@
 .jmvideo--temp {
   .jm-image-text-heading {
     text-align: left;
-    letter-spacing: 0px;
     text-shadow: $jmTextShadow2;
-    opacity: 1;
-    font-size: 36px;
-    line-height: 40px;
-    font-family: $jmMediumFont;
-    color: $jmWhiteColor;
+    @include generateFont($jmMediumFont, 36px, 40px, $jmWhiteColor);
   }
   .jm-image-slogan-text {
     text-shadow: $jmTextShadow2;
     text-align: left;
-    font-size: 16px;
-    line-height: 22px;
-    font-family: $jmFont;
-    letter-spacing: 0;
-    color: $jmWhiteColor;
     text-transform: capitalize;
-    opacity: 0.84;
     margin: 0 0 5px;
+    @include generateFont($jmFont, 16px, 22px, $jmWhiteColor, 0.84);
   }
   .jm-info-btn {
     border-radius: 0%;
     background-color: $jmEgyptianBlueColor;
-    color: $jmWhiteColor;
-    letter-spacing: 0px;
-    color: $jmWhiteColor;
     text-transform: uppercase;
-    opacity: 1;
-    font-size: 16px;
-    line-height: 20px;
-    font-family: $jmMediumFont;
+    @include generateFont($jmMediumFont, 16px, 20px, $jmWhiteColor);
   }
   .jm-video-image-container {
     padding: 0px !important;
@@ -53,9 +37,7 @@
     text-align: center;
     color:$jmWhiteColor;
     .modalbutton {
-      position: absolute;
-      top: 70%;
-      left: 15%;
+      @include generatePosAbs(15%, 70%);
       transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       background-color: $jmDavyGrayColor;
@@ -70,25 +52,19 @@
     }  
   }
   .centered-with-text {
-    position: absolute;
-    top: 120px;
-    left: 100px;
+    @include generatePosAbs(100px, 120px);
     transform: translate(0%, 0%);
     width: 44%;
   }
   .top-left {
-    position: absolute;
-    top: 60px;
-    left: 126px;
+    @include generatePosAbs(126px, 60px);
   }
   .jm-video-image-container {
     padding-left: 0;
     padding-right: 0;
   }
   .container-fluid .centered {
-    position: absolute;
-    top: 310px;
-    left: 100px;
+    @include generatePosAbs(100px, 310px);
     transform: translate(0%, 0%);
     width: auto;
     h2 span {
@@ -135,9 +111,7 @@
     height: auto !important;
   }
   .video-close-icon {
-    color: $jmEgyptianBlueColor;
-    font-size: 18px;
-    font-family: $jmMediumFont;
+    @include generateFont($jmMediumFont, 18px, false, $jmEgyptianBlueColor);
   }
   .modal-footer {
     background-color: $jmEgyptianBlueColor;
@@ -263,35 +237,24 @@
       width: 100%;
       border-radius: 0%;
       background-color: $jmEgyptianBlueColor;
-      color: $jmWhiteColor;
       text-transform: uppercase;
-      opacity: 1;
-      font-size: 16px;
-      line-height: 20px;
-      font-family: $jmMediumFont;
       border: none;
+      @include generateFont($jmMediumFont, 16px, 20px, $jmWhiteColor);
     }
     .centered-with-text {
-      position: absolute;
-      top: 35%;
-      left: 50%;
+      @include generatePosAbs(50%, 35%);
       transform: translate(-50%, -50%);
       width: 82%;
     }
     .centered {
-      position: absolute;
-      top: 65%;
-      left: 50%;
+      @include generatePosAbs(50%, 65%);
       transform: translate(-50%, -50%);
       width: 82%;
     }
   }
-
   .container-fluid.jmvideo--content {
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: flex;
+    @include generatePosAbs(0%, 0%);
+      display: flex;
     justify-content: center;
   }
 }
