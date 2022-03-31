@@ -1,0 +1,9 @@
+.container.jmpromo--block-container-alignment {
+	margin: 30px 0 20px 0;
+    @include generatePadding(0px, 0px, 30px, 20px);
+	.col-md-5 {
+		img {
+			width: 100%;
+		}
+	}
+}
