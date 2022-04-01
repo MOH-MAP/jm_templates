@@ -6,4 +6,13 @@
 			width: 100%;
 		}
 	}
+	.col-md-7 {
+		h1,h2,h3,h4,h5 {
+			@include generateFont($jmMediumFont, 40px, 48px, $jmWhiteColor);
+			margin-bottom: 30px;
+		}
+		p {
+			@include generateFont($jmFont, 18px, 27px, $jmWhiteColor);
+		}
+	}
 }
