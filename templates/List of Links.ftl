@@ -20,10 +20,11 @@
 						<#assign href = cur_AdditionalLinks_Title.AdditionalLinks_Target.getData() >
 					</#if>
 				</#if>
-				<li class="jmlist-of--item">${title}
-					<a class="jmlist-of--link" href="${href}">
-						<p class="jmlist-of--text">Explore</p><span class="jmlist-of--icon"></span>
-					</a>
+				<li class="list-of--item">
+				    <a class="list-of--link" href="${href}" title="${title}">
+					<span class="list-of--text">${title}</span>
+					<span class="list-of--icon"></span>
+				    </a>
 				</li>
 			</#list>
 		</ul>
