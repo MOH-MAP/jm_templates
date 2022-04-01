@@ -1,7 +1,7 @@
 <#assign namespace = randomNamespace />
 <#assign JournalArticleLocalService = serviceLocator.findService("com.liferay.journal.service.JournalArticleLocalService")>
 
-<div class="panel_block" id="panel_block-${namespace}">
+<div class="panel_block jmpanel-block-alignment-temp" id="panel_block-${namespace}">
     <div class="container">
         <header class="panel_block-header">
             <h1>${Title.getData()}</h2>
