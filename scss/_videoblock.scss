@@ -1,32 +1,30 @@
-.jmvideo--temp {
-  .jm-image-text-heading {
+.jmvideotempl{
+	margin: 70px 0;
+	position: relative;
+}
+.jmvideotempl__content {
+	@include generatePosAbs(0, 0);
+	width: 100%;
+	height: 100%;
+  .jmvideotempl__slogan-text {
     text-align: left;
     text-shadow: $jmTextShadow2;
     @include generateFont($jmMediumFont, 36px, 40px, $jmWhiteColor);
+    margin-bottom: 50px;
   }
-  .jm-image-slogan-text {
+  .jmvideotempl__heading {
     text-shadow: $jmTextShadow2;
     text-align: left;
     text-transform: capitalize;
     margin: 0 0 5px;
     @include generateFont($jmFont, 16px, 22px, $jmWhiteColor, 0.84);
+    margin-bottom: 15px;
   }
-  .jm-info-btn {
+  .jmvideotempl__info-btn {
     border-radius: 0%;
     background-color: $jmEgyptianBlueColor;
     text-transform: uppercase;
     @include generateFont($jmMediumFont, 16px, 20px, $jmWhiteColor);
-  }
-  .jm-video-image-container {
-    padding: 0px !important;
-    margin: -10px !important;
-    text-align: center;
-    color:$jmWhiteColor;
-    position: relative;
-    img {
-      width: 100%;
-      height: 600px;
-    }
   }
   .container {
     padding-left: 0;
@@ -35,42 +33,15 @@
     display: flex;
     position: relative;
     text-align: center;
-    color:$jmWhiteColor;
-    .modalbutton {
-      @include generatePosAbs(15%, 70%);
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      background-color: $jmDavyGrayColor;
-      color:$jmWhiteColor;
-      font-size: 16px;
-      padding: 12px 24px;
-      border: none;
-      cursor: pointer;
-      border-radius: 0px;
-      text-align: center;
-      background-color: blue;
-    }  
+    color: $jmWhiteColor;
+    width: 100%;
+    height: 100%;
   }
-  .centered-with-text {
-    @include generatePosAbs(100px, 120px);
-    transform: translate(0%, 0%);
-    width: 44%;
-  }
-  .top-left {
-    @include generatePosAbs(126px, 60px);
-  }
-  .jm-video-image-container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .container-fluid .centered {
-    @include generatePosAbs(100px, 310px);
-    transform: translate(0%, 0%);
-    width: auto;
-    h2 span {
-      display: flex;
-      margin-left: 150px;
-    }
+  .jmvideotempl__innercont{
+  	@include generatePosAbs(auto, 50%);
+  	margin-top: -60px;
+    text-align: left;
+    width: 45%;
   }
   .player {
     &:hover {
@@ -223,15 +194,6 @@
       display: block;
       width: 100%;
     }
-    .jm-video-image-container {
-      padding: 0%;
-      img {
-        width: 100%;
-        height: 600px;
-        object-fit: cover;
-        object-position: bottom;
-      }
-    }
     .jm-info-btn {
       display: block;
       width: 100%;
@@ -241,24 +203,5 @@
       border: none;
       @include generateFont($jmMediumFont, 16px, 20px, $jmWhiteColor);
     }
-    .centered-with-text {
-      @include generatePosAbs(50%, 35%);
-      transform: translate(-50%, -50%);
-      width: 82%;
-    }
-    .centered {
-      @include generatePosAbs(50%, 65%);
-      transform: translate(-50%, -50%);
-      width: 82%;
-    }
   }
-  .container-fluid.jmvideo--content {
-    @include generatePosAbs(0%, 0%);
-      display: flex;
-    justify-content: center;
-  }
-}
-
-.journal-content-article[data-analytics-asset-title="RefiningVideo Block"] {
-  margin-bottom: 70px;
 }

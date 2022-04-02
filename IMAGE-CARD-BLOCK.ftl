@@ -9,29 +9,46 @@
         <div class="image-card-block__body">
             <div class="image-card-block__row row">
                 <#if ImageCards?? && ImageCards.getSiblings()?has_content>
-                    <#assign tileCount = ImageCards.getSiblings()?size />
-                	<#list ImageCards.getSiblings() as cur_ImageCards>
-                	    <#assign tileColCssClass = "col-md-6" />
-                        <#if tileCount gte 3 >
-                            <#assign tileColCssClass = "col-md-4" />
+                    <#list ImageCards.getSiblings()?chunk(2) as imgCardlist>
+						<#assign tileCount = imgCardlist?size />
+						<#if tileCount == 1 >
+                            <#assign tileColCssClass = "col-md-12" />
+							<#list imgCardlist as imgCard>
+								<div class="${tileColCssClass}">
+									<#assign
+										webContentData = jsonFactoryUtil.createJSONObject(imgCard.getData())
+									/>
+									<#assign
+										article = JournalArticleLocalService.getLatestArticle(getterUtil.getLong(webContentData.classPK, 0))
+									/>
+									<@liferay_journal["journal-article"]
+										articleId = article.getArticleId()
+										ddmTemplateKey = "IMAGE-CARD-LONG"
+										groupId = article.getGroupId()
+									/>
+								</div>
+							</#list>
+						<#else>
+							<#assign tileColCssClass = "col-md-6" />
+							<#list imgCardlist as imgCard>
+								<div class="${tileColCssClass}">
+									<#assign
+										webContentData = jsonFactoryUtil.createJSONObject(imgCard.getData())
+									/>
+									<#assign
+										article = JournalArticleLocalService.getLatestArticle(getterUtil.getLong(webContentData.classPK, 0))
+									/>
+									<@liferay_journal["journal-article"]
+										articleId = article.getArticleId()
+										ddmTemplateKey = "IMAGE-CARD"
+										groupId = article.getGroupId()
+									/>
+								</div>
+							</#list>
                         </#if>
-                	    <div class="${tileColCssClass}">
-                            <#assign
-                                webContentData = jsonFactoryUtil.createJSONObject(cur_ImageCards.getData())
-                            />
-                            <#assign
-                                article = JournalArticleLocalService.getLatestArticle(getterUtil.getLong(webContentData.classPK, 0))
-                            />
-                            <@liferay_journal["journal-article"]
-                                articleId = article.getArticleId()
-                                ddmTemplateKey = "IMAGE-CARD"
-                                groupId = article.getGroupId()
-                            />
-                        </div>
-                	</#list>
+					</#list>
                 </#if>
             </div>
         </div>
     </div>
 </div>
-<#assign JournalArticleLocalService = serviceLocator.findService("com.liferay.journal.service.JournalArticleLocalService")>

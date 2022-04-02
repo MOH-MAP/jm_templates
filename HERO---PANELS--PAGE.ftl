@@ -1,30 +1,39 @@
 <#assign namespace = randomNamespace />
+<#assign ImageData = "" />
+<#if (ImageLarge.getData())?? && ImageLarge.getData() != "">
+    <#assign ImageData = ImageLarge.getData() />
+</#if>
 <style>
     #panels-hero-${namespace} {
-        background-image: url("${ImageLarge.getData()}");
+        background-image: url("${ImageData}");
+        background-position: center;
+        background-size: cover;
     }
 </style>
-
-<div id="panels-hero-${namespace} jmpanels--hero-temp" class="panels-hero">
-	<div class="banner container py-6 py-md-8">
-		<div class="row">
-			<div class="col-12">
-				<div class="panels-hero-header">
-    				<h1>${Name.getData()}</h1>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-12">
-				<div class="panels-hero-para">
-                    <#if (Summary.getData())??>${Summary.getData()}</#if>
-				</div>
-			</div>
-			<div class="col-12">
-		        <#if AdditionalLinks_Title?? && AdditionalLinks_Title.getSiblings()?has_content>
-				    <#assign href = '#' >
+<div id="panels-hero-${namespace}" class="panels-hero jmpanels--hero-temp">
+    <div class="banner container py-6 py-md-8">
+        <#if (Title.getData())??>
+            <div class="row">
+                <div class="col-12">
+                    <div class="panels-hero-header">
+                        <h1> ${Title.getData()}</h1>
+                    </div>
+                </div>
+            </div>
+        </#if>
+        <div class="row">
+            <#if (Summary.getData())??>
+                <div class="col-12">
+                    <div class="panels-hero-para">
+                        ${Summary.getData()}
+                    </div>
+                </div>
+            </#if>
+            <div class="col-12">
+                <#if AdditionalLinks_Title?? && AdditionalLinks_Title.getSiblings()?has_content>
+                    <#assign href = '#' >
                     <#assign title = 'Explore'>
-				    <#list AdditionalLinks_Title.getSiblings() as cur_AdditionalLinks_Title>
+                    <#list AdditionalLinks_Title.getSiblings() as cur_AdditionalLinks_Title>
                         <#if cur_AdditionalLinks_Title?? && cur_AdditionalLinks_Title.getData()?has_content>
                             <#assign title = cur_AdditionalLinks_Title.getData()>
                             <#if cur_AdditionalLinks_Title.AdditionalLinks_Internal?? && cur_AdditionalLinks_Title.AdditionalLinks_Internal.getFriendlyUrl()?has_content>
@@ -40,18 +49,18 @@
                             </#if>
                             <div class="mt-4">
                                 <a class="panel__btn" href="${href}" title="${title}">
-                                    ${title}
+                                    <span>${title}</span>
                                     <span class="arrow__forward"></span>
                                 </a>
                             </div>
                         </#if>
-				    </#list>
+                    </#list>
                 </#if>
             </div>
         </div>
-	</div>
+    </div>
 
-	<#if Panels?? && Panels.getSiblings()?? && Panels.getSiblings()?has_content>
+    <#if Panels?? && Panels.getSiblings()?? && Panels.getSiblings()?has_content>
         <div class="panels-hero-panels">
             <div class="container">
                 <div class="row">

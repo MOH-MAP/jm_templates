@@ -37,4 +37,6 @@ $(document).ready(function () {
     $.getScript("https://www.youtube.com/iframe_api", function () {
         loadVideo();
     });
+
+    $('.jmvideotempl__innercont').css({'margin-top': '-' + $('.jmvideotempl__innercont').height()/2 + 'px'});
 });
