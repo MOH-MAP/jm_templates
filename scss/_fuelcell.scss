@@ -19,8 +19,3 @@
         padding-left: 0;
     }
 }
-.panel_block-header h1{
-	text-shadow: $jmTextShadow1;
-	margin: 0;
-    @include generateFont($jmMediumFont, 48px, 60px, $jmWhiteColor);
-}
