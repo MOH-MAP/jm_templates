@@ -17,7 +17,7 @@
     .title-style-a {
       @include generateFont($jmMediumFont, 34px, 32px, $jmWhiteColor);
     }
-    p {
+    h1, h2, h3, h4, h5, h6, p {
       margin-top: 10px;
       @include generateFont($jmFont, 18px, 27px);
     }
