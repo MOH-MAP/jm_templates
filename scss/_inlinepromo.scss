@@ -55,11 +55,11 @@
 		}
 	}
   .arrow__forward {
-    background: url("../images/new__jm__images/arrow_forward-white.svg") 0 0
-      no-repeat transparent;
-    display: block;
-    width: 20px;
-    height: 20px;
+    @include generateIcon(
+      20px,
+      20px,
+      "../images/new__jm__images/arrow_forward-white.svg"
+    );
     margin-top: 0px;
   }
 }
