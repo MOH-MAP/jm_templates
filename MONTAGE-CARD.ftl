@@ -23,7 +23,8 @@ Autocomplete is also available and can be invoked by typing "${".
     </#if>
 </#if>
 
-<a class="card__contentlink" href="${href}" title="${Title.getData()}">
+<div class="card__contentlink">
+    <a class="card__montlink" href="${href}" title="${Title.getData()}"></a>
     <div class="card__container">
         <div class="card__content">
             <h2 class="card__heading">${Title.getData()}</h2>
@@ -39,4 +40,4 @@ Autocomplete is also available and can be invoked by typing "${".
             </#if>
         </div>
     </div>
-</a>
+</div>

@@ -11,7 +11,7 @@
         display: grid;
         grid-template-columns: repeat(3, minmax(calc(33.3% - 60px), 1fr));
         margin-top: 0px;
-        padding: 60px!important;
+        padding: 60px 0!important;
         gap: 20px;
     }
     h4.person_card-title {
@@ -44,7 +44,7 @@
         @include generateFont($jmMediumFont!important, 18px!important, 22px!important);
     }
     .person-heading_align {
-        padding-left: 60px;
+        padding-left: 0px;
         margin-left: 0;
         @include generateFont($jmMediumFont, 36px, 32px, $jmDarkCharcoalColor);
     }

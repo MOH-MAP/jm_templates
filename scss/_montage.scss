@@ -18,10 +18,20 @@
 }
 .montage__data{
 	margin-bottom: 30px;
+    .journal-content-article{
+        height: 100%;
+    }
 }
 .card__contentlink{  
     text-decoration: none;
     height: 100% !important;
+    position: relative;
+    a{
+        width: 100%;
+        height: 100%;
+        @include generatePosAbs(0, 0);
+        z-index: 1;
+    }
     &:hover{
         text-decoration: none !important;
         color: $jmWhiteColor;
@@ -54,7 +64,7 @@
 }
 .card__subtext{
     display: flex;
-    @include generatePosAbs(auto, auto, auto, 0);
+    @include generatePosAbs(auto, auto, 0, 0);
     @include generateFont($jmMediumFont, 18px, 22px, $jmWhiteColor);
 }
 @media(max-width: 990px) {
