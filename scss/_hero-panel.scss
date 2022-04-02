@@ -7,7 +7,7 @@
 		border-left: 1.5px $jmWhiteColor solid;
 	}
 	.panels-hero-header {
-		h1 {
+		h1, h2, h3, h4, h5, h6 {
 			text-shadow: $jmTextShadow2;
 			@include generateFont($jmMediumFont, 46px, 60px, $jmWhiteColor);
 		}

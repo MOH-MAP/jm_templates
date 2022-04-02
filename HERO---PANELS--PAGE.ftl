@@ -49,7 +49,7 @@
                             </#if>
                             <div class="mt-4">
                                 <a class="panel__btn" href="${href}" title="${title}">
-                                    <span>${title}</span>
+                                    <span class='panel__btntext'>${title}</span>
                                     <span class="arrow__forward"></span>
                                 </a>
                             </div>
