@@ -18,6 +18,11 @@
 
 .jmproduct--hero-temp {
     margin-bottom: 70px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 	.product_hero__para {
         @include generateFont($jmFont, 18px, 28px);
 		p {

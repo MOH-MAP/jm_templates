@@ -21,6 +21,12 @@
     .journal-content-article{
         height: 100%;
     }
+    &:nth-child(even){
+        padding-right: 0;
+    }
+    &:nth-child(odd){
+        padding-left: 0;
+    }
 }
 .card__contentlink{  
     text-decoration: none;

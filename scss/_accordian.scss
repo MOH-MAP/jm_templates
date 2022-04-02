@@ -25,7 +25,7 @@
   }
   .jmaccrdn__answer-sec {
     padding: 40px 40px;
-    p {
+    p, * {
       margin-bottom: 30px;
       @include generateFont($jmFont, 18px, 27px, $jmDarkCharcoalColor);
     }
