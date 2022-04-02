@@ -1,6 +1,8 @@
 
-<div class="container jmlist-of--links-container">
-	<h1 class="jmlist-of--links-heading"><#if (Title.getData())??>${Title.getData()}</#if></h1>
+<div class="container jmlist">
+	<#if (Title.getData())??>
+		<h1 class="jmlist__links-heading">${Title.getData()}</h1>
+	</#if>
 	<#if AdditionalLinks_Title.getSiblings()?has_content>
 		<#assign href = '#' >
         <#assign title = 'Explore'>
@@ -20,10 +22,10 @@
 						<#assign href = cur_AdditionalLinks_Title.AdditionalLinks_Target.getData() >
 					</#if>
 				</#if>
-				<li class="list-of--item">
-				    <a class="list-of--link" href="${href}" title="${title}">
-					<span class="list-of--text">${title}</span>
-					<span class="list-of--icon"></span>
+				<li class="jmlist__item">
+				    <a class="jmlist__link" href="${href}" title="${title}">
+						<span class="jmlist__text">${title}</span>
+						<span class="jmlist__icon"></span>
 				    </a>
 				</li>
 			</#list>

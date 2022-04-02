@@ -1,10 +1,10 @@
-.list-of--links-container {
-    .jmlist-of--links-heading{
+.jmlist {
+    .jmlist__links-heading{
         font: 40px/48px $jmMediumFont;
         color: $jmDarkCharcoalColor;
         padding-bottom: 30px;
     }
-    .jmlist-of--item{
+    .jmlist__item{
         font-size: 24px;
         font-family: $jmFont;
         color: $jmDarkCharcoalColor;
@@ -15,14 +15,14 @@
         margin-top: 18px;
         background-color: $jmAntiFlashWhiteColor; 
     }
-    .jmlist-of--link{
+    .jmlist__link{
         text-decoration: none;
         color: $jmEgyptianBlueColor;
         font: 18px/22px $jmMediumFont;
         display: flex;
         margin-left: 60px;
     }
-    .jmlist-of--icon {
+    .jmlist__icon {
         background: url("../images/new__jm__images/blue-right-arrow.svg") 0 0 no-repeat transparent;
         display: block;
         width: 24px;
@@ -31,7 +31,7 @@
         float:right;
         margin-top:2px
     }
-    .jmlist-of--text {
+    .jmlist__text {
         font-size: 18px;
         color: $jmEgyptianBlueColor;
         opacity: 1;
@@ -39,7 +39,7 @@
         font-family: $jmMediumFont;
     }
     @media (min-width: 320px) and (max-width: 539px) {
-        .jmlist-of--item {
+        .jmlist__item {
             font-size: 20px;
             font-family: $jmFont;
             color: $jmDarkCharcoalColor;
@@ -49,16 +49,16 @@
             align-items: center;
             margin-top: 10px;
         }
-        .jmlist-of--text {
+        .jmlist__text {
             font-size: 15px;
             display: none;
         }
-        .jmlist-of--icon {
+        .jmlist__icon {
             width: 20px;
             height: 20px;
             margin-left: 8px;
         }
-        .jmlist-of--links--heading{
+        .jmlist__links--heading{
             font-size: 24px;
             color: $jmDarkCharcoalColor;
             font-family: $jmMediumFont;

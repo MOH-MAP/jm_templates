@@ -1,9 +1,9 @@
-.list-of--links-container {
-    .jmlist-of--links-heading{
+.jmlist {
+    .jmlist__links-heading{
         padding-bottom: 30px;
         @include generateFont($jmMediumFont, 40px, 48px, $jmDarkCharcoalColor);
     }
-    .jmlist-of--item{
+    .jmlist__item{
         padding: 22px 40px 22px 30px;
         display: flex;
         justify-content: space-between;
@@ -12,24 +12,24 @@
         background-color: $jmAntiFlashWhiteColor; 
         @include generateFont($jmFont, 24px, false, $jmDarkCharcoalColor);
     }
-    .jmlist-of--link{
+    .jmlist__link{
         text-decoration: none;
         display: flex;
         margin-left: 60px;
         @include generateFont($jmMediumFont, 18px, 22px, $jmEgyptianBlueColor);
     }
-    .jmlist-of--icon {
+    .jmlist__icon {
         @include generateIcon(24px, 24px, "../images/new__jm__images/blue-right-arrow.svg");
         margin-left: 10px;
         float: right;
         margin-top:2px
     }
-    .jmlist-of--text {
+    .jmlist__text {
         float: left;
         @include generateFont($jmMediumFont, 18px, false, $jmEgyptianBlueColor);
     }
     @media (min-width: 320px) and (max-width: 539px) {
-        .jmlist-of--item {
+        .jmlist__item {
             padding: 15px 10px 15px 10px;
             display: flex;
             justify-content: space-between;
@@ -37,16 +37,16 @@
             margin-top: 10px;
             @include generateFont($jmFont, 20px, false, $jmDarkCharcoalColor);
         }
-        .jmlist-of--text {
+        .jmlist__text {
             font-size: 15px;
             display: none;
         }
-        .jmlist-of--icon {
+        .jmlist__icon {
             width: 20px;
             height: 20px;
             margin-left: 8px;
         }
-        .jmlist-of--links--heading{
+        .jmlist__links--heading{
             padding-bottom: 5px;
             @include generateFont($jmMediumFont, 24px, false, $jmDarkCharcoalColor);
         }
