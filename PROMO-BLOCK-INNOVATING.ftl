@@ -1,4 +1,4 @@
-<div class="container jmpromo--block-container-alignment">
+<div class="container jmpromoblock">
 	<div class="row">
 		<div class="col-md-7">
 			<#if (Title.getData())??>

@@ -1,9 +1,18 @@
-.container.jmpromo--block-container-alignment {
+.container.jmpromoblock {
 	margin: 30px 0 20px 0;
     @include generatePadding(0px, 0px, 30px, 20px);
 	.col-md-5 {
 		img {
 			width: 100%;
+		}
+	}
+	.col-md-7 {
+		h1, h2, h3, h4, h5, h6 {
+			@include generateFont($jmMediumFont, 40px, 48px, $jmWhiteColor);
+			margin-bottom: 30px;
+		}
+		p {
+			@include generateFont($jmFont, 18px, 27px, $jmWhiteColor);
 		}
 	}
 }
