@@ -1,9 +1,9 @@
 <#assign namespace = randomNamespace />
 <#assign JournalArticleLocalService = serviceLocator.findService("com.liferay.journal.service.JournalArticleLocalService")>
 
-<div class="panel_block jmpanel-block-alignment-temp" id="panel_block-${namespace}">
+<div class="panel_block jmpanelblock" id="panel_block-${namespace}">
     <div class="container">
-        <header class="panel_block-header">
+        <header class="jmpanelblock__header">
             <h1>${Title.getData()}</h2>
         </header>
         <#if Panels?? && Panels.getSiblings()?? && Panels.getSiblings()?has_content>
@@ -34,10 +34,5 @@
         background-position: center;
     	background-size: cover;
         padding: 7.5rem 0;
-    }
-
-    .panel_block .panel_block-header {
-        color: white;
-        margin-bottom: 5.5rem;
     }
 </style>

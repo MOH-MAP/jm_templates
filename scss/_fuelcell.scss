@@ -19,13 +19,3 @@
         padding-left: 0;
     }
 }
-.panel_block.jmpanel-block-alignment-temp {
-    margin-top: 20px;
-    color: $jmWhiteColor;
-}
-.panel_block.jmpanel-block-alignment-temp .panel_block-header h1{
-	text-shadow: $jmTextShadow1;
-	margin: 0;
-    @include generateFont($jmMediumFont, 48px, 60px, $jmWhiteColor);
-}
-
