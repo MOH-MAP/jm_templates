@@ -115,3 +115,100 @@
     width: 100% !important;
   }
 }
+.person__container{
+  margin-top: 70px;
+  .person__img--sec {
+    margin-top: 105px;
+  }
+  .person__title {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    @include generateFont($jmFont, 21px, 32px, $jmDarkCharcoalColor, 0.8);
+  }
+  .person__subtitle {
+    text-align: left;
+    margin: 0 0 15px;
+    text-transform: capitalize;
+    @include generateFont($jmMediumFont, 30px, 46px, $jmDarkCharcoalColor);
+  }
+  .person__descp, p {
+    text-align: left;
+    @include generateFont($jmFont, 17px, 28px, $jmDarkCharcoalColor, 0.84);
+    margin: 0 0 8px;
+  }
+  .person__year {
+    text-align: left;
+    @include generateFont($jmFont, 15px, 28px, $jmDarkCharcoalColor, 0.6);
+  }
+  .person_dsktpimg {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  .person__name {
+    display: none;
+  }
+  @media (min-width: 320px) and (max-width: 539px) {
+    .person__name {
+      display: block;
+      @include generateFont($jmMediumFont, 29px, 38px, $jmDarkCharcoalColor);
+    }
+    .person__title {
+      font-size: 18px;
+      margin-bottom: 29px;
+      margin-top: 16px;
+    }
+    .person__subtitle {
+      font-size: 24px;
+      margin-bottom: 14px;
+      margin-top: 40px;
+    }
+    .person__descp,
+    .person__year, p {
+      font-size: 14px;
+      margin-bottom: 2px;
+    }
+  }
+  @media (min-width: 540px) and (max-width: 767px) {
+    .person__name {
+      display: block;
+      @include generateFont($jmMediumFont, 29px, 38px, $jmDarkCharcoalColor);
+    }
+    .person__title {
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+    .person__subtitle {
+      margin-bottom: 40px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 834px) {
+    .person_mbimg {
+      display: none;
+    }
+    .person__title {
+      margin-top: 160px;
+      margin-bottom: 35px;
+      font-size: 20px;
+      line-height: 32px;
+    }
+    .person__subtitle {
+      font-size: 26px;
+      line-height: 21px;
+    }
+    .person__descp, p {
+      font-size: 16px;
+      line-height: 25px;
+    }
+    .person__year {
+      font-size: 14px;
+      line-height: 17px;
+      font-family: $jmFont;
+    }
+  }
+  .person_card{
+    width: 100% !important;
+  }
+}

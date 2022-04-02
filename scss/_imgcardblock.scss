@@ -23,7 +23,9 @@
 .image-card-block__inner {
   margin: 20px 0px;
 }
-
+.image-card-block [class^='col-md'] {
+  margin-bottom: 20px;
+}
 .jmimage-card-block--header {
   padding: 20px 0px 20px 0px;
   @include generateFont($jmMediumFont, 34px, false, $jmDarkCharcoalColor);
