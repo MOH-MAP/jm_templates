@@ -2,10 +2,12 @@
     .two-persons-block_container {
         padding: 0rem 5rem;
     }
-    .person-grid .person_card {
-        width: 100%;
-        border: none;
-        padding: 0;
+    .person-grid {
+        .person_card {
+            width: 100%;
+            border: none;
+            padding: 0;
+        }
     }
     .two-person-grid{
         display: grid;
@@ -33,6 +35,7 @@
     }
     .btn__person{
         padding: 0 10px;
+        @include generatePosAbs(0, auto, 0, auto);
     }
     .person_explore-icon{
         margin-left: 10px;
@@ -51,7 +54,7 @@
     .person_card img{
         border-radius: 0;
         position: static;
-        height: 100%;
+        height: auto;
     }
     @media (max-width: 575.98px) {
         .two-person-grid{

@@ -6,7 +6,7 @@
   width: 27%;
 }
 .person_card-body {
-  padding: 10px 0px;
+  padding: 10px 0px 30px;
 }
 h4.person_card-title {
   @include generateFont($jmMediumFont, 24px, false, $jmDarkCharcoalColor);
