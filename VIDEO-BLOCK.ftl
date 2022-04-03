@@ -77,5 +77,9 @@
         $.getScript("https://www.youtube.com/iframe_api", function() {
             loadVideo();
         });
+        
+        $('.jmvideotempl__innercont').each(function(){
+            $(this).css({'margin-top': '-' + $(this).height()/2 + 'px'});
+        });
     });
 </script>

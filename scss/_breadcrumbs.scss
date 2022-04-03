@@ -1,12 +1,19 @@
-#breadcrumbs .portlet-body nav{
-    z-index: 1;
-    width: 100%;
-    @include generatePosAbs(0, 0);
-}
-#breadcrumbs .breadcrumb{
-    border-radius: 0;
-    margin-bottom: 0;
-    background: $jmDarkCharcoalColorOpc5;
+#breadcrumbs {
+    .portlet-body nav{
+        z-index: 1;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    .breadcrumb{
+        border-radius: 0;
+        margin-bottom: 0;
+        background: $jmDarkCharcoalColorOpc5;
+        flex-wrap: nowrap;
+    }
+    .portlet-decorate .portlet-content{
+        background: transparent
+    }
 }
 .breadcrumb-link{
     @include generateFont($jmFont, 14px, 28px, $jmAntiFlashWhiteColor, 0.8);

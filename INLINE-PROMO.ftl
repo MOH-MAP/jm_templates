@@ -4,7 +4,7 @@
 			<p class="jminline-promo--sign-up">${Name.getData()}</p>
 			<h2 class="jminline-promo--heading">${Title.getData()}</h2>
 			<a class="jminline-promo--btn" href="${Path.getData()}" title="${PreTitle.getData()}">
-				${PreTitle.getData()}
+				<span class="btn__text">${PreTitle.getData()}</span>
 				<span class="arrow__forward"></span>
 			</a>
 		</div>

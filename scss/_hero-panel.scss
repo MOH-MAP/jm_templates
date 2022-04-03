@@ -1,5 +1,6 @@
 .jmpanels--hero-temp {
 	@include generateBgSizePos;
+	margin-top: -52px;
 	.panels-hero-panels {
 		background-color: $jmEgyptianBlueColor;
 	}

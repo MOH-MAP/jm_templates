@@ -1,6 +1,11 @@
 .jmvideotempl{
 	margin: 70px 0;
 	position: relative;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 .jmvideotempl__content {
 	@include generatePosAbs(0, 0);
@@ -202,6 +207,9 @@
       text-transform: uppercase;
       border: none;
       @include generateFont($jmMediumFont, 16px, 20px, $jmWhiteColor);
+    }
+    .jmvideotempl__innercont{
+      width: 100%;
     }
   }
 }

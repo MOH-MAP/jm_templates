@@ -1,14 +1,15 @@
 .jmarticle__hero-main-container {
 	@include generateBgSizePos;
 	width: 100%;
-	height: 457px;
+	min-height: 457px;
+	height: auto;
 	position: relative;
-	.article__para {
+	.article__para, p, .article__cont div, li {
 		text-align: left;
 		text-shadow: $jmTextShadow1;
 		@include generateFont($jmMediumFont, 16px, 25px, $jmWhiteColor, 0.8);
 	}
-	.article__heading {
+	.article__heading, h1, h2, h3, h4, h5, h6 {
 		text-align: left;
 		text-shadow: $jmTextShadow1;
 		margin-top: 74px;

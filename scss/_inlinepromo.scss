@@ -24,10 +24,15 @@
   border: 1px solid $jmWhiteColor;
   padding: 20px 10px 17px 60px;
   @include generateFont($jmMediumFont, 18px, 22px, $jmWhiteColor);
-}
-.jminline-promo--btn:hover {
-  text-decoration: none;
-  color: $jmWhiteColor;
+  display: flex;
+  .btn__text{
+    width: calc(100% - 24px);
+    text-align: right;
+  }
+  &:hover {
+    text-decoration: none;
+    color: $jmWhiteColor;
+  }
 }
 .jminline-promo--forward-icon {
   @include generateIcon(
@@ -78,7 +83,7 @@
   }
   .jminline-promo--btn {
     font-size: 16px;
-    padding: 16px 10px 16px 53px;
+    padding: 16px;
   }
 }
 @media (min-width: 540px) and(max-width: 834px) {

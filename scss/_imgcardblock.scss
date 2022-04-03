@@ -23,8 +23,14 @@
 .image-card-block__inner {
   margin: 20px 0px;
 }
-.image-card-block [class^='col-md'] {
-  margin-bottom: 20px;
+.image-card-block {
+  [class^='col-md'] {
+    margin-bottom: 20px;
+  }
+  &.container{
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .jmimage-card-block--header {
   padding: 20px 0px 20px 0px;
@@ -53,22 +59,21 @@
   width: 100%;
   @include generateFont($jmFont, 25px, 1.2em, $jmDarkCharcoalColor, 1, 500);
 }
-
-  .jmimg--cardblock-list--ilnk {
+.jmimg--cardblock-list--ilnk {
+  @include generateTextDecoration;
+  display: flex;
+  margin-top: 0px;
+  bottom:18px;
+  position: absolute;
+  left: auto;
+  top: auto;
+  @include generateFont($jmMediumFont, 18px, 27px, $jmEgyptianBlueColor);
+  &:hover {
     @include generateTextDecoration;
+    @include generateFont($jmMediumFont, 18px, 27px, $jmEgyptianBlueColor);
     display: flex;
     margin-top: 0px;
-    bottom:18px;
-    position: absolute;
-    left: auto;
-    top: auto;
-    @include generateFont($jmMediumFont, 18px, 27px, $jmEgyptianBlueColor);
-    &:hover {
-      @include generateTextDecoration;
-      @include generateFont($jmMediumFont, 18px, 27px, $jmEgyptianBlueColor);
-      display: flex;
-      margin-top: 0px;
-    }
+  }
 }
 .jmimg--cardblock-link--icon {
   display: block;
@@ -80,6 +85,12 @@
 .image-card-block__body{
   .journal-content-article {
     height: 100%;
+  }
+  [class^='col-md']{
+    .container{
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -312,5 +323,10 @@
   }
   .jmimg-card_block {
     height: auto;
+  }
+}
+@media (min-width: 320px) and (max-width: 767.98px){
+  .image-card-block [class^='col-md']{
+    margin-bottom: 0;
   }
 }
