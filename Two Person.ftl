@@ -1,6 +1,6 @@
 <#assign href = '#' >
 
-<div class="container mt-6 jmtwo--person-temp">
+<div class="container jmtwo--person-temp">
     <h1 class="person-heading_align">${Title.getData()}</h1>
     <#if (SubTitle.getData())??>
         <h6 class="person-subheading_align">

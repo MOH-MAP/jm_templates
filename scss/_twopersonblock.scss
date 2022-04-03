@@ -1,4 +1,5 @@
 .jmtwo--person-temp {
+    margin-top: 30px;
     .two-persons-block_container {
         padding: 0rem 5rem;
     }
@@ -13,7 +14,7 @@
         display: grid;
         grid-template-columns: repeat(3, minmax(calc(33.3% - 60px), 1fr));
         margin-top: 0px;
-        padding: 60px 0!important;
+        padding: 60px 0 0px!important;
         gap: 20px;
     }
     h4.person_card-title {
