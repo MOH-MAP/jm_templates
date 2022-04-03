@@ -14,7 +14,7 @@
         display: grid;
         grid-template-columns: repeat(3, minmax(calc(33.3% - 60px), 1fr));
         margin-top: 0px;
-        padding: 60px 0 0px!important;
+        padding: 60px 0 30px!important;
         gap: 20px;
     }
     h4.person_card-title {
