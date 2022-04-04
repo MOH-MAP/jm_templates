@@ -24,7 +24,6 @@
   border: 1px solid $jmWhiteColor;
   padding: 20px 10px 17px 60px;
   @include generateFont($jmMediumFont, 18px, 22px, $jmWhiteColor);
-  display: flex;
   .btn__text{
     width: calc(100% - 24px);
     text-align: right;

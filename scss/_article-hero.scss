@@ -66,13 +66,6 @@
 		@include generateFont($jmMediumFont, 48px, 60px, $jmDarkCharcoalColor);
 		text-shadow: none;
 	}
-	a {
-		color: $jmDarkCharcoalColor;
-		text-shadow: none;
-		&:hover {
-			color: $jmDarkCharcoalColor;
-		}
-	}
 }
 @media (min-width: 320px) and (max-width: 539px) {
 	.jmarticle__hero-main-container, .article__intro {
