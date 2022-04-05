@@ -3,8 +3,8 @@
   padding: 0;
   margin: 0;
 }
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
 .portlet-journal-content .journal-content-article {
   word-wrap: break-word;
@@ -29,7 +29,7 @@ li {
 }
 .jmlogo__img {
   width: 250px;
-  margin-left:75px;
+  margin-left: 75px;
 }
 .jmlogo__img--mb {
   display: none;
@@ -43,7 +43,7 @@ li {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0;
-	  padding: 0px 25px;
+    padding: 0px 54px;
   }
 }
 .jmheader__navlist {
@@ -221,30 +221,32 @@ a.sub-child {
 }
 
 .portlet {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 .portlet-layout .portlet-header {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 .arrow--animate {
   transform: rotate(180deg);
   opacity: 1;
 }
-.explore-icon{
-	background: url("../images/new__jm__images/arrow_forward.svg") 0 0 no-repeat transparent;
+.explore-icon {
+  background: url("../images/new__jm__images/arrow_forward.svg") 0 0 no-repeat
+    transparent;
   display: block;
   width: 24px;
   height: 24px;
   margin-left: 12px;
 }
 .arrow__forward {
-	background: url("../images/new__jm__images/arrow_forward-white.svg") 0 0 no-repeat transparent;
-	display: block;
-	width: 24px;
-	height: 24px;
-	margin-left: 8px;
-	top: 50%;
-	margin-top: -2px;
+  background: url("../images/new__jm__images/arrow_forward-white.svg") 0 0
+    no-repeat transparent;
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+  top: 50%;
+  margin-top: -2px;
 }
 .top-left {
   position: absolute;
@@ -425,15 +427,15 @@ iframe {
     }
   }
 }
-.ejm__btn{
+.ejm__btn {
   padding: 20px;
   background: $jmEgyptianBlueColor;
   color: $jmWhiteColor !important;
-  opacity: 1!important;
+  opacity: 1 !important;
   text-align: right;
-  font-family: $jmMediumFont!important;
-  font-size: 18px!important;
-  line-height: 22px!important;
+  font-family: $jmMediumFont !important;
+  font-size: 18px !important;
+  line-height: 22px !important;
   align-items: center;
   text-transform: uppercase;
   margin-top: 30px;
@@ -549,11 +551,11 @@ iframe {
   text-decoration: none;
 }
 table {
-	td {
-		border: 0.125rem solid $jmWhiteColor;
-		padding: 0.5rem;
-		background: $jmLightGrayColor;
-	}
+  td {
+    border: 0.125rem solid $jmWhiteColor;
+    padding: 0.5rem;
+    background: $jmLightGrayColor;
+  }
 }
 .pad-tpbtm-100 {
   padding-top: 100px;
@@ -573,8 +575,20 @@ table {
   width: 440px;
 }
 .taglib-empty-result-message-header {
-	display: none;
+  display: none;
 }
-b, strong{
+b,
+strong {
   font-family: $jmFont;
+}
+
+@media (min-width: 667px) {
+  .jmheader__navbar {
+    .jmheader__navlinks {
+      padding: 0px 54px;
+    }
+  }
+  .logo {
+    margin-left: 22px;
+  }
 }
