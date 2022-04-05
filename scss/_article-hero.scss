@@ -63,7 +63,7 @@
 		opacity: 1;
 	}
 	.article__heading, h1, h2, h3, h4, h5, h6 {
-		@include generateFont($jmMediumFont, 48px, 60px, $jmDarkCharcoalColor);
+		@include generateFont($jmMediumFont, 36px, 44px, $jmDarkCharcoalColor);
 		text-shadow: none;
 	}
 }
@@ -79,8 +79,9 @@
 			bottom: 40px;
 		}
 		.article__heading {
-			font-size: 32px;
+			font-size: 28px;
 			margin-bottom: 24px;
+			line-height: 26px;
 		}
 	}
 	.article__intro {
@@ -93,7 +94,8 @@
 @media (min-width: 540px) and (max-width: 834px) {
 	.jmarticle__hero-main-container, .article__intro {
 		.article__heading {
-			font-size: 44px;
+			font-size: 36px;
+			line-height: 44px;
 		}
 	}
 	.article__intro {

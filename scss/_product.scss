@@ -6,9 +6,8 @@
   @include generateFont($jmMediumFont, 53px, 60px, $jmWhiteColor);
 }
 .panel__btn {
-  display: flex;
   background-color: $jmEgyptianBlueColor;
-  width: 380px;
+  min-width: 380px;
   border: none;
   outline: none;
   padding: 20px 10px 17px 24px;
@@ -18,6 +17,7 @@
   margin-bottom: 30px;
   text-decoration: none !important;
   @include generateFont($jmMediumFont, 18px, 22px, $jmWhiteColor!important);
+  display: inline-flex;
   &:hover {
     text-decoration: none;
     color: $jmWhiteColor;
@@ -69,7 +69,7 @@
 }
 @media (min-width: 320px) and (max-width: 539px) {
   .panel__btn {
-    width: 334px;
+    min-width: 334px;
     padding: 20px 10px 17px 0px;
     font-size: 16px;
   }

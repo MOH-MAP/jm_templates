@@ -37,7 +37,7 @@
                 <div class="jmcol-for-alignment">
                     <div class="">
                         <a href="${linkHref}" class="panel__btn" title="${Link_Title.getData()}">
-                            ${Link_Title.getData()} 
+                            <span class="panel__btntext">${Link_Title.getData()} </span>
                             <span class="arrow__forward"></span>
                         </a>
                     </div>
@@ -61,9 +61,9 @@
 						<#elseif cur_AdditionalLinks_Title.AdditionalLinks_Target.getData()?has_content>
 							<#assign href = cur_AdditionalLinks_Title.AdditionalLinks_Target.getData() >
 						</#if>
-						<div class="panel__btn">
-                            <a href="${href}" title="${title}">
-                                ${title}
+						<div>
+                            <a class="panel__btn" href="${href}" title="${title}">
+                                <span class="panel__btntext">${title}</span>
                                 <span class="arrow__forward"></span>
                             </a>
                         </div>

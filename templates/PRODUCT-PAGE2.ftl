@@ -15,7 +15,7 @@
                 </div>
             </#if>
             
-              <#if Link_Title?? && Link_Title.getData()?has_content>
+            <#if Link_Title?? && Link_Title.getData()?has_content>
                 <#assign linkHref = "#" />
         
                 <#if Link_Title.Link_Internal.getFriendlyUrl()?has_content>

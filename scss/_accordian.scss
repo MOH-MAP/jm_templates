@@ -5,11 +5,11 @@
     padding-left: 40px;
     text-align: left;
     border-bottom: 1px solid $jmBlackColorOpc1;
-    @include generateFont($jmMediumFont, 40px, 48px, $jmDarkCharcoalColor);
+    @include generateFont($jmMediumFont, 36px, 34px, $jmDarkCharcoalColor);
   }
   .jmaccrdn__title {
-    padding: 24px 40px;
-    @include generateFont($jmMediumFont, 24px, 32px, $jmGraniteGrayColor);
+    padding: 20px 40px;
+    @include generateFont($jmMediumFont, 20px, 32px, $jmGraniteGrayColor);
     margin: 0;
     border-bottom: 1px solid $jmBlackColorOpc1;
     cursor: pointer;
@@ -17,6 +17,7 @@
       display: flex;
       justify-content: space-between;
       margin-bottom: 0px;
+      @include generateFont($jmMediumFont, 20px, 32px, $jmGraniteGrayColor);
     }
   }
   .jmaccrdn__body {
