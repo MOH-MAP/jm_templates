@@ -1,16 +1,27 @@
-.jmvideotempl{
-	margin: 70px 0;
-	position: relative;
-  img{
+.jmvideotempl {
+  margin: 70px 0;
+  position: relative;
+  img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 }
 .jmvideotempl__content {
-	@include generatePosAbs(0, 0);
-	width: 100%;
-	height: 100%;
+  @include generatePosAbs(0, 0);
+  width: 100%;
+  height: 100%;
+  .jmvideo--play-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23ffffff' class='bi bi-play' viewBox='0 0 16 16'%3E%3Cpath d='M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z' fill='%23ffffff'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    content: "";
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+    margin-top: -2px;
+    float: right;
+  }
   .jmvideotempl__slogan-text {
     text-align: left;
     text-shadow: $jmTextShadow2;
@@ -30,6 +41,7 @@
     background-color: $jmEgyptianBlueColor;
     text-transform: uppercase;
     @include generateFont($jmMediumFont, 16px, 20px, $jmWhiteColor);
+    position: relative;
   }
   .container {
     padding-left: 0;
@@ -42,9 +54,9 @@
     width: 100%;
     height: 100%;
   }
-  .jmvideotempl__innercont{
-  	@include generatePosAbs(auto, 50%);
-  	margin-top: -60px;
+  .jmvideotempl__innercont {
+    @include generatePosAbs(10%, 50%);
+    margin-top: -60px;
     text-align: left;
     width: 45%;
   }
@@ -208,8 +220,25 @@
       border: none;
       @include generateFont($jmMediumFont, 16px, 20px, $jmWhiteColor);
     }
-    .jmvideotempl__innercont{
+    .jmvideotempl__innercont {
       width: 100%;
     }
+    .jmvideotempl__info-btn {
+      width: 80%;
+    }
+    .jmvideotempl {
+      img {
+        height: 540px;
+        object-fit: unset;
+      }
+      .jmvideotempl__innercont {
+        @include generatePosAbs(10%, 50%);
+      }
+    }
+  }
+}
+.container-fluid{
+  .jmvideotempl__content .jmvideotempl__innercont{
+    left: 0;
   }
 }

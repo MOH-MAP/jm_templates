@@ -4,7 +4,7 @@
         	${Title.getData()}
         </#if>
     </h2>-->
-    <div class="jmimage--cardb-lock jmimg--main--cardblock bg-light">
+    <div class="jmimg--main--cardblock bg-light">
     	<div class="row no-gutters">
     		<div class="col-4">
     			<div class="jmimg--cardblock--body body">
