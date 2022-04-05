@@ -3,11 +3,10 @@
         <source media="(min-width: 1480px)" srcset="${ImageLarge.getData()}">
         <source media="(min-width: 1024px)" srcset="${ImageMedium.getData()}">
         <#if (ImageLarge.getData())?? && ImageLarge.getData() !="">
-            <img <#if ImageLarge.getAttribute("alt")??> alt="${ImageLarge.getAttribute("alt")}"
-        </#if>
-        <#if ImageLarge.getAttribute("fileEntryId")??> data-fileentryid="${ImageLarge.getAttribute("fileEntryId")}"
-        </#if>
-        src="${ImageLarge.getData()}" />
+            <img 
+                <#if ImageLarge.getAttribute("alt")??> alt="${ImageLarge.getAttribute("alt")}" </#if>
+                <#if ImageLarge.getAttribute("fileEntryId")??> data-fileentryid="${ImageLarge.getAttribute("fileEntryId")}" </#if>
+            src="${ImageLarge.getData()}" />
         </#if>
     </picture>
     <div class="jmvideotempl__content">
@@ -16,7 +15,8 @@
                 <h5 class="jmvideotempl__heading">${Title.getData()}</h5>
                 <h2 class="jmvideotempl__slogan-text"><span>${Summary.getData()}</span></h2>
                 <button class="btn btn-info btn-lg modalbutton jmvideotempl__info-btn" data-toggle="modal"
-                    data-target="#exampleModal">Play Video
+                    data-target="#exampleModal">
+                    Play Video
                     <span class="jmvideo--play-icon"></span>
                 </button>
             </div>
@@ -50,44 +50,44 @@
             </div>
         </div>
     </div>
-
-    <script>
-        function loadVideo() {
-            var player;
-            window.YT.ready(function () {
-                player = new YT.Player('player', {
-                    height: '390',
-                    width: '640',
-                    videoId: '${YoutubeID.getData()}',
-                    playerVars: {
-                        'playsinline': 1,
-                        'controls': 0
-                    },
-                });
-            });
-
-            $('#play').click(function () { player.playVideo(); });
-
-            $('#pause').click(function () { player.pauseVideo(); });
-
-            $('#stop').click(function () { player.stopVideo(); });
-
-            $('.modalbutton').click(function () {
-                player.playVideo();
-            });
-
-            $("#closebtn").click(function () {
-                player.stopVideo();
-            });
-        }
-
-        $(document).ready(function () {
-            $.getScript("https://www.youtube.com/iframe_api", function () {
-                loadVideo();
-            });
-
-            $('.jmvideotempl__innercont').each(function () {
-                $(this).css({ 'margin-top': '-' + $(this).height() / 2 + 'px' });
+</div>
+<script>
+    function loadVideo() {
+        var player;
+        window.YT.ready(function () {
+            player = new YT.Player('player', {
+                height: '390',
+                width: '640',
+                videoId: '${YoutubeID.getData()}',
+                playerVars: {
+                    'playsinline': 1,
+                    'controls': 0
+                },
             });
         });
-    </script>
+
+        $('#play').click(function () { player.playVideo(); });
+
+        $('#pause').click(function () { player.pauseVideo(); });
+
+        $('#stop').click(function () { player.stopVideo(); });
+
+        $('.modalbutton').click(function () {
+            player.playVideo();
+        });
+
+        $("#closebtn").click(function () {
+            player.stopVideo();
+        });
+    }
+
+    $(document).ready(function () {
+        $.getScript("https://www.youtube.com/iframe_api", function () {
+            loadVideo();
+        });
+
+        $('.jmvideotempl__innercont').each(function () {
+            $(this).css({ 'margin-top': '-' + $(this).height() / 2 + 'px' });
+        });
+    });
+</script>
