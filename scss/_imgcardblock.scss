@@ -108,9 +108,10 @@
   .jmimg--cardblock-list--ilnk {
     @include generateTextDecoration;
     display: flex;
+    bottom:18px;
     margin-top: 0px;
-    @include generatePosAbs(auto, auto, auto, 15px);
-    @include generateFont($jmMediumFont, 16px, 22px, $jmEgyptianBlueColor);
+    @include generatePosAbs(auto, auto, auto, 25px);
+    @include generateFont($jmMediumFont, 16px, 25px, $jmEgyptianBlueColor);
   }
   .col-md-4.\33 {
     .jmimg-cardblock--col-img {
@@ -139,9 +140,16 @@
     min-height: 1px;
     @include generatePadding(0.5rem, 0.5rem, 0.5rem, 0.5rem);
   }
+  .jmimg--cardblock--body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    @include generatePadding(1rem, 1rem, 1rem, 1rem);
+    width: 100%;
+  }
   .jmimg--cardblock--text {
     padding-right: 0px;
     width: 100%;
+    margin-bottom: 40px;
     @include generateFont($jmFont, 18px, 1.2em, $jmDarkCharcoalColor, 1, 500);
   }
   .jmimg--cardblock--title {
@@ -151,9 +159,10 @@
   }
   .jmimg--cardblock-list--ilnk {
     @include generateTextDecoration;
-    @include generateFont($jmMediumFont, 14px, 22px, $jmEgyptianBlueColor);
-    @include generatePosAbs(auto, auto, auto, 10px);
+    @include generateFont($jmMediumFont, 14px, 26px, $jmEgyptianBlueColor);
+    @include generatePosAbs(auto, auto, auto, 20px);
     display: flex;
+    margin-bottom: 18px !important;
     margin-top: 0px;
   }
   .col-md-4.\33 {
@@ -225,9 +234,10 @@
     @include generateFont($jmFont, 12px, false, $jmDarkCharcoalColor);
   }
   .jmimg--cardblock--text {
-    padding-right: 0px;
+    padding-right: 30px;
     padding-bottom: 0px;
     width: 100%;
+    right: 5px;
     @include generateFont($jmFont, 20px, 1.2em, $jmDarkCharcoalColor, 1, 500);
   }
   .jmimg--cardblock-link--text {
@@ -258,6 +268,7 @@
     bottom: 15px;
     float: right;
     margin-top: -15px;
+    margin-right: 5px;
     position: relative;
     @include generateFont($jmMediumFont, 17px, 22px, $jmEgyptianBlueColor);
   }
