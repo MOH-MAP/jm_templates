@@ -21,7 +21,6 @@
     margin-left: 8px;
     margin-top: -2px;
     float: right;
-    position: absolute;
   }
   .jmvideotempl__slogan-text {
     text-align: left;
@@ -236,5 +235,10 @@
         @include generatePosAbs(10%, 50%);
       }
     }
+  }
+}
+.container-fluid{
+  .jmvideotempl__content .jmvideotempl__innercont{
+    left: 0;
   }
 }
