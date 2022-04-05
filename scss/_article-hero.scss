@@ -22,7 +22,7 @@
 		width: 321px;
 		border: none;
 		outline: none;
-		padding: 20px 10px 17px 24px;
+		padding: 17px 10px 17px 24px;
 		justify-content: flex-end;
 		text-align: right;
 		text-transform: uppercase;
@@ -57,13 +57,24 @@
 .article__intro{
 	margin: 60px 0 30px;
 	height: auto;
+	a {
+		text-decoration: none;
+		color: $jmEgyptianBlueColor;
+		&:hover {
+			text-decoration: none !important;
+			color: $jmEgyptianBlueColor;
+		}
+	li{
+		padding: 5px 0px;
+	}
+	}
 	.article__para, p, .article__date, li {
 		color: $jmDarkCharcoalColor;
 		text-shadow: none;
 		opacity: 1;
 	}
 	.article__heading, h1, h2, h3, h4, h5, h6 {
-		@include generateFont($jmMediumFont, 36px, 44px, $jmDarkCharcoalColor);
+		@include generateFont($jmMediumFont, 30px, 44px, $jmDarkCharcoalColor);
 		text-shadow: none;
 	}
 }
@@ -79,28 +90,33 @@
 			bottom: 40px;
 		}
 		.article__heading {
-			font-size: 28px;
-			margin-bottom: 24px;
-			line-height: 26px;
+			font-size: 30px;
+			margin-bottom: 15px;
+			line-height: 38px;
 		}
 	}
 	.article__intro {
+		margin: 60px 15px 30px 15px;
+	    height: auto;
 		h1, h2, h3, h4, h5, h6 {
-			font-size: 32px;
-			margin-bottom: 24px;
+			font-size: 26px;
+			margin-bottom: 10px;
 		}
 	}
 }
 @media (min-width: 540px) and (max-width: 834px) {
 	.jmarticle__hero-main-container, .article__intro {
+		padding: 0px 15px;
 		.article__heading {
 			font-size: 36px;
 			line-height: 44px;
 		}
 	}
 	.article__intro {
+		margin: 60px 15px 30px 15px;
+	    height: auto;
 		h1, h2, h3, h4, h5, h6 {
-			font-size: 44px;
+			font-size: 32px;
 		}
 	}
 }
