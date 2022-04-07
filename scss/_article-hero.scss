@@ -4,10 +4,11 @@
 	height: 457px;
 	position: relative;
 	margin-top: -52px;
-	.article__para, p, .article__date, li, h1, h2, h3, h4, h5, h6 {
+	.article__para, p, .article__date, li, h1, h2, h3, h4, h5, h6, span {
 		text-align: left;
 		text-shadow: $jmTextShadow1;
-		@include generateFont($jmMediumFont, 16px, 25px, $jmWhiteColor, 0.8);
+		@include generateFont($jmMediumFont, 16px!important, 25px, $jmWhiteColor, 0.8);
+		margin-bottom: 10px;
 	}
 	.article__heading {
 		text-align: left;
@@ -28,8 +29,7 @@
 		text-transform: uppercase;
 		margin-bottom: 30px;
 		text-decoration: none !important;
-		position: absolute;
-		bottom: 80px;
+		position: static;
 		@include generateFont($jmMediumFont, 18px, 22px, $jmWhiteColor !important);
 		.btn__text{
 			width: calc(100% - 24px);
@@ -64,11 +64,11 @@
 			text-decoration: none !important;
 			color: $jmEgyptianBlueColor;
 		}
-	li{
-		padding: 5px 0px;
+		li{
+			padding: 5px 0px;
+		}
 	}
-	}
-	.article__para, p, .article__date, li {
+	.article__para, p, .article__date, li, span {
 		color: $jmDarkCharcoalColor;
 		text-shadow: none;
 		opacity: 1;
@@ -76,6 +76,14 @@
 	.article__heading, h1, h2, h3, h4, h5, h6 {
 		@include generateFont($jmMediumFont, 30px, 44px, $jmDarkCharcoalColor);
 		text-shadow: none;
+	}
+	li {
+		list-style: disc;
+		margin-left: 20px!important;
+	}
+	ul{
+		margin-left: 0!important;
+		margin-top: 5px;
 	}
 }
 @media (min-width: 320px) and (max-width: 539px) {
@@ -93,6 +101,12 @@
 			font-size: 30px;
 			margin-bottom: 15px;
 			line-height: 38px;
+			display: -webkit-box;
+			-webkit-line-clamp: 4;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			max-height: 150px;
 		}
 	}
 	.article__intro {
@@ -101,8 +115,19 @@
 		h1, h2, h3, h4, h5, h6 {
 			font-size: 26px;
 			margin-bottom: 10px;
+			line-height: 30px;
 		}
 	}
+	.jmarticle__hero-main-container {
+		.article__para, p, li, h1, h2, h3, h4, h5, h6 {
+			display: -webkit-box;
+			-webkit-line-clamp: 4;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			max-height: 100px;
+		}
+	}	
 }
 @media (min-width: 540px) and (max-width: 834px) {
 	.jmarticle__hero-main-container, .article__intro {
@@ -110,6 +135,12 @@
 		.article__heading {
 			font-size: 36px;
 			line-height: 44px;
+			display: -webkit-box;
+			-webkit-line-clamp: 4;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			max-height: 150px;
 		}
 	}
 	.article__intro {
@@ -119,4 +150,14 @@
 			font-size: 32px;
 		}
 	}
+	.jmarticle__hero-main-container {
+		.article__para, p, li, h1, h2, h3, h4, h5, h6 {
+			display: -webkit-box;
+			-webkit-line-clamp: 4;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			max-height: 100px;
+		}
+	}	
 }

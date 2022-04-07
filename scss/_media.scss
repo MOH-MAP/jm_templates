@@ -50,6 +50,7 @@
   .jmheader__navbar.open {
     visibility: visible;
     transition: all 0.8s ease;
+    max-height: 100%!important;
   }
   .jmheader__navlist:hover ul.child-menu {
     display: none !important;
@@ -128,8 +129,9 @@
 
   .contact__container {
     display: flex !important;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin: 5px auto;
+    padding: 20px 75px 10px;
+    justify-content: space-between;
 
     .jm__contact {
       background: url(../images/new__jm__images/contact-icon_white.svg) 0 0
@@ -137,22 +139,22 @@
       display: block;
       width: 24px;
       height: 24px;
-      margin-left: 10px;
+      margin-left: 0px;
     }
     .contact__text {
       font-family: $jmMediumFont;
       font-size: 14px;
       line-height: 20px;
       color: $jmWhiteColor;
-      margin-left: 12px;
+      margin-left: 10px;
       display: flex;
       text-align: center;
       justify-content: center;
       margin-bottom: 0px !important;
+      margin-right: auto;
     }
     .contact__arrow {
-      position: absolute;
-      right: 50px;
+      position: static;
     }
   }
   .nav__toggler {
@@ -198,6 +200,14 @@
     height: 315px;
     width: 440px;
     float: right;
+  }
+  .jmheader__navbar {
+    .jmheader__navlinks {
+      padding: 0px 55px;
+    }
+  }
+  .logo {
+    margin-left: 20px;
   }
 }
 @media (min-width: 320px) and (max-width: 539.98px) {
@@ -249,5 +259,13 @@
     height: 200px;
     width: 100%;
     padding: 15px;
+  }
+  .jmheader__navbar {
+    .jmheader__navlinks {
+      padding: 0px 55px;
+    }
+  }
+  .logo {
+    margin-left: 20px;
   }
 }
