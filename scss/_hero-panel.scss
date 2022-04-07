@@ -15,6 +15,6 @@
 	}
 	.panels-hero-para {
 		text-shadow: $jmTextShadow1;
-		@include generateFont($jmMediumFont, 18px, 28px, $jmWhiteColor, 0.8);
+		@include generateFont($jmMediumFont, 24px, 28px, $jmWhiteColor, 0.8);
 	}
 }

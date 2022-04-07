@@ -247,6 +247,7 @@ a.sub-child {
   margin-left: 8px;
   top: 50%;
   margin-top: -2px;
+  margin-bottom: 0!important;
 }
 .top-left {
   position: absolute;
@@ -560,17 +561,21 @@ table {
 table {
   td {
     border: 1px solid $jmBlackColorOpc1!important;
-    padding: 20px 30px;
+    padding: 20px 30px!important;
     background: $jmLightGrayColorOpc3;
     vertical-align: top;
-    @include generateFont($jmFont, 20px, 38px, $jmGraniteGrayColor);
+    @include generateFont($jmFont, 18px, 38px, $jmGraniteGrayColor);
     strong {
       font-family: $jmMediumFont;
+    }
+    hr{
+      width: 10px;
+      margin-left: auto;
     }
   }
   tr:first-child td {
     background: $jmWhiteColor;
-    padding: 15px 30px;
+    padding: 15px 30px!important;
     color: $jmDarkCharcoalColor;
     border-top: 0;
   }
