@@ -6,7 +6,7 @@
     </h2>-->
     <div class="jmimg--main--cardblock bg-light">
     	<div class="row no-gutters">
-    		<div class="col-4">
+    		<div class="col-7">
     			<div class="jmimg--cardblock--body body">
     				<h6 class="jmimg--cardblock--title">${PreTitle.getData()}</h6>
     				<h3 class="jmimg--cardblock--text">${Title.getData()}</h3>
@@ -35,7 +35,7 @@
     				</#if>
     			</div>
     		</div>
-    		<div class="col-8 jmimg--cardblock--longcol">
+    		<div class="col-5 jmimg--cardblock--longcol">
                 <#if (ImageLarge.getData())?? && ImageLarge.getData() != "">
                 	<img class="jmimg--cardblock-img rounded-0" alt="${ImageLarge.getAttribute("alt")}" data-fileentryid="${ImageLarge.getAttribute("fileEntryId")}" src="${ImageLarge.getData()}" />
                 </#if>

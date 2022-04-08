@@ -326,9 +326,9 @@
 @media (max-width: 575.98px) {
   .jmimg--cardblock--longcol {
     .jmimg--cardblock-img.rounded-0 {
-      height: 100px;
-      float: right;
-      width: 125px;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
     }
   }
   .jmimg--cardblock--body {
