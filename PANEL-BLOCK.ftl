@@ -7,7 +7,7 @@
             <h1>${Title.getData()}</h2>
         </header>
         <#if Panels?? && Panels.getSiblings()?? && Panels.getSiblings()?has_content>
-            <div class="row">
+            <div class="row jmpanelblock__row">
                 <#list Panels.getSiblings() as cur_Panels>
                     <div class="col-sm-12 col-md-6">
                         <#assign
