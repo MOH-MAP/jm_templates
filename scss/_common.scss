@@ -84,6 +84,8 @@ li {
   flex-wrap: wrap;
   left: 108px;
   box-shadow: $jmBoxShadow1;
+  max-height: 300px;
+  overflow: auto;
 }
 .submenu__mb {
   position: fixed;

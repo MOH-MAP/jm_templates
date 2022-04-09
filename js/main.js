@@ -27,4 +27,21 @@ jQuery(document).ready(function(){
 		let selectedValue = jQuery(this).text();
 		jQuery('.textBox').val(selectedValue);
 	})
+	
+	jQuery('#jmsearch').on('click', function(){
+		jQuery(this).hide();
+		jQuery('.jmheader__srchcontainer').css({'display': 'flex'});
+        if (jQuery(window).width() <= 834) {
+        	jQuery('.jmheader__headerbtn, .jmheader__logocont').hide();
+        }
+    });
+
+	jQuery('.jmheader__srchcloseicon').on('click', function(){
+    	jQuery('.jmheader__srchinput').val('');
+    	jQuery('.jmheader__srchcontainer').hide();
+    	jQuery('#jmsearch').show();
+        if (jQuery(window).width() <= 834) {
+        	jQuery('.jmheader__headerbtn, .jmheader__logocont').show();
+        }
+    });
 });
