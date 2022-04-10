@@ -83,7 +83,7 @@
 		}
 	}
   a{
-    .btn--style-a{
+    [class^='btn--style'] {
       background-color: $jmEgyptianBlueColor;
       min-width: 380px;
       border: none;
@@ -104,7 +104,7 @@
     &:hover{
       text-decoration: none;
       color: $jmWhiteColor;
-      .btn--style-a{
+      [class^='btn--style'] {
         &:hover {
           text-decoration: none;
           color: $jmWhiteColor;
