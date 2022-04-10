@@ -621,11 +621,18 @@ a {
   color: $jmEgyptianBlueColor;
 }
 sub, sup{
-  font-size: 10px
+  font-size: 10px;
 }
 sup{
-  top: -10px
+  top: -10px;
+  &.normal--txt{
+    @include generateFont($jmFont, 18px, 25px, $jmDarkCharcoalColor);
+		top: auto;
+  }
 }
 sub{
   bottom: -5px;
+}
+.jmgeneral--hero .general_hero__heading{
+  @include generateFont($jmMediumFont, 46px, 60px, $jmDarkCharcoalColor);
 }

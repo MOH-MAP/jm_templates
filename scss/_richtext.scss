@@ -31,6 +31,9 @@
 			@include generateFont($jmFont, 18px, 25px, $jmDarkCharcoalColor);
 		}
 	}
+	img{
+		width: 100%;
+	}
 }
 @media (max-width: 575.98px){
 	.jmrich--text-inner {

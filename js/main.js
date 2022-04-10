@@ -3,7 +3,7 @@ Liferay.Portlet.ready(function (_portletId, _node) {});
 Liferay.on('allPortletsReady', function () {
 	jQuery('.jmaccrdn__title').each(function(){
 		if (jQuery(this).parent().find('.jmaccrdn__body').hasClass('show')) {
-		jQuery(this).parent().find('.jmaccrdn__arrow').addClass('arrow--animate');
+			jQuery(this).parent().find('.jmaccrdn__arrow').addClass('arrow--animate');
 		}
 	});
 	
@@ -44,4 +44,10 @@ jQuery(document).ready(function(){
         	jQuery('.jmheader__headerbtn, .jmheader__logocont').show();
         }
     });
+
+	$('sup').each(function(){
+		if ($(this).text().length > 5) {
+			$(this).addClass('normal--txt');
+		}
+	});
 });
