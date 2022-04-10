@@ -53,6 +53,10 @@
         margin-left: 0;
         @include generateFont($jmMediumFont, 36px, 32px, $jmDarkCharcoalColor);
     }
+    .person-subheading_align {
+        @include generateFont($jmMediumFont, 22px, 26px, $jmDarkCharcoalColor);
+        margin-top: 15px;
+    }
     .person_card img{
         border-radius: 0;
         position: static;

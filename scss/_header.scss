@@ -45,8 +45,8 @@
 	background: url(/o/jm-platinum-theme/images/new__jm__images/search_icon.svg) no-repeat transparent !important;
 	background-size: cover;
 	display: inline-block;
-	margin-left: 15px;
-	margin-left: 0;
+	margin-left: 10px;
+    margin-right: 10px;
 }
 .jmheader__worldicon {
 	width: 24px;
@@ -85,7 +85,8 @@
 	width: 100%;
 	display: none;
 	position: relative;
-	top: 0px;
+	top: -7px;
+    right: -3px;
 	.jmheader__srchicon {
 		margin-left: 0;
 	}
@@ -216,7 +217,7 @@ header#banner .container-fluid.container-fluid-max-xl{
 	}
 	.hide--mobile {
 		display: none;
-    }
+	}
 	.jmheader__menuicon {
 		width: 24px;
 		height: 24px;
