@@ -64,27 +64,27 @@
                     </#if>
                 </div>
             </div>
-            <#if imgPresent >
-                <div class="col-md-5">
+            <div class="col-md-5">
+                <#if imgPresent >
                     <img class="product_hero_img" alt="${ImageLarge.getAttribute("alt")!}" data-fileentryid="${ImageLarge.getAttribute("fileEntryId")!}" src="${ImageLarge.getData()}" />
-                </div>
-            </#if>
-            <#if SpecificationTitle.getData()?has_content>
-				<div class="jm-richtext-item-image">
-					<div class="jm-rt-image-block">
-						<div class="jm-text-slider">
-							<div class="jm-rxtx-slider-btn-block">
-								<div class="jm-button-block-rctx">
-									<span>${SpecificationTitle.getData()}</span></span>
-								</div>
-								<div class="jm-product-info-container">
-									${Specification.getData()}
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</#if>
+                </#if>
+                <#if SpecificationTitle.getData()?has_content>
+				    <div class="jm-richtext-item-image">
+					    <div class="jm-rt-image-block">
+						    <div class="jm-text-slider">
+							    <div class="jm-rxtx-slider-btn-block">
+								    <div class="jm-button-block-rctx">
+									    <span>${SpecificationTitle.getData()}</span></span>
+								    </div>
+								    <div class="jm-product-info-container">
+									    ${Specification.getData()}
+								    </div>
+							    </div>
+						    </div>
+					    </div>
+				    </div>
+			    </#if>
+            </div>
         </div>
     </div>
 </div>

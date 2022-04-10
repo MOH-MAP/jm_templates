@@ -33,7 +33,7 @@
 		@include generateFont($jmFont, 20px, 32px, $jmDarkGrayColor);
 	}
 	.explore__applications {
-		padding: 20px 15px;
+		padding: 15px;
 		border-bottom: solid 1px $jmBlackColorOpc1;
 	}
 	.explore__applications:last-child {
@@ -44,7 +44,8 @@
 		align-items: center;
 		justify-content: space-between;
 		cursor: pointer;
-		@include generateFont($jmBoldFont, 24px, 32px, $jmGraniteGrayColor);
+		@include generateFont($jmBoldFont, 20px, 32px, $jmGraniteGrayColor);
+		margin-bottom: 0
 	}
 	.explore__checkbox {
 		@include generatePosAbs(0, 0);
@@ -94,7 +95,8 @@
 		color: $jmEgyptianBlueColor;
 	}
 	.explore__arrowicon {
-		@include generateIcon(32px, 32px, "../images/new__jm__images/arrow_downward.svg");
+		@include generateIcon(24px, 24px, "../images/new__jm__images/arrow_downward.svg");
+		background-size: cover;
 	}
 	.explore__filtercategory {
 		width: calc(100% - 45px);

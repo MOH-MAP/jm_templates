@@ -73,7 +73,7 @@
 		h1, h2, h3, h4, h5, h6 {
 			@include generateFont($jmMediumFont, 40px, 48px, $jmDarkCharcoalColor);
 			margin-bottom: 30px;
-      i{
+      i, em{
         @include generateFont($jmMediumFont, 40px, 48px, $jmDarkCharcoalColor);
         font-style: normal;
       }

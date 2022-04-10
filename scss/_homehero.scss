@@ -59,6 +59,15 @@
     padding: 15px 10px 15px 21px;
   }
 }
+.panels-hero-panels {
+    background: $jmEgyptianBlueColor;
+    .col-sm-12.col-md-4.hero-panels-panel {
+    	border-right: solid 1px $jmWhiteColor;
+    	&:last-child {
+    		border-right: 0;
+		}
+	}
+}
 @media (min-width: 540px) and (max-width: 834px) {
   .homehero__heading {
     font-size: 15px;
@@ -76,5 +85,23 @@
     line-height: 22px;
     margin: 0;
     padding: 15px 10px 15px 21px;
+  }
+}
+@media (min-width: 320px) and (max-width: 834px) {
+  .panels-hero-panels {
+    .col-sm-12.col-md-4.hero-panels-panel {
+    	border-right: 0;
+    	.journal-content-article {
+    		border-bottom: solid 1px $jmWhiteColor;
+    	}
+    	&:last-child {
+    		.journal-content-article {
+    			border-bottom: 0;
+    		}
+			}
+		}
+		.jm-stock-price-portlet .stockprice__content{
+			border-bottom: 0;
+		}
   }
 }
