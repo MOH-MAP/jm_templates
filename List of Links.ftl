@@ -1,34 +1,37 @@
-
-<div class="container jmlist">
+<div class="container mar-btm-60 jmlist">
 	<#if (Title.getData())??>
-		<h1 class="jmlist__links-heading">${Title.getData()}</h1>
-	</#if>
-	<#if AdditionalLinks_Title.getSiblings()?has_content>
-		<#assign href = '#' >
-        <#assign title = 'Explore'>
-        <ul> 
-			<#list  AdditionalLinks_Title.getSiblings() as cur_AdditionalLinks_Title>
-				<#if cur_AdditionalLinks_Title?? && cur_AdditionalLinks_Title.getData()?has_content>
-					<#assign title = cur_AdditionalLinks_Title.getData()>
-					<#if cur_AdditionalLinks_Title.AdditionalLinks_Internal?? && cur_AdditionalLinks_Title.AdditionalLinks_Internal.getFriendlyUrl()?has_content>
-						<#assign href = cur_AdditionalLinks_Title.AdditionalLinks_Internal.getFriendlyUrl() >
-					<#elseif cur_AdditionalLinks_Title.AdditionalLinks_Media?? && cur_AdditionalLinks_Title.AdditionalLinks_Media.getData()?has_content>
-						<#assign href = cur_AdditionalLinks_Title.AdditionalLinks_Media.getData() >
-					<#elseif cur_AdditionalLinks_Title.AdditionalLinks_Mailto?? && cur_AdditionalLinks_Title.AdditionalLinks_Mailto.getData()?has_content>
-						<#assign href = cur_AdditionalLinks_Title.AdditionalLinks_Mailto.getData() >
-					<#elseif cur_AdditionalLinks_Title.AdditionalLinks_External?? && cur_AdditionalLinks_Title.AdditionalLinks_External.getData()?has_content>
-						<#assign href = cur_AdditionalLinks_Title.AdditionalLinks_External.getData() >
-					<#elseif cur_AdditionalLinks_Title.AdditionalLinks_Target?? && cur_AdditionalLinks_Title.AdditionalLinks_Target.getData()?has_content>
-						<#assign href = cur_AdditionalLinks_Title.AdditionalLinks_Target.getData() >
-					</#if>
-				</#if>
-				<li class="jmlist__item">
-				    <a class="jmlist__link" href="${href}" title="${title}">
-						<span class="jmlist__text">${title}</span>
-						<span class="jmlist__icon"></span>
-				    </a>
-				</li>
-			</#list>
-		</ul>
+    <h1 class="jmlist__links-heading">${Title.getData()}</h1>
     </#if>
+    <ul>
+        <#if AdditionalLinks_Title?? && AdditionalLinks_Title.getSiblings??>
+	        <#list AdditionalLinks_Title.getSiblings() as cur_Links>
+    	        <li class="jmlist__item">
+                    <#if cur_Links.AdditionalLinks_Internal?has_content>
+                        <a title="Explore" class="jmlist__link data" href="${cur_Links.AdditionalLinks_Internal.getFriendlyUrl()}"
+                            <#if cur_Links.AdditionalLinks_Target?? && cur_Links.AdditionalLinks_Target.getData()??>
+                            target="${cur_Links.AdditionalLinks_Target.getData()}"
+                            </#if>>
+                            <span class="jmlist__text">Explore</span>
+                            <span class="jmlist__icon"></span>
+                        </a>
+                    <#elseif cur_Links.AdditionalLinks_Media?has_content>
+                        <a title="Explore" title="Explore" class="jmlist__link data" href="${cur_Links.AdditionalLinks_Media.getData()}" target="${cur_Links.AdditionalLinks_Target.getData()}">
+                            <span class="jmlist__text">Explore</span>
+                            <span class="jmlist__icon"></span>
+                        </a>
+                    <#elseif cur_Links.AdditionalLinks_Mailto?has_content>
+                        <a title="Explore" title="Explore" class="jmlist__link data" href="${cur_Links.AdditionalLinks_Mailto.getData()}" target="${cur_Links.AdditionalLinks_Target.getData()}">
+                            <span class="jmlist__text">Explore</span>
+                            <span class="jmlist__icon"></span>
+                        </a>
+                    <#elseif cur_Links.AdditionalLinks_External?has_content>
+                        <a title="Explore" title="Explore" class="jmlist__link data" href="${cur_Links.AdditionalLinks_External.getData()}" target="${cur_Links.AdditionalLinks_Target.getData()}">
+                            <span class="jmlist__text">Explore</span>
+                            <span class="jmlist__icon"></span>
+                        </a>
+                    </#if>
+                </li>
+	        </#list>
+        </#if>
+    <ul>
 </div>
