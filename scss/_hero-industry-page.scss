@@ -1,4 +1,5 @@
 .jmhero--industry-main-container-temp {
+	margin-top: 50px;
 	#jmhero--industry-temp {
 		background-size: cover;
 		position: absolute !important;
@@ -9,6 +10,14 @@
 	}
 	#jmhero--industry-img-temp {
 		display: none;
+	}
+	.industry__para, p {
+		margin: 0;
+		margin-top: 24px;
+		margin-bottom: 44px;
+		text-align: left;
+		max-width: 572px;
+		@include generateFont($jmFont, 18px, 28px, $jmDarkCharcoalColor, 0.8);
 	}
 }
 @media (min-width: 320px) and (max-width: 539px) {
@@ -25,6 +34,16 @@
 			flex: 0 0 0;
 			max-width: 100%;
 		}
+		.industry__para, p {
+			font-size: 14px;
+		}
+		.industry__heading {
+			font-size: 32px;
+		}
+		.industry__btn {
+			width: 100% !important;
+			margin-bottom: 30px;
+		}
 	}
 }
 @media (min-width: 540px) and (max-width: 834px) {
@@ -40,6 +59,19 @@
 		.industry-blck {
 			flex: 0 0 0;
 			max-width: 100%;
+		}
+		.industry__btn {
+			width: 260px !important ;
+			margin-bottom: 40px;
+		}
+		.industry__para, p {
+			font-size: 14px;
+			margin-top: 24px;
+			margin-bottom: 30px;
+			max-width: 290px;
+		}
+		.industry__heading {
+			font-size: 32px;
 		}
 	}
 }

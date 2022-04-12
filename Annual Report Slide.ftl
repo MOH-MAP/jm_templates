@@ -33,9 +33,9 @@
         </div> 
         <div class="scroll__sec">
 			<#if HideScrollArrow?? && getterUtil.getBoolean(HideScrollArrow.getData())>
-				<img class="viewnext__img" src="scroll_arrow.svg" alt=""> <a href="#"></a>
+				<a href="#"></a>
 			<#else>
-				<img class="viewnext__img" src="scroll_arrow.svg" alt=""> <a href="#"></a>
+				<a href="#"></a>
 			</#if>
 		</div>
     </div>

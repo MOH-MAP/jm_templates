@@ -117,6 +117,7 @@
 }
 .person__container{
   margin-top: 70px;
+  margin-bottom: 100px;
   .person__img--sec {
     margin-top: 105px;
   }
@@ -140,12 +141,6 @@
   .person__year {
     text-align: left;
     @include generateFont($jmFont, 15px, 28px, $jmDarkCharcoalColor, 0.6);
-  }
-  .person_dsktpimg {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
   }
   .person__name {
     display: none;
