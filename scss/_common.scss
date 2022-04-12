@@ -633,9 +633,11 @@ sup{
 sub{
   bottom: -5px;
 }
-.jmgeneral--hero .general_hero__heading{
-  margin-top: 26px;
-  @include generateFont($jmMediumFont, 46px, 60px, $jmDarkCharcoalColor);
+.jmgeneral--hero {
+  margin-top: 35px;
+  .general_hero__heading{
+    @include generateFont($jmMediumFont, 46px, 60px, $jmDarkCharcoalColor);
+  }
 }
 .child-menu li h1 a {
   @include generateFont($jmMediumFont, 16px, 24px, $jmDarkCharcoalColor!important);
@@ -660,7 +662,7 @@ sub{
 }
 .jm-richtext__subtag {
   font-size: 18px;
-  font-family: JMSansRegular;
+  font-family: $jmFont;
 }
 
 @media (min-width: 993px) { 
