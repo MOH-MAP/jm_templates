@@ -634,6 +634,7 @@ sub{
   bottom: -5px;
 }
 .jmgeneral--hero .general_hero__heading{
+  margin-top: 26px;
   @include generateFont($jmMediumFont, 46px, 60px, $jmDarkCharcoalColor);
 }
 .child-menu li h1 a {
@@ -656,4 +657,10 @@ sub{
   max-height: calc(100vh - 200px);
   overflow: auto;
   min-height: 300px;
+}
+
+@media (min-width: 993px) { 
+  .row.jmpanelblock__row{
+    padding: 20px;
+  }
 }
