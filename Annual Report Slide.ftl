@@ -1,9 +1,6 @@
 <#assign namespace = randomNamespace />
 <#assign href = '#' >
-<#assign layoutService = serviceLocator.findService("com.liferay.portal.kernel.service.LayoutLocalService") />
-<#assign serviceContext = staticUtil["com.liferay.portal.kernel.service.ServiceContextThreadLocal"].getServiceContext() />
-<#assign themeDisplay = serviceContext.getThemeDisplay() />
-<#assign layoutname = themeDisplay.getLayout().getName(themeDisplay.getLocale()) />
+<#assign JournalArticleLocalService = serviceLocator.findService("com.liferay.journal.service.JournalArticleLocalService")>
 
 <section class="main__sec jmannual--main-container"> 
     <div id="annual-report-slide-${namespace}" class="annual-report-slide jmannual--rs-temp">
@@ -11,8 +8,10 @@
             <#if (Title.getData())??>
                 <h1 class="panel__heading">${Title.getData()}</h1>
             </#if>
-			<p>${Subtitle.getData()}</p>
-            <#if Links_Title.getSiblings()?has_content>
+			<#if (Subtitle.getData())??>
+                <p>${Subtitle.getData()}</p>
+            </#if>
+            <#if Links_Title?? && Links_Title.getSiblings()?has_content>
                 <#list Links_Title.getSiblings() as cur_Links_Title>
                     <#if cur_Links_Title.Links_Internal?? && cur_Links_Title.Links_Internal.getFriendlyUrl()?has_content>
                         <#assign href = cur_Links_Title.Links_Internal.getFriendlyUrl() >
@@ -33,46 +32,57 @@
             </#if>
         </div> 
         <div class="scroll__sec">
-			<#if getterUtil.getBoolean(HideScrollArrow.getData())>
+			<#if HideScrollArrow?? && getterUtil.getBoolean(HideScrollArrow.getData())>
 				<img class="viewnext__img" src="scroll_arrow.svg" alt=""> <a href="#"></a>
 			<#else>
 				<img class="viewnext__img" src="scroll_arrow.svg" alt=""> <a href="#"></a>
 			</#if>
 		</div>
     </div>
-  
-    <#if Panels.getSiblings()?has_content>
+
+    <#if Panels?? && Panels.getSiblings()?has_content>
         <div class="hero-panels text-white">
+        <div class="container">
             <div class="row no-gutters">
-                <#if Panels.getSiblings()?size == 1>
-                    <#assign colSize = 8 />
+                 <#if Panels.getSiblings()?size == 1>
+                    <#assign colClass = "col-12" />
                 <#elseif Panels.getSiblings()?size == 2>
-                    <#assign colSize = 4 />
+                    <#assign colClass = "col-sm-12 col-md-6" />
                 <#elseif Panels.getSiblings()?size == 3>
-                    <#assign colSize = 3 />
+                    <#assign colClass = "col-sm-12 col-md-4" />
                 <#elseif Panels.getSiblings()?size == 4>
-                    <#assign colSize = 2 />
+                    <#assign colClass = "col-sm-12 col-md-3" />
                 </#if>
-                <div class="col-md-2"></div>
-                <#list Panels.getSiblings() as cur_Panels>
-                    <div class="col-${colSize} p-4 annual-result-slide-panel ${cur_Panels?is_first?then('','white-border')}">
-                        <#assign
+            <#list Panels.getSiblings() as cur_Panels>
+           <div class="${colClass} hero-panels-panel ${cur_Panels?is_first?then('','white-border')}">
+						<#assign
                             webContentData = jsonFactoryUtil.createJSONObject(cur_Panels.getData())
                         />
-                        <@liferay_asset["asset-display"]
-                            className = webContentData.className
-                            classPK = getterUtil.getLong(webContentData.classPK, 0)
-                        />
-                    </div>
+                       	<#assign
+			                article = JournalArticleLocalService.getLatestArticle(getterUtil.getLong(webContentData.classPK, 0))
+			            />
+			            <#assign tpl = "TEXT-PANEL" />
+			            <#if article.DDMStructureKey == "STATISTIC-PANEL">
+			            	<#assign tpl = "STATISTIC-PANEL" />
+						<#elseif article.DDMStructureKey == "STOCKS-PANEL">
+							<#assign tpl = "STOCK-PANEL" />
+						</#if>
+						<@liferay_journal["journal-article"]
+						    articleId = article.getArticleId()
+						    ddmTemplateKey = tpl
+						    groupId = article.getGroupId()
+						/> 
+                	</div>
                 </#list>
-                <div class="col-md-2"></div>
+            </div>
             </div>
         </div>
     </#if>
 </section>
-
+<#if (ImageLarge.getData())?? && ImageLarge.getData() != "">
 <style>
     #annual-report-slide-${namespace} {
         background-image: url("${ImageLarge.getData()}");
     }
 </style>
+</#if>

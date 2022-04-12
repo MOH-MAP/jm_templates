@@ -66,6 +66,22 @@
       display: none;
     }
   }
+  .hero-panels.text-white {
+        .hero-panels-panel {
+        	border-right: 0;
+        	.journal-content-article {
+        		border-bottom: solid 1px $jmWhiteColor;
+        	}
+        	&:last-child {
+        		.journal-content-article {
+        			border-bottom: 0;
+        		}
+    			}
+    		}
+    		.jm-stock-price-portlet .stockprice__content{
+    			border-bottom: 0;
+    		}
+      }
 }
 @media (min-width: 540px) and (max-width: 834px) {
   .jmannual--main-container {
