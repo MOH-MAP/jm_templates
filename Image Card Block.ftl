@@ -1,6 +1,7 @@
 <#assign JournalArticleLocalService = serviceLocator.findService("com.liferay.journal.service.JournalArticleLocalService")>
+<#assign namespace = randomNamespace />
 
-<div class="image-card-block container">
+<div class="image-card-block container" id="image-card-block-${namespace}">
     <div class="image-card-block__inner">
         <#if Title?? && Title.getData()?has_content>
             <div class="image-card-block__header">
@@ -53,3 +54,13 @@
         </div>
     </div>
 </div>
+
+<#if (ImageLarge.getData())?? && ImageLarge.getData() != "">
+	<style>
+	    #image-card-block-${namespace} {
+	        background-image: url("${ImageLarge.getData()}");
+	        background-position: center;
+	        background-size: cover;
+	    }
+	</style>
+</#if>

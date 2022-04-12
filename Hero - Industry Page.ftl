@@ -1,41 +1,43 @@
 <#assign namespace = randomNamespace />
 
-<style>
-   	#industry-hero-${namespace}{
-    	background:  url("${ImageLarge.getData()}") no-repeat center center transparent;
-    }
-    #industry-img-${namespace}{
-    	display: none;
-    }
-    
-    @media(min-width: 320px) and (max-width: 539px){
-       	#industry-hero-${namespace}{
-       		display: none;
-       	}
-       	#industry-img-${namespace}{
-          	background:  url("${ImageLarge.getData()}") no-repeat center center transparent;
-       	}
-    }
-    @media(min-width: 540px) and (max-width: 834px){
-    	#industry-hero-${namespace}{
-       		display: none !important;
-       	}
-       	#industry-img-${namespace}{
-         	background:  url("${ImageLarge.getData()}") no-repeat center center transparent;
-       	}
-    }
-</style>
+<#if (ImageLarge.getData())?? && ImageLarge.getData() != "">
+	<style>
+	    #industry-hero-${namespace} {
+	        background-image: url("${ImageLarge.getData()}");
+	        background-position: center;
+	        background-size: cover;
+	    }
+	</style>
+</#if>
 
 <div class="full__widthcontainer jmhero--industry-main-container-temp">
-	<div class="container industry__sec">
-		<div class=" col-md-6 industry__text">
+	<div class="container industry__sec row">
+		<div class="col-md-6 industry__text">
     		<h1 class="industry__heading">${Title.getData()}</h1>
     		<#if (Summary.getData())??>
 				<p class="industry__para">
 					${Summary.getData()}
 				</p>
 			</#if>
-            <#if AdditionalLinks_Title.getSiblings()?has_content>
+
+			<#if Link_Title?? && Link_Title.getData()?has_content>
+                <#assign linkHref = "#" />
+                <#if Link_Title.Link_Internal?? && Link_Title.Link_Internal.getFriendlyUrl()?has_content>
+                    <#assign linkHref = Link_Title.Link_Internal.getFriendlyUrl() />
+                <#elseif Link_Title.Link_Media?? && Link_Title.Link_Media.getData()?has_content>
+                    <#assign linkHref = Link_Title.Link_Media.getData() />
+                <#elseif Link_Title.Link_Mailto?? && Link_Title.Link_Mailto.getData()?has_content>
+                    <#assign linkHref = "mailto:" + Link_Title.Link_Mailto.getData() />
+                <#elseif Link_Title.Link_External?? && Link_Title.Link_External.getData()?has_content>
+                    <#assign linkHref = Link_Title.Link_External.getData() />
+                </#if>
+                <a class="industry__btn" href="${linkHref}" title="${Link_Title.getData()}">
+					${Link_Title.getData()}
+					<span class="arrow__forward"></span>
+				</a>
+            </#if>
+            
+            <#if AdditionalLinks_Title?? && AdditionalLinks_Title.getSiblings()?has_content>
 				<#assign href = '#' >
                 <#assign title = 'Explore'>
 				<#list AdditionalLinks_Title.getSiblings() as cur_AdditionalLinks_Title>
@@ -61,22 +63,24 @@
 					</#if>
 				</#list>
             </#if>
-            <#if ShowScrollLink.getSiblings()?has_content>
-				<#list ShowScrollLink.getSiblings() as cur_ShowScrollLink>
-					<#if getterUtil.getBoolean(cur_ShowScrollLink.getData())>
-						<div class="hero-links hero-scroll-link">
-							<a class="industry__btn" href="#industry-details" title="${ScrollLinkText.getData()}">
-								<#if (ScrollLinkText.getData())??>${ScrollLinkText.getData()}</#if>
-							 	<span class="arrow__forward"></span>
-							</a>
-						</div>
-					<#else>
-						${languageUtil.get(locale, "no")}
-					</#if>
-				</#list>
+
+            <#if ShowScrollLink?? && ShowScrollLink.getData()?has_content>
+				<#if getterUtil.getBoolean(ShowScrollLink.getData())>
+					<div class="hero-links hero-scroll-link">
+					    <#assign scrollLinkTitle = "Read More" />
+					    <#if (ScrollLinkText.getData())??>
+                        	<assign scrollLinkTitle = ScrollLinkText.getData() />
+                        </#if>
+						<a class="industry__btn" href="#industry-details" title="${scrollLinkTitle}">
+							${scrollLinkTitle}
+						 	<span class="arrow__forward"></span>
+						</a>
+					</div>
+				</#if>
             </#if>
+
 		</div>
-		<div class="col-md-6 industry-blck" id="industry-hero-${namespace} jmhero--industry-temp"></div>
-		<div class="col-md-6 mb__img" id="industry-img-${namespace} jmhero--industry-img-temp" ></div>
+		<div class="col-md-6 industry-blck jmhero--industry-temp" id="industry-hero-${namespace}"></div>
 	</div>
 </div>
+<div id="industry-details" />

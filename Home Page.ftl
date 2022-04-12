@@ -79,7 +79,7 @@
 			            <#assign tpl = "TEXT-PANEL" />
 			            <#if article.DDMStructureKey == "STATISTIC-PANEL">
 			            	<#assign tpl = "STATISTIC-PANEL" />
-						<#elseif article.DDMStructureKey == "STOCK-PANEL">
+						<#elseif article.DDMStructureKey == "STOCKS-PANEL">
 							<#assign tpl = "STOCK-PANEL" />
 						</#if>
 						<@liferay_journal["journal-article"]

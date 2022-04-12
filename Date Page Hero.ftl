@@ -22,7 +22,7 @@
             />
 			<@liferay_journal["journal-article"]
 			    articleId = article.getArticleId()
-			    ddmTemplateKey = "EVENT"
+			    ddmTemplateKey = "EVENTS"
 			    groupId = article.getGroupId()
 			/>
         </div>
