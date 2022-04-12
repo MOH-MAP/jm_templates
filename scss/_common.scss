@@ -658,6 +658,10 @@ sub{
   overflow: auto;
   min-height: 300px;
 }
+.jm-richtext__subtag {
+  font-size: 18px;
+  font-family: JMSansRegular;
+}
 
 @media (min-width: 993px) { 
   .row.jmpanelblock__row{
