@@ -51,6 +51,15 @@
     border: 1px solid $jmWhiteColor;
   }
 }
+.hero-panels.text-white {
+	background: $jmEgyptianBlueColor;
+	.hero-panels-panel {
+		border-right: solid 1px $jmWhiteColor;
+		&:last-child {
+			border-right: 0;
+		}
+	}
+}
 @media (min-width: 320px) and (max-width: 539px) {
   .jmannual--main-container {
     .panel__heading {
