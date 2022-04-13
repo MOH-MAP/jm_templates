@@ -1,100 +1,108 @@
-.jmlist--block-temp {
-    .jmlist--block-title {
-        padding: 30px 0px 30px 0px;
+.jmlistblock {
+    margin-top: 30px;
+    .jmlistblock__title {
+        padding: 0px 0px 30px 0px;
         @include generateFont($jmMediumFont, 34px, false, $jmDarkCharcoalColor);
     }
-    .jmlist--block-card {
+    .jmlistblock__card {
         background: $jmAntiFlashWhiteColor 0% 0% no-repeat padding-box;
         border-bottom: $jmEgyptianBlueColor 15px solid;
     }
-    .jmlist--block-innerspace {
+    .jmlistblock__summary, p{
+        @include generateFont($jmFont, 18px, 27px, $jmDarkCharcoalColor);
+        margin-bottom: 20px;
+    }
+    .jmlistblock__innerspace {
         flex: 1 1 auto;
         min-height: 1px;
         @include generatePadding(1.25rem, 1.25rem, 1.25rem, 0.99rem);
     }
-    .jmlist--block-card-title {
+    .jmlistblock__card-title {
         text-transform: capitalize;
         text-align: left;
         @include generateFont($jmFont, 14px, 16px, $jmDarkCharcoalColor);
     }
-    .jmlist--block-card-heading{
+    .jmlistblock__card-heading{
         margin-top: 10px;
         margin-bottom: 20px;
         margin-right: 25%;
         @include generateFont($jmFont, 25px, 1.2em, $jmDarkCharcoalColor, 1, 500);
     }
-    .jmlist--block-read-more {
+    .jmlistblock__read-more {
         margin-top: 20px;
         @include generateFont($jmMediumFont, 17px, 22px, $jmEgyptianBlueColor);
     }
-    .jmlist--block-more-icon {
+    .jmlistblock__more-icon {
         @include generateIcon(24px, 24px, "../images/new__jm__images/blue-right-arrow.svg");
         margin-left: 90px;
         margin-top: -20px;
     }
     @media (min-width: 835px) and (max-width:1024px) {
-        .jmlist--block-card-heading {
+        .jmlistblock__card-heading {
             margin-right: 0%;
         }
     }
     @media (min-width: 540px) and (max-width:834px) {
-        .jmlist--block-title {
+        .jmlistblock__title {
             font-size: 30px;
         }
-        .jmlist--block-card-heading {
+        .jmlistblock__card-heading {
             font-size: 23px;
             margin-top: 10px;
             margin-bottom: 20px;
             margin-right: 0%;
         }
-        .jmlist--block-card-title {
+        .jmlistblock__card-title {
             font-size: 13px;
             margin: 0px;
         }
-        .jmlist--block-innerspace {
+        .jmlistblock__innerspace {
             flex: 1 1 auto;
             min-height: 1px;
             @include generatePadding(1rem, 1rem, 1rem, 1rem);
         }
-        .jmlist--block-read-more {
+        .jmlistblock__read-more {
             font-size: 17px;
             margin-top: 20px;
         }
-        .jmlist--block-more-icon {
+        .jmlistblock__more-icon {
             margin-left: 90px;
         }
     }
     @media (min-width: 320px) and (max-width: 539px) {
-        .jmlist--block-title {
+        .jmlistblock__title {
             padding: 10px 0px 10px 0px;
             font-size: 24px;
         }
-        .jmlist--block-innerspace {
+        .jmlistblock__innerspace {
             flex: 1 1 auto;
             min-height: 1px;
             @include generatePadding(0.5rem, 0.5rem, 0.75rem, 0.75rem);
         }
-        .jmlist--block-card-title {
+        .jmlistblock__card-title {
             font-size: 13px;
             margin: 0px;
         }
-        .jmlist--block-card-heading {
+        .jmlistblock__card-heading {
             font-size: 20px;
             margin-bottom: 0px;
             margin-top: 5px;
             margin-right: 20%;
         }
-        .jmlist--block-read-more {
+        .jmlistblock__read-more {
             display: none;
         }
-        .jmlist--block-more-icon {
+        .jmlistblock__more-icon {
             float: right;
             margin-top: -21px;
             margin-right: 0px;
         }
-        .jmlist--block-card {
+        .jmlistblock__card {
             background: $jmAntiFlashWhiteColor 0% 0% no-repeat padding-box;
             border-bottom: $jmEgyptianBlueColor 10px solid;
+        }
+        .jmlistblock__summary, p{
+            font-size: 16px;
         }
     }
 }

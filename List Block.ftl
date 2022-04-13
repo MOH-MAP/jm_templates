@@ -1,18 +1,18 @@
 <#assign namespace = randomNamespace />
 
-<div class="jmlist-block" id="jmlist-block-${namespace}">
+<div class="jmlistblock" id="jmlistblock-${namespace}">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 jmlist-block-link">
+            <div class="col-md-6 jmlistblock__list">
                 <#if (SummaryTitle.getData())??>
-                    <h1 class="jmlist-block-title">${SummaryTitle.getData()}</h1>
+                    <h1 class="jmlistblock__title">${SummaryTitle.getData()}</h1>
                 </#if>
                 <#if (SummaryText.getData())??>
-                    <h6 class="jmlist-block-summary">${SummaryText.getData()}</h6>
+                    <h6 class="jmlistblock__summary">${SummaryText.getData()}</h6>
                 </#if>
 
                 <#if Link_Title?? && Link_Title.getData()?has_content>
-                    <div class="jmlist-block-link">
+                    <div class="jmlistblock__link">
                         <#assign title = 'Explore'>
                         <#assign href = '#' >
                         <#assign target = ''>
@@ -41,13 +41,13 @@
 				</#if>
             </div>
 
-            <div class="col-md-6 jmlist-block-list">
+            <div class="col-md-6 jmlistblock__list">
                 <#if (ListTitle.getData())??>
-                    <h1 class="jmlist-block-list-title">${ListTitle.getData()}</h1>
+                    <h1 class="jmlistblock__title">${ListTitle.getData()}</h1>
                 </#if>
 
                 <#if List_Link_Title?? && List_Link_Title.getSiblings()?has_content>
-                    <div class="jmlist-block-list-links">
+                    <div class="jmlistblock__link">
                     	<#list List_Link_Title.getSiblings() as cur_List_Link_Title>
                     		<#assign title = 'Explore'>
                             <#assign href = '#' >
