@@ -67,9 +67,9 @@
             </div>
             <#if imgPresent >
 	            <div class="col-md-5">
-                    <img class="product_hero_img" alt="${ImageLarge.getAttribute("alt")!}" data-fileentryid="${ImageLarge.getAttribute("fileEntryId")!}" src="${ImageLarge.getData()}" />
-	                <#if SpecificationTitle.getData()?has_content>
-					    <div class="jm-richtext-item-image">
+                    <#if SpecificationTitle.getData()?has_content>
+					    <img class="product_hero_img product--heroimgspecification" alt="${ImageLarge.getAttribute("alt")!}" data-fileentryid="${ImageLarge.getAttribute("fileEntryId")!}" src="${ImageLarge.getData()}" />
+	                    <div class="jm-richtext-item-image">
 						    <div class="jm-rt-image-block">
 							    <div class="jm-text-slider">
 								    <div class="jm-rxtx-slider-btn-block">
@@ -83,7 +83,9 @@
 							    </div>
 						    </div>
 					    </div>
-				    </#if>
+                        <#else>
+                        <img class="product_hero_img" alt="${ImageLarge.getAttribute("alt")!}" data-fileentryid="${ImageLarge.getAttribute("fileEntryId")!}" src="${ImageLarge.getData()}" />
+                    </#if>
 	            </div>
             </#if>
         </div>
