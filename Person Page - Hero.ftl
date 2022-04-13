@@ -1,5 +1,5 @@
-<div class="container jmperson--temp">
-  <div class="row person__container">
+<div class="container">
+  <div class="row person__container personpage__templ">
     <div class="col-md-6">
       <div>
         <#if (PersonName.getData())??>

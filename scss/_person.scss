@@ -115,7 +115,7 @@
     width: 100% !important;
   }
 }
-.person__container{
+.person__container.personpage__templ{
   margin-top: 70px;
   margin-bottom: 100px;
   .person__img--sec {
@@ -125,24 +125,34 @@
     text-align: left;
     margin-top: 20px;
     margin-bottom: 10px;
-    @include generateFont($jmFont, 21px, 32px, $jmDarkCharcoalColor, 0.8);
+    @include generateFont($jmMediumFont, 28px, 38px, $jmDarkCharcoalColor);
   }
-  .person__subtitle {
+  .person__subtitle, h1, h2, h3, h4, h5, h6 {
     text-align: left;
     margin: 0 0 15px;
     text-transform: capitalize;
-    @include generateFont($jmMediumFont, 30px, 46px, $jmDarkCharcoalColor);
+    @include generateFont($jmMediumFont, 30px, 38px, $jmDarkCharcoalColor);
   }
-  .person__descp, p {
+  .person__descp, p, div {
     text-align: left;
-    @include generateFont($jmFont, 17px, 28px, $jmDarkCharcoalColor, 0.84);
-    margin: 0 0 8px;
+    @include generateFont($jmFont, 18px, 25px, $jmDarkCharcoalColor);
+		margin: 0 0 10px;
   }
   .person__year {
     text-align: left;
     @include generateFont($jmFont, 15px, 28px, $jmDarkCharcoalColor, 0.6);
   }
   .person__name {
+    display: none;
+  }
+  .person_dsktpimg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .person_mbimg {
+    width: 100%;
+    height: auto;
     display: none;
   }
   @media (min-width: 320px) and (max-width: 539px) {
@@ -152,8 +162,9 @@
     }
     .person__title {
       font-size: 18px;
-      margin-bottom: 29px;
-      margin-top: 16px;
+      margin-bottom: 30px;
+      margin-top: 15px;
+      line-height: 26px;
     }
     .person__subtitle {
       font-size: 24px;
@@ -162,8 +173,14 @@
     }
     .person__descp,
     .person__year, p {
-      font-size: 14px;
+      font-size: 16px;
       margin-bottom: 2px;
+    }
+    .person_mbimg {
+      display: block;
+    }
+    .person_dsktpimg {
+      display: none;
     }
   }
   @media (min-width: 540px) and (max-width: 767px) {
@@ -177,6 +194,12 @@
     }
     .person__subtitle {
       margin-bottom: 40px;
+    }
+    .person_mbimg {
+      display: block;
+    }
+    .person_dsktpimg {
+      display: none;
     }
   }
   @media (min-width: 768px) and (max-width: 834px) {
@@ -201,6 +224,12 @@
       font-size: 14px;
       line-height: 17px;
       font-family: $jmFont;
+    }
+    .person_mbimg {
+      display: block;
+    }
+    .person_dsktpimg {
+      display: none;
     }
   }
   .person_card{
