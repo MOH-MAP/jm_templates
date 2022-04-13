@@ -34,7 +34,7 @@
 }
 .jmimage-card-block--header {
   padding: 20px 0px 20px 0px;
-  @include generateFont($jmMediumFont, 34px, false, $jmDarkCharcoalColor);
+  @include generateFont($jmMediumFont, 34px, false, $jmWhiteColor);
 }
 .jmimg__cardblock-body {
   flex: 1 1 auto;
