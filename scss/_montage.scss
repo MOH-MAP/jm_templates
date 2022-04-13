@@ -45,10 +45,8 @@
     }
 }
 .card__content{
-    flex-basis: 90%;
-    margin-right: 40px;
+    flex-basis: 98%;
     position: relative;
-    width: calc(100% - 145px);
 }
 .card__img img{
     width: 100%;
@@ -69,7 +67,6 @@
 }
 .card__description{
     margin: 20px 0px 0px 0px; 
-    max-width: 350px;
     @include generateFont($jmFont, 16px, 20px, $jmWhiteColor, 0.84);
 }
 .card__subtext{
