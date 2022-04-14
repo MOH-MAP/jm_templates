@@ -18,6 +18,25 @@
 		a {
 			color: $jmEgyptianBlueColor!important;
 			text-decoration: revert;
+			position: relative;
+			span[class^='btn--style']{
+				background-color: $jmEgyptianBlueColor;
+				min-width: 380px;
+				border: none;
+				outline: none;
+				padding: 20px 10px 17px 24px;
+				justify-content: flex-end;
+				text-align: right;
+				text-transform: uppercase;
+				margin-bottom: 30px;
+				text-decoration: none !important;
+				@include generateFont($jmMediumFont, 18px, 22px, $jmWhiteColor!important);
+				display: inline-flex;
+				&:hover {
+					text-decoration: none;
+					color: $jmWhiteColor;
+				}
+			}
 		}
 	}
 	ul, ol {
