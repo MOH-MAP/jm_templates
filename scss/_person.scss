@@ -36,7 +36,7 @@
     display: none;
   }
   .person__name {
-    display: none;
+    @include generateFont($jmMediumFont, 48px, 46px, $jmDarkCharcoalColor);
   }
   @media (min-width: 320px) and (max-width: 539px) {
     .person_mbimg {
