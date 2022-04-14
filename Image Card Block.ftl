@@ -1,7 +1,7 @@
 <#assign JournalArticleLocalService = serviceLocator.findService("com.liferay.journal.service.JournalArticleLocalService")>
 <#assign namespace = randomNamespace />
 
-<#if (ImageLarge.getData())?? && ImageLarge.getData() != "">
+<#if ImageLarge?? && (ImageLarge.getData())?? && ImageLarge.getData() != "">
 	<div class="image-card-block image-card-block-with-img" id="image-card-block-${namespace}">
 <#else>
 	<div class="image-card-block" id="image-card-block-${namespace}">
@@ -63,7 +63,7 @@
 	</div>
 </div>
 
-<#if (ImageLarge.getData())?? && ImageLarge.getData() != "">
+<#if ImageLarge?? && (ImageLarge.getData())?? && ImageLarge.getData() != "">
 	<style>
 	    #image-card-block-${namespace} {
 	        background-image: url("${ImageLarge.getData()}");
