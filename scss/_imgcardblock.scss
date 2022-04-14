@@ -15,6 +15,11 @@
   height: 100%;
   object-fit: cover;
 }
+.image-card-block-with-img{
+  .jmimage-card-block--header{
+    color: $jmWhiteColor;
+  }
+}
 .image-card-block__body {
 	.journal-content-article {
 		height: 100%;
