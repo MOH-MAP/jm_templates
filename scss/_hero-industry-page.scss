@@ -11,13 +11,17 @@
 	#jmhero--industry-img-temp {
 		display: none;
 	}
-	.industry__para, p {
+	.industry__para, p, ul li {
 		margin: 0;
 		margin-top: 24px;
 		margin-bottom: 44px;
 		text-align: left;
 		max-width: 572px;
 		@include generateFont($jmFont, 18px, 28px, $jmDarkCharcoalColor, 0.8);
+	}
+	ul li{
+		list-style: disc;
+		margin: 0 0 5px 18px;
 	}
 }
 @media (min-width: 320px) and (max-width: 539px) {
