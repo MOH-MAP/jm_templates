@@ -69,7 +69,6 @@
 }
 .card__description{
     margin: 20px 0px 0px 0px; 
-    max-width: 350px;
     @include generateFont($jmFont, 16px, 20px, $jmWhiteColor, 0.84);
 }
 .card__subtext{
