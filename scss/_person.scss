@@ -36,7 +36,7 @@
     display: none;
   }
   .person__name {
-    @include generateFont($jmMediumFont, 48px, 46px, $jmDarkCharcoalColor);
+    display: none;
   }
   @media (min-width: 320px) and (max-width: 539px) {
     .person_mbimg {
@@ -130,7 +130,7 @@
     margin-bottom: 10px;
     @include generateFont($jmMediumFont, 28px, 38px, $jmDarkCharcoalColor);
   }
-  .person__subtitle, h1, h2, h3, h4, h5, h6 {
+  .person__subtitle, h1, h2, h3, h4, h5, h6, .person__key {
     text-align: left;
     margin: 0 0 15px;
     text-transform: capitalize;
@@ -146,7 +146,7 @@
     @include generateFont($jmFont, 15px, 28px, $jmDarkCharcoalColor, 0.6);
   }
   .person__name {
-    display: none;
+    @include generateFont($jmMediumFont, 48px, 46px, $jmDarkCharcoalColor);
   }
   .person_dsktpimg {
     width: 100%;
@@ -157,6 +157,12 @@
     width: 100%;
     height: auto;
     display: none;
+  }
+  .person__keycontainer{
+    h1, h2, h3, h4, h5, h6{
+      @include generateFont($jmFont, 24px, 28px, $jmEgyptianBlueColor);
+      margin-bottom: 5px;
+    }
   }
   @media (min-width: 320px) and (max-width: 539px) {
     .person__name {

@@ -1,0 +1,79 @@
+.event--templ{
+    .event__align-left {
+        display: none;
+        justify-content: start;
+    }
+    .event__align-right{
+        position: absolute;
+        right: 20px;
+        top: calc(50% - 12px);
+    }
+    .event__row {
+        padding: 0px;
+    }
+    .event__align-right {
+        display: flex;
+        justify-content: end;
+    }
+    .event__card.mb-3:nth-child(odd) {
+        padding: 20px;
+        background: $jmAntiFlashWhiteColor;
+        @include generateFont($jmMediumFont, 18px, 22px, $jmDarkCharcoalColor);
+        border-bottom: solid 2px $jmLightGrayColor;
+    }
+    .event__card-body h2 {
+        @include generateFont($jmMediumFont, 24px, 32px, $jmBlackColor);
+    }
+    .event__card-body {
+        h1, h3, h4, h5, h6 {
+            margin-top: 30px;
+            text-align: left;
+            @include generateFont($jmMediumFont, 18px, 24px, $jmDarkGrayColor, 0.8);
+            &:first-child{
+                margin-top: 0;
+            }
+        }
+    }
+    .event__card-body p, .event__card-text, .event__card-location, .event__card-heading, .event__card-title {
+        @include generateFont($jmFont!important, 16px!important, 27px!important, $jmDarkCharcoalColor!important, 1!important);
+        margin-bottom: 0!important;
+        margin-top: 30px;
+        &:first-child{
+            margin-top: 0;
+        }
+    }
+    .event__list-link {
+        @include generateFont($jmMediumFont, 18px, 22px, $jmEgyptianBlueColor);
+        text-transform: capitalize;
+        display: flex;
+        padding: 20px 0px 0px 0px;
+        text-decoration: none !important;
+        :hover {
+            text-decoration: none !important;
+        }
+    }
+    .event__link-icon {
+        @include generateIcon(24px, 24px, "../images/new__jm__images/arrow_forward-blue.svg");
+        margin-left: 8px;
+    }
+    .event__select {
+        position: relative;
+        display: block;
+        @include generateFont($jmMediumFont, 18px, 22px, $jmEgyptianBlueColor);
+        border: none;
+        outline: none;
+        background: $jmAntiFlashWhiteColor;
+    }
+    .event__select option {
+        position: absolute;
+        background: $jmWhiteColor 0% 0% no-repeat padding-box;
+        box-shadow: $jmBoxShadow1;
+        text-align: left;
+        @include generateFont($jmMediumFont, 18px, 22px, $jmDarkCharcoalColor);
+        height: 200px;
+        padding: 20px;
+        margin: 20px;
+        border-bottom: 1px solid $jmBlackColor;
+        outline: none;
+    }
+}

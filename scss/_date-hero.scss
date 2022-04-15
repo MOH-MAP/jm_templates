@@ -7,8 +7,7 @@
 	}
 	.datepagehero__heading {
 		text-align: left;
-		text-shadow: $jmTextShadow1;
-		@include generateFont($jmMediumFont, 52px, 60px, $jmWhiteColor);
+		@include generateFont($jmMediumFont, 36px, 40px, $jmDarkCharcoalColor);
 		margin-top: 95px;
 		margin-bottom: 34px;
 	}

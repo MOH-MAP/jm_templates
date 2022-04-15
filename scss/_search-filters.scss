@@ -35,6 +35,8 @@
 	.explore__applications {
 		padding: 15px;
 		border-bottom: solid 1px $jmBlackColorOpc1;
+		max-height: 500px;
+		overflow: auto;
 	}
 	.explore__applications:last-child {
 		border-bottom: none;
