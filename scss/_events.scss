@@ -35,7 +35,7 @@
         }
     }
     .event__card-body p, .event__card-text, .event__card-location, .event__card-heading, .event__card-title {
-        @include generateFont($jmFont!important, 16px!important, 27px!important, $jmDarkCharcoalColor!important, 1!important);
+        @include generateFont($jmFont!important, 18px!important, 27px!important, $jmDarkCharcoalColor!important, 1!important);
         margin-bottom: 0!important;
         margin-top: 30px;
         &:first-child{
@@ -46,7 +46,8 @@
         @include generateFont($jmMediumFont, 18px, 22px, $jmEgyptianBlueColor);
         text-transform: capitalize;
         display: flex;
-        padding: 20px 0px 0px 0px;
+        padding: 0;
+        margin-top: 30px;
         text-decoration: none !important;
         :hover {
             text-decoration: none !important;
