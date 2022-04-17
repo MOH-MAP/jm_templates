@@ -20,6 +20,9 @@
     h1, h2, h3, h4, h5, h6, p, ul li, ol li {
       margin-top: 10px;
       @include generateFont($jmFont, 18px, 27px);
+      span[style^='font-size: 48px']{
+        line-height: 48px;
+      }
     }
   }
 }

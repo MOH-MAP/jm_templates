@@ -1,6 +1,10 @@
 <div class="container">
 	<div class="row jminline-promo--section">
-		<div class="col-md-8 jminline--promo">
+        <#if (ImageLarge.getData())?? && ImageLarge.getData() != "">
+        <div class="col-md-8 jminline--promo">
+		<#else>
+        <div class="col-md-12 jminline--promo jminline--promo-no-image">
+		</#if>
 			<p class="jminline-promo--sign-up">${PreTitle.getData()}</p>
 			<h2 class="jminline-promo--heading">${Title.getData()}</h2>
 
@@ -23,10 +27,10 @@
             </#if>
 		</div>
 
-		<div class="col-md-4">
-		<#if (ImageLarge.getData())?? && ImageLarge.getData() != "">
-        	<img alt="${ImageLarge.getAttribute("alt")}" data-fileentryid="${ImageLarge.getAttribute("fileEntryId")}" src="${ImageLarge.getData()}" class="inline-img" />
+        <#if (ImageLarge.getData())?? && ImageLarge.getData() != "">
+            <div class="col-md-4">
+                <img alt="${ImageLarge.getAttribute("alt")}" data-fileentryid="${ImageLarge.getAttribute("fileEntryId")}" src="${ImageLarge.getData()}" class="inline-img" />
+            </div>
         </#if>
-		</div>
 	</div>
 </div>

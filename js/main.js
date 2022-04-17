@@ -50,4 +50,8 @@ jQuery(document).ready(function(){
 			$(this).addClass('normal--txt');
 		}
 	});
+
+	$(".jmrich--text-inner p a span[class^='btn--style']").each(function(){
+		$(this).text($(this).text().replace('>>', ''));
+	});
 });

@@ -3,7 +3,7 @@
 		margin-bottom: 20px !important;
 		@include generateFont($jmMediumFont, 34px, false, $jmEgyptianBlueColor);
 		span{
-			@include generateFont($jmMediumFont, 34px, false, $jmEgyptianBlueColor!important);	
+			@include generateFont($jmMediumFont!important, 34px, false, $jmEgyptianBlueColor!important);	
 		}
 	}
 	span{
@@ -24,7 +24,7 @@
 				min-width: 380px;
 				border: none;
 				outline: none;
-				padding: 20px 10px 17px 24px;
+				padding: 20px 55px 20px 20px;
 				justify-content: flex-end;
 				text-align: right;
 				text-transform: uppercase;
@@ -32,10 +32,55 @@
 				text-decoration: none !important;
 				@include generateFont($jmMediumFont, 18px, 22px, $jmWhiteColor!important);
 				display: inline-flex;
+				position: relative;
+				&::after{
+					position: absolute;
+					background: url("../images/new__jm__images/arrow_forward-white.svg") 0 0
+						no-repeat transparent;
+					width: 24px;
+					height: 24px;
+					right: 20px;
+					top: calc(50% - 12px);
+					content: "";
+				}
 				&:hover {
 					text-decoration: none;
 					color: $jmWhiteColor;
 				}
+			}
+		}
+	}
+	a {
+		color: $jmEgyptianBlueColor!important;
+		text-decoration: revert;
+		position: relative;
+		span[class^='btn--style']{
+			background-color: $jmEgyptianBlueColor;
+			min-width: 380px;
+			border: none;
+			outline: none;
+			padding: 20px 55px 20px 20px;
+			justify-content: flex-end;
+			text-align: right;
+			text-transform: uppercase;
+			margin-bottom: 30px;
+			text-decoration: none !important;
+			@include generateFont($jmMediumFont, 18px, 22px, $jmWhiteColor!important);
+			display: inline-flex;
+			position: relative;
+			&::after{
+				position: absolute;
+				background: url("../images/new__jm__images/arrow_forward-white.svg") 0 0
+					no-repeat transparent;
+				width: 24px;
+				height: 24px;
+				right: 20px;
+				top: calc(50% - 12px);
+				content: "";
+			}
+			&:hover {
+				text-decoration: none;
+				color: $jmWhiteColor;
 			}
 		}
 	}
@@ -51,7 +96,7 @@
 		}
 	}
 	img{
-		width: 100%;
+		max-width: 100%;
 	}
 }
 @media (max-width: 575.98px){
