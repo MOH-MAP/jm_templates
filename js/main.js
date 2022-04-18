@@ -54,4 +54,19 @@ jQuery(document).ready(function(){
 	$(".jmrich--text-inner p a span[class^='btn--style']").each(function(){
 		$(this).text($(this).text().replace('>>', ''));
 	});
+
+	$('.portlet-forms.jmdot--digital-temp .form-control').on('focus', function(){
+		$(this).parents('.ddm-field').addClass('jminput--focus');
+	});
+
+	$('.portlet-forms.jmdot--digital-temp .form-control').on('blur', function(){
+		$(this).parents('.ddm-field').removeClass('jminput--focus');
+		if (!$(this).parents('.form-group').hasClass('has-error')) {
+			$(this).parents('.ddm-field').addClass('jminput--complete');
+		} else {
+			$(this).parents('.ddm-field').removeClass('jminput--complete');
+		}
+	});
+
+	$('.portlet-forms.jmdot--digital-temp .form-builder-select-field').parents('.ddm-field').addClass('jmhide--label');;
 });

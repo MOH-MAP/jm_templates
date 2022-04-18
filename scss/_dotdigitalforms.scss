@@ -1,0 +1,183 @@
+.jmdot--digital-temp {
+    .form-control, input{
+        background: $jmAntiFlashWhiteColor;
+        border-radius: 0;
+        border: 0;
+        border-bottom: 2px solid $jmAntiFlashWhiteColor;
+        height: auto;
+        padding: 25px 20px 5px;
+        @include generateFont($jmFont, 16px, 21px, $jmGraniteGrayColor);
+        &:focus {
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%231E22AA' class='bi bi-eye-fill' viewBox='0 0 16 16'%3E%3Cpath d='M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z'/%3E%3Cpath d='M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z' fill='%231E22AA'/%3E%3C/svg%3E") no-repeat calc(100% - 12px) center $jmAntiFlashWhiteColor;
+            border-bottom: 2px solid $jmEgyptianBlueColor;
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    .ddm-field{
+        padding: 0;
+    }
+    .ddm-form-page-container{
+        max-width: 700px;
+    }
+}
+.jmdot--digital-temp .ddm-form-basic-info {
+    margin-bottom: 30px;
+}
+.jmdot--digital-temp .lfr-ddm-form-page-title,
+.lfr-ddm-form-page-description {
+    padding-left: 0px;
+    padding-right: 32px;
+}
+.jmdot--digital-temp .ddm-form-basic-info .ddm-form-name,
+.form-entry .ddm-form-basic-info .ddm-form-name {
+    padding: 40px 0 0 0px;
+    text-align: left;
+    @include generateFont($jmMediumFont, 52px, 56px, $jmDarkCharcoalColor, 1, 300);
+}
+.jmdot--digital-temp label.ddm-label, .jmdot--digital-temp .item label.label {
+    position: absolute;
+    top: calc(50% - 12px);
+    left: 20px;
+    text-transform: none;
+    margin-bottom: 0;
+    @include generateFont($jmFont, 16px, false, $jmGraniteGrayColor);
+}
+.jmdot--digital-temp {
+    .jminput--focus, .jminput--complete, .has-error {
+        label.ddm-label{
+            font-size: 12px;
+            line-height: 16px;
+            top: 14px;
+            color: $jmEgyptianBlueColor;
+        }
+    }
+    .jminput--complete{
+        label.ddm-label{
+            color: $jmGraniteGrayColor;
+        }
+        .form-control{
+            color: $jmDarkCharcoalColor;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%231E22AA' class='bi bi-eye-fill' viewBox='0 0 16 16'%3E%3Cpath d='M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z'/%3E%3Cpath d='M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z' fill='%231E22AA'/%3E%3C/svg%3E") no-repeat calc(100% - 12px) center $jmAntiFlashWhiteColor;
+            border-bottom: 2px solid $jmGraniteGrayColor;
+        }
+    }
+    .has-error{
+        label.ddm-label {
+            color: $jmRedColor;
+        }
+        .form-feedback-item{
+            @include generateFont($jmFont, 14px, false, $jmRedColor);
+            margin-top: 5px;
+        }
+        .form-control{
+            color: $jmDarkCharcoalColor;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23dc3545' class='bi bi-eye-fill' viewBox='0 0 16 16'%3E%3Cpath d='M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z'/%3E%3Cpath d='M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z' fill='%23dc3545'/%3E%3C/svg%3E") no-repeat calc(100% - 12px) center $jmAntiFlashWhiteColor;
+            border-bottom: 2px solid $jmRedColor;
+        }
+    }
+    .jmhide--label{
+        label.ddm-label{
+            display: none;
+        }
+    }
+    .form-builder-select-field{
+        .form-control{
+            background: $jmAntiFlashWhiteColor;
+            @include generateFont($jmFont, 16px, 21px, $jmGraniteGrayColor);
+            border-bottom: solid 2px $jmAntiFlashWhiteColor;
+            padding: 16px 20px 10px;
+        }
+        .select-field-trigger .option-selected {
+            @include generateFont($jmFont, 16px, 21px, $jmDarkCharcoalColor);
+            &.option-selected-placeholder{
+                color: $jmGraniteGrayColor;
+            }
+        }
+    }
+}
+.jmdot--digital-temp label.ddm-label:focus {
+    color: $jmEgyptianBlueColor;
+}
+.jmdot--digital-temp .lfr-ddm-form-page-title {
+    padding: 40px 0 0 0px;
+    text-align: left;
+    @include generateFont($jmMediumFont, 52px, 56px, $jmDarkCharcoalColor);
+}
+.jmdot--digital-temp .lfr-ddm-form-page-description {
+    text-align: left;
+    @include generateFont($jmFont, 18px, 24px, $jmDarkCharcoalColor, 0.8);
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+.jmdot--digital-temp {
+    .custom-checkbox .custom-control-label::before {
+        border-radius:0;
+        border: 0;
+        background-image: url("data:image/svg+xml,%3Csvg id='check_box_outline_blank-white-48dp' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath id='Path_6196' data-name='Path 6196' d='M0,0H24V24H0Z' fill='none'/%3E%3Cpath id='Path_6197' data-name='Path 6197' d='M19,5V19H5V5H19m0-2H5A2.006,2.006,0,0,0,3,5V19a2.006,2.006,0,0,0,2,2H19a2.006,2.006,0,0,0,2-2V5A2.006,2.006,0,0,0,19,3Z' fill='%231e22aa'/%3E%3C/svg%3E%0A");
+        width: 24px;
+        height: 24px;
+        left: 0;
+        top: 0;
+        box-shadow: none;
+    }
+    .custom-control-input:checked ~ .custom-control-label{
+        &::before {
+            background-color: $jmEgyptianBlueColor!important;
+            border: solid 2px $jmWhiteColor!important;
+            border-radius: 4px!important;
+        }
+        &::after{
+            left: 4px;
+            top: 4px;
+        }
+    }
+}
+.jmdot--digital-temp .form-builder-select-field .select-arrow-down-container {
+    visibility: hidden;
+}
+.jmdot--digital-temp .lfr-ddm-form-container .lfr-ddm-form-pagination-controls button {
+    background-color: $jmEgyptianBlueColor;
+    border-radius: 0;
+}
+.jmdot--digital-temp .liferay-ddm-form-field-paragraph,
+.liferay-ddm-form-field-tip {
+    position: static;
+    vertical-align: top;
+    text-align: left;
+    @include generateFont($jmFont, 18px, 24px, $jmDarkCharcoalColor, 0.8);
+}
+.jmdot--digital-temp .custom-control-label {
+    cursor: pointer;
+    position: static;
+    vertical-align: top;
+    text-align: left;
+    @include generateFont($jmMediumFont, 18px, 24px, $jmDarkCharcoalColor, 0.8);
+}
+.jmdot--digital-temp button.float-right.lfr-ddm-form-submit.btn.btn-primary:before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 10px;
+    top: calc(50% - 12px);
+    background: url("data:image/svg+xml,%3Csvg id='arrow_forward-blue-48dp' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath id='Path_5802' data-name='Path 5802' d='M0,0H24V24H0Z' fill='none'/%3E%3Cpath id='Path_5803' data-name='Path 5803' d='M12,4,10.59,5.41,16.17,11H4v2H16.17l-5.58,5.59L12,20l8-8Z' fill='%23fff'/%3E%3C/svg%3E%0A") no-repeat;
+}
+.jmdot--digital-temp button.float-right.lfr-ddm-form-submit.btn.btn-primary {
+    position: relative;
+    padding: 20px 40px 20px 20px;
+    @include generateFont($jmMediumFont, 18px, 22px, $jmWhiteColor);
+    min-width: 200px;
+    text-align: right;
+}
+span.ddm-label-required.reference-mark {	
+    display: none;	
+}
+.ddm-form-page, p.text-secondary {	
+    display: none;	
+}
+.jmdot--digital-temp .select-chevron-down-container {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%231e22aa' class='bi bi-chevron-down' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E") no-repeat right center;
+    width: 28px;
+    height: 28px;
+}
