@@ -103,4 +103,22 @@ jQuery(document).ready(function(){
 	});
 
 	$('.portlet-forms.jmdot--digital-temp .form-builder-select-field').parents('.ddm-field').addClass('jmhide--label');;
+
+	$('.search__filters').parents('.col.col-lg-3.col-sm-3.col-3.col-md-3').parent().find('.col.col-lg-5.col-sm-5.col-5.col-md-5').removeClass('col-lg-5 col-sm-5 col-5 col-md-5').addClass('col-lg-7 col-sm-7 col-7 col-md-7');
+
+	$('.search__filters').parents('.col.col-lg-3.col-sm-3.col-3.col-md-3').parent().find('.col.col-lg-2.col-sm-2.col-2.col-md-2').removeClass('col-lg-2 col-sm-2 col-2 col-md-2').addClass('col-lg-1 col-sm-1 col-1 col-md-1');
+	
+	$('.search__filters').parents('.col.col-lg-3.col-sm-3.col-3.col-md-3').parent().addClass('search__mob-view');
+
+	var scrollPos = 0;
+	var scrollEventHandler = function() {
+		if ($('.explore__left').is(':visible') && window.innerWidth <= 834) {
+			window.scroll(0, scrollPos);
+		}
+	}
+
+	$('.explore__filtericon').on('click', function(){
+		$('.explore__left').show();
+		scrollPos = window.pageYOffset;
+	});
 });

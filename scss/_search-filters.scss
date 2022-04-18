@@ -47,7 +47,7 @@
 		justify-content: space-between;
 		cursor: pointer;
 		@include generateFont($jmBoldFont, 20px, 32px, $jmGraniteGrayColor);
-		margin-bottom: 0
+		margin-bottom: 0;
 	}
 	.explore__checkbox {
 		@include generatePosAbs(0, 0);
@@ -171,6 +171,7 @@
 		}
 		.explore__apptext {
 			font: 14px/18px $jmFont;
+			width: 120px;
 		}
 		.explore__accordian {
 			@include generatePosAbs(120px, 118px);

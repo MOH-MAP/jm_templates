@@ -54,7 +54,6 @@
 	.explore__filtericon {
 		@include generateIcon(16px, 16px, "../images/new__jm__images/filter_icon.svg");
 		background-size: cover;
-		display: none;
 	}
 	.explore__link:hover {
 		text-decoration: none;
@@ -98,6 +97,11 @@
 		.explore__boxes::after {
 			width: calc(100% - 30px);
 			left: 15px;
+		}
+		.search__mob-view [class^='col'] {
+			width: 100%;
+			flex: 0 0 100%;
+			max-width: 100%;
 		}
 	}
 	@media (min-width: 835px) and (max-width: 1208px) {
