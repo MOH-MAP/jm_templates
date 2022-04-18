@@ -61,11 +61,45 @@ jQuery(document).ready(function(){
 
 	$('.portlet-forms.jmdot--digital-temp .form-control').on('blur', function(){
 		$(this).parents('.ddm-field').removeClass('jminput--focus');
-		if (!$(this).parents('.form-group').hasClass('has-error')) {
+		if (!$(this).parents('.form-group').hasClass('has-error') && $(this).val()) {
 			$(this).parents('.ddm-field').addClass('jminput--complete');
 		} else {
 			$(this).parents('.ddm-field').removeClass('jminput--complete');
 		}
+	});
+
+	$('.jmrich--text-inner form input').on('focus', function(){
+		$(this).parent('div').addClass('jminput--focus');
+	});
+
+	$('.jmrich--text-inner form input').on('blur', function(){
+		$(this).parent('div').removeClass('jminput--focus');
+		if (!$(this).parent('div').hasClass('has-error') && $(this).val()) {
+			$(this).parent('div').addClass('jminput--complete');
+		} else {
+			$(this).parent('div').removeClass('jminput--complete');
+		}
+	});
+
+	$('.jmrich--text-inner form input').on('focus', function(){
+		$(this).parent('td').addClass('jminput--focus');
+	});
+
+	$('.jmrich--text-inner form input').on('blur', function(){
+		$(this).parent('td').removeClass('jminput--focus');
+		if (!$(this).parent('td').hasClass('has-error') && $(this).val()) {
+			$(this).parent('td').addClass('jminput--complete');
+		} else {
+			$(this).parent('td').removeClass('jminput--complete');
+		}
+	});
+
+	$('.jmrich--text-inner form input[type="submit"]').each(function(){
+		$(this).parent().append('<span></span>');
+	});
+
+	$('.jmrich--text-inner form input[type="checkbox"]').each(function(){
+		$(this).parent().append('<span></span>');
 	});
 
 	$('.portlet-forms.jmdot--digital-temp .form-builder-select-field').parents('.ddm-field').addClass('jmhide--label');;

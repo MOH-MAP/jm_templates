@@ -1,5 +1,5 @@
 .jmdot--digital-temp {
-    .form-control, input{
+    .form-control{
         background: $jmAntiFlashWhiteColor;
         border-radius: 0;
         border: 0;
@@ -19,6 +19,10 @@
     }
     .ddm-form-page-container{
         max-width: 700px;
+    }
+    .custom-control-label-text{
+        display: inline-block;
+        width: calc(100% - 50px);
     }
 }
 .jmdot--digital-temp .ddm-form-basic-info {
@@ -86,7 +90,7 @@
             background: $jmAntiFlashWhiteColor;
             @include generateFont($jmFont, 16px, 21px, $jmGraniteGrayColor);
             border-bottom: solid 2px $jmAntiFlashWhiteColor;
-            padding: 16px 20px 10px;
+            padding: 16px 12px 10px 20px;
         }
         .select-field-trigger .option-selected {
             @include generateFont($jmFont, 16px, 21px, $jmDarkCharcoalColor);
@@ -154,21 +158,21 @@
     text-align: left;
     @include generateFont($jmMediumFont, 18px, 24px, $jmDarkCharcoalColor, 0.8);
 }
-.jmdot--digital-temp button.float-right.lfr-ddm-form-submit.btn.btn-primary:before {
-    content: "";
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    right: 10px;
-    top: calc(50% - 12px);
-    background: url("data:image/svg+xml,%3Csvg id='arrow_forward-blue-48dp' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath id='Path_5802' data-name='Path 5802' d='M0,0H24V24H0Z' fill='none'/%3E%3Cpath id='Path_5803' data-name='Path 5803' d='M12,4,10.59,5.41,16.17,11H4v2H16.17l-5.58,5.59L12,20l8-8Z' fill='%23fff'/%3E%3C/svg%3E%0A") no-repeat;
-}
 .jmdot--digital-temp button.float-right.lfr-ddm-form-submit.btn.btn-primary {
     position: relative;
     padding: 20px 40px 20px 20px;
     @include generateFont($jmMediumFont, 18px, 22px, $jmWhiteColor);
     min-width: 200px;
     text-align: right;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        right: 10px;
+        top: calc(50% - 12px);
+        background: url("data:image/svg+xml,%3Csvg id='arrow_forward-blue-48dp' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath id='Path_5802' data-name='Path 5802' d='M0,0H24V24H0Z' fill='none'/%3E%3Cpath id='Path_5803' data-name='Path 5803' d='M12,4,10.59,5.41,16.17,11H4v2H16.17l-5.58,5.59L12,20l8-8Z' fill='%23fff'/%3E%3C/svg%3E%0A") no-repeat;
+    }
 }
 span.ddm-label-required.reference-mark {	
     display: none;	
