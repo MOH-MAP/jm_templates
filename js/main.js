@@ -77,6 +77,23 @@ jQuery(document).ready(function(){
 
     setTimeout(function(){
        	hideAddress();
+       	$('.portlet-forms.jmdot--digital-temp .form-builder-select-field').parents('.ddm-field').addClass('jmhide--label');
+       	$('.portlet-forms.jmdot--digital-temp .form-control').on('focus', function(){
+    		$(this).parents('.ddm-field').addClass('jminput--focus');
+    	});
+
+    	$('.portlet-forms.jmdot--digital-temp .form-control').on('blur', function(){
+    		$(this).parents('.ddm-field').removeClass('jminput--focus');
+    		if (!$(this).parents('.form-group').hasClass('has-error') && $(this).val()) {
+    			$(this).parents('.ddm-field').addClass('jminput--complete');
+    		} else {
+    			$(this).parents('.ddm-field').removeClass('jminput--complete');
+    		}
+    	});
+    	
+    	$('.jmdot--digital-temp label.ddm-label').on('click', function(){
+    		$(this).parent('.form-group').find('.form-control').focus();
+    	});
     }, 1000);
 
     setTimeout(function () {
@@ -87,19 +104,6 @@ jQuery(document).ready(function(){
 
 	$(".jmrich--text-inner p a span[class^='btn--style']").each(function(){
 		$(this).text($(this).text().replace('>>', ''));
-	});
-
-	$('.portlet-forms.jmdot--digital-temp .form-control').on('focus', function(){
-		$(this).parents('.ddm-field').addClass('jminput--focus');
-	});
-
-	$('.portlet-forms.jmdot--digital-temp .form-control').on('blur', function(){
-		$(this).parents('.ddm-field').removeClass('jminput--focus');
-		if (!$(this).parents('.form-group').hasClass('has-error') && $(this).val()) {
-			$(this).parents('.ddm-field').addClass('jminput--complete');
-		} else {
-			$(this).parents('.ddm-field').removeClass('jminput--complete');
-		}
 	});
 
 	$('.jmrich--text-inner form input').on('focus', function(){
@@ -135,8 +139,6 @@ jQuery(document).ready(function(){
 	$('.jmrich--text-inner form input[type="checkbox"]').each(function(){
 		$(this).parent().append('<span></span>');
 	});
-
-	$('.portlet-forms.jmdot--digital-temp .form-builder-select-field').parents('.ddm-field').addClass('jmhide--label');;
 
 	$('.search__filters').parents('.col.col-lg-3.col-sm-3.col-3.col-md-3').parent().find('.col.col-lg-5.col-sm-5.col-5.col-md-5').removeClass('col-lg-5 col-sm-5 col-5 col-md-5').addClass('col-lg-7 col-sm-7 col-7 col-md-7');
 

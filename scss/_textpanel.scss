@@ -9,9 +9,9 @@
   padding: 20px 10px 20px 142px;
 }
 .text-panel_explore-icon {
-  float:right;
-  margin-top: -34px;
-  @include generateIcon(24px, 24px,"../images/new__jm__images/arrow_forward-white.svg");
+    float:right;
+    margin-top: -34px;
+    @include generateIcon(24px, 24px,"../images/new__jm__images/arrow_forward-white.svg");
 }
 .text-panel_title {
   text-align: left;

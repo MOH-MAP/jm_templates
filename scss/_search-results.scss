@@ -8,7 +8,9 @@
 		width: 100%;
 	}
 	.explore__heading {
+		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		margin-bottom: 10px;
 		margin-left: 25px;
 		@include generateFont($jmMediumFont, 32px, 45px, $jmDarkCharcoalColor);
@@ -62,6 +64,9 @@
 	}
 	/**media query for mobile **/
 	@media (min-width: 320px) and (max-width: 834px) {
+		.explore__filtericon{
+			display: block;
+		}
 		.explore__right {
 			width: 100%;
 		}
