@@ -1,10 +1,11 @@
 .jmpanelblock {
     margin-top: 20px;
     color: $jmWhiteColor;
+    padding: 90px 0 100px!important;
     .jmpanelblock__header{
         h1, h2, h3, h4, h5, h6{
             text-shadow: $jmTextShadow1;
-            margin: 0 0 10px;
+            margin: 0 0 40px;
             @include generateFont($jmMediumFont, 48px, 60px, $jmWhiteColor);
         }
     }

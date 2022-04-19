@@ -60,13 +60,26 @@
   }
 }
 .panels-hero-panels {
-    background: $jmEgyptianBlueColor;
-    .col-sm-12.col-md-4.hero-panels-panel {
-    	border-right: solid 1px $jmWhiteColor;
-    	&:last-child {
-    		border-right: 0;
-		}
-	}
+  background: $jmEgyptianBlueColor;
+  .col-sm-12.col-md-4.hero-panels-panel {
+      border-right: solid 1px $jmWhiteColor;
+      &:last-child {
+        border-right: 0;
+    }
+  }
+  .text-panel-matter {
+    position: static;
+    .container{
+      position: static;
+    }
+  }
+  .text-panel-link {
+    bottom: 20px;
+    right: 20px;
+  }
+  .jm-stock-price-portlet .stockprice__content{
+    padding: 20px 0;
+  }
 }
 @media (min-width: 540px) and (max-width: 834px) {
   .homehero__heading {

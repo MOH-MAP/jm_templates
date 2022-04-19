@@ -4,13 +4,15 @@
     width: 100%;
     position: relative;
     overflow: hidden;
+    background: $jmDarkCharcoalColorOpc5;
   }
   .breadcrumb {
     border-radius: 0;
-    margin-bottom: 0;
-    background: $jmDarkCharcoalColorOpc5;
+    background: transparent;
     flex-wrap: nowrap;
     padding: 0.75rem 78px !important;
+    max-width: $jmOverallContentMaxWidth;
+    margin: 0 auto;
   }
   .breadcrumb-item {
 	+ {

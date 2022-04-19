@@ -16,7 +16,7 @@
                 <h2 class="jmvideotempl__slogan-text"><span>${Summary.getData()}</span></h2>
                 <button class="btn btn-info btn-lg modalbutton jmvideotempl__info-btn" data-toggle="modal"
                     data-target="#exampleModal">
-                    Play Video
+                    <span>Play Video</span>
                     <span class="jmvideo--play-icon"></span>
                 </button>
             </div>

@@ -8,6 +8,10 @@
         margin-bottom: 20px;
         @include generateFont($jmFont, 18px, 27px, $jmDarkCharcoalColor, 0.84);
     }
+    ul li{
+        @include generateFont($jmFont, 18px, 27px, $jmDarkCharcoalColor, 0.84);
+        list-style: disc;
+    }
     img{
         position: static;
     }
@@ -31,9 +35,17 @@
 	.product_hero__para {
         @include generateFont($jmFont, 18px, 28px);
 		p {
-			margin-bottom: 1rem;
+			margin-bottom: 20px;
+            @include generateFont($jmFont, 18px, 28px);
 		}
 	}
+    ul{
+        margin-left: 30px;
+        li{
+            @include generateFont($jmFont, 18px, 27px, $jmDarkCharcoalColor, 0.84);
+            list-style: disc;
+        }
+    } 
 	.jmcol-for-alignment {
 		padding-left: 15px;
 		padding-right: 15px;

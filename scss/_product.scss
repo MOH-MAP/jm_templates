@@ -10,7 +10,7 @@
   min-width: 380px;
   border: none;
   outline: none;
-  padding: 20px 10px 17px 24px;
+  padding: 20px 10px 20px 20px;
   justify-content: flex-end;
   text-align: right;
   text-transform: uppercase;
@@ -25,6 +25,10 @@
   .panel__btntext{
     width: 100%
   }
+}
+.jmpanels--hero-temp .panel__btn{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .product__cont {
   a, a:hover{

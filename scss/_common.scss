@@ -29,7 +29,8 @@ li {
 }
 .jmlogo__img {
   width: 250px;
-  margin-left: 75px;
+  height: auto;
+  margin: 25px 0;
 }
 .jmlogo__img--mb {
   display: none;
@@ -44,6 +45,8 @@ li {
     flex-wrap: wrap;
     margin-bottom: 0;
     padding: 0px 54px;
+    max-width: $jmOverallContentMaxWidth;
+    margin: 0 auto;
   }
 }
 .jmheader__navlist {

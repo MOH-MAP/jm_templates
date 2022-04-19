@@ -102,7 +102,7 @@ jQuery(document).ready(function(){
         );
     }, 3000);
 
-	$(".jmrich--text-inner p a span[class^='btn--style']").each(function(){
+	$(".jmrich--text-inner p a span[class^='btn--style'], .jmpromoblock p a span[class^='btn--style']").each(function(){
 		$(this).text($(this).text().replace('>>', ''));
 	});
 
@@ -156,5 +156,13 @@ jQuery(document).ready(function(){
 	$('.explore__filtericon').on('click', function(){
 		$('.explore__left').show();
 		scrollPos = window.pageYOffset;
+	});
+
+	jQuery(window).on('scroll', function(){
+	    if (jQuery(window).scrollTop() >= 82) {
+	    	jQuery('#banner').addClass('jmheader--fixed');
+	    } else {
+	    	jQuery('#banner').removeClass('jmheader--fixed');
+	    }
 	});
 });

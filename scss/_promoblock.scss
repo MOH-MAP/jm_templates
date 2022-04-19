@@ -83,12 +83,12 @@
 		}
 	}
   a{
-    [class^='btn--style'] {
+    span[class^='btn--style']{
       background-color: $jmEgyptianBlueColor;
       min-width: 380px;
       border: none;
       outline: none;
-      padding: 20px 10px 17px 24px;
+      padding: 20px 45px 20px 20px;
       justify-content: flex-end;
       text-align: right;
       text-transform: uppercase;
@@ -96,6 +96,17 @@
       text-decoration: none !important;
       @include generateFont($jmMediumFont, 18px, 22px, $jmWhiteColor!important);
       display: inline-flex;
+      position: relative;
+      &::after{
+        position: absolute;
+        background: url("../images/new__jm__images/arrow_forward-white.svg") 0 0
+          no-repeat transparent;
+        width: 24px;
+        height: 24px;
+        right: 10px;
+        top: calc(50% - 12px);
+        content: "";
+      }
       &:hover {
         text-decoration: none;
         color: $jmWhiteColor;
@@ -111,24 +122,33 @@
       }
     }
   }
-  span{
-    &[class^='btn--style'] {
-      background-color: $jmEgyptianBlueColor;
-      min-width: 380px;
-      border: none;
-      outline: none;
-      padding: 20px 10px 17px 24px;
-      justify-content: flex-end;
-      text-align: right;
-      text-transform: uppercase;
-      margin-bottom: 30px;
-      text-decoration: none !important;
-      @include generateFont($jmMediumFont, 18px, 22px, $jmWhiteColor!important);
-      display: inline-flex;
-      &:hover {
-        text-decoration: none;
-        color: $jmWhiteColor;
-      }
+  span[class^='btn--style']{
+    background-color: $jmEgyptianBlueColor;
+    min-width: 380px;
+    border: none;
+    outline: none;
+    padding: 20px 45px 20px 20px;
+    justify-content: flex-end;
+    text-align: right;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-decoration: none !important;
+    @include generateFont($jmMediumFont, 18px, 22px, $jmWhiteColor!important);
+    display: inline-flex;
+    position: relative;
+    &::after{
+      position: absolute;
+      background: url("../images/new__jm__images/arrow_forward-white.svg") 0 0
+        no-repeat transparent;
+      width: 24px;
+      height: 24px;
+      right: 10px;
+      top: calc(50% - 12px);
+      content: "";
+    }
+    &:hover {
+      text-decoration: none;
+      color: $jmWhiteColor;
     }
   }
   ul, li {
