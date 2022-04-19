@@ -1,0 +1,78 @@
+.jmarticlegrid {
+    margin-top: 60px;
+    .jmarticlegrid__heading{
+        @include generateFont($jmMediumFont, 36px, 46px, $jmDarkCharcoalColor);
+        margin-bottom: 60px;
+    }
+    .jmarticlegrid__list{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .jmarticlegrid__flex-item {
+        margin: 0 0 65px;
+        height: auto;
+        width: calc((100% - 60px) / 4);
+        .jmarticlegrid__thumbnail {
+            width: 100%;
+            >img {
+                width: 100%;
+                height: 240px;
+                object-fit: cover;
+            }
+        }
+    }
+    .jmarticlegrid__thumbnail-title {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        >.jmarticlegrid__jmarticlegrid__title-text, >.jmarticlegrid__jmarticlegrid__title-date {
+            text-align: left;
+            text-transform: uppercase;
+            @include generateFont($jmMediumFont, 14px, 28px, $jmDarkCharcoalColor);
+        }
+        >.jmarticlegrid__title-text {
+            margin-right: 10px;
+        }
+    }
+    .jmarticlegrid__caption-heading, .jmarticlegrid__caption-heading a {
+        text-align: left;
+        @include generateFont($jmMediumFont, 20px, 28px, $jmDarkCharcoalColor);
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    @media screen and (max-width: 834px) {
+        .jmarticlegrid__thumbnail {
+            margin: 0px;
+            padding: 0px;
+            width: auto;
+        }
+        .jmarticlegrid__thumbnail-title {
+            >.jmarticlegrid__jmarticlegrid__title-text, >.jmarticlegrid__jmarticlegrid__title-date {
+                font-size: 12px;
+            }
+        }
+        .jmarticlegrid__caption-heading, .jmarticlegrid__caption-heading a {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+    #loadmoreBtn {
+        padding: 20px;
+        background: $jmEgyptianBlueColor;
+        color: $jmWhiteColor;
+        margin: 0 auto;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    .cards {
+        .ctaCard {
+            background: $jmWhiteColor;
+            :nth-child(1n+9) {
+                display: none;
+            }
+        }
+    }    
+}
