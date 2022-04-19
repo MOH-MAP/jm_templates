@@ -229,8 +229,12 @@
     min-height: 1px;
     @include generatePadding(0.7rem, 0, 0.7rem, 0.5rem);
   }
+  .image-card-block__inner{
+    margin: 20px 0px;
+    padding: 10px 15px;
+  }
   .jmimage-card-block--header {
-    padding: 10px 0px 20px 0px;
+    padding: 10px 0px 10px 0px;
     @include generateFont($jmMediumFont, 24px, false, $jmDarkCharcoalColor);
   }
   .jmimg--cardblock--title {
@@ -344,6 +348,7 @@
   }
   .jmimg-card_block {
     height: auto;
+    margin: 10px 0px !important;
   }
 }
 @media (min-width: 320px) and (max-width: 767.98px){
