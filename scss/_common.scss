@@ -670,3 +670,12 @@ sub{
   font-size: 18px;
   font-family: $jmFont;
 }
+@media (min-width: 320px) and (max-width: 539px) {
+  .jmgeneral--hero {
+    margin-top: 35px;
+    .general_hero__heading{
+      @include generateFont($jmMediumFont, 30px, 60px, $jmDarkCharcoalColor);
+      padding-left: 20px;
+    }
+  }
+}
