@@ -243,7 +243,7 @@
     @include generateFont($jmFont, 12px, false, $jmDarkCharcoalColor);
   }
   .jmimg--cardblock--text {
-    padding-right: 30px;
+    padding-right: 10px;
     padding-bottom: 0px;
     width: 100%;
     right: 5px;
@@ -348,7 +348,7 @@
   }
   .jmimg-card_block {
     height: auto;
-    margin: 10px 0px !important;
+    margin: 15px 15px !important;
   }
 }
 @media (min-width: 320px) and (max-width: 767.98px){
