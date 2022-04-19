@@ -15,7 +15,7 @@
         }
     }
     .ddm-field{
-        padding: 0;
+        padding: 0!important;
     }
     .ddm-form-page-container{
         max-width: 700px;
@@ -35,9 +35,9 @@
 }
 .jmdot--digital-temp .ddm-form-basic-info .ddm-form-name,
 .form-entry .ddm-form-basic-info .ddm-form-name {
-    padding: 40px 0 0 0px;
+    padding: 40px 0 0 0px!important;
     text-align: left;
-    @include generateFont($jmMediumFont, 52px, 56px, $jmDarkCharcoalColor, 1, 300);
+    @include generateFont($jmMediumFont!important, 52px!important, 56px!important, $jmDarkCharcoalColor!important, 1, 300!important);
 }
 .jmdot--digital-temp label.ddm-label, .jmdot--digital-temp .item label.label {
     position: absolute;
@@ -110,9 +110,10 @@
 }
 .jmdot--digital-temp .lfr-ddm-form-page-description {
     text-align: left;
-    @include generateFont($jmFont, 18px, 24px, $jmDarkCharcoalColor, 0.8);
-    margin-bottom: 40px;
-    margin-top: 0;
+    @include generateFont($jmFont!important, 18px!important, 24px!important, $jmDarkCharcoalColor!important, 0.8);
+    margin-bottom: 40px!important;
+    margin-top: 0!important;
+    padding-left: 0;
 }
 .jmdot--digital-temp {
     .custom-checkbox .custom-control-label::before {

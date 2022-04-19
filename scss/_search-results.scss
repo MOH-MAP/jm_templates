@@ -54,6 +54,7 @@
 	.explore__filtericon {
 		@include generateIcon(16px, 16px, "../images/new__jm__images/filter_icon.svg");
 		background-size: cover;
+		display: none;
 	}
 	.explore__link:hover {
 		text-decoration: none;

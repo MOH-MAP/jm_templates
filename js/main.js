@@ -51,6 +51,40 @@ jQuery(document).ready(function(){
 		}
 	});
 
+	jQuery('div.portlet-forms').addClass('jmdot--digital-temp');
+
+    function hideAddress(){
+        jQuery('.portlet-forms label').each(function(){
+           if (jQuery(this).text() === 'AddressId') {
+               jQuery(this).parents('.form-group').hide();
+                    if (jQuery(this).parents('.form-group').is(':visible')) 
+                    hideAddress();
+                }
+        });
+    }
+
+    jQuery('div.portlet-forms').addClass('jmdot--digital-temp');
+
+    function hideAddress(){
+        jQuery('.portlet-forms label').each(function(){
+           if (jQuery(this).text() === 'AddressId') {
+               jQuery(this).parents('.form-group').hide();
+                    if (jQuery(this).parents('.form-group').is(':visible')) 
+                    hideAddress();
+                }
+        });
+    }
+
+    setTimeout(function(){
+       	hideAddress();
+    }, 1000);
+
+    setTimeout(function () {
+        jQuery("a.select-arrow-down-container").replaceWith(
+          '<div class="select-chevron-down-container"></div>'
+        );
+    }, 3000);
+
 	$(".jmrich--text-inner p a span[class^='btn--style']").each(function(){
 		$(this).text($(this).text().replace('>>', ''));
 	});
