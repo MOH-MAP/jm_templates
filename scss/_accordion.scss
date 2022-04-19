@@ -27,12 +27,20 @@
   .jmaccrdn__answer-sec {
     padding: 40px 40px;
     p, * {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       @include generateFont($jmFont, 18px, 27px, $jmDarkCharcoalColor);
+      strong{
+        font-weight: bold !important;
+      }
     }
     a, a:hover{
       @include generateFont($jmFont, 18px, 27px, $jmEgyptianBlueColor);
     }
+    ul li{
+      list-style-type: initial;
+      margin-left: 20px;
+    }
+   
   }
   .jmaccrdn__arrow {
     @include generateIcon(24px, 24px, "../images/new__jm__images/jm__accrdn_arrow_blue.svg");
