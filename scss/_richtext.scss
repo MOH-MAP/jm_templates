@@ -1,5 +1,15 @@
 .jmrich--text-inner {
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2, h3{
+      strong{
+		@include generateFont($jmMediumFont!important, 34px, false, $jmEgyptianBlueColor);
+		font-weight: normal;
+		span{
+			@include generateFont($jmMediumFont!important, 34px, false, $jmEgyptianBlueColor);
+		font-weight: normal;
+		}
+	  }
+	} 
+	h4, h5, h6 {
 		margin-bottom: 20px !important;
 		@include generateFont($jmMediumFont, 34px, false, $jmEgyptianBlueColor);
 		span{
