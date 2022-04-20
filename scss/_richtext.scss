@@ -15,6 +15,12 @@
 	p {
 		padding-bottom: 10px !important;
 		@include generateFont($jmFont, 18px, 25px, $jmDarkCharcoalColor);
+		strong{
+			@include generateFont($jmMediumFont, 18px, 25px, $jmDarkCharcoalColor);
+			span{
+				font-family: $jmMediumFont;
+			}
+		}
 		a {
 			color: $jmEgyptianBlueColor!important;
 			text-decoration: revert;
