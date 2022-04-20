@@ -29,8 +29,8 @@
         object-fit: cover;
     }
     .product_hero__heading{
-        margin-bottom: 40px;
-        @include generateFont($jmMediumFont, 36px, 40px, $jmDarkCharcoalColor);
+        margin-bottom: 20px;
+        @include generateFont($jmMediumFont, 52px, 40px, $jmDarkCharcoalColor);
     }
 	.product_hero__para {
         @include generateFont($jmFont, 18px, 28px);
@@ -42,7 +42,7 @@
     ul{
         margin-left: 30px;
         li{
-            @include generateFont($jmFont, 18px, 27px, $jmDarkCharcoalColor, 0.84);
+            @include generateFont($jmFont, 18px, 40px, $jmDarkCharcoalColor, 0.84);
             list-style: disc;
         }
     } 
