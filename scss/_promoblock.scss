@@ -80,6 +80,9 @@
 		}
 		p {
 			@include generateFont($jmFont, 18px, 27px, $jmDarkCharcoalColor);
+      sub{
+        @include generateFont($jmFont, 14px, 27px, $jmDarkCharcoalColor);
+      }
 		}
 	}
   a{
@@ -155,6 +158,7 @@
     font-family: $jmFont;
     font-size: 18px;
     list-style: disc;
+    margin-left: 10px;
   }
 }
 /** innovating styling : end***/
