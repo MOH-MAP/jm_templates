@@ -28,7 +28,7 @@
 		strong{
 			@include generateFont($jmMediumFont, 18px, 25px, $jmDarkCharcoalColor);
 			span{
-				font-weight: $jmMediumFont;
+				font-family: $jmMediumFont;
 			}
 		}
 		a {
