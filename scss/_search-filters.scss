@@ -73,7 +73,7 @@
 		margin-left: 35px;
    		margin-bottom: 0;
 		word-break: break-all;
-		@include generateFont($jmMediumFont, 16px, 26px, $jmDarkGrayColor);
+		@include generateFont($jmMediumFont, 16px, 26px, $jmDarkGrayColor!important);
 	}
 	.jmicon {
 		width: 24px;
@@ -94,7 +94,7 @@
 			transparent;
 	}
 	.explore__checkbox:checked + label + label {
-		// color: $jmEgyptianBlueColor;
+		color: $jmEgyptianBlueColor;
 	}
 	.explore__arrowicon {
 		@include generateIcon(24px, 24px, "../images/new__jm__images/arrow_downward.svg");
