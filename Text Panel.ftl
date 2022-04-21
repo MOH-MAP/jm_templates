@@ -9,6 +9,7 @@
         <#if (Body.getData())?? && Body.getData() !="">
             <div class="text-panel-matter col">
                 <div class="container">
+                 <a href="#" class="jmtext-panel-tag"></a>
                     <#if (Title.getData())??>
                         <div class="text-panel-title">${Title.getData()}</div>
                     </#if>

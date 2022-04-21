@@ -5,6 +5,11 @@
     color: $jmWhiteColor;
     padding: 20px 0 20px;
   }
+  .jmtext-panel-tag {
+    position: absolute;
+    padding: 73px 170px;
+    margin-top: -20px;
+}
   .text-panel-link {
     float: right;
     @include generatePosAbs(auto, auto, 37px, 40px);
