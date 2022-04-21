@@ -14,6 +14,16 @@
       @include linkNHover;
     }
   }
+  p{
+    a{
+      text-decoration: revert;
+      color:$jmEgyptianBlueColor;
+      &:hover {
+        text-decoration: revert;
+        color:$jmEgyptianBlueColor;
+      }
+    }
+  }
 }
 .hero-links a {
   @include linkNHover;
