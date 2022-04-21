@@ -15,12 +15,14 @@
     }
   }
   p{
-    a{
+    a:not([class]){
       text-decoration: revert;
       color:$jmEgyptianBlueColor;
+      background: transparent;
       &:hover {
         text-decoration: revert;
         color:$jmEgyptianBlueColor;
+        background: transparent;
       }
     }
   }
