@@ -674,6 +674,12 @@ sub{
   font-size: 18px;
   font-family: $jmFont;
 }
+.jmdot--digital-temp .btn.btn-cancel.btn-secondary{
+  padding: 20px 40px;
+  @include generateFont($jmMediumFont, 18px, 22px, $jmWhiteColor);
+  border-radius: 0;
+  margin-right: 20px;
+}
 @media (min-width: 320px) and (max-width: 539px) {
   .jmgeneral--hero {
     margin-top: 35px;

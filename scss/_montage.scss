@@ -1,8 +1,13 @@
 .card__title{
     text-align: left;
-    margin-bottom: 40px;
-    padding-top: 60px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
     @include generateFont($jmMediumFont, 40px, 48px, $jmDarkCharcoalColor);
+}
+.card__summary{
+    @include generateFont($jmFont, 18px, 25px, $jmDarkCharcoalColor);
+    width: 100%;
 }
 .categories__main{
     display: grid;

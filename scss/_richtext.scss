@@ -23,7 +23,7 @@
 		}
 	}
 	p {
-		padding-bottom: 10px !important;
+		margin-bottom: 10px !important;
 		@include generateFont($jmFont, 18px, 25px, $jmDarkCharcoalColor);
 		strong{
 			@include generateFont($jmMediumFont, 18px, 25px, $jmDarkCharcoalColor);

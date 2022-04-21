@@ -42,8 +42,9 @@
     ul{
         margin-left: 30px;
         li{
-            @include generateFont($jmFont, 18px, 40px, $jmDarkCharcoalColor, 0.84);
+            @include generateFont($jmFont, 18px, 27px, $jmDarkCharcoalColor, 0.84);
             list-style: disc;
+            margin-bottom: 20px;
         }
     } 
 	.jmcol-for-alignment {
