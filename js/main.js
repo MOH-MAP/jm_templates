@@ -165,4 +165,11 @@ jQuery(document).ready(function(){
 	    	jQuery('#banner').removeClass('jmheader--fixed');
 	    }
 	});
+	
+	$('.jmheader__navlist').each(function(){
+	    var menuText = $(this).find('.header__menu span').text().trim();
+	    if(menuText === 'About us' || menuText === 'Science and innovation' || menuText === 'Sustainability' || menuText === 'Investors' || menuText === 'Careers' || menuText === 'Media') {
+	        $(this).addClass('jmchildmenu--listsnormal');        
+	    }
+	});
 });

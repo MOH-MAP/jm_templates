@@ -57,7 +57,7 @@
         <div class="hero-panels text-white">
             <div class="container">
                 <div class="row no-gutters">
-                     <#if Panels.getSiblings()?size == 1>
+                    <#if Panels.getSiblings()?size == 1>
                         <#assign colClass = "col-12" />
                     <#elseif Panels.getSiblings()?size == 2>
                         <#assign colClass = "col-sm-12 col-md-6" />

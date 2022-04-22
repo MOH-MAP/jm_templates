@@ -32,6 +32,75 @@
     a, a:hover{
       @include generateFont($jmFont, 18px, 27px, $jmEgyptianBlueColor);
     }
+    a{
+      span[class^='btn--style']{
+        background-color: $jmEgyptianBlueColor;
+        min-width: 380px;
+        border: none;
+        outline: none;
+        padding: 20px 45px 20px 20px;
+        justify-content: flex-end;
+        text-align: right;
+        text-transform: uppercase;
+        margin-bottom: 0px;
+        text-decoration: none !important;
+        @include generateFont($jmMediumFont, 18px, 22px, $jmWhiteColor!important);
+        display: inline-flex;
+        position: relative;
+        &::after{
+          position: absolute;
+          background: url("../images/new__jm__images/arrow_forward-white.svg") 0 0
+            no-repeat transparent;
+          width: 24px;
+          height: 24px;
+          right: 10px;
+          top: calc(50% - 12px);
+          content: "";
+        }
+        &:hover {
+          text-decoration: none;
+          color: $jmWhiteColor;
+        }
+      }
+      &:hover{
+        text-decoration: none;
+        [class^='btn--style'] {
+          &:hover {
+            text-decoration: none;
+            color: $jmWhiteColor;
+          }
+        }
+      }
+    }
+    span[class^='btn--style']{
+      background-color: $jmEgyptianBlueColor;
+      min-width: 380px;
+      border: none;
+      outline: none;
+      padding: 20px 45px 20px 20px;
+      justify-content: flex-end;
+      text-align: right;
+      text-transform: uppercase;
+      margin-bottom: 0px;
+      text-decoration: none !important;
+      @include generateFont($jmMediumFont, 18px, 22px, $jmWhiteColor!important);
+      display: inline-flex;
+      position: relative;
+      &::after{
+        position: absolute;
+        background: url("../images/new__jm__images/arrow_forward-white.svg") 0 0
+          no-repeat transparent;
+        width: 24px;
+        height: 24px;
+        right: 10px;
+        top: calc(50% - 12px);
+        content: "";
+      }
+      &:hover {
+        text-decoration: none;
+        color: $jmWhiteColor;
+      }
+    }
   }
   .jmaccrdn__arrow {
     @include generateIcon(24px, 24px, "../images/new__jm__images/jm__accrdn_arrow_blue.svg");

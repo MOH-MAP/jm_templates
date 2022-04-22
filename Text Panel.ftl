@@ -27,6 +27,7 @@
                         <#elseif Link_Title.Link_External.getData()?has_content>
                             <#assign linkHref=Link_Title.Link_External.getData() />
                         </#if>
+                        <a class="text-panel-full-link" href="${linkHref}"></a>
                         <div class="text-panel-link">
                             <a href="${linkHref}">
                                 <span class="arrow__forward" />

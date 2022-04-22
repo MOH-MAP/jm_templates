@@ -9,12 +9,12 @@
         <#if Panels?? && Panels.getSiblings()?? && Panels.getSiblings()?has_content>
             <div class="row jmpanelblock__row">
                 <#list Panels.getSiblings() as cur_Panels>
-                <#assign siblingSize = Panels.getSiblings()?size />
-                <#if siblingSize === 1>
-                    <div class="col-sm-12 col-md-12">
-                <#else>
-                    <div class="col-sm-12 col-md-6">
-                </#if>    
+                    <#if Panels.getSiblings()?size == 1>
+                        <#assign colClass = "col-sm-12 col-md-12" />
+                    <#else>
+                        <#assign colClass = "col-sm-12 col-md-6" />
+                    </#if>
+                    <div class="${colClass}">  
                         <#assign
                             webContentData = jsonFactoryUtil.createJSONObject(cur_Panels.getData())
                         />

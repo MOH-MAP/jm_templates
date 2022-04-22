@@ -1,4 +1,6 @@
 #breadcrumbs {
+  position: relative;
+  z-index: 2;
   .portlet-body nav {
     z-index: 1;
     width: 100%;
