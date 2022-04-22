@@ -397,6 +397,10 @@ iframe {
 .carousel-control-prev-icon {
   background-image: url("../images/new__jm__images/casestudy-left-arrow.svg");
 }
+.carousel-control-next {
+  right: 0;
+  left: auto;
+}
 .no-heading {
   opacity: 0;
 }

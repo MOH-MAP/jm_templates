@@ -46,7 +46,7 @@
 		align-items: center;
 		justify-content: space-between;
 		cursor: pointer;
-		@include generateFont($jmBoldFont, 20px, 32px, $jmGraniteGrayColor);
+		@include generateFont($jmMediumFont, 20px, 32px, $jmGraniteGrayColor);
 		margin-bottom: 0;
 	}
 	.explore__checkbox {
