@@ -25,7 +25,7 @@
 }
 .jm-rt-image-block {
 	@include generateBgSizePos;
-	min-height: 690px;
+	min-height: 100%;
 	width: 100%;
 	position: relative;
 	overflow: hidden;
