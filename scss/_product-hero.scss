@@ -27,6 +27,9 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        &.product--heroimgspecification{
+            min-height: 690px;
+        }
     }
     .product_hero__heading{
         margin-bottom: 20px;
@@ -47,6 +50,9 @@
             margin-bottom: 20px;
         }
     } 
+    .specifications--in ul li{
+        color: $jmWhiteColor;
+    }
 	.jmcol-for-alignment {
 		padding-left: 15px;
 		padding-right: 15px;
