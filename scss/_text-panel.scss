@@ -8,6 +8,12 @@
   .text-panel-link {
     float: right;
     @include generatePosAbs(auto, auto, 37px, 40px);
+    a{
+      .arrow__forward{
+        margin-top: 0px;
+        margin-bottom: -15px !important;
+      }
+    }
   }
   .text-panel-title {
     margin-bottom: 10px;
