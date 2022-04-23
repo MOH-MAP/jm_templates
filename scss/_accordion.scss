@@ -31,6 +31,9 @@
       strong{
         font-weight: bold !important;
       }
+      img{
+        overflow: overlay;
+      }
     }
     a, a:hover{
       @include generateFont($jmFont, 18px, 27px, $jmEgyptianBlueColor);
