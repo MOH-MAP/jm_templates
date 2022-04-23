@@ -282,7 +282,8 @@
     @include generateFont($jmMediumFont, 17px, 22px, $jmEgyptianBlueColor);
   }
   .jmimg--main--cardblock {
-    border-bottom: 10px solid $jmEgyptianBlueColor;
+    border-bottom: 8px solid $jmEgyptianBlueColor !important;
+    margin:15px 0px;
   }
 }
 .jmimg--cardblock--longcol {
@@ -337,8 +338,9 @@
   .jmimg--cardblock--longcol {
     .jmimg--cardblock-img.rounded-0 {
       height: 100%;
-      width: 100%;
+      width: 86% !important;
       object-fit: cover;
+      float: right;
     }
   }
   .jmimg--cardblock--body {
@@ -348,7 +350,7 @@
   }
   .jmimg-card_block {
     height: auto;
-    margin: 15px 15px !important;
+    margin: 15px 0px !important;
   }
 }
 @media (min-width: 320px) and (max-width: 767.98px){
