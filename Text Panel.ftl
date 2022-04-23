@@ -9,13 +9,14 @@
         <#if (Body.getData())?? && Body.getData() !="">
             <div class="text-panel-matter col">
                 <div class="container">
+                 <a href="${linkHref}">
                     <#if (Title.getData())??>
                         <div class="text-panel-title">${Title.getData()}</div>
                     </#if>
                     <#if (Body.getData())??>
                         <div class="text-panel-body">${Body.getData()}</div>
                     </#if>
-
+                    
                     <#if Link_Title??&& Link_Title.getData()?has_content>
                         <#assign linkHref="#" />
                         <#if Link_Title.Link_Internal?? && Link_Title.Link_Internal.getFriendlyUrl()?has_content>
@@ -27,6 +28,7 @@
                         <#elseif Link_Title.Link_External.getData()?has_content>
                             <#assign linkHref=Link_Title.Link_External.getData() />
                         </#if>
+                 </a>
                         <a class="text-panel-full-link" href="${linkHref}"></a>
                         <div class="text-panel-link">
                             <a href="${linkHref}">
