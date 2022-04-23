@@ -184,4 +184,13 @@ jQuery(document).ready(function(){
 			});
 		} 
 	});
+
+	$('.tabbed-article-heading').parents('.col.col-lg-6.col-sm-6.col-6.col-md-6').parent().addClass('container jmtabbed');
+	$('.tabbed-article-heading').parents('.col.col-lg-6.col-sm-6.col-6.col-md-6')
+	.removeClass('col col-lg-6 col-sm-6 col-6 col-md-6')
+	.addClass('col col-lg-9 col-sm-9 col-9 col-md-9');
+	$('.jmtabbed .panel-collapse.collapse').addClass('show');
+	$('.jmtabbed').find('.col.col-lg-6.col-sm-6.col-6.col-md-6')
+	.removeClass('col col-lg-6 col-sm-6 col-6 col-md-6')
+	.addClass('col col-lg-3 col-sm-3 col-3 col-md-3');
 });
