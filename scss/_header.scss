@@ -162,7 +162,7 @@
 	background: $jmWhiteColor!important;
 	box-shadow: $jmBoxShadow1!important;
 	position: absolute;
-	z-index: 2!important;
+	z-index: 4!important;
 	right: 0;
 	display: none;
 	padding: 40px!important;
@@ -221,6 +221,12 @@ header#banner .container-fluid.container-fluid-max-xl{
 @media (min-width: 320px) and (max-width: 834px){
 	.show--mobile{
 	    display: block;
+	}
+	.jmheader__langcont {
+		right: 0;
+		padding: 25px!important;
+		min-width: 250px;
+		top: 60px!important;
 	}
 	.jmheader__logocont{
 	    width: 52px;
