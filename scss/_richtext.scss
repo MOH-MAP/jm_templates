@@ -353,6 +353,10 @@
 			a {
 				color: $jmEgyptianBlueColor;
 				text-decoration: revert;
+				span[class^='btn--style']{
+					background-color: $jmEgyptianBlueColor;
+					min-width: 100% !important;
+				}
 			}
 		}
 		ul {
