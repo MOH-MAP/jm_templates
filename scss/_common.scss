@@ -39,6 +39,9 @@ li {
 .jmheader__navlinks {
   background-color: $jmEgyptianBlueColor;
 }
+.jmheader__navlinks{
+  position: relative;
+}
 .jmheader__navbar {
   .jmheader__navlinks {
     display: flex;
@@ -70,17 +73,18 @@ li {
     color: $jmCrayolaColor;
   }
 }
-
 .jmheader__navlist a.header__menu:hover {
   color: $jmWhiteColor !important;
 }
-.jmheader__navlist .child-header:nth-last-child(1),
-.child-header:nth-last-child(2),
-.child-header:nth-last-child(3),
-.child-header:nth-last-child(4) {
+// .jmheader__navlist .child-header:nth-last-child(1),
+// .child-header:nth-last-child(2),
+// .child-header:nth-last-child(3),
+// .child-header:nth-last-child(4) {
+//   border-bottom: 0 !important;
+// }
+.bor-bot--0{
   border-bottom: 0 !important;
 }
-
 .jmheader__navlist:hover ul.child-menu {
   display: flex;
   width: calc(100% - 216px);
@@ -114,7 +118,6 @@ ul.child-menu {
   display: none;
   grid-template-columns: repeat(4, 1fr);
   position: absolute;
-  margin-top: 20px;
   left: 0;
   width: 100%;
   background-color: $jmWhiteColor;
@@ -158,12 +161,14 @@ a.sub-child {
       opacity: 1;
     }
   }
-
   .child-header {
     border-bottom: 1px solid $jmBlackColorOpc12;
     opacity: 1;
     flex: 0 0 25%;
-    padding: 30px 0px;
+    padding: 0 0 30px;
+  }
+  li div:nth-child(n+7) {
+    display: none;
   }
   .jmlfry__btn {
     background-color: $jmEgyptianBlueColor;
@@ -181,7 +186,9 @@ a.sub-child {
   .jmprdt__btn {
     display: flex;
     align-items: flex-end;
-    margin-bottom: 14px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-top: 30px;
   }
 }
 .contact__container {
@@ -673,6 +680,8 @@ sub{
   max-height: calc(100vh - 200px);
   overflow: auto;
   min-height: 300px;
+  top: 72px;
+  margin-top: 0;
 }
 .jm-richtext__subtag {
   font-size: 18px;

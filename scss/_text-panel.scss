@@ -24,6 +24,7 @@
       margin-top: 10px;
       @include generateFont($jmFont, 18px, 27px);
       width: calc(100% - 10px);
+      margin-bottom: 10px;
       span[style^='font-size: 48px']{
         line-height: 48px;
       }

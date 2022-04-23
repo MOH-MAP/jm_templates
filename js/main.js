@@ -172,4 +172,16 @@ jQuery(document).ready(function(){
 	        $(this).addClass('jmchildmenu--listsnormal');        
 	    }
 	});
+
+	$('.jmheader__navlist').each(function(){
+		if (!$(this).hasClass('jmchildmenu--listsnormal') && $(this).find('.child-header').length%4 !== 0) {
+			var rowCount = parseInt($(this).find('.child-header').length/4);
+			var addClassStart = rowCount * 4;
+			$(this).find('.child-header').each(function(i){
+				if (i >= addClassStart) {
+					$(this).addClass('bor-bot--0');
+				}
+			});
+		} 
+	});
 });

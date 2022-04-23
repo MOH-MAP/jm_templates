@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <#assign imgPresent = ((ImageLarge.getData())?? && ImageLarge.getData() != "")>
-            <div class="${(imgPresent)?then('col-md-7','col-md-12')}">
+            <div class="${(imgPresent)?then('col-md-6','col-md-12')}">
                 <#if (Title.getData())??>
                     <h1 class="product_hero__heading">
                         ${Title.getData()}
@@ -66,6 +66,7 @@
                 </div>
             </div>
             <#if imgPresent >
+                <div class="col-md-1"></div>
 	            <div class="col-md-5">
                     <#if SpecificationTitle.getData()?has_content>
 					    <img class="product_hero_img product--heroimgspecification" alt="${ImageLarge.getAttribute("alt")!}" data-fileentryid="${ImageLarge.getAttribute("fileEntryId")!}" src="${ImageLarge.getData()}" />
