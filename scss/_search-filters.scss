@@ -189,15 +189,25 @@
 		}
 		.explore__expanded.explore__applications {
 			background: $jmWhiteColor;
+			overflow: hidden;
 		}
 		.explore__checkboxlabel {
 			top: 50%;
 			margin-top: -12px;
+		}
+		.search--sort.search__filters .explore__left{
+			display: none;
 		}
 	}
 	@media (min-width: 835px) {
 		.explore__left {
 			display: block !important;
 		}
+	}
+}
+.search--locations.search__filters {
+	margin: 40px auto 0;
+	.explore__applications:last-child {
+		border-bottom: solid 1px $jmBlackColorOpc1;	
 	}
 }

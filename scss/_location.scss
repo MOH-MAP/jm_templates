@@ -1,0 +1,41 @@
+.explore__results{
+    border-top: 1px solid $jmBlackColorOpc1;
+    .jmaccrdn__title p{
+        @include generateFont($jmMediumFont, 24px, 32px, $jmGraniteGrayColor);
+        margin-bottom: 0;
+        width: 100%;
+        border-bottom: 1px solid $jmBlackColorOpc1;
+        padding: 25px 40px;
+        display: flex;
+        justify-content: space-between;
+        .jmaccrdn__arrow {
+            @include generateIcon(24px, 24px, "../images/new__jm__images/jm__accrdn_arrow_blue.svg");
+            margin-left: 8px;
+            margin-top: 7px;
+        }
+    }
+    .jmaccrdn__answer-sec{
+        background: $jmAntiFlashWhiteColor;
+        padding: 45px 40px 0;
+        border-bottom: 1px solid $jmBlackColorOpc1;
+        .country-locations .col-md-4{
+            margin-bottom: 25px;
+            &:nth-child(n+4){
+                margin-top: 25px;
+            }
+            div{
+                @include generateFont($jmFont, 18px, 22px, $jmDarkCharcoalColor);
+                &:first-child{
+                    @include generateFont($jmMediumFont, 18px, 22px, $jmDarkCharcoalColor);
+                }
+            }
+        }
+        .map-link{
+            margin-top: 15px;
+        }
+        a.map-link{
+            @include generateFont($jmMediumFont, 18px, 22px, $jmEgyptianBlueColor);
+            text-decoration: underline;
+        }
+    }
+}
