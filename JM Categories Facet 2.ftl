@@ -102,14 +102,21 @@ $( document ).ready(function() {
             } else {
                 $(this).parents('.explore__applications').removeClass('explore__expanded');
             }
-        } else if (!$(this).parents('.explore__applications').hasClass('explore__expanded')) {
+        } else if ($(this).parents('.explore__applications').hasClass('explore__expanded')) {
 			$('.explore__applications').removeClass('explore__expanded');
 			$(this).parents('.explore__applications').addClass('explore__expanded');
 		}
 	});
 
+    $(window).on('resize', function(){
+        if (window.innerWidth <= 834) {
+            $('.search__filters.search--locations .explore__categoryfilter').first().find('.explore__apptext').click();
+        }
+    });
+
 	$('.explore__filtericon').on('click', function(){
 		$('.search--locations .explore__left').show();
+        $('.search__filters.search--locations .explore__categoryfilter').first().find('.explore__apptext').click();
 		scrollPos = window.pageYOffset;
 	});
 
