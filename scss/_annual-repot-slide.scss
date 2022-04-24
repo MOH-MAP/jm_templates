@@ -5,6 +5,7 @@
     width: 100%;
     min-height: 477px;
     position: relative;
+    z-index: 0;
   }
   .jmannual__video{
     position: absolute;
@@ -12,6 +13,8 @@
     height: 100%;
     left: 0;
     top: 0;
+    object-fit: fill;
+    z-index: -1;
   }
   .panel__heading {
     text-shadow: $jmTextShadow1;

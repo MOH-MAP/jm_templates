@@ -88,10 +88,12 @@
 	.explore__checkboxlabel {
 		@include generateIcon(24px, 24px, "../images/new__jm__images/checkbox_icon.png");
 		@include generatePosAbs(0, 2px);
+		background-size: cover;
 	}
 	.explore__checkbox:checked + label {
 		background: url(../images/new__jm__images/checkbox_selected_icon.png) no-repeat center center
 			transparent;
+		background-size: cover;
 	}
 	.explore__checkbox:checked + label + label {
 		color: $jmEgyptianBlueColor;
@@ -196,7 +198,7 @@
 			margin-top: -12px;
 		}
 		.search--sort.search__filters .explore__left{
-			display: none;
+			display: none!important;
 		}
 	}
 	@media (min-width: 835px) {

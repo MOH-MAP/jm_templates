@@ -1,5 +1,10 @@
 .search--locresults{
-    border-top: 1px solid $jmBlackColorOpc1;
+	.explore__heading {
+    	border-bottom: 1px solid $jmBlackColorOpc1;
+    	margin-bottom: 0;
+    	padding-bottom: 5px;
+    	margin-left: 0;
+    }
     .jmaccrdn__title p{
         @include generateFont($jmMediumFont, 24px, 32px, $jmGraniteGrayColor);
         margin-bottom: 0;
@@ -37,5 +42,11 @@
             @include generateFont($jmMediumFont, 18px, 22px, $jmEgyptianBlueColor);
             text-decoration: underline;
         }
+    }
+}
+.search--sort{
+	.radio label{
+    	display: flex;
+    	align-items: center;
     }
 }
