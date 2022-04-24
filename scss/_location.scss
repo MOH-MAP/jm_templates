@@ -1,4 +1,4 @@
-.explore__results{
+.search--locresults{
     border-top: 1px solid $jmBlackColorOpc1;
     .jmaccrdn__title p{
         @include generateFont($jmMediumFont, 24px, 32px, $jmGraniteGrayColor);
@@ -25,15 +25,15 @@
             }
             div{
                 @include generateFont($jmFont, 18px, 22px, $jmDarkCharcoalColor);
-                &:first-child{
+                &.jmcountry-title{
                     @include generateFont($jmMediumFont, 18px, 22px, $jmDarkCharcoalColor);
                 }
             }
         }
-        .map-link{
+        .map-link-cont{
             margin-top: 15px;
         }
-        a.map-link{
+        .map-link{
             @include generateFont($jmMediumFont, 18px, 22px, $jmEgyptianBlueColor);
             text-decoration: underline;
         }
