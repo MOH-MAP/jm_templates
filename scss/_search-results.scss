@@ -64,7 +64,6 @@
 	}
 	.explore__download-list-cont{
 		display: flex;
-		justify-content: space-between;
 		.explore__download-list {
 			background: $jmEgyptianBlueColor;
 			padding: 15px 20px;
@@ -72,6 +71,11 @@
 			width: calc((100% - 40px) / 3);
 			margin-bottom: 20px;
 			cursor: pointer;
+			margin-right: 20px;
+			position: relative;
+			&:nth-child(3n){
+				margin-right: 0;
+			}
 			.download-title{
 				@include generateFont($jmMediumFont, 20px, 32px, $jmWhiteColor);
 				margin-bottom: 20px;
@@ -79,10 +83,26 @@
 			.download-detail{
 				@include generateFont($jmFont, 16px, 26px, $jmWhiteColor);
 			}
+			.download-link {
+				position: absolute;
+				left: 0;
+    			top: 0;
+    			width: 100%;
+    			height: 100%;
+			}
 		}
 	}
 	/**media query for mobile **/
 	@media (min-width: 320px) and (max-width: 834px) {
+		.explore__download-list-cont{
+			margin: 0 auto;
+			padding: 0px 0 0;
+			.explore__download-list {
+				width: 100%;
+				margin-left: 20px;
+				margin-right: 20px!important;
+			}
+		}
 		.explore__filtericon{
 			display: block;
 		}
