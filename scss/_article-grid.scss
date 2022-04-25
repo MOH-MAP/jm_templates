@@ -30,6 +30,7 @@
             text-align: left;
             text-transform: uppercase;
             @include generateFont($jmMediumFont, 14px, 28px, $jmDarkCharcoalColor);
+            display: block;
         }
         >.jmarticlegrid__title-text {
             margin-right: 10px;
