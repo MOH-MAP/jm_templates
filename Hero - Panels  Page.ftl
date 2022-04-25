@@ -7,6 +7,7 @@
 	        background-image: url("${ImageLarge.getData()}");
 	        background-position: center;
 	        background-size: cover;
+            background-attachment: fixed;
 	    }
 	</style>
 </#if>

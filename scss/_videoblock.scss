@@ -1,10 +1,16 @@
 .jmvideotempl {
   margin: 70px 0;
   position: relative;
+  @media (max-width: 768px) {
+    margin: 30px 0;
+  }
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    @media (max-width: 768px) {
+      min-height: 600px;
+    }
   }
 }
 .jmvideotempl__content {
@@ -186,6 +192,20 @@
     }
   }
   @media (max-width: 768px) {
+    width: calc(100% - 40px);
+    left: 20px;
+    .jmvideotempl__innercont{
+      top: 70px;
+      margin-top: 0;
+    }
+    .jmvideotempl__heading {
+      @include generateFont($jmMediumFont, 18px, 28px, $jmWhiteColor, 0.8);
+      margin-bottom: 10px;
+    }
+    .jmvideotempl__slogan-text{
+      @include generateFont($jmFont, 32px, 40px, $jmWhiteColor);
+      margin-bottom: 80px;
+    }
     .modal-footer > .controls {
       width: 100%;
       margin-right: 4%;
@@ -231,7 +251,9 @@
       width: 100%;
     }
     .jmvideotempl__info-btn {
-      width: 80%;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
     }
     .jmvideotempl {
       img {

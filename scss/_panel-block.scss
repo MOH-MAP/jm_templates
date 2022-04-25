@@ -21,6 +21,9 @@
         padding: 0;
         .text-panel-matter{
             background: transparent;
+            @media (min-width: 320px) and (max-width: 834px) {
+                padding: 20px 0 20px 20px;
+            }
         }
     }
     .text-panel-img {

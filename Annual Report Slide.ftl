@@ -96,6 +96,7 @@
 <style>
     #annual-report-slide-${namespace} {
         background-image: url("${ImageLarge.getData()}");
+        background-attachment: fixed;
     }
 </style>
 </#if>

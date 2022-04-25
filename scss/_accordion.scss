@@ -37,7 +37,13 @@
       text-decoration:revert;
       &:hover{
         @include generateFont($jmFont, 18px, 27px, $jmEgyptianBlueColor);
-      text-decoration:revert;
+        text-decoration:revert;
+      }
+    }
+    td a{
+      text-decoration: underline;
+      &:hover{
+        text-decoration: underline;
       }
     }
     ul li{

@@ -295,4 +295,7 @@
       margin-left: -0.5rem;
     }
   }
+  span[class^='btn--style']{
+    min-width: 100%!important;
+  }
 }
