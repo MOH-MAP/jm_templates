@@ -1,0 +1,97 @@
+#dvCSV{
+    .dataTables_wrapper {
+        margin-bottom: 50px;
+        &:last-child{
+            margin-bottom: 0;
+            .dataTables_info, .dataTables_paginate{
+                margin-bottom: 0;
+            }
+        }
+        .dataTables_filter input{
+            border: 2px solid $jmEgyptianBlueColor;
+            border-radius: 0;
+            margin-left: 15px;
+            @include generateFont($jmFont, 18px, 25px, $jmDarkCharcoalColor);
+        }
+        label{
+            @include generateFont($jmFont, 18px, 25px, $jmDarkCharcoalColor);
+            margin: 0 15px;
+        }
+        .dataTables_length select{
+            border-radius: 0;
+            border: 2px solid $jmEgyptianBlueColor;
+            @include generateFont($jmFont, 18px, 25px, $jmDarkCharcoalColor);
+            margin: 0 10px;
+        }
+        .dataTables_paginate{
+            margin: 20px 15px 20px 0;
+            display: flex;
+            align-items: center;
+            .paginate_button{
+                @include generateFont($jmFont, 18px, 25px, $jmGraniteGrayColor, 0.9);
+                border: none;
+                border-radius: 0;
+                &:hover{
+                    background: $jmEgyptianBlueColor;
+                }
+                &.current{
+                    @include generateFont($jmMediumFont, 18px, 25px, $jmWhiteColor!important);
+                    background: $jmEgyptianBlueColor;
+                }
+                &.previous{
+                    background-image: url("data:image/svg+xml,%3Csvg id='keyboard_arrow_left-black-48dp' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath id='Path_5505' data-name='Path 5505' d='M0,0H24V24H0Z' fill='none'/%3E%3Cpath id='Path_5506' data-name='Path 5506' d='M15.41,16.59,10.83,12l4.58-4.59L14,6,8,12l6,6Z' fill='%231e22aa'/%3E%3C/svg%3E%0A");
+                    font-size: 0;
+                    width: 24px;
+                    height: 24px;
+                    background-size: cover;
+                    margin-right: 5px;
+                    &.disabled{
+                        background-image: url("data:image/svg+xml,%3Csvg id='keyboard_arrow_left-black-48dp' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath id='Path_5505' data-name='Path 5505' d='M0,0H24V24H0Z' fill='none'/%3E%3Cpath id='Path_5506' data-name='Path 5506' d='M15.41,16.59,10.83,12l4.58-4.59L14,6,8,12l6,6Z' fill='%23999'/%3E%3C/svg%3E%0A");
+                    }
+                    &:hover{
+                        background-color: transparent;
+                    }
+                }
+                &.next{
+                    background-image: url("data:image/svg+xml,%3Csvg id='keyboard_arrow_right-black-48dp' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath id='Path_5507' data-name='Path 5507' d='M0,0H24V24H0Z' fill='none'/%3E%3Cpath id='Path_5508' data-name='Path 5508' d='M8.59,16.59,13.17,12,8.59,7.41,10,6l6,6-6,6Z' fill='%231e22aa'/%3E%3C/svg%3E%0A");
+                    font-size: 0;
+                    width: 24px;
+                    height: 24px;
+                    background-size: cover;
+                    margin-left: 5px;
+                    &.disabled{
+                        background-image: url("data:image/svg+xml,%3Csvg id='keyboard_arrow_right-black-48dp' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath id='Path_5507' data-name='Path 5507' d='M0,0H24V24H0Z' fill='none'/%3E%3Cpath id='Path_5508' data-name='Path 5508' d='M8.59,16.59,13.17,12,8.59,7.41,10,6l6,6-6,6Z' fill='%23999'/%3E%3C/svg%3E%0A");
+                    }
+                    &:hover{
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+        .dataTables_info{
+            margin: 20px 0 20px 15px;
+            @include generateFont($jmFont, 18px, 25px, $jmDarkCharcoalColor);
+        }
+    }
+    table.dataTable {
+        &.no-footer{
+            border-bottom-color: $jmBlackColorOpc1;
+        }
+        thead th{
+            font-weight: normal;
+            @include generateFont($jmMediumFont, 18px, 25px, $jmDarkCharcoalColor);
+            border-bottom-color: $jmBlackColorOpc1;
+        }
+        td{
+            border-bottom-width: 0;
+            @include generateFont($jmFont, 18px, 25px, $jmGraniteGrayColor);
+            border-bottom-color: $jmBlackColorOpc1;
+        }
+    }
+    table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTable thead .sorting_desc, table.dataTable thead .sorting_asc_disabled, table.dataTable thead .sorting_desc_disabled{
+        background-position: right calc(100% - 12px);
+    }
+}
+.table-block-second{
+    width: 100%;
+}

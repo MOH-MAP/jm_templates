@@ -1,3 +1,23 @@
+@media (min-width: 1024px) {
+  .iframe-header {
+    margin-bottom: 60px;
+  }
+  .iframe-block__intro {
+    width: 80%;
+    display: block;
+  }
+  .iframe-container {
+    width: 75%;
+  }
+}
+@media (min-width: 2048px) {
+  .iframe-block__intro {
+    width: 65%;
+  }
+  .iframe-container {
+    width: 100%;
+  }
+}
 /**media query for mobile **/
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .btn__person {
@@ -126,7 +146,6 @@
     background-color: $jmOceanBlueColor;
     opacity: 1;
   }
-
   .contact__container {
     display: flex !important;
     margin: 5px auto;
@@ -267,5 +286,13 @@
   }
   .logo {
     margin-left: 20px;
+  }
+  .jmgeneral--hero {
+    margin-top: 35px;
+    .general_hero__heading{
+      @include generateFont($jmMediumFont, 30px, 60px, $jmDarkCharcoalColor);
+      padding-left: 20px;
+      margin-left: -0.5rem;
+    }
   }
 }

@@ -693,13 +693,24 @@ sub{
   border-radius: 0;
   margin-right: 20px;
 }
-@media (min-width: 320px) and (max-width: 539px) {
-  .jmgeneral--hero {
-    margin-top: 35px;
-    .general_hero__heading{
-      @include generateFont($jmMediumFont, 30px, 60px, $jmDarkCharcoalColor);
-      padding-left: 20px;
-      margin-left: -0.5rem;
-    }
-  }
+.iframe-header {
+  width: 100%;
+}
+.iframe-block__title {
+  @include generateFont($jmMediumFont, 24px, 32px, $jmDarkCharcoalColor);
+}
+.iframe-block__intro,
+.iframe-block__intro p {
+  @include generateFont($jmFont, 18px, 26px, $jmDarkCharcoalColor);
+}
+.iframe-block__intro {
+  width: 100%;
+  display: none;
+}
+.iframe-container {
+  width: 100%;
+  margin: 100px auto 0;
+}
+.iframe-container iframe {
+  width: 100%;
 }
