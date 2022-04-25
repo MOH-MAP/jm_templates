@@ -62,6 +62,25 @@
 		text-decoration: none;
 		opacity: 0.7;
 	}
+	.explore__download-list-cont{
+		display: flex;
+		justify-content: space-between;
+		.explore__download-list {
+			background: $jmEgyptianBlueColor;
+			padding: 15px 20px;
+			color: $jmWhiteColor;
+			width: calc((100% - 40px) / 3);
+			margin-bottom: 20px;
+			cursor: pointer;
+			.download-title{
+				@include generateFont($jmMediumFont, 20px, 32px, $jmWhiteColor);
+				margin-bottom: 20px;
+			}
+			.download-detail{
+				@include generateFont($jmFont, 16px, 26px, $jmWhiteColor);
+			}
+		}
+	}
 	/**media query for mobile **/
 	@media (min-width: 320px) and (max-width: 834px) {
 		.explore__filtericon{
