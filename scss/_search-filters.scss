@@ -85,14 +85,32 @@
 		background-size: contain;
 		margin-left: 10px;
 	}
-	.explore__checkboxlabel {
-		@include generateIcon(24px, 24px, "../images/new__jm__images/checkbox_icon.png");
+	.explore__checkboxlabel, .explore__radiolabel {
+		@include generateIcon(24px, 24px, $checkboxInputDataUri);
 		@include generatePosAbs(0, 2px);
 		background-size: cover;
 	}
+	.explore__radiolabel {
+		background: none;
+		border: 2px solid $jmEgyptianBlueColor;
+		border-radius: 50%;
+		width: 18px;
+		height: 18px;
+		margin: 3px;
+	}
 	.explore__checkbox:checked + label {
-		background: url(../images/new__jm__images/checkbox_selected_icon.png) no-repeat center center
+		background: url($checkboxInputCheckedDataUri) no-repeat center center
 			transparent;
+		background-size: cover;
+	}
+	input[type='radio'].explore__checkbox:checked + label {
+		width: 21px;
+		height: 21px;
+		margin: 1.5px;
+		border: none;
+		border-radius: 0;
+		background: url($radioInputCheckedDataUri) no-repeat center center
+		transparent;
 		background-size: cover;
 	}
 	.explore__checkbox:checked + label + label {

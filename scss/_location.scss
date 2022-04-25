@@ -50,8 +50,31 @@
     }
 }
 .search--sort{
-	.radio label{
+	.explore__options label{
     	display: flex;
     	align-items: center;
+        padding-left: 0;
+		word-break: break-all;
+		@include generateFont($jmMediumFont, 16px, 26px, $jmDarkGrayColor!important);
+    }
+    .explore__options input[type='radio']{
+        -webkit-appearance: none;
+        background: none;
+        border: 2px solid $jmEgyptianBlueColor;
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        margin: 3px 10px 0 3px;
+        position: static;
+        &:checked{
+            width: 21px;
+            height: 21px;
+            margin: 1.5px 8.5px 1.5px 1.5px;
+            border: none;
+            border-radius: 0;
+            background: url($radioInputCheckedDataUri) no-repeat center center
+            transparent;
+            background-size: cover;
+        }
     }
 }
