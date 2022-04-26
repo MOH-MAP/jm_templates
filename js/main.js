@@ -94,6 +94,10 @@ jQuery(document).ready(function(){
     	$('.jmdot--digital-temp label.ddm-label').on('click', function(){
     		$(this).parent('.form-group').find('.form-control').focus();
     	});
+
+		$('.jmdot--digital-temp label.ddm-label').on('focus', function(){
+    		$(this).parent('.form-group').find('.form-control').focus();
+    	});
     }, 1000);
 
     setTimeout(function () {
@@ -193,4 +197,40 @@ jQuery(document).ready(function(){
 	$('.jmtabbed').find('.col.col-lg-6.col-sm-6.col-6.col-md-6')
 	.removeClass('col col-lg-6 col-sm-6 col-6 col-md-6')
 	.addClass('col col-lg-3 col-sm-3 col-3 col-md-3');
+
+	addModalClass = function() {
+		if ($('.modal-backdrop').length) {
+			$('.modal-backdrop').parent().addClass('jmgetintouchmodal');
+			$('.jmgetintouchmodal .form-control').on('focus', function(){
+				$(this).parents('.form-group').addClass('jminput--focus');
+			});
+	
+			$('.jmgetintouchmodal .form-control').on('blur', function(){
+				$(this).parents('.form-group').removeClass('jminput--focus');
+				if (!$(this).parents('.form-group').hasClass('has-error') && $(this).val()) {
+					$(this).parents('.form-group').addClass('jminput--complete');
+				} else {
+					$(this).parents('.form-group').removeClass('jminput--complete');
+				}
+			});
+			
+			$('.jmgetintouchmodal label').on('click', function(){
+				$(this).parent('.form-group').find('.form-control').focus();
+			});
+	
+			$('.jmgetintouchmodal label').on('focus', function(){
+				$(this).parent('.form-group').find('.form-control').focus();
+			});
+
+			$('.jmgetintouchmodal .form-group input-select-wrapper').addClass('jminput--complete');
+		} else {
+			setTimeout(function(){
+				addModalClass();
+			}, 100);
+		}
+	}
+	
+	$('.jmtwo--person-temp .btn-person_link').on('click', function(){
+		addModalClass();
+	});
 });

@@ -1,0 +1,230 @@
+.jmgetintouchmodal {
+    .modal-backdrop {
+        z-index: 9999;
+    }
+
+    .modal {
+        z-index: 10000;
+    }
+
+    .modal.show .modal-dialog {
+        width: 850px;
+        max-width: 850px;
+        box-shadow: $jmBoxShadow1;
+    }
+
+    .modal-content {
+        border: none;
+        border-radius: 0;
+    }
+
+    .modal-header {
+        width: 650px;
+        margin: 0 auto;
+        padding: 80px 0 25px;
+        background: $jmWhiteColor;
+        height: auto;
+        border-bottom: 0;
+
+        .modal-title {
+            @include generateFont($jmMediumFont, 32px, 40px, $jmDarkCharcoalColor);
+        }
+    }
+
+    button.close {
+        top: 35px;
+        right: 35px;
+        position: absolute;
+        border: none;
+        margin-right: 0 !important;
+        opacity: 1;
+
+        .lexicon-icon {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    .modal-body {
+        width: 650px;
+        margin: 0 auto;
+        height: 940px;
+    }
+}
+
+#p_jm_get_in_touch_portlet_GetInTouchPortlet {
+    + {
+        .portlet-body {
+            @include generateFont($jmMediumFont, 24px, 48px, $jmGraniteGrayColor);
+
+            button.btn.btn-primary {
+                position: relative;
+                padding: 20px 40px 20px 20px;
+                @include generateFont($jmMediumFont, 18px, 22px, $jmWhiteColor);
+                min-width: 200px;
+                text-align: right;
+                background: $jmEgyptianBlueColor;
+                border-radius: 0;
+                float: right;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 24px;
+                    height: 24px;
+                    right: 10px;
+                    top: calc(50% - 12px);
+                    background: url("data:image/svg+xml,%3Csvg id='arrow_forward-blue-48dp' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath id='Path_5802' data-name='Path 5802' d='M0,0H24V24H0Z' fill='none'/%3E%3Cpath id='Path_5803' data-name='Path 5803' d='M12,4,10.59,5.41,16.17,11H4v2H16.17l-5.58,5.59L12,20l8-8Z' fill='%23fff'/%3E%3C/svg%3E%0A") no-repeat;
+                }
+            }
+
+            ::-webkit-input-placeholder {
+                /* WebKit browsers */
+                color: transparent;
+            }
+
+            :-moz-placeholder {
+                /* Mozilla Firefox 4 to 18 */
+                color: transparent;
+            }
+
+            ::-moz-placeholder {
+                /* Mozilla Firefox 19+ */
+                color: transparent;
+            }
+
+            :-ms-input-placeholder {
+                /* Internet Explorer 10+ */
+                color: transparent;
+            }
+
+            input::placeholder {
+                color: transparent;
+            }
+
+            textarea::-webkit-input-placeholder {
+                /* WebKit browsers */
+                color: transparent;
+            }
+
+            textarea:-moz-placeholder {
+                /* Mozilla Firefox 4 to 18 */
+                color: transparent;
+            }
+
+            textarea::-moz-placeholder {
+                /* Mozilla Firefox 19+ */
+                color: transparent;
+            }
+
+            textarea:-ms-input-placeholder {
+                /* Internet Explorer 10+ */
+                color: transparent;
+            }
+
+            textarea::placeholder {
+                color: transparent;
+            }
+
+            form {
+                margin-top: 60px;
+            }
+
+            .form-group {
+                margin-bottom: 30px;
+                position: relative;
+
+                label {
+                    position: absolute;
+                    top: 0px;
+                    left: 20px;
+                    text-transform: none;
+                    margin-bottom: 0;
+                    @include generateFont($jmFont, 16px, false, $jmGraniteGrayColor);
+                    text-transform: capitalize;
+
+                    .reference-mark {
+                        color: $jmGraniteGrayColor!important;
+                    }
+                }
+            }
+
+            textarea.form-group {
+                min-height: 145px;
+                resize: none;
+            }
+
+            .lexicon-icon {
+                width: 7px;
+                height: 7px;
+            }
+
+            .form-control {
+                background: $jmAntiFlashWhiteColor;
+                border-radius: 0;
+                border: 0;
+                border-bottom: 2px solid $jmAntiFlashWhiteColor;
+                height: auto;
+                padding: 25px 20px 5px;
+                @include generateFont($jmFont, 16px, 21px, $jmGraniteGrayColor);
+
+                &:focus {
+                    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%231E22AA' class='bi bi-eye-fill' viewBox='0 0 16 16'%3E%3Cpath d='M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z'/%3E%3Cpath d='M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z' fill='%231E22AA'/%3E%3C/svg%3E") no-repeat calc(100% - 12px) center $jmAntiFlashWhiteColor;
+                    border-bottom: 2px solid $jmEgyptianBlueColor;
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+
+            .jminput--focus,
+            .jminput--complete,
+            .has-error {
+                label {
+                    font-size: 12px;
+                    line-height: 16px;
+                    top: 8px;
+                    color: $jmEgyptianBlueColor;
+                }
+            }
+
+            .jminput--complete {
+                label {
+                    color: $jmGraniteGrayColor;
+                }
+
+                .form-control {
+                    color: $jmDarkCharcoalColor;
+                    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%231E22AA' class='bi bi-eye-fill' viewBox='0 0 16 16'%3E%3Cpath d='M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z'/%3E%3Cpath d='M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z' fill='%231E22AA'/%3E%3C/svg%3E") no-repeat calc(100% - 12px) center $jmAntiFlashWhiteColor;
+                    border-bottom: 2px solid $jmGraniteGrayColor;
+                }
+            }
+
+            .has-error {
+                label {
+                    color: $jmRedColor;
+                }
+
+                .form-feedback-item {
+                    @include generateFont($jmFont, 14px, false, $jmRedColor);
+                    margin-top: 5px;
+                }
+
+                .form-control {
+                    color: $jmDarkCharcoalColor;
+                    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23dc3545' class='bi bi-eye-fill' viewBox='0 0 16 16'%3E%3Cpath d='M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z'/%3E%3Cpath d='M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z' fill='%23dc3545'/%3E%3C/svg%3E") no-repeat calc(100% - 12px) center $jmAntiFlashWhiteColor;
+                    border-bottom: 2px solid $jmRedColor;
+                }
+            }
+
+            .jmhide--label {
+                label {
+                    display: none;
+                }
+            }
+
+            select.form-control {
+                background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%231e22aa' class='bi bi-chevron-down' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E") no-repeat calc(100% - 20px) center $jmAntiFlashWhiteColor!important;
+            }
+        }
+    }
+}
