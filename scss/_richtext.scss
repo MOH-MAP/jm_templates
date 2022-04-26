@@ -18,14 +18,11 @@
 	}
 	.rich--text-details{
 		h2{
-			@include generateFont($jmMediumFont, 40px, 48px, $jmDarkCharcoalColor);
+			@include generateFont($jmMediumFont, 40px, 48px, $jmDarkCharcoalColor!important);
 			text-align: left;
 			margin-bottom: 20px;
 			padding-top: 20px;
 			width: 100%;
-			opacity: 1;
-			letter-spacing: 0px;
-			font-weight: normal;
 		}
 	}
 	span{
@@ -381,7 +378,7 @@
 		}
 		.rich--text-details{
 			h2{
-				@include generateFont($jmMediumFont, 24px, 48px, $jmDarkCharcoalColor);
+				@include generateFont($jmMediumFont, 24px, 48px, $jmDarkCharcoalColor!important);
 				margin-bottom: 16px;
 				padding-top: 30px;
 			}
