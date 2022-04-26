@@ -87,7 +87,7 @@
 	}
 	.explore__checkboxlabel, .explore__radiolabel {
 		@include generateIcon(24px, 24px, $checkboxInputDataUri);
-		@include generatePosAbs(0, 2px);
+		@include generatePosAbs(0, 0px);
 		background-size: cover;
 	}
 	.explore__radiolabel {
@@ -96,7 +96,8 @@
 		border-radius: 50%;
 		width: 18px;
 		height: 18px;
-		margin: 3px;
+		margin: 0 3px;
+		top: 4px;
 	}
 	.explore__checkbox:checked + label {
 		background: url($checkboxInputCheckedDataUri) no-repeat center center
@@ -106,12 +107,13 @@
 	input[type='radio'].explore__checkbox:checked + label {
 		width: 21px;
 		height: 21px;
-		margin: 1.5px;
+		margin: 0 1.5px;
 		border: none;
 		border-radius: 0;
 		background: url($radioInputCheckedDataUri) no-repeat center center
 		transparent;
 		background-size: cover;
+		top: 3px
 	}
 	.explore__checkbox:checked + label + label {
 		color: $jmEgyptianBlueColor;
