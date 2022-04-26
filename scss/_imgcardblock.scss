@@ -36,6 +36,7 @@
   &.container{
     padding-left: 0;
     padding-right: 0;
+    max-width: 100%;
   }
 }
 .jmimage-card-block--header {
@@ -98,6 +99,16 @@
       padding-right: 0;
     }
   }
+}
+.jmimg--cardblock--body{
+  position: relative;
+}
+.jmimg--cardblock-list--full-ilnk{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .jmimg--cardblock--text {
@@ -166,7 +177,7 @@
   .jmimg--cardblock-list--ilnk {
     @include generateTextDecoration;
     @include generateFont($jmMediumFont, 14px, 26px, $jmEgyptianBlueColor);
-    @include generatePosAbs(auto, auto, auto, 20px);
+    @include generatePosAbs(auto, auto, 0, 30px);
     display: flex;
     margin-bottom: 18px !important;
     margin-top: 0px;
