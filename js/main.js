@@ -233,4 +233,13 @@ jQuery(document).ready(function(){
 	$('.jmtwo--person-temp .btn-person_link').on('click', function(){
 		addModalClass();
 	});
+
+	if (jQuery(window).width() <= 834) {
+		var expandedList = $('.explore__applications').filter(function(e){
+			return $(this).hasClass('explore__expanded');
+		});
+		if (!expandedList.length) {
+			$('.explore__applications:first-child .explore__apptext').click()
+		}
+	}
 });

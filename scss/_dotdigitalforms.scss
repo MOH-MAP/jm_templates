@@ -176,9 +176,13 @@
     }
 }
 span.ddm-label-required.reference-mark {	
-    display: none;	
+    color: $jmGraniteGrayColor!important;
+    .lexicon-icon{
+        width: 7px;
+        height: 7px;
+    }
 }
-.ddm-form-page, p.text-secondary {	
+.ddm-form-page, p.text-secondary, .lfr-ddm-legend span.ddm-label-required.reference-mark {	
     display: none;	
 }
 .jmdot--digital-temp .select-chevron-down-container {

@@ -179,6 +179,9 @@
 		.explore__selectedfilter {
 			display: none !important;
 		}
+		.explore__selectedfilter + h4{
+			display: none;
+		}
 		.explore__filteroptions {
 			padding-bottom: 0;
 		}
@@ -190,6 +193,7 @@
 			padding: 15px 20px;
 			width: 120px;
 			background: $jmAntiFlashWhiteColor;
+			overflow: hidden;
 		}
 		.explore__apptext {
 			font: 14px/18px $jmFont;
