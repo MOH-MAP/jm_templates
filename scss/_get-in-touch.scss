@@ -48,7 +48,7 @@
     .modal-body {
         width: 650px;
         margin: 0 auto;
-        height: 940px;
+        height: 940px!important;
     }
 }
 
@@ -177,8 +177,9 @@
             }
 
             .jminput--focus,
-            .jminput--complete,
-            .has-error {
+            .has-success,
+            .has-error,
+            .jminput--complete {
                 label {
                     font-size: 12px;
                     line-height: 16px;
@@ -187,7 +188,7 @@
                 }
             }
 
-            .jminput--complete {
+            .has-success, .jminput--complete {
                 label {
                     color: $jmGraniteGrayColor;
                 }
