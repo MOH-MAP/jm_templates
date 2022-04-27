@@ -672,6 +672,9 @@ sub{
 .child-menu .jmlfry__btn a {
   opacity: 1;
   @include generateFont($jmMediumFont, 16px, 21px, $jmWhiteColor!important);
+  &:hover{
+    text-decoration: none;
+  }
 }
 .jmheader__navlist:hover ul.child-menu {
   display: flex;
