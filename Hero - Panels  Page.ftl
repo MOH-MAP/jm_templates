@@ -31,7 +31,7 @@
                     </div>
                 </div>
             </#if>
-            <div class="col-12">
+            <div class="panel__btnlist">
                 <#if AdditionalLinks_Title?? && AdditionalLinks_Title.getSiblings()?has_content>
                     <#assign href = '#' >
                     <#assign title = 'Explore'>
@@ -49,12 +49,10 @@
                             <#elseif cur_AdditionalLinks_Title.AdditionalLinks_Target?? && cur_AdditionalLinks_Title.AdditionalLinks_Target.getData()?has_content>
                                 <#assign href = cur_AdditionalLinks_Title.AdditionalLinks_Target.getData() >
                             </#if>
-                            <div class="mt-4">
                                 <a class="panel__btn" href="${href}" title="${title}">
                                     <span class='panel__btntext'>${title}</span>
                                     <span class="arrow__forward"></span>
                                 </a>
-                            </div>
                         </#if>
                     </#list>
                 </#if>
