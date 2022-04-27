@@ -16,6 +16,15 @@
 			@include generateFont($jmMediumFont!important, 34px, false, $jmEgyptianBlueColor!important);	
 		}
 	}
+	.rich--text-details{
+		h2{
+			@include generateFont($jmMediumFont, 40px, 48px, $jmDarkCharcoalColor!important);
+			text-align: left;
+			margin-bottom: 20px;
+			padding-top: 20px;
+			width: 100%;
+		}
+	}
 	span{
 	    @include generateFont($jmFont, 18px, 25px, $jmDarkCharcoalColor);
 		strong{
@@ -365,6 +374,13 @@
 			li {
 				padding: 5px 0px;
 				@include generateFont($jmFont, 16px, 20px, $jmDarkCharcoalColor);
+			}
+		}
+		.rich--text-details{
+			h2{
+				@include generateFont($jmMediumFont, 24px, 48px, $jmDarkCharcoalColor!important);
+				margin-bottom: 16px;
+				padding-top: 30px;
 			}
 		}
 	}	

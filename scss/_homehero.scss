@@ -55,6 +55,7 @@
     line-height: 28px;
     margin: 0;
     margin-bottom: 14px;
+    margin-top: 50px;
   }
   .homehero__para {
     font-size: 20px;
@@ -122,6 +123,9 @@
   .panels-hero-panels {
     .col-sm-12.col-md-4.hero-panels-panel {
     	border-right: 0;
+      &.white-border{
+        border-left: 0;
+      }
     	.journal-content-article {
     		border-bottom: solid 1px $jmWhiteColor;
     	}

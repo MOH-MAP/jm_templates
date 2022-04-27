@@ -1,10 +1,10 @@
 <div class="jmimage__card-block jmimg-card_block bg-light">
 	<div class="row jmimg-cardblock--no-gutters">
-	 <#if (ImageLarge.getData())?? && ImageLarge.getData() != "">
-		<div class="col-7">
-		<#else>
-		<div class="col-12">
-	 </#if>
+		<#if (ImageLarge.getData())?? && ImageLarge.getData() != "">
+			<div class="col-7">
+			<#else>
+			<div class="col-12">
+		</#if>
 			<div class="jmimg--cardblock--body body">
 				<h6 class="jmimg--cardblock--title">${PreTitle.getData()}</h6>
 				<h3 class="jmimg--cardblock--text">${Title.getData()}</h3>
@@ -29,6 +29,7 @@
 					<#if Link_Title.Link_Target??>
 				        <#assign linkTarget = Link_Title.Link_Target.getData()>
 				    </#if>
+					<a class="jmimg--cardblock-list--full-ilnk" href="${linkHref}" target="${linkTarget!}"></a>
 					<a class="jmimg--cardblock-list--ilnk text-decoration-none" href="${linkHref}" target="${linkTarget!}">
 						<span class="jmimg--cardblock-link--text">${linkTitle}</span>
 						<span class="jmimg--cardblock-link--icon"></span>
@@ -38,11 +39,10 @@
 			</div>
 		</div>
 		 
-		    <#if (ImageLarge.getData())?? && ImageLarge.getData() != "">
-		    	<div class="col-5 jmimg-cardblock--right-img">
-				<img class="img__card-img img__card-img2 rounded-0" alt="${ImageLarge.getAttribute("alt")}" data-fileentryid="${ImageLarge.getAttribute("fileEntryId")}" src="${ImageLarge.getData()}" />
-				</div>
-			</#if>
-		
+		<#if (ImageLarge.getData())?? && ImageLarge.getData() != "">
+			<div class="col-5 jmimg-cardblock--right-img">
+			<img class="img__card-img img__card-img2 rounded-0" alt="${ImageLarge.getAttribute("alt")}" data-fileentryid="${ImageLarge.getAttribute("fileEntryId")}" src="${ImageLarge.getData()}" />
+			</div>
+		</#if>
 	</div>
 </div>
