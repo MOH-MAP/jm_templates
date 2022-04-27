@@ -17,6 +17,9 @@
   @include generatePosAbs(0, 0);
   width: 100%;
   height: 100%;
+  + .modal{
+    z-index: 9999;
+  }
   .jmvideo--play-icon {
     background-image: url("data:image/svg+xml,%3Csvg id='warning-white-48dp' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath id='Path_6426' data-name='Path 6426' d='M0,0H24V24H0Z' fill='none'/%3E%3Cpath id='Path_6427' data-name='Path 6427' d='M1,21H23L12,2,9.256,6.74Z' transform='translate(23.5 -0.5) rotate(90)' fill='%23fff'/%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
