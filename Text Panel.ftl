@@ -15,7 +15,6 @@
                     <#if (Body.getData())??>
                         <div class="text-panel-body">${Body.getData()}</div>
                     </#if>
-
                     <#if Link_Title??&& Link_Title.getData()?has_content>
                         <#assign linkHref="#" />
                         <#if Link_Title.Link_Internal?? && Link_Title.Link_Internal.getFriendlyUrl()?has_content>
