@@ -1,59 +1,33 @@
 .jmtext--panel-temp {
     padding: 0 5% 0 5%;
-
     .text-panel-matter {
-        background-color: $jmEgyptianBlueColor;
-        color: $jmWhiteColor;
-        padding: 20px 0 20px;
+      background-color: $jmEgyptianBlueColor;
+      color: $jmWhiteColor;
+      padding: 20px 0 20px;
     }
-
     .text-panel-link {
-        float: right;
-        @include generatePosAbs(auto, auto, 37px, 40px);
+      float: right;
+      @include generatePosAbs(auto, auto, 37px, 40px);
     }
-
-    a {
-        .text-panel-title {
-            margin-bottom: 10px;
-            @include generateFont($jmMediumFont, 24px, 32px, $jmWhiteColor);
-        }
-
-        &:hover {
-            text-decoration: none;
-        }
-    }
-
     .text-panel-title {
-        margin-bottom: 10px;
-        @include generateFont($jmMediumFont, 24px, 32px);
+      margin-bottom: 10px;
+      @include generateFont($jmMediumFont, 24px, 32px);
     }
-
-    .text-panel-full-link {
-        display: none;
+    .text-panel-full-link{
+      display: none;
     }
-
     .text-panel-body {
-        .title-style-a {
-            @include generateFont($jmMediumFont, 34px, 32px, $jmWhiteColor);
+      .title-style-a {
+        @include generateFont($jmMediumFont, 34px, 32px, $jmWhiteColor);
+      }
+      h1, h2, h3, h4, h5, h6, p, ul li, ol li {
+        margin-top: 10px;
+        @include generateFont($jmFont, 18px, 27px);
+        width: calc(100% - 10px);
+        margin-bottom: 10px;
+        span[style^='font-size: 48px']{
+          line-height: 48px;
         }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        p,
-        ul li,
-        ol li {
-            margin-top: 10px;
-            @include generateFont($jmFont, 18px, 27px);
-            width: calc(100% - 10px);
-            margin-bottom: 10px;
-
-            span[style^='font-size: 48px'] {
-                line-height: 48px;
-            }
-        }
+      }
     }
 }
