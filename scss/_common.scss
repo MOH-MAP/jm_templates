@@ -68,7 +68,7 @@ li {
   }
   a {
     font-family: $jmMediumFont;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 30px;
     color: $jmCrayolaColor;
   }
@@ -718,4 +718,7 @@ sub{
 }
 .iframe-container iframe {
   width: 100%;
+}
+.onetrust-pc-dark-filter.ot-fade-in{
+	display: none;
 }

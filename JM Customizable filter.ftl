@@ -215,7 +215,11 @@
 
         $(document).on('click', '.jmicon--close', function(){
             var elementId = $(this).parents('.explore__filters').attr('dataparam');
-            $('#'+elementId).click();
+            if ($('#'+elementId).attr('type')) {
+               location.href = location.origin + location.pathname;
+            } else {
+                $('#'+elementId).click();
+            }
         });
 
         var scrollPos = 0;

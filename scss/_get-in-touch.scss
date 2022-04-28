@@ -127,7 +127,7 @@
             }
 
             form {
-                margin-top: 60px;
+                margin-top: 15px;
             }
 
             .form-group {
@@ -141,7 +141,10 @@
                     text-transform: none;
                     margin-bottom: 0;
                     @include generateFont($jmFont, 16px, false, $jmGraniteGrayColor);
-                    text-transform: capitalize;
+                    text-transform: lowercase;
+                    &:first-letter {
+    					text-transform: uppercase;
+   					}
 
                     .reference-mark {
                         color: $jmGraniteGrayColor!important;
