@@ -232,3 +232,22 @@
         }
     }
 }
+
+@media (min-width: 320px) and (max-width: 834px) {
+    .jmgetintouchmodal {
+        .modal.show .modal-dialog {
+            width: calc(100% - 15px);
+            max-width: calc(100% - 15px);
+        }
+    
+        .modal-header {
+            width: calc(100% - 60px);
+            max-width: calc(100% - 60px);
+        }
+        
+        .modal-body {
+            width: calc(100% - 60px);
+            max-width: calc(100% - 60px);
+        }
+    }
+}
