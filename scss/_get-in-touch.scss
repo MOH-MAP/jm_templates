@@ -249,5 +249,10 @@
             width: calc(100% - 60px);
             max-width: calc(100% - 60px);
         }
+
+        .modal-backdrop {
+            width: 100%;
+            height: 100%;
+        }    
     }
 }
