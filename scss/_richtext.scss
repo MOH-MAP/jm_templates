@@ -35,9 +35,11 @@
 		margin-bottom: 10px !important;
 		@include generateFont($jmFont, 18px, 25px, $jmDarkCharcoalColor);
 		strong{
-			@include generateFont($jmMediumFont, 18px, 25px, $jmDarkCharcoalColor);
+			@include generateFont($jmFont, 18px, 25px, $jmDarkCharcoalColor);
+			font-weight: bold;
 			span{
-				font-family: $jmMediumFont;
+				@include generateFont($jmFont, 18px, 25px, $jmDarkCharcoalColor);
+				font-weight: bold;
 			}
 		}
 		a {
