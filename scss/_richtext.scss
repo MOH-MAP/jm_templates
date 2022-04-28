@@ -1,10 +1,10 @@
 .jmrich--text-inner {
 	h1, h2, h3{
       strong{
-		@include generateFont($jmMediumFont!important, 34px, false, $jmEgyptianBlueColor);
+		@include generateFont($jmMediumFont!important, 26px, false, $jmDarkCharcoalColor);
 		font-weight: normal;
 		span{
-			@include generateFont($jmMediumFont!important, 34px, false, $jmEgyptianBlueColor);
+			@include generateFont($jmMediumFont!important, 26px!important, false!important, $jmDarkCharcoalColor!important);
 		font-weight: normal;
 		}
 	  }
