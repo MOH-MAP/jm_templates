@@ -121,6 +121,15 @@
         text-decoration: none;
         color: $jmWhiteColor;
       }
+      a{
+        color: $jmWhiteColor;
+        text-decoration: none;
+        margin-bottom: 0;
+        &:hover {
+          text-decoration: none;
+          color: $jmWhiteColor;
+        }
+      }
     }
   }
   .jmaccrdn__arrow {
