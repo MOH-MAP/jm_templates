@@ -220,5 +220,14 @@ jQuery(document).ready(function(){
 			$('.explore__applications:first-child .explore__apptext').click()
 		}
 	}
+
+	if (!$('#breadcrumbs').length) {
+		$('#content .layout-content.portlet-layout .journal-content-article').children().hasClass('panels-hero')
+	}
 	
+	if (!$('#breadcrumbs').length) {
+		$('#content .layout-content.portlet-layout .journal-content-article').
+		find('.jmarticle__hero-main-container, .article__intro, .jmpanels--hero-temp, .matthey--carousel').
+		css({'margin-top': 0});
+	}
 });

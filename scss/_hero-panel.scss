@@ -1,6 +1,7 @@
 .jmpanels--hero-temp {
 	@include generateBgSizePos;
 	margin-top: -52px;
+	position: relative;
 	.panels-hero-panels {
 		background-color: $jmEgyptianBlueColor;
 	}
@@ -28,4 +29,15 @@
 		margin-top: 30px;
 		margin-bottom: 10px;
 	}
+	.panels-hero-panels{
+		position: relative;
+	}
+}
+.jmpanels--hero-temp-video {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	object-fit: cover;
 }

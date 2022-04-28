@@ -62,6 +62,36 @@
         position: static;
         height: auto;
     }
+    .list_inner_link{
+        background-color: $jmEgyptianBlueColor;
+        min-width: 380px;
+        border: none;
+        outline: none;
+        padding: 20px 45px 20px 20px;
+        justify-content: flex-end;
+        text-align: right;
+        text-transform: uppercase;
+        margin-bottom: 0px;
+        text-decoration: none !important;
+        @include generateFont($jmMediumFont, 18px, 22px, $jmWhiteColor!important);
+        display: inline-flex;
+        position: relative;
+        margin: 30px 0 0;
+        &::after{
+          position: absolute;
+          background: url("../images/new__jm__images/arrow_forward-white.svg") 0 0
+            no-repeat transparent;
+          width: 24px;
+          height: 24px;
+          right: 10px;
+          top: calc(50% - 12px);
+          content: "";
+        }
+        &:hover {
+          text-decoration: none;
+          color: $jmWhiteColor;
+        }
+    }
     @media (max-width: 575.98px) {
         .two-person-grid{
             display: grid;

@@ -17,6 +17,14 @@
         margin: 0 0 25px;
         height: auto;
         width: calc((100% - 40px) / 3);
+        position: relative;
+    }
+    .tabbed-article-flex-item-link{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
     }
     .tabbed-article-flex-item .tabbed-article-thumbnail>img {
         width: 100%;
