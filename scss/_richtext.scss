@@ -1,10 +1,10 @@
 .jmrich--text-inner {
 	h1, h2, h3{
       strong{
-		@include generateFont($jmMediumFont!important, 34px, false, $jmEgyptianBlueColor);
+		@include generateFont($jmMediumFont!important, 26px, false, $jmDarkCharcoalColor);
 		font-weight: normal;
 		span{
-			@include generateFont($jmMediumFont!important, 34px, false, $jmEgyptianBlueColor);
+			@include generateFont($jmMediumFont!important, 26px!important, false!important, $jmDarkCharcoalColor!important);
 		font-weight: normal;
 		}
 	  }
@@ -35,9 +35,11 @@
 		margin-bottom: 10px !important;
 		@include generateFont($jmFont, 18px, 25px, $jmDarkCharcoalColor);
 		strong{
-			@include generateFont($jmMediumFont, 18px, 25px, $jmDarkCharcoalColor);
+			@include generateFont($jmFont, 18px, 25px, $jmDarkCharcoalColor);
+			font-weight: bold;
 			span{
-				font-family: $jmMediumFont;
+				@include generateFont($jmFont, 18px, 25px, $jmDarkCharcoalColor);
+				font-weight: bold;
 			}
 		}
 		a {
