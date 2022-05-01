@@ -23,7 +23,10 @@
 }
 .montage__data{
 	margin-bottom: 30px;
-    margin-top: 30px;
+    margin-top: 0px;
+    &:first-child, &:nth-child(2){
+        margin-top: 30px;
+    }
     .journal-content-article{
         height: 100%;
     }
@@ -139,5 +142,18 @@
     .montage__data{
         padding-left: 0;
         padding-right: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        &:first-child, &:nth-child(2){
+            margin-top: 10px;
+        }
+    }
+    .card__content{
+        margin-right: 20px;
+        word-break: break-all;
+    }
+    .card__img img{
+        min-width: 78px;
+        min-height: 78px;
     }
 }

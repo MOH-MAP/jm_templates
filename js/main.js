@@ -227,7 +227,30 @@ jQuery(document).ready(function(){
 	
 	if (!$('#breadcrumbs').length) {
 		$('#content .layout-content.portlet-layout .journal-content-article').
-		find('.jmarticle__hero-main-container, .article__intro, .jmpanels--hero-temp, .matthey--carousel').
+		find('.jmarticle__hero-main-container, .article__intro, .jmpanels--hero-temp, .matthey--carousel, .jmannual--main-container .jmannual--rs-temp').
 		css({'margin-top': 0});
 	}
+
+	// var selector = $('.panels-hero-panels').parents('.journal-content-article').parent('div');
+	// if (selector.next().length) {
+	// 	selector.next().find('.journal-content-article').children().css({'margin-top': 0});
+	// } else {
+	// 	selector = selector.parent(div);
+	// }
+
+	var selector = $('.panels-hero-panels').parents('.journal-content-article').parent('div');
+	do {
+		selector = selector.parent('div');
+		if (selector.next().length) {
+			selector.next().find('.journal-content-article').children().css({'margin-top': 0});
+		}
+	}
+	while (!selector.next().length);
+
+	var lastIndex = $('.journal-content-article').length - 1;
+
+	if ($($('.journal-content-article')[lastIndex]).find('.jmimg--main--cardblock').length) {
+		$('.footer__container').css({'margin-top': 0})
+	}
+	
 });

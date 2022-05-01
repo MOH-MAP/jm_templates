@@ -70,22 +70,14 @@
 		}
 	}
 	.col-md-7 {
-		h1, h2, h3, h4, h6 {
+		h1, h2, h3, h4, h5, h6 {
 			@include generateFont($jmMediumFont, 40px, 48px, $jmDarkCharcoalColor);
 			margin-bottom: 30px;
       i, em{
-        @include generateFont($jmMediumFont, 40px, 48px, $jmDarkCharcoalColor);
-        font-style: normal;
+        @include generateFont($jmFont, 24px, 34px, $jmDarkCharcoalColor);
+        display: inline-block;
       }
 		}
-    h5{
-      @include generateFont($jmMediumFont, 40px, 48px, $jmDarkCharcoalColor);
-			margin-bottom: 30px;
-      i, em{
-        @include generateFont($jmMediumFont, 24px, 27px, $jmDarkCharcoalColor);
-        font-style: normal;
-      }
-    }
 		p {
 			@include generateFont($jmFont, 18px, 27px, $jmDarkCharcoalColor);
       sub{

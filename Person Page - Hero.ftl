@@ -25,14 +25,14 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-5 personpage__right-section">
             <#if (SubHeadingTitle.getData())??>
-              <h1 class="person__key">
+                <h1 class="person__key">
             	    ${SubHeadingTitle.getData()}
             	</h1>
             </#if>
             <#if (SubHeadingSummary.getData())??>
-              <div class="person__keycontainer">
+                <div class="person__keycontainer">
                 	${SubHeadingSummary.getData()}
             	</div>
             </#if>
