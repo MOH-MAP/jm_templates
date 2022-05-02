@@ -239,17 +239,20 @@ jQuery(document).ready(function(){
 	// }
 
 	var selector = $('.panels-hero-panels').parents('.journal-content-article').parent('div');
-	do {
-		selector = selector.parent('div');
-		if (selector.next().length) {
-			selector.next().find('.journal-content-article').children().css({'margin-top': 0});
+	if (selector.length) {
+		do {
+			selector = selector.parent('div');
+			console.log(123);
+			if (selector.next().length) {
+				selector.next().find('.journal-content-article').children().css({'margin-top': 0});
+			}
 		}
+		while (!selector.next().length);
 	}
-	while (!selector.next().length);
 
-	var lastIndex = $('.journal-content-article').length - 1;
+	var lastIndex = $('#content .journal-content-article').length - 1;
 
-	if ($($('.journal-content-article')[lastIndex]).find('.jmimg--main--cardblock').length) {
+	if ($($('#content .journal-content-article')[lastIndex]).find('.jmimg--main--cardblock').length) {
 		$('.footer__container').css({'margin-top': 0})
 	}
 	

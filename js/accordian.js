@@ -1,13 +1,21 @@
 $(document).ready(function () {	
 	$(".jmfooter__heading").click(function(){
-	   	$(this).parent(".jmfooter__lists").toggleClass("open"); 
-	});
+		$(this).parents(".jmfooter__lists").toggleClass("open"); 
+ 	});
+ 
+ 	$('.footer__container .jmfooter__lists:nth-last-child(2) .jmfooter__heading').click(function(){
+	 	$(".footer__container .jmfooter__lists:last-child").toggleClass("open");
+ 	});
 		
-	$(".hidden__overlay").click(function(){
+	$(".jmalign--container-temp .hidden__overlay").click(function(){
+		$('.jmheader__navlist').hide();
+		$(this).parents(".jmheader__navlist").addClass('jmshow--submenu'); 
 	   	$(this).parents(".jmheader__navlist").find(".submenu__mb").toggle(); 
 	});
 	
-	$(".submenu__mb .back__arrow").click(function(){
+	$(".jmalign--container-temp .submenu__mb .back__arrow").click(function(){
+		$('.jmheader__navlist').show();
+		$(this).parents(".jmheader__navlist").removeClass('jmshow--submenu'); 
 	   	$(this).parents(".submenu__mb").toggle(); 
 	});
 	

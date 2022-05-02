@@ -54,7 +54,6 @@
 }
 .jmimg--cardblock--title {
   text-align: left;
-  text-transform: capitalize;
   @include generateFont($jmFont, 14px, false, $jmDarkCharcoalColor);
 }
 .row.jmimg-cardblock--no-gutters {
@@ -119,7 +118,6 @@
   }
   .jmimg--cardblock--title {
     text-align: left;
-    text-transform: capitalize;
     @include generateFont($jmFont, 13px, false, $jmDarkCharcoalColor);
   }
   .jmimg--cardblock-list--ilnk {
@@ -171,7 +169,6 @@
   }
   .jmimg--cardblock--title {
     text-align: left;
-    text-transform: capitalize;
     @include generateFont($jmFont, 12px, false, $jmDarkCharcoalColor);
   }
   .jmimg--cardblock-list--ilnk {
@@ -251,7 +248,6 @@
   }
   .jmimg--cardblock--title {
     text-align: left;
-    text-transform: capitalize;
     @include generateFont($jmFont, 12px, false, $jmDarkCharcoalColor);
   }
   .jmimg--cardblock--text {

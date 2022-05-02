@@ -52,6 +52,13 @@
 }
 /**media query for tab **/
 @media (max-width: 834px) {
+  .jmheader__navlist.jmshow--submenu {
+    display: inline-block!important;
+    border-bottom: 0!important;
+    .hidden__overlay, .header__menu, .jmarrow__right{
+      display: none!important;
+    }
+  }
   .jmlogo__img {
     display: none;
   }
@@ -66,6 +73,11 @@
     overflow: hidden;
     visibility: hidden;
     transition: all 0.8s ease;
+    position: fixed;
+    width: 100%;
+    height: calc(100% - 64px);
+    z-index: 3;
+    top: 64px;
   }
   .jmheader__navbar.open {
     visibility: visible;
@@ -149,8 +161,9 @@
   .contact__container {
     display: flex !important;
     margin: 5px auto;
-    padding: 20px 75px 10px;
+    padding: 20px 45px 10px;
     justify-content: space-between;
+    align-items: center;
 
     .jm__contact {
       background: url(../images/new__jm__images/contact-icon_white.svg) 0 0
@@ -222,7 +235,7 @@
   }
   .jmheader__navbar {
     .jmheader__navlinks {
-      padding: 0px 55px;
+      padding: 0px 20px;
     }
   }
   .logo {
@@ -281,7 +294,7 @@
   }
   .jmheader__navbar {
     .jmheader__navlinks {
-      padding: 0px 55px;
+      padding: 0px 20px;
     }
   }
   .logo {
