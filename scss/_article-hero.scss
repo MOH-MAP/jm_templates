@@ -62,6 +62,41 @@
 		padding: 0 15px;
 	}
 }
+.jmarticle__author-info {
+    background-color: $jmLightShadeWhiteColor;
+    padding: 20px 0;
+    .hero__bar{
+        display: flex;
+        justify-content: center;
+    }
+    .author{
+        display: flex;
+        align-items: center;
+    }
+    .author__image{
+        border-radius: 50%;
+        width: 65px;
+        height: 65px;
+        overflow: hidden;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+    .author__name a{
+    	@include generateFont($jmMediumFont, 24px!important, 28px, $jmDarkCharcoalColor);
+    	margin-right: 10px;
+    	&:hover{
+    		text-decoration: none;
+    	}
+    }
+    .author__desc{
+    	@include generateFont($jmFont, 16px!important, 28px, $jmDarkCharcoalColor, 0.8);
+    	margin-bottom: 0;
+    }
+    .author__details{
+    	display: flex;
+    	align-items: center;
+    }
+}
 .article__intro{
 	margin: 60px 0 30px;
 	height: auto;

@@ -103,6 +103,10 @@
     margin-bottom: 25px !important;
     padding-left: 0;
     padding-right: 0;
+    &:nth-last-child(2), &:last-child{
+    	margin-bottom: 0!important;
+    	border-bottom: 0;
+    }
     .jmfooter__links {
       max-height: 0;
       overflow: hidden;

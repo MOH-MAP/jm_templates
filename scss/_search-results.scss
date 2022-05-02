@@ -7,6 +7,13 @@
 	.explore__rightinner {
 		width: 100%;
 	}
+	.explore__full-link{
+		position: absolute;
+   		width: 100%;
+    	height: 100%;
+  	  	left: 0;
+  	  	top: 0;
+	}
 	.explore__heading {
 		display: flex;
 		justify-content: space-between;
