@@ -1,22 +1,26 @@
 .jmrich--text-inner {
 	h1, h2, h3{
       strong{
-		@include generateFont($jmMediumFont!important, 34px, false, $jmEgyptianBlueColor);
+		@include generateFont($jmMediumFont!important, 34px!important, false, $jmDarkCharcoalColor);
 		font-weight: normal;
 		span{
-			@include generateFont($jmMediumFont!important, 34px, false, $jmEgyptianBlueColor);
+			@include generateFont($jmMediumFont!important, 34px!important, false, $jmDarkCharcoalColor);
 		font-weight: normal;
 		}
 	  }
 	} 
 	h4, h5, h6 {
 		margin-bottom: 20px !important;
-		@include generateFont($jmMediumFont, 34px, false, $jmEgyptianBlueColor);
+		@include generateFont($jmMediumFont!important, 34px!important, false, $jmDarkCharcoalColor);
 		span{
-			@include generateFont($jmMediumFont!important, 34px, false, $jmEgyptianBlueColor!important);	
+			@include generateFont($jmMediumFont!important, 34px!important, false, $jmDarkCharcoalColor!important);	
 		}
 	}
 	.rich--text-details{
+		&.p-2{
+			padding-left: 0!important;
+			padding-right: 0!important;
+		}
 		h2{
 			@include generateFont($jmMediumFont, 40px, 48px, $jmDarkCharcoalColor!important);
 			text-align: left;
@@ -37,7 +41,7 @@
 		strong{
 			@include generateFont($jmMediumFont, 18px, 25px, $jmDarkCharcoalColor);
 			span{
-				font-family: $jmMediumFont;
+				font-family: $jmBoldFont;
 			}
 		}
 		a {
@@ -122,6 +126,9 @@
 	}
 	img{
 		max-width: 100%;
+		&[style^='float: right; margin-left: 10px; border-color: #ffffff;']{
+			width: 150px;
+		}
 	}
 	form {
 		width: 70%;

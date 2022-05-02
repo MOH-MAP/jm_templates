@@ -657,8 +657,12 @@ sub{
 }
 .jmgeneral--hero {
   margin-top: 35px;
+  .container{
+    padding-left: 0;
+    padding-right: 0;
+  }
   .general_hero__heading{
-    margin-left: -0.5rem;
+    margin-left: 0;
     @include generateFont($jmMediumFont, 46px, 60px, $jmDarkCharcoalColor);
   }
 }

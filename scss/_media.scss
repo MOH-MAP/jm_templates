@@ -289,10 +289,14 @@
   }
   .jmgeneral--hero {
     margin-top: 35px;
+    .container{
+      padding-left: 15px!important;
+      padding-right: 15px!important;
+    }
     .general_hero__heading{
-      @include generateFont($jmMediumFont, 30px, 60px, $jmDarkCharcoalColor);
-      padding-left: 20px;
-      margin-left: -0.5rem;
+      @include generateFont($jmMediumFont, 30px!important, 35px!important, $jmDarkCharcoalColor);
+      padding-left: 0px;
+      margin-left: 0!important;
     }
   }
   span[class^='btn--style']{

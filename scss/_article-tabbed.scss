@@ -4,7 +4,6 @@
         display: flex;
         flex-wrap: wrap;
         margin-left: 0;
-        justify-content: space-between;
     }
     .tabbed-article-heading {
         font-family: $jmMediumFont;
@@ -18,6 +17,10 @@
         height: auto;
         width: calc((100% - 40px) / 3);
         position: relative;
+        margin-right: 20px;
+        &:nth-child(3n){
+            margin-right: 0;
+        }
     }
     .tabbed-article-flex-item-link{
         position: absolute;
