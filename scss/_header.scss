@@ -263,11 +263,19 @@ header#banner .container-fluid.container-fluid-max-xl{
     max-height: 100%!important;
     padding: 10px 0!important;
 	top: 52px;
+	overflow: visible!important;
+	min-height: 10px!important
+}
+.jmheader__navlist.jmchildmenu--listsnormal:hover .child-menu.jmchildmenu__lists{
+	display: inline-block!important;
 }
 .jmchildmenu--listsnormal .child-menu.jmchildmenu__lists .child-header {
-    flex: 0 0 100%;
     padding: 0;
     border-bottom: 0;
+	float: left;
+	width: 100%;
+	background: $jmWhiteColor;
+	box-shadow: $jmBoxShadow1;
 }
 .jmchildmenu--listsnormal .child-menu.jmchildmenu__lists li h1 a {
     float: left;

@@ -226,9 +226,9 @@ a.sub-child {
 }
 .hidden__overlay {
   position: absolute;
-  width: 100%;
+  width: 60px;
   height: 100%;
-  left: 0;
+  right: 0;
   top: 0;
   display: none;
   z-index: 1;

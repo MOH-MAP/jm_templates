@@ -227,7 +227,7 @@ jQuery(document).ready(function(){
 	
 	if (!$('#breadcrumbs').length) {
 		$('#content .layout-content.portlet-layout .journal-content-article').
-		find('.jmarticle__hero-main-container, .article__intro, .jmpanels--hero-temp, .matthey--carousel, .jmannual--main-container .jmannual--rs-temp').
+		find('.jmarticle__hero-main-container, .article__intro, .jmpanels--hero-temp, .matthey--carousel, .jmannual--main-container .jmannual--rs-temp, .search-hero').
 		css({'margin-top': 0});
 	}
 
