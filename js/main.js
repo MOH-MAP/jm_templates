@@ -159,6 +159,12 @@ jQuery(document).ready(function(){
 
 	$('.explore__filtericon').on('click', function(){
 		$('.explore__left').show();
+		var expandedList = $('.explore__applications').filter(function(e){
+			return $(this).hasClass('explore__expanded');
+		});
+		if (!expandedList.length) {
+			$('.explore__applications:first-child .explore__apptext').click()
+		}
 		scrollPos = window.pageYOffset;
 	});
 
