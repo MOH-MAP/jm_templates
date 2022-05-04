@@ -98,6 +98,10 @@
 	position: relative;
 	top: -7px;
     right: -3px;
+	@media (max-width: 834px) {
+		width: 85%;
+		right: -45px;
+	}
 	.jmheader__srchicon {
 		margin-left: 0;
 	}

@@ -34,7 +34,7 @@
   .jmvideotempl__slogan-text {
     text-align: left;
     text-shadow: $jmTextShadow2;
-    @include generateFont($jmMediumFont, 46px, 50px, $jmWhiteColor);
+    @include generateFont($jmFont, 16px, 22px, $jmWhiteColor, 0.84);
     margin-bottom: 50px;
   }
   .jmvideotempl__heading {
@@ -42,7 +42,7 @@
     text-align: left;
     text-transform: capitalize;
     margin: 0 0 5px;
-    @include generateFont($jmFont, 16px, 22px, $jmWhiteColor, 0.84);
+    @include generateFont($jmMediumFont, 46px, 50px, $jmWhiteColor);
     margin-bottom: 15px;
   }
   .jmvideotempl__info-btn {
@@ -202,11 +202,11 @@
       margin-top: 0;
     }
     .jmvideotempl__heading {
-      @include generateFont($jmMediumFont, 18px, 28px, $jmWhiteColor, 0.8);
+      @include generateFont($jmFont, 32px, 40px, $jmWhiteColor);
       margin-bottom: 10px;
     }
     .jmvideotempl__slogan-text{
-      @include generateFont($jmFont, 32px, 40px, $jmWhiteColor);
+      @include generateFont($jmMediumFont, 18px, 28px, $jmWhiteColor, 0.8);
       margin-bottom: 80px;
     }
     .modal-footer > .controls {

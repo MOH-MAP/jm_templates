@@ -12,11 +12,17 @@
         background-color: $jmAntiFlashWhiteColor; 
         @include generateFont($jmFont, 24px, false, $jmDarkCharcoalColor);
     }
+    .jmlist__title-text{
+        @include generateFont($jmFont, 26px, 28px, $jmDarkCharcoalColor);
+    }
     .jmlist__link{
         text-decoration: none;
         display: flex;
-        margin-left: 60px;
+        margin-left: 0;
         @include generateFont($jmMediumFont, 18px, 22px, $jmEgyptianBlueColor);
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
     }
     .jmlist__icon {
         @include generateIcon(24px, 24px, "../images/new__jm__images/blue-right-arrow.svg");
@@ -27,6 +33,7 @@
     .jmlist__text {
         float: left;
         @include generateFont($jmMediumFont, 18px, false, $jmEgyptianBlueColor);
+        margin-left: auto;
     }
     @media (min-width: 320px) and (max-width: 539px) {
         .jmlist__item {

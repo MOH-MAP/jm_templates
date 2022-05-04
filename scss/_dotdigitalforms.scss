@@ -52,7 +52,7 @@
         label.ddm-label{
             font-size: 12px;
             line-height: 16px;
-            top: 14px;
+            top: 5px;
             color: $jmEgyptianBlueColor;
         }
     }
@@ -87,7 +87,7 @@
     }
     .form-builder-select-field{
         .form-control{
-            background: $jmAntiFlashWhiteColor;
+            background: url("data:image/svg+xml,%3Csvg id='keyboard_arrow_down-white-48dp' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath id='Path_5503' data-name='Path 5503' d='M0,0H24V24H0Z' fill='none'/%3E%3Cpath id='Path_5504' data-name='Path 5504' d='M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z' fill='%231e22aa'/%3E%3C/svg%3E") no-repeat calc(100% - 12px) center $jmAntiFlashWhiteColor;
             @include generateFont($jmFont, 16px, 21px, $jmGraniteGrayColor);
             border-bottom: solid 2px $jmAntiFlashWhiteColor;
             padding: 16px 12px 10px 20px;
@@ -189,6 +189,7 @@ span.ddm-label-required.reference-mark {
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%231e22aa' class='bi bi-chevron-down' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E") no-repeat right center;
     width: 28px;
     height: 28px;
+    visibility: hidden;
 }
 @media (max-width: 834px) {
     .jmdot--digital-temp form {

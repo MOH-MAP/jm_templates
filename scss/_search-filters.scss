@@ -179,6 +179,9 @@
 		.explore__selectedfilter {
 			display: none !important;
 		}
+		.explore__categoryfilter h4:first-child {
+			display: none;
+		}
 		.explore__selectedfilter + h4{
 			display: none;
 		}

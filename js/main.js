@@ -75,29 +75,40 @@ jQuery(document).ready(function(){
         });
     }
 
+    var setLimit = 0
+    function checkFormPage() {
+    	if (!$('.loading-animation').length) {
+    		$('.portlet-forms.jmdot--digital-temp .form-builder-select-field').parents('.ddm-field').addClass('jmhide--label');
+    		$(document).on('focus', '.portlet-forms.jmdot--digital-temp .form-control', function(){
+        		$(this).parents('.ddm-field').addClass('jminput--focus');
+        	});
+
+          $(document).on('blur', '.portlet-forms.jmdot--digital-temp .form-control', function(){
+        		$(this).parents('.ddm-field').removeClass('jminput--focus');
+        		if (!$(this).parents('.form-group').hasClass('has-error') && $(this).val()) {
+        			$(this).parents('.ddm-field').addClass('jminput--complete');
+        		} else {
+        			$(this).parents('.ddm-field').removeClass('jminput--complete');
+        		}
+        	});
+        	
+           	$(document).on('click', '.jmdot--digital-temp label.ddm-label', function(){
+        		$(this).parent('.form-group').find('.form-control').focus();
+        	});
+
+        	$(document).on('focus', '.jmdot--digital-temp label.ddm-label', function(){
+        		$(this).parent('.form-group').find('.form-control').focus();
+        	});
+    	} else if (setLimit <= 7) {
+    		setTimeout(function(){
+    			setLimit++;
+    			checkFormPage();
+    		}, 1000);
+    	}
+    }
     setTimeout(function(){
        	hideAddress();
-       	$('.portlet-forms.jmdot--digital-temp .form-builder-select-field').parents('.ddm-field').addClass('jmhide--label');
-       	$('.portlet-forms.jmdot--digital-temp .form-control').on('focus', function(){
-    		$(this).parents('.ddm-field').addClass('jminput--focus');
-    	});
-
-    	$('.portlet-forms.jmdot--digital-temp .form-control').on('blur', function(){
-    		$(this).parents('.ddm-field').removeClass('jminput--focus');
-    		if (!$(this).parents('.form-group').hasClass('has-error') && $(this).val()) {
-    			$(this).parents('.ddm-field').addClass('jminput--complete');
-    		} else {
-    			$(this).parents('.ddm-field').removeClass('jminput--complete');
-    		}
-    	});
-    	
-    	$('.jmdot--digital-temp label.ddm-label').on('click', function(){
-    		$(this).parent('.form-group').find('.form-control').focus();
-    	});
-
-		$('.jmdot--digital-temp label.ddm-label').on('focus', function(){
-    		$(this).parent('.form-group').find('.form-control').focus();
-    	});
+       	checkFormPage();
     }, 1000);
 
     setTimeout(function () {
@@ -166,6 +177,19 @@ jQuery(document).ready(function(){
 			$('.explore__applications:first-child .explore__apptext').click()
 		}
 		scrollPos = window.pageYOffset;
+	});
+
+	$(document).on('click', '.explore__apptext', function(){
+		if (window.innerWidth > 834) {
+			if (!$(this).parents('.explore__applications').hasClass('explore__expanded')) {
+				$(this).parents('.explore__applications').addClass('explore__expanded');
+			} else {
+				$(this).parents('.explore__applications').removeClass('explore__expanded');
+			}
+		} else if (!$(this).parents('.explore__applications').hasClass('explore__expanded')) {
+			$('.explore__applications').removeClass('explore__expanded');
+			$(this).parents('.explore__applications').addClass('explore__expanded');
+		}
 	});
 
 	jQuery(window).on('scroll', function(){
