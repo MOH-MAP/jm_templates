@@ -32,7 +32,7 @@ $(document).ready(function () {
 
 	var scrollPos = 0;
 	var scrollEventHandler = function() {
-		if (jQuery('body').hasClass('ovfl--hdn') && window.innerWidth <= 834) {
+		if ($(".jmheader__navbar").hasClass("open") && window.innerWidth <= 834) {
 			window.scroll(0, scrollPos);
 		}
 	}
