@@ -29,4 +29,11 @@ $(document).ready(function () {
 			$(".jmheader__navbar").removeAttr("style");
 		}
 	});	
+
+	var scrollPos = 0;
+	var scrollEventHandler = function() {
+		if (jQuery('body').hasClass('ovfl--hdn') && window.innerWidth <= 834) {
+			window.scroll(0, scrollPos);
+		}
+	}
 });

@@ -35,6 +35,15 @@
 			@include generateFont($jmMediumFont, 18px, 25px, $jmDarkCharcoalColor);
 		}
 	}
+	strong span, strong a{
+		font-family: $jmMediumFont!important;
+		font-weight: bolder!important;
+	}
+	a strong span, a strong a, span strong a, span a strong{
+		font-family: $jmMediumFont!important;
+		color: $jmEgyptianBlueColor!important;
+		font-weight: bolder!important;
+	}
 	p {
 		margin-bottom: 10px !important;
 		@include generateFont($jmFont, 18px, 25px, $jmDarkCharcoalColor);
@@ -48,7 +57,7 @@
 			color: $jmEgyptianBlueColor!important;
 			text-decoration: revert;
 			position: relative;
-			span[class^='btn--style']{
+			span[class^='btn--style'], &[class^='btn--style'] {
 				background-color: $jmEgyptianBlueColor;
 				min-width: 380px;
 				border: none;

@@ -185,7 +185,7 @@ a.sub-child {
   }
   .jmprdt__btn {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     margin-bottom: 0px;
     margin-left: auto;
     margin-top: 30px;
@@ -806,4 +806,10 @@ span[class^='btn--style'], a[class^='btn--style']{
 }
 .bg--white{
 	background: $jmWhiteColor;
+}
+span[class^='title-style-b'], span[class^='title-style-b'] * {
+  @include generateFont($jmMediumFont, 36px, 48px, $jmDarkCharcoalColor!important);
+}
+span[class^='title-style-e'], span[class^='title-style-e'] * {
+  @include generateFont($jmMediumFont, 28px, 48px, $jmDarkCharcoalColor!important);
 }

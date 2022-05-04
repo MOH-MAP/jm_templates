@@ -59,6 +59,15 @@
       display: none!important;
     }
   }
+  .submenu__mb .jmlfry__btn{
+    width: 100%;
+    border: solid 1px $jmWhiteColor;
+    background: transparent;
+    padding: 15px;
+  }
+  .jmheader__navlist.jmchildmenu--listsnormal:hover .child-menu.jmchildmenu__lists{
+    display: none!important;
+  }
   .jmlogo__img {
     display: none;
   }

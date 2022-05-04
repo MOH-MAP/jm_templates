@@ -15,7 +15,7 @@
                         ${Summary.getData()}
                     </div>
                 </#if>
-                <div class="mt-4">
+                <div class="panel__btnlist">
                     <#if Link_Title?? && Link_Title.getData()?has_content>
                         <#assign linkHref = "#" />
                         <#if Link_Title.Link_Internal?? && Link_Title.Link_Internal.getFriendlyUrl()?has_content>
