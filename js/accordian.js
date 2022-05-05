@@ -29,11 +29,4 @@ $(document).ready(function () {
 			$(".jmheader__navbar").removeAttr("style");
 		}
 	});	
-
-	var scrollPos = 0;
-	var scrollEventHandler = function() {
-		if ($(".jmheader__navbar").hasClass("open") && window.innerWidth <= 834) {
-			window.scroll(0, scrollPos);
-		}
-	}
 });

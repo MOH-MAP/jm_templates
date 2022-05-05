@@ -7,6 +7,12 @@
 	}
 	.hero-panels-panel.white-border {
 		border-left: 1.5px $jmWhiteColor solid;
+		@media screen and (max-width: 834px) {
+			border-left: 0;
+			.jmtext--panel-temp{
+				border-top: 1.5px $jmWhiteColor solid;
+			}
+		}
 	}
 	.panels-hero-header {
 		h1, h2, h3, h4, h5, h6 {

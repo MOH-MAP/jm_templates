@@ -163,10 +163,12 @@ jQuery(document).ready(function(){
 
 	var scrollPos = 0;
 	var scrollEventHandler = function() {
-		if ($('.explore__left').is(':visible') && window.innerWidth <= 834) {
+		if (($('.explore__left').is(':visible') || $(".jmheader__navbar").hasClass("open")) && window.innerWidth <= 834) {
 			window.scroll(0, scrollPos);
 		}
 	}
+
+	window.addEventListener("scroll", scrollEventHandler, false);
 
 	$('.explore__filtericon').on('click', function(){
 		$('.explore__left').show();
@@ -199,11 +201,8 @@ jQuery(document).ready(function(){
 
 	$(document).on('click', '.explore__apptext', function(){
 		if (window.innerWidth > 834) {
-			if (!$(this).parents('.explore__applications').hasClass('explore__expanded')) {
-				$(this).parents('.explore__applications').addClass('explore__expanded');
-			} else {
-				$(this).parents('.explore__applications').removeClass('explore__expanded');
-			}
+			$('.explore__applications').removeClass('explore__expanded');
+			$(this).parents('.explore__applications').addClass('explore__expanded');
 		} else if (!$(this).parents('.explore__applications').hasClass('explore__expanded')) {
 			$('.explore__applications').removeClass('explore__expanded');
 			$(this).parents('.explore__applications').addClass('explore__expanded');
@@ -258,6 +257,13 @@ jQuery(document).ready(function(){
 	$('.event--templcont .addToCal').removeClass('open');
 	$('.event--templcont .addToCal').on('click', function(){
 		$(this).toggleClass('open');
+	});
+
+	$('.event--templcont .col.col-lg-3.col-sm-3.col-3.col-md-3 .portlet-body .panel-header-link.panel-header').on('click', function(){
+		setTimeout(function(){
+			$('.panel-collapse.collapse').removeClass('show');
+			$($(this).attr('data-target')).addClass('show');
+		}, 3000);
 	});
 
 	addModalClass = function() {
