@@ -2,7 +2,7 @@
     margin-top: 100px;
     .product_hero__heading{
         margin-bottom: 40px;
-        @include generateFont($jmMediumFont, 36px, 40px, $jmDarkCharcoalColor);
+        @include generateFont($jmMediumFont, 36px, 56px, $jmDarkCharcoalColor);
     }
     .product_hero__para p{
         margin-bottom: 20px;

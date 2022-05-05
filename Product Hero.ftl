@@ -131,6 +131,9 @@
 .jm-text-slider.jm-text-spec-without-image .jm-product-info-container {
     padding-left: 30px;
 }
+.jmproduct--hero-temp .product_hero__heading{
+    line-height: 56px;
+}
 </style>
 <#if getterUtil.getBoolean(ShowScrollLink.getData())>
     <div id="read-more"></div>
