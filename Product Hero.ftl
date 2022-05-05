@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <#assign imgPresent = ((ImageLarge.getData())?? && ImageLarge.getData() != "")>
-            <div class="${(imgPresent || (SpecificationTitle?? && SpecificationTitle.getData()?has_content))?then('col-md-6','col-md-12')}">
+            <div class="${(imgPresent || (Specification?? && Specification.getData()?has_content))?then('col-md-6','col-md-12')}">
                 <#if (Title.getData())??>
                     <h1 class="product_hero__heading">
                         ${Title.getData()}
@@ -98,16 +98,16 @@
                         <img class="product_hero_img" alt="${ImageLarge.getAttribute("alt")!}" data-fileentryid="${ImageLarge.getAttribute("fileEntryId")!}" src="${ImageLarge.getData()}" />
                     </#if>
 	            </div>
-	        <#elseif SpecificationTitle?? && SpecificationTitle.getData()?has_content>
+	        <#elseif Specification?? && Specification.getData()?has_content>
 	            <div class="col-md-1"></div>
 	            <div class="col-md-5">
-					    <div class="jm-text-slider jm-text-spec-without-image">
-								    <div class="jm-rxtx-slider-btn-block">
-									    <div class="jm-product-info-container">
-										    ${Specification.getData()}
-									    </div>
-								    </div>
-							    </div>
+                    <div class="jm-text-slider jm-text-spec-without-image">
+                        <div class="jm-rxtx-slider-btn-block">
+                            <div class="jm-product-info-container">
+                                ${Specification.getData()}
+                            </div>
+                        </div>
+                    </div>
 	            </div>
             </#if>
         </div>

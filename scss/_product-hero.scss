@@ -148,9 +148,7 @@
 }
 .jm-text-slider.jm-text-spec-without-image {
     left: 0;
-    @media (max-width: 834px) {
-        position: static;
-    }
+    position: static;
 }
 .jm-text-slider.jm-text-spec-without-image .jm-product-info-container {
     padding-left: 30px;
