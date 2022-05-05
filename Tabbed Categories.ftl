@@ -22,7 +22,10 @@ Autocomplete is also available and can be invoked by typing "${".
 
 <#assign hasCategories = false />
 	<div aria-orientation="vertical" class="panel-group" role="tablist">
-		<h3 class='jmtabbed__filterheading'>Filters</h3>
+		<h3 class='jmtabbed__filterheading'>
+			<span class="jmtabbed__filterback"></span>
+			Filters
+		</h3>
 		<#if entries?has_content>
 			<#list entries as entry>
 				<#assign categories = entry.getCategories() />

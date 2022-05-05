@@ -174,9 +174,27 @@ jQuery(document).ready(function(){
 			return $(this).hasClass('explore__expanded');
 		});
 		if (!expandedList.length) {
-			$('.explore__applications:first-child .explore__apptext').click()
+			$($(".explore__applications")[0]).find(".explore__apptext").click();
 		}
 		scrollPos = window.pageYOffset;
+	});
+
+	$('.jmtabbed .jmtabbed__filtericon').on('click', function(){
+		$('.jmtabbed .panel-group').show();
+		scrollPos = window.pageYOffset;
+	});
+
+	$('.jmtabbed .jmtabbed__filterback').on('click', function(){
+		$('.jmtabbed .panel-group').hide();
+	});
+
+	$('.event--templcont .event__filtericon').on('click', function(){
+		$('.event--templcont .panel-group').show();
+		scrollPos = window.pageYOffset;
+	});
+
+	$('.event--templcont .event__filterback').on('click', function(){
+		$('.event--templcont .panel-group').hide();
 	});
 
 	$(document).on('click', '.explore__apptext', function(){
@@ -228,6 +246,20 @@ jQuery(document).ready(function(){
 	.removeClass('col col-lg-6 col-sm-6 col-6 col-md-6')
 	.addClass('col col-lg-3 col-sm-3 col-3 col-md-3');
 
+	$('.event--templ').parents('.col.col-lg-6.col-sm-6.col-6.col-md-6').parent().addClass('container event--templcont');
+	$('.event--templ').parents('.col.col-lg-6.col-sm-6.col-6.col-md-6')
+	.removeClass('col col-lg-6 col-sm-6 col-6 col-md-6')
+	.addClass('col col-lg-9 col-sm-9 col-9 col-md-9');
+	$('.event--templcont .panel-collapse.collapse').addClass('show');
+	$('.event--templcont').find('.col.col-lg-6.col-sm-6.col-6.col-md-6')
+	.removeClass('col col-lg-6 col-sm-6 col-6 col-md-6')
+	.addClass('col col-lg-3 col-sm-3 col-3 col-md-3');
+
+	$('.event--templcont .addToCal').removeClass('open');
+	$('.event--templcont .addToCal').on('click', function(){
+		$(this).toggleClass('open');
+	});
+
 	addModalClass = function() {
 		if ($('.modal-backdrop').length) {
 			$('.modal-backdrop').parent().addClass('jmgetintouchmodal');
@@ -247,7 +279,7 @@ jQuery(document).ready(function(){
 			return $(this).hasClass('explore__expanded');
 		});
 		if (!expandedList.length) {
-			$('.explore__applications:first-child .explore__apptext').click()
+			$($(".explore__applications")[0]).find(".explore__apptext").click();
 		}
 	}
 
@@ -257,7 +289,7 @@ jQuery(document).ready(function(){
 				return $(this).hasClass('explore__expanded');
 			});
 			if (!expandedList.length) {
-				$('.explore__applications:first-child .explore__apptext').click()
+				$($(".explore__applications")[0]).find(".explore__apptext").click();
 			}
 		}
 	});

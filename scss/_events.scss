@@ -3,23 +3,32 @@
         display: none;
         justify-content: start;
     }
-    .event__align-right{
-        position: absolute;
-        right: 20px;
-        top: calc(50% - 12px);
-    }
     .event__row {
         padding: 0px;
+        width: 35%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     .event__align-right {
         display: flex;
         justify-content: end;
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+        flex-wrap: wrap;
+        position: relative;
+        right: 0;
+        top: 0;
+        // position: absolute;
+        // right: 20px;
+        // top: calc(50% - 12px);
     }
     .event__card.mb-3:nth-child(odd) {
         padding: 20px;
-        background: $jmAntiFlashWhiteColor;
+        background: $jmWhiteColor;
         @include generateFont($jmMediumFont, 18px, 22px, $jmDarkCharcoalColor);
-        border-bottom: solid 2px $jmLightGrayColor;
+        border-bottom: solid 1px $jmLightGrayColor;
     }
     .event__card-body h2 {
         @include generateFont($jmMediumFont, 24px, 32px, $jmBlackColor);
@@ -34,10 +43,22 @@
             }
         }
     }
-    .event__card-body p, .event__card-text, .event__card-location, .event__card-heading, .event__card-title {
+    .event__card-heading {
+        @include generateFont($jmMediumFont!important, 24px!important, 32px!important, $jmDarkCharcoalColor!important, 1!important);
+        margin-bottom: 20px!important;
+        max-width: 425px;
+    }
+    .event__card-title, .event__card-location{
+        @include generateFont($jmFont!important, 18px!important, 24px!important, $jmDarkGrayColor!important, 0.8!important);
+        margin-top: 0!important;
+        margin-bottom: 35px!important;
+        float: left;
+    }
+    .event__card-body p, .event__card-text {
         @include generateFont($jmFont!important, 18px!important, 27px!important, $jmDarkCharcoalColor!important, 1!important);
         margin-bottom: 0!important;
-        margin-top: 30px;
+        margin-top: 0px;
+        display: inline-block;
         &:first-child{
             margin-top: 0;
         }
@@ -49,6 +70,7 @@
         padding: 0;
         margin-top: 30px;
         text-decoration: none !important;
+        width: 100%;
         :hover {
             text-decoration: none !important;
         }
@@ -76,5 +98,176 @@
         margin: 20px;
         border-bottom: 1px solid $jmBlackColor;
         outline: none;
+    }
+}
+.event--templcont{
+    margin: 60px auto 30px;
+    .jmevent--adt-temp .row{
+        .journal-content-article {
+            width: 100%;
+        }
+        &:nth-child(odd) .event--templ .event__card.mb-3{
+            padding: 20px;
+            background: $jmAntiFlashWhiteColor;
+            @include generateFont($jmMediumFont, 18px, 22px, $jmDarkCharcoalColor);
+            border-bottom: solid 1px $jmLightGrayColor;
+        }
+        .event__card.mb-3{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            margin-bottom: 0!important;
+        }
+    }
+    .event__card-body{
+        width: 65%;
+    }
+    .addToCal{
+        background: transparent;
+        @include generateFont($jmMediumFont, 18px, 22px, $jmEgyptianBlueColor);
+        border: none;
+        padding: 0!important;
+        width: 100%;
+        height: 30px;
+        padding-right: 35px!important;
+        span{
+            position: relative;
+            &:after{
+                content: '';
+                position: absolute;
+                left: auto;
+                right: -30px;
+                top: 0px;
+                width: 0;
+                height: 0;
+                clear: both;
+                border: 0;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg id='keyboard_arrow_down-blue-48dp' transform='translate(24 24) rotate(180)'%3E%3Cpath id='Path_5503' data-name='Path 5503' d='M0,0H24V24H0Z' fill='none'/%3E%3Cpath id='Path_5504' data-name='Path 5504' d='M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z' transform='translate(24 24.59) rotate(180)' fill='%231e22aa'/%3E%3C/g%3E%3C/svg%3E%0A");
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    .addToCal.open + .addToCalOptions{
+        max-height: 100%;
+        border: none;
+        box-shadow: $jmBoxShadow1;
+        padding: 0 20px;
+        position: absolute;
+        top: 35px;
+        right: 15px;
+    }
+    .addToCal.open span:after {
+        transform: rotate(180deg);
+    }
+    .addToCalOptions {
+        /* Animation related styles */
+        overflow-y: hidden;
+        max-height: 0px;
+        -webkit-transition: max-height .7s cubic-bezier(0, 1, 0.5, 1);
+        -moz-transition: max-height .7s cubic-bezier(0, 1, 0.5, 1);
+        -ms-transition: max-height .7s cubic-bezier(0, 1, 0.5, 1);
+        transition: max-height .7s cubic-bezier(0, 1, 0.5, 1);
+        background-color: $jmWhiteColor;
+        width: 100%;
+        border: none;
+        box-sizing: border-box;
+        a {
+            color: $jmBlackColor;
+            padding: 15px 0;
+            text-decoration: none;
+            display: block;
+            border-bottom: 1px solid $jmBlackColorOpc1;
+            @include generateFont($jmFont, 18px, 24px, $jmDarkCharcoalColor);
+            &:last-child{
+                border-bottom: 0;
+            }
+            &:hover{
+                background-color: transparent!important;
+            }
+        }
+    }
+    .col.col-lg-3.col-sm-3.col-3.col-md-3{
+        .portlet-body{
+            margin-right: 20px;
+            p{
+                @include generateFont($jmFont, 24px, 32px, $jmGraniteGrayColor);
+                border-bottom: solid 1px $jmBlackColorOpc1;
+                padding-bottom: 15px;
+            }
+            .panel-header-link.panel-header{
+                @include generateFont($jmMediumFont, 24px, 32px, $jmGraniteGrayColor);
+                padding: 10px;
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+            input[type='radio']{
+                visibility: hidden;
+            }
+            .event-select-panel--group .row{
+                width: 100%;
+                border-bottom: solid 1px $jmBlackColorOpc1;
+            }
+            .btn-filter a{
+                @include generateFont($jmMediumFont, 20px, 26px, $jmDarkGrayColor);
+                position: relative;
+                &::after{
+                    position: absolute;
+                    width: 24px;
+                    height: 24px;
+                    left: -24px;
+                    top: 0;
+                    background-image: url("data:image/svg+xml,%3Csvg id='radio_button_unchecked-blue-48dp' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath id='Path_6201' data-name='Path 6201' d='M0,0H24V24H0Z' fill='none'/%3E%3Cpath id='Path_6202' data-name='Path 6202' d='M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z' fill='%231e22aa'/%3E%3C/svg%3E%0A");
+                    background-repeat: no-repeat;
+                    content: "";
+                }
+            }
+            .event-panel-collapse-icon-open{
+                width: 24px;
+                height: 24px;
+                background: url(../images/new__jm__images/arrow_downward.svg) 0 0 no-repeat transparent;
+                background-size: cover;
+                transform: rotate(180deg);
+                float: right;
+                margin-top: 5px;
+                svg{
+                    display: none;
+                }
+            }
+            .collapsed{
+                .event-panel-collapse-icon-open{
+                    transform: rotate(0deg);
+                }
+            }
+        }
+    }
+    .event__filtericon {
+		@include generateIcon(16px, 16px, "../images/new__jm__images/filter_icon.svg");
+		background-size: cover;
+		display: none;
+	}
+    .event__filterback{
+        @include generateIcon(24px, 24px, "../images/new__jm__images/arrow_forward_white.svg");
+		margin-right: 20px;
+		display: none;
+		transform: rotate(180deg);
+    }
+    @media screen and (max-width: 834px) {
+        [class^='col-md']{
+            width: 100%;
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+        .col.col-lg-9.col-sm-9.col-9.col-md-9, 
+        .col.col-lg-3.col-sm-3.col-3.col-md-3{
+            width: 100%;
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+        .event__filtericon, .event__filterback{
+            display: inline-block;
+        }
     }
 }

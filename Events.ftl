@@ -13,11 +13,15 @@
                         </#if>
                     </div>
                     <div class="col-md-6 event__align-right">
-                        <select id="select_${namespace}" class="event__select">
-                        	<option value="Google Calendar">Google Calendar</option>
-                        	<option value="Apple Calendar">Apple Calendar</option>
-                        	<option value="Outlook Calendar">Outlook Calendar</option>
-                        </select>
+                    <button
+                    class="addToCal open" data-ace='{"title":"Event 2","desc":"Event 2 description","location":"Location of Event 2","time":{"start":"March 27, 2016 12:00:00", "end":"March 27, 2016 14:00:00", "zone":"+05:30"}, "organizer":{"name":"Lord Abbett", "email": "email@gmail.com"}}'><span>Add To Calendar</span></button>
+                        <div class="addToCalOptions">
+                            <a href="#" data-type="ics">Outlook Calendar</a>
+                            <a href="#" data-type="google">Google Calendar</a>
+                            <a href="#" data-type="apple">Apple Calendar</a>
+                            
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="event__card-body">
@@ -59,4 +63,106 @@
         </div>
     </div>
 </div>
- 
+<script>
+$( ".addToCal" ).on( "click", function(){
+    $( this ).toggleClass( "open" );
+} );
+
+$( ".addToCalOptions a" ).on( "click", function(){
+    var $this = $( this ),
+        data = $this.closest( ".container" ).find( "button" ).data( "ace" ),
+        type = $this.data( "type" ),
+        url = "";
+    // console.log( data );
+    console.log( type );
+    switch( type ){
+        case "google":
+            url = getUrl_google( data );
+            break;
+        case "apple":
+            url = getUrl_yahoo( data );
+            break;
+        case "ics":
+            // Logic to download ics file.
+            break;
+        default:
+            break;
+    }
+    console.log( url );
+    window.open( url, '_blank' );
+} );
+
+
+function getUrl_google( data ) {
+    var url = 'https://www.google.com/calendar/event?action=TEMPLATE';
+    url += '&text=' + encodeURIComponent(data.title);
+    url += '&details=' + encodeURIComponent(data.desc);
+    url += '&location=' + encodeURIComponent(data.location);
+    url += '&dates=' + encodeURIComponent(_getUTCTime(data.time.start, data.time.zone) + '/' + _getUTCTime(data.time.end, data.time.zone));  // time needs to be sent as UTC and let Google handle converting to local
+    url += '&sprop=website:' + encodeURIComponent(data.url);
+    url += '&sprop=name:' + encodeURIComponent(data.organizer.name);
+    return url;
+}
+function getUrl_yahoo( data ) {
+    var url = 'http://calendar.yahoo.com?v=60';
+    url += '&TITLE=' + encodeURIComponent(data.title);
+    url += '&DESC=' + encodeURIComponent(data.desc);
+    url += '&URL=' + encodeURIComponent(data.url);
+    url += '&in_loc=' + encodeURIComponent(data.location);
+    url += '&ST=' + _getUTCTime(data.time.start, data.time.zone);
+    url += '&DUR=' + _getDateDiff(data.time.start, data.time.end);
+    return url;
+}
+function getUrl_hotmail( data ) {
+    var url = 'https://bay02.calendar.live.com/calendar/calendar.aspx?rru=addevent';
+    url += '&dtstart=' + _getUTCTime(data.time.start, data.time.zone);
+    url += '&dtend=' + _getUTCTime(data.time.end, data.time.zone);
+    url += '&summary=' + encodeURIComponent(data.title);
+    url += '&location=' + encodeURIComponent(data.location);
+    url += '&description=' + encodeURIComponent(data.desc);
+    url += '&allday=' + "false";
+    url += '&uid=' + "";
+    return url;
+}
+
+function _getUTCTime( dateObj, zone ) {
+    var newDateObj = _adjustToUTC(dateObj, zone);
+    return _getDatePart(newDateObj.getFullYear(),4) + _getDatePart(newDateObj.getMonth()+1,2) + _getDatePart(newDateObj.getDate(),2) + 'T' + _getDatePart(newDateObj.getHours(),2) + _getDatePart(newDateObj.getMinutes(),2) + _getDatePart(newDateObj.getSeconds(),2) + 'Z';
+}
+
+function _getDatePart(part, digits){
+    part = part.toString();
+    while(part.length < digits) {
+        part = '0' + part;
+    }
+    return part;
+}
+
+function _adjustToUTC(dateObj, zone){
+    var dateOut = new Date(dateObj),
+    hours, mins;
+
+    if(isNaN(dateOut.getTime())) {
+        return new Date();
+    }
+
+    // adjust to UTC
+    hours = zone.substring(1,3);
+    mins = zone.substring(4,6);
+    if(zone.substring(0,1) === '-') {
+        dateOut.setHours(dateOut.getHours() + (hours-0));
+        dateOut.setMinutes(dateOut.getMinutes() + (mins-0));
+    } else {
+        dateOut.setHours(dateOut.getHours() - hours);
+        dateOut.setMinutes(dateOut.getMinutes() - mins);
+    }
+    return dateOut;
+}
+
+function _getDateDiff(startDate, endDate) {
+    var diff = Math.floor((endDate - startDate)/60000),
+    hours = Math.floor(diff/60),
+    mins = diff - (hours * 60);
+    return this._getDatePart(hours,2) + this._getDatePart(mins,2);
+}
+</script>

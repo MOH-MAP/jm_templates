@@ -63,19 +63,29 @@
                             </#if>
                         </#list>
                     </#if>
+                    <#if getterUtil.getBoolean(ShowScrollLink.getData())>
+                    	<#assign scrollLinkTxt = 'Read more' />
+                    	<#if (ScrollLinkText.getData())??>
+                    	    <#assign scrollLinkTxt = ScrollLinkText.getData() />
+                        </#if>
+                        <a href="#read-more" class="panel__btn" title="${scrollLinkTxt}">
+                            ${scrollLinkTxt}
+                            <span class="arrow__forward"></span>
+                        </a>
+                    </#if>
                 </div>
             </div>
             <#if imgPresent >
                 <div class="col-md-1"></div>
 	            <div class="col-md-5">
-                    <#if SpecificationTitle.getData()?has_content>
+                    <#if SpecificationTitle?? && SpecificationTitle.getData()?has_content>
 					    <img class="product_hero_img product--heroimgspecification" alt="${ImageLarge.getAttribute("alt")!}" data-fileentryid="${ImageLarge.getAttribute("fileEntryId")!}" src="${ImageLarge.getData()}" />
 	                    <div class="jm-richtext-item-image">
 						    <div class="jm-rt-image-block">
 							    <div class="jm-text-slider">
 								    <div class="jm-rxtx-slider-btn-block">
 									    <div class="jm-button-block-rctx">
-										    <span>${SpecificationTitle.getData()}</span></span>
+										    <span>${SpecificationTitle.getData()}</span>
 									    </div>
 									    <div class="jm-product-info-container">
 										    ${Specification.getData()}
@@ -84,7 +94,7 @@
 							    </div>
 						    </div>
 					    </div>
-                        <#else>
+                    <#else>
                         <img class="product_hero_img" alt="${ImageLarge.getAttribute("alt")!}" data-fileentryid="${ImageLarge.getAttribute("fileEntryId")!}" src="${ImageLarge.getData()}" />
                     </#if>
 	            </div>
@@ -103,3 +113,7 @@
         });
     });
 </script>
+
+<#if getterUtil.getBoolean(ShowScrollLink.getData())>
+    <div id="read-more"></div>
+</#if>

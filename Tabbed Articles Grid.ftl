@@ -8,7 +8,7 @@
 <#if entries?has_content>
 <div class="container-fluid">
     <div class="row">
-        <div class="tabbed-article-heading">Expert Insight <span class="explore__filtericon"></span></div>
+        <div class="tabbed-article-heading">Expert Insight <span class="jmtabbed__filtericon"></span></div>
         <div class="tabbed-article-flex-container">
         <#list entries as curEntry>
             <#assign 

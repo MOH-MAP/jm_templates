@@ -36,6 +36,11 @@
     width: auto;
     min-width: 320px;
     max-width: 410px;
+    @media (max-width: 834px) {
+      width: calc(100% - 40px);
+      margin-left: 20px;
+      min-width: 280px;
+    }
   }
   .panel__btn {
     display: inline-flex;
