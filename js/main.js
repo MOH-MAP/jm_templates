@@ -190,15 +190,6 @@ jQuery(document).ready(function(){
 		$('.jmtabbed .panel-group').hide();
 	});
 
-	$('.event--templcont .event__filtericon').on('click', function(){
-		$('.event--templcont .panel-group').show();
-		scrollPos = window.pageYOffset;
-	});
-
-	$('.event--templcont .event__filterback').on('click', function(){
-		$('.event--templcont .panel-group').hide();
-	});
-
 	$(document).on('click', '.explore__apptext', function(){
 		if (window.innerWidth > 834) {
 			$('.explore__applications').removeClass('explore__expanded');
@@ -245,25 +236,42 @@ jQuery(document).ready(function(){
 	.removeClass('col col-lg-6 col-sm-6 col-6 col-md-6')
 	.addClass('col col-lg-3 col-sm-3 col-3 col-md-3');
 
+	$(document).on('click', '.event--templcont .event__filtericon', function(){
+		$('.event--templcont .portlet-body').show();
+		$('.panel-collapse.collapse').removeClass('show');
+		$('#section0').addClass('show');
+		scrollPos = window.pageYOffset;
+	});
+
+    $(document).on('click', '.event--templcont .event__filterback', function(){
+		$('.event--templcont .col.col-lg-3.col-sm-3.col-3.col-md-3 .portlet-body').hide();
+	});
+	
 	$('.event--templ').parents('.col.col-lg-6.col-sm-6.col-6.col-md-6').parent().addClass('container event--templcont');
 	$('.event--templ').parents('.col.col-lg-6.col-sm-6.col-6.col-md-6')
 	.removeClass('col col-lg-6 col-sm-6 col-6 col-md-6')
-	.addClass('col col-lg-9 col-sm-9 col-9 col-md-9');
+	.addClass('col col-lg-9 col-sm-9 col-9 col-md-9')
+	.prepend("<span class='event__filtericon'></span>");
 	$('.event--templcont .panel-collapse.collapse').addClass('show');
 	$('.event--templcont').find('.col.col-lg-6.col-sm-6.col-6.col-md-6')
 	.removeClass('col col-lg-6 col-sm-6 col-6 col-md-6')
-	.addClass('col col-lg-3 col-sm-3 col-3 col-md-3');
+	.addClass('col col-lg-3 col-sm-3 col-3 col-md-3').find('.portlet-body p')
+	.prepend("<span class='event__filterback'></span>");
 
 	$('.event--templcont .addToCal').removeClass('open');
-	$('.event--templcont .addToCal').on('click', function(){
+	$(document).on('click', '.event--templcont .addToCal', function(){
 		$(this).toggleClass('open');
 	});
-
-	$('.event--templcont .col.col-lg-3.col-sm-3.col-3.col-md-3 .portlet-body .panel-header-link.panel-header').on('click', function(){
+	
+	$(document).on('click', '.event--templcont .col.col-lg-3.col-sm-3.col-3.col-md-3 .portlet-body .panel-header-link.panel-header', function(){
+		var elementId = $(this).hasClass('.event-select-panel--title') ? 
+	        $(this).parent('.panel-header-link.panel-header').attr('data-target')
+	        : 
+	        $(this).attr('data-target');
 		setTimeout(function(){
 			$('.panel-collapse.collapse').removeClass('show');
-			$($(this).attr('data-target')).addClass('show');
-		}, 3000);
+			$(elementId).addClass('show');
+		}, 100);
 	});
 
 	addModalClass = function() {
