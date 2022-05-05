@@ -296,6 +296,9 @@ header#banner .container-fluid.container-fluid-max-xl{
 }
 .jmheader__navlist.jmchildmenu--listsnormal{
 	position: relative!important;
+	.submenu--content-btn-list{
+		display: none;
+	}
 }
 .jmchildmenu--listsnormal .jmprdt__btn{
 	display: none!important;

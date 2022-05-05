@@ -25,10 +25,11 @@
 }
 .jm-rt-image-block {
 	@include generateBgSizePos;
-	min-height: 690px;
 	width: 100%;
 	position: relative;
 	overflow: hidden;
+	height: 100%;
+	min-height: 300px;
 }
 .jm-text-slider {
 	background-color: $jmEgyptianBlueColor;
@@ -41,6 +42,8 @@
 .jm-product-info-container {
 	color: $jmWhiteColor;
 	padding: 30px 20px 30px 0;
+	height: 100%;
+	overflow: auto;
 	p {
 		text-align: left;
 		@include generateFont($jmFont, 16px, false, $jmWhiteColor);
@@ -108,6 +111,7 @@
 }
 .jm-rxtx-slider-btn-block {
 	display: flex;
+	height: 100%;
 }
 .jm-rt-ol-menulist {
 	display: flex;
