@@ -50,11 +50,19 @@
 }
 .breadcrumb-text-truncate {
     @include generateFont($jmFont, 14px, 28px, $jmWhiteColor);
+    overflow: visible;
+    max-width: 100%;
+    text-overflow: unset;
+    padding-right: 10px;
+    white-space: nowrap;
     &:hover {
         text-decoration: none;
     }
 }
 @media (min-width: 320px) and (max-width: 834px) {
+#breadcrumbs .portlet-body nav{
+	overflow: auto;
+}
     #breadcrumbs {
         .breadcrumb {
             padding: 0 20px 2px !important;

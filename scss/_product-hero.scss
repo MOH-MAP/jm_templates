@@ -19,6 +19,13 @@
         align-items: center;
     }
 }
+.jmproduct--hero-temp .product--heroimgspecification {
+    width: calc(100% - 64px);
+    height: auto;
+}
+.jmproduct--hero-temp img.product_hero_img {
+    height: auto;
+}
 
 .jmproduct--hero-temp {
     margin-bottom: 70px;
@@ -41,8 +48,12 @@
         object-fit: cover;
     }
     .product--heroimgspecification{
-        width: calc(100% - 3.75em);
-    }
+    	width: calc(100% - 64px);
+    	height: auto;
+	}
+	img.product_hero_img {
+    	height: auto;
+	}
     .product_hero__heading{
         margin-bottom: 20px;
         @include generateFont($jmMediumFont, 52px, 40px, $jmDarkCharcoalColor);

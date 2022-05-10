@@ -63,6 +63,10 @@
       display: none!important;
     }
   }
+  .jmheader__navlist.jmshow--submenu .jmarrow__right, 
+  .jmheader__navlist.jmshow--submenu .hidden--submenu-overlay{
+  	display: block!important;
+  }
   .submenu__mb .jmlfry__btn{
     width: 100%;
     border: solid 1px $jmWhiteColor;

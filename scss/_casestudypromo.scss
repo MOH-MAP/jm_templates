@@ -124,6 +124,11 @@ span.jmcasestudy__link-text {
     height: 235px;
   }
 }
+@media (max-width: 834px) {
+  .jmcasestudy__content {
+   margin-left:0 !important;
+  }
+}
 @media (max-width: 575.98px) {
   .jmcasestudy__img {
     width: 27% !important;
