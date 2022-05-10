@@ -192,8 +192,12 @@ jQuery(document).ready(function(){
 
 	$(document).on('click', '.explore__apptext', function(){
 		if (window.innerWidth > 834) {
-			$('.explore__applications').removeClass('explore__expanded');
-			$(this).parents('.explore__applications').addClass('explore__expanded');
+			if(!$(this).parents('.explore__applications').hasClass('explore__expanded')){
+				$('.explore__applications').removeClass('explore__expanded');
+				$(this).parents('.explore__applications').addClass('explore__expanded');
+			} else {
+				$('.explore__applications').removeClass('explore__expanded');
+			}
 		} else if (!$(this).parents('.explore__applications').hasClass('explore__expanded')) {
 			$('.explore__applications').removeClass('explore__expanded');
 			$(this).parents('.explore__applications').addClass('explore__expanded');
@@ -338,9 +342,9 @@ jQuery(document).ready(function(){
 	}
 
 	var lastIndex = $('#content .journal-content-article').length - 1;
-
-	if ($($('#content .journal-content-article')[lastIndex]).find('.jmimg--main--cardblock').length) {
-		$('.footer__container').css({'margin-top': 0})
-	}
+    if ($($('#content .journal-content-article')[lastIndex]).find('.jmimg--main--cardblock, .jmvideotempl').length) {
+	    $('.footer__container').css({'margin-top': 0});
+	    $($('#content .journal-content-article')[lastIndex]).find('.jmvideotempl').css({'margin-bottom': 0});
+    }
 	
 });
