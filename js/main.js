@@ -177,6 +177,9 @@ jQuery(document).ready(function(){
 		});
 		if (!expandedList.length) {
 			$($(".explore__applications")[0]).find(".explore__apptext").click();
+		} else if ($(window).width() <= 834 && expandedList.length > 1) {
+			$('.explore__applications').removeClass('explore__expanded');
+			$($(".explore__applications")[0]).find(".explore__apptext").click();
 		}
 		scrollPos = window.pageYOffset;
 	});

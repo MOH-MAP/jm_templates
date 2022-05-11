@@ -29,8 +29,11 @@
         line-height: 48px;
       }
     }
-    ul li, ol li{
-      list-style: disc;
-    }
+    ul, ol{
+      margin-left: 25px;
+      li{
+        list-style: disc;
+      }
+    } 
   }
 }

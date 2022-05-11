@@ -138,10 +138,10 @@
 		.jm-stock-price-portlet .stockprice__content{
 			border-bottom: 0;
       .stockprice__heading{
-        font-size: 16px/22px $jmFont;
+        font: 16px/22px $jmFont;
       }
       .stockprice__date{
-        font-size: 12px/20px $jmMediumFont;
+        font: 12px/20px $jmMediumFont;
       }
 		}
   }

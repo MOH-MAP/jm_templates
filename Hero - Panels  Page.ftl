@@ -31,7 +31,7 @@
                     </div>
                 </div>
             </#if>
-            <div class="panel__btnlist">
+            <div class="col-12 panel__btnlist">
                 <#if AdditionalLinks_Title?? && AdditionalLinks_Title.getSiblings()?has_content>
                     <#assign href = '#' >
                     <#assign title = 'Explore'>

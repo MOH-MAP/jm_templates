@@ -14,7 +14,7 @@
 	margin: 2rem 8rem;
 }
 .jmcta-inner-header {
-	@include generateFont($jmMediumFont, 3.25rem, 4.25rem);
+	@include generateFont($jmMediumFont, 42px, 46px);
 	opacity: 1;
 }
 .jmcta-inner-text {
